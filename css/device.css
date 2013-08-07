@@ -1,0 +1,33 @@
+label {
+  font-weight: bold;
+  float: left;
+  font-size: 1em;
+  padding: 0 10px 0 0; }
+
+span {
+  float: left;
+  display: none; }
+
+/*Desktop */
+@media only screen and (min-width: 768px) {
+  .desktop {
+    display: inline-block; } }
+/*Tablet */
+@media only screen and (max-width: 768px) {
+  .tablet {
+    display: inline-block; } }
+/*iPhone 4+ */
+@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hd-phone {
+    display: inline-block; } }
+  @media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .hd-phone .portrait {
+      display: inline-block; } }
+  @media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .hd-phone .landscape {
+      display: inline-block; } }
+
+@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .global-header .NSWlogo {
+    width: 20px;
+    background-color: lime; } }

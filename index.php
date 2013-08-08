@@ -228,7 +228,8 @@
 <section id="featured-software-slider" class="slider-holder light-grey">
     <div class="row">
         <div class="large-12 columns">
-            <h2>Learn &amp; Get Inspired</h2>
+            <h2>Featured Software</h2>
+
             <div class="orbit-container">
                 <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container">
                     <li>
@@ -284,6 +285,35 @@
                                 <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
                             </div>
                             <div class="explore-it heading">
+                                <h3>Minecraft</h3>
+                                <a href="#" class="button">Get License</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="img-holder">
+                                <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
+                            </div>
+                            <div class="fix-it heading">
+                                <h3>Microsoft Office</h3>
+                                <a href="#" class="button">Get License</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img-holder">
+                                <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
+                            </div>
+                            <div class="share-it heading">
+                                <h3>Photoshop Elements</h3>
+                                <a href="#" class="button">Get License</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img-holder">
+                                <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
+                            </div>
+                            <div class="use-it heading">
                                 <h3>Minecraft</h3>
                                 <a href="#" class="button">Get License</a>
                             </div>

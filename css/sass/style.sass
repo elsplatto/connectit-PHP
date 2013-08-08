@@ -73,6 +73,10 @@ $drop-down-border-color: #e0e0e0
 
 /* START: override foundation classes */
 
+html.search-showing
+  body
+    overflow: hidden
+
 body
   font-family: $body-font-family
   background-color: $footer-bg
@@ -692,7 +696,7 @@ input[type='url']
               margin: 0
               padding: 0
               .search-holder
-                padding: 3.5em 0
+                padding: 2.7em 0 3.5em
                 height: auto
                 margin: 0 auto
                 min-width: 60em
@@ -714,7 +718,24 @@ input[type='url']
                     height: 72px
 
 .search-results-overlay
-  background-color: #fff
+  background-color: rgb(255,255,255)
+  z-index: 200
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0px
+  left: 0px
+  display: none
+  .row
+    overflow-y: auto
+    height: 65%
+    padding: 30px 0
+
+.hover
+  .search-results-overlay
+    display: block
+
+
 
 
 #nav-holder.respond

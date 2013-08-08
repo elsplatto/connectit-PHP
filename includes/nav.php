@@ -25,12 +25,16 @@
                                 <li class="search-holder">
                                     <form id="frmSearch">
                                         <label for="search">Search</label>
-                                        <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search" type="search" class="large" placeholder="Search Connect.It" />
+                                        <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search" type="search" class="large" placeholder="Search CONNECT.IT" />
                                     </form>
                                 </li>
                             </ul>
                             <div class="search-results-overlay">
+                                <div class="row">
+                                    <div class="large-12">
 
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>

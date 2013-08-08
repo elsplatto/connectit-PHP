@@ -128,7 +128,24 @@
               is_hover = topbar.data('topbar');
 
           var a = li.find('a:first-child');
-              //a.css({'outline':'1px solid red'})
+          var html = $('html');
+          var searchResultsEl;
+          var dropDownEl = li.find('ul.dropdown');
+          var dropDownElTop = (dropDownEl.offset().top - $(window).scrollTop());
+          var dropDownHeight = dropDownEl.height();
+          var searchResultsHeight = $(window).height() - (dropDownHeight+dropDownElTop);
+
+          if (li.hasClass('search'))
+          {
+            searchResultsEl = li.find('.search-results-overlay');
+            searchResultsEl.css({
+                'top': (dropDownElTop + dropDownHeight) + 'px'
+            });
+            searchResultsEl.find('div.row').css({
+                'height' :  searchResultsHeight + 'px'
+            });
+          }
+
 
           if (self.settings.is_hover && !Modernizr.touch) return;
 
@@ -150,9 +167,11 @@
               a.on('click',function(e){
                 e.preventDefault();
                 $(this).closest('li').removeClass('hover');
+                html.removeClass('search-showing');
               });
               if (!li.hasClass('hover')) {
                   li.addClass('hover');
+                  html.addClass('search-showing');
               }
           }
 
@@ -201,6 +220,7 @@
             .removeClass('expanded')
             .find('li')
             .removeClass('hover');
+          $('html').removeClass('search-showing');
         }
       }.bind(this));
 
@@ -211,7 +231,13 @@
           return;
         }
 
-        $('.top-bar li, [data-topbar] li').removeClass('hover');
+        var li =  $('.top-bar li, [data-topbar] li.hover');
+        var a = li.find('a:first-child');
+        var html = $('html');
+        html.removeClass('search-showing');
+        li.removeClass('hover');
+        a.attr('data-closeOnClick','');
+        a.off('click');
       });
 
       // Go up a level on Click

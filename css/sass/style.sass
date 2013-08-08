@@ -77,9 +77,10 @@ html.search-showing
   body
     overflow: hidden
 
+
 body
   font-family: $body-font-family
-  background-color: $footer-bg
+  background-color: $footer-bg!important
 
 h1, h2, h3
   font-family: $serif-font-family
@@ -607,7 +608,7 @@ input[type='url']
             &:hover
               a
                 color: #fff
-          li#search-it
+          li.search-it
             position: static
             width: 4.762%
             border-width: 0px
@@ -628,7 +629,7 @@ input[type='url']
               a
                 &:before
                   background-position: -76px -64px
-          li#search-it.hover
+          li.search-it.hover
             a
               &:before
                 top: 18px
@@ -636,49 +637,55 @@ input[type='url']
                 width: 15px
                 height: 15px
                 background-position: -77px 0px
-          #use-it
+          .use-it
+            background-color: #fff!important
             &:hover
-              background-color: $use-it-nav-bg
+              background-color: $use-it-nav-bg!important
+          .use-it.active
+            background-color: $use-it-nav-bg!important
+            a
+              color: #fff
+          .fix-it
+            background-color: #fff!important
+            &:hover
+              background-color: $fix-it-nav-bg!important
+          .fix-it.active
+            background-color: $fix-it-nav-bg!important
+            a
+              color: #fff
+          .explore-it
+            background-color: #fff!important
+            &:hover
+              background-color: $explore-it-nav-bg!important
+          .explore-it.active
+            background-color: $explore-it-nav-bg!important
+            a
+              color: #fff
+          .share-it
+            background-color: #fff!important
+            &:hover
+              background-color: $share-it-nav-bg!important
+          .share-it.active
+            background-color: $share-it-nav-bg!important
+            a
+              color: #fff
+          .about-it
+            background-color: #fff!important
+            &:hover
+              background-color: $about-it-nav-bg!important
+          .about-it.active
+            background-color: $about-it-nav-bg!important
+            a
+              color: #fff
+          .search-it
+            background-color: #fff!important
+            &:hover
+              background-color: $search-it-nav-bg!important
               .dropdown
-                background-color: $use-it-nav-bg
+                background-color: $search-it-nav-bg!important
                 li
                   background-color: inherit
-          #fix-it
-            &:hover
-              background-color: $fix-it-nav-bg
-              .dropdown
-                background-color: $fix-it-nav-bg
-                li
-                  background-color: inherit
-          #explore-it
-            &:hover
-              background-color: $explore-it-nav-bg
-              .dropdown
-                background-color: $explore-it-nav-bg
-                li
-                  background-color: inherit
-          #share-it
-            &:hover
-              background-color: $share-it-nav-bg
-              .dropdown
-                background-color: $share-it-nav-bg
-                li
-                  background-color: inherit
-          #about-it
-            &:hover
-              background-color: $about-it-nav-bg
-              .dropdown
-                background-color: $about-it-nav-bg
-                li
-                  background-color: inherit
-          #search-it
-            &:hover
-              background-color: $search-it-nav-bg
-              .dropdown
-                background-color: $search-it-nav-bg
-                li
-                  background-color: inherit
-          .hover
+          .search-it.hover
             background-color: $search-it-nav-bg
             .dropdown
               background-color: $search-it-nav-bg
@@ -735,15 +742,42 @@ input[type='url']
   .search-results-overlay
     display: block
 
-
-
-
 #nav-holder.respond
   position: fixed
   top: 50px
   border-bottom: 1px solid $light-grey-border
   box-shadow: 0px 5px 5px rgba(140,140,140,0.35)
 
+/*START: Headings classes*/
+.breadcrumbs
+  padding: 0 0 10px 0
+  margin: 0
+  background: none
+  border: none!important
+  color: rgba(255,255,255,0.7)!important
+  font:
+    family: $serif-font-family
+    size: 24px
+  &:before
+    color: rgba(255,255,255,0.7)
+  a
+    color: rgba(255,255,255,0.7)
+
+.headings
+  background-image: url(img/heading-bg-1.png), url(img/heading-bg-2.png), url(img/heading-bg-3.png), url(img/heading-bg-4.png), url(img/heading-bg-5.png)
+  background-repeat: no-repeat, repeat-y, repeat-y, repeat-y, repeat-y
+  background-position: bottom right, 90% 99%, 85% 99%, 88% 99%, 95% 99%
+  padding: 50px 0
+  h2
+    padding: 0
+    margin: 0
+    line-height: 1em
+    color: rgba(255,255,255,1)
+    font:
+      family: $gothic-font-family
+      size: 44px
+
+/*END: Headings classes*/
 
 .feature-holder
   width: 100%
@@ -1174,6 +1208,7 @@ footer
         font-size: 0.8em
 
 .bottom-logo
+  background-color: $footer-bg
   text-align: center
   .NSWlogo
     margin: 0 auto

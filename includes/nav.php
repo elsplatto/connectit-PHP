@@ -15,12 +15,12 @@
                 <section class="top-bar-section">
                     <!-- Left Nav Section -->
                     <ul class="top-level">
-                        <li id="use-it"><a href="#">Use.It</a></li>
-                        <li id="fix-it"><a href="#">Fix.It</a></li>
-                        <li id="explore-it"><a href="#">Explore.It</a></li>
-                        <li id="share-it"><a href="#">Share.It</a></li>
-                        <li id="about-it"><a href="#">About.It</a></li>
-                        <li id="search-it" class="has-dropdown search"><a href="#" data-isSearch="true" data-closeOnClick>Search</a>
+                        <li class="use-it<?if ($pageType == 'use-it') {echo ' active';} ?>"><a href="use-it.php">Use.It</a></li>
+                        <li class="fix-it<?if ($pageType == 'fix-it') {echo ' active';} ?>"><a href="#">Fix.It</a></li>
+                        <li class="explore-it<?if ($pageType == 'explore-it') {echo ' active';} ?>"><a href="#">Explore.It</a></li>
+                        <li class="share-it<?if ($pageType == 'share-it') {echo ' active';} ?>"><a href="#">Share.It</a></li>
+                        <li class="about-it<?if ($pageType == 'about-it') {echo ' active';} ?>"><a href="#">About.It</a></li>
+                        <li class="search-it has-dropdown search"><a href="#" data-isSearch="true" data-closeOnClick>Search</a>
                             <ul class="dropdown">
                                 <li class="search-holder">
                                     <form id="frmSearch">

@@ -7,7 +7,8 @@ $pageType = 'use-it'
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <?php include 'includes/header.php'; ?>
-<body">
+
+<body class="body-use-it">
 
 <?php include 'includes/global-header.php'; ?>
 <?php include 'includes/banner.php'; ?>
@@ -16,324 +17,60 @@ $pageType = 'use-it'
 
 <section class="headings use-it">
     <div class="row">
-        <div class="large-12">
-            <div class="breadcrumbs"><a href="#">Use.It</a>  <a href="#">Product Guides</a>  <a href="#">Printers</a></div>
-            <h2>HP Apeos IVC3375</h2>
+        <div class="large-12 columns">
+            <div class="subheader"><h3>How to Guides</h3></div>
+            <h2>Use.It</h2>
         </div>
     </div>
 </section>
 
 
-<section class="whats-new">
+<section class="white std">
     <div class="row">
-        <div class="large-12 columns text-center list-holder">
-            <h2>What's New</h2>
-            <ul>
-                <li>
-                    <div class="circle fix-it"></div>
-                    <div class="holder">
-                        <h4><a href="#">$5M capital funding for NSW rural and regional community-based preschool providers</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle use-it"></div>
-                    <div class="holder">
-                        <h4><a href="#">Last few days left to enrol. Check out our course vacancies here & take the path to success!</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle share-it"></div>
-                    <div class="holder">
-                        <h4><a href="#">FREE fun app for preschoolers - develops literacy and numeracy skills</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle share-it"></div>
-                    <div class="holder">
-                        <h4>Good luck to the <a href="#">#SWSI</a> <a href="#">#TAFE</a> students competing in the <a href="#">@WorldSkills_AU</a> joinery regionals today!</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle about-it"></div>
-                    <div class="holder">
-                        <h4><a href="#">Our #Forklift program for #Moree is now next week - 23 & 24 July for training & 27 July for assessment.</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-            </ul>
-            <a href="#" class="small button green">See all news</a>
+        <div class="large-4 columns">
+            <h2>Training Guides</h2>
+            <p>Training in the Products and Services available through the DEC.</p>
+            <a href="#" class="button small green full-width">View all Training Guides</a>
+        </div>
+
+        <div class="large-4 columns">
+            <h2>Product Guides</h2>
+            <p>Get support and information on the products you used anyway.</p>
+            <a href="#" class="button small green full-width">View all Product Guides</a>
+        </div>
+
+        <div class="large-4 columns">
+            <h2>Use.It Guides</h2>
+            <p>Discover how to use technology to get the most from you professional practice.</p>
+            <a href="#" class="button small green full-width">View all Use.It Guides</a>
         </div>
     </div>
 </section>
 
-<section id="inspired-slider" class="slider-holder dark-grey">
+
+<section class="light-grey std">
     <div class="row">
         <div class="large-12 columns">
-            <h2>Learn &amp; Get Inspired</h2>
-            <div class="orbit-container dark-grey">
-                <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container dark-grey">
-                    <li>
-                        <div class="fix-it">
-                            <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Fix.IT / Video</h4>
-                                <h3>Bring in your own device scheme</h3>
-                            </div>
-                        </div>
+            <h2>Popular</h2>
+        </div>
+        <div class="large-4 columns">
+            <h6 class="light-grey-bottom-border">Training Guides</h6>
 
-                        <div class="use-it">
-                            <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Use.IT / Article</h4>
-                                <h3>How to design and build a website</h3>
-                            </div>
-                        </div>
+            <div class="tile white">
 
-                        <div class="share-it">
-                            <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Share.IT / Article</h4>
-                                <h3>Connecting with your peer community</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="fix-it">
-                            <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Fix.IT / Video</h4>
-                                <h3>Bring in your own device scheme</h3>
-                            </div>
-                        </div>
-
-                        <div class="use-it">
-                            <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Use.IT / Article</h4>
-                                <h3>How to design and build a website</h3>
-                            </div>
-                        </div>
-
-                        <div class="share-it">
-                            <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Share.IT / Article</h4>
-                                <h3>Connecting with your peer community</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="fix-it">
-                            <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Fix.IT / Video</h4>
-                                <h3>Bring in your own device scheme</h3>
-                            </div>
-                        </div>
-
-                        <div class="use-it">
-                            <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Use.IT / Article</h4>
-                                <h3>How to design and build a website</h3>
-                            </div>
-                        </div>
-
-                        <div class="share-it">
-                            <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
-                            <div class="heading">
-                                <h4>Share.IT / Article</h4>
-                                <h3>Connecting with your peer community</h3>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
             </div>
+
+        </div>
+        <div class="large-4 columns">
+            <h6 class="light-grey-bottom-border">Product Guides</h6>
+        </div>
+        <div class="large-4 columns">
+            <h6 class="light-grey-bottom-border">Use.It Guides</h6>
         </div>
     </div>
 </section>
 
-<section class="icon-community">
-    <div class="row">
-        <div class="large-12 columns text-center list-holder">
-            <h2>Your Community</h2>
 
-            <h5>Last Discussions</h5>
-            <ul>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Problem with printer</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Re: Help connecting to the network server</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">How to design for mobile</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Whiteboard in the classroom</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Thoughts on online communities</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-            </ul>
-
-            <a href="#" class="button small">Go to the Community</a>
-        </div>
-    </div>
-</section>
-
-<section id="featured-software-slider" class="slider-holder light-grey">
-    <div class="row">
-        <div class="large-12 columns">
-            <h2>Featured Software</h2>
-
-            <div class="orbit-container">
-                <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container">
-                    <li>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
-                            </div>
-                            <div class="use-it heading">
-                                <h3>Microsoft Office</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
-                            </div>
-                            <div class="use-it heading">
-                                <h3>Photoshop Elements</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
-                            </div>
-                            <div class="about-it heading">
-                                <h3>Minecraft</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
-                            </div>
-                            <div class="share-it heading">
-                                <h3>Microsoft Office</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
-                            </div>
-                            <div class="use-it heading">
-                                <h3>Photoshop Elements</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
-                            </div>
-                            <div class="explore-it heading">
-                                <h3>Minecraft</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
-                            </div>
-                            <div class="fix-it heading">
-                                <h3>Microsoft Office</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
-                            </div>
-                            <div class="share-it heading">
-                                <h3>Photoshop Elements</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
-                            </div>
-                            <div class="use-it heading">
-                                <h3>Minecraft</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
-                            </div>
-                            <div class="fix-it heading">
-                                <h3>Microsoft Office</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
-                            </div>
-                            <div class="share-it heading">
-                                <h3>Photoshop Elements</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-holder">
-                                <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
-                            </div>
-                            <div class="use-it heading">
-                                <h3>Minecraft</h3>
-                                <a href="#" class="button">Get License</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php include 'includes/footer.php'; ?>
 
@@ -445,45 +182,6 @@ $pageType = 'use-it'
         offsetLeft: 184
     });
 
-    $(document).foundation('orbit');
-
-    $(function() {
-        var sliderNextArrow = $('.orbit-container .orbit-next');
-        var sliderPrevArrow = $('.orbit-container .orbit-prev');
-        var orbitContainer = $('.slider-holder .orbit-container');
-        var sliderMarginWidth = 0;
-        var i = 0;
-
-        for (i = 0;i < sliderNextArrow.length; i++)
-        {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left;
-            $(sliderNextArrow[i]).addClass('desktop');
-            $(sliderPrevArrow[i]).addClass('desktop');
-            $(sliderNextArrow[i]).css({
-                'width': sliderMarginWidth + 'px',
-                'right': '-' +  sliderMarginWidth + 'px'
-            });
-            $(sliderPrevArrow[i]).css({
-                'width': sliderMarginWidth + 'px',
-                'left': '-' +  sliderMarginWidth + 'px'
-            });
-        }
-
-        $(window).resize(function() {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left;
-            for (i = 0;i < sliderNextArrow.length; i++)
-            {
-                $(sliderNextArrow[i]).css({
-                    'width': sliderMarginWidth + 'px',
-                    'right': '-' +  sliderMarginWidth + 'px'
-                });
-                $(sliderPrevArrow[i]).css({
-                    'width': sliderMarginWidth + 'px',
-                    'left': '-' +  sliderMarginWidth + 'px'
-                });
-            }
-        });
-    });
 </script>
 </body>
 </html>

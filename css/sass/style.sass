@@ -6,16 +6,37 @@ $support-area-bg: #eeeff1
 
 $banner-height: 144px
 
-$use-it-nav-bg: #994275
-$fix-it-nav-bg: #f19d19
-$explore-it-nav-bg: #e35d68
-$share-it-nav-bg: #1a7bc0
-$about-it-nav-bg: #60cdaf
-$search-it-nav-bg: #424a53
+/*START: colors*/
 
-$light-grey-bg: #eeeff1
-$grey-bg: #3f4851
+$use-it-bg: #7d2d5c
+$use-it-mid-bg: #994275
+$use-it-light-bg: #e8a4cb
+
+$fix-it-bg: #e28a00
+$fix-it-mid-bg: #f19d19
+$fix-it-light-bg: #fad153
+
+$explore-it-bg: #c43442
+$explore-it-mid-bg: #e14d5b
+$explore-it-light-bg: #f9a8b1
+
+$share-it-bg: #0e5992
+$share-it-mid-bg: #1a7bc0
+$share-it-light-bg: #80c2f2
+
+$about-it-bg: #3aa385
+$about-it-mid-bg: #60cdae
+$about-it-light-bg: #aef9e4
+
 $dark-grey-bg: #424a53
+$dark-grey-mid-bg: #555e68
+$dark-grey-light-bg: #8a9096
+
+$light-grey-bg: #cacdd1
+$light-grey-mid-bg: #dfe0e3
+$light-grey-light-bg: #eeeff1
+
+$grey-bg: #3f4851
 
 $button-blue: #1a7bc0
 $button-blue-drop-shadow: #095389
@@ -23,10 +44,13 @@ $button-green: #60cdaf
 $button-green-drop-shadow: #2b9477
 $light-grey-border: #cacdd1
 
+/*END: colors*/
+
 $serif-font-family: 'PMN Caecilia', serif
 $gothic-font-family: 'Gotham'
 $body-font-family: 'Whitney HTF', 'Helvetica Neue'
 $std-font-color: #454d54
+$std-link-color: #454d54
 $h-tag-std-color: #222529
 $h-tag-small-color: #424a53
 
@@ -77,6 +101,8 @@ html.search-showing
   body
     overflow: hidden
 
+a
+  color: $std-link-color
 
 body
   font-family: $body-font-family
@@ -109,20 +135,65 @@ h6
 /*Classes that don't have properties but are used to manipulate other classes*/
 
 .body-use-it
+  a
+    &:hover
+      color: $use-it-bg
   h6
-    color: $use-it-nav-bg
+    color: $use-it-bg
+    a
+      color: inherit
+  .themed
+    color: $use-it-bg
+  .headings
+    background-color: $use-it-bg
 .body-fix-it
+  a
+    &:hover
+      color: $fix-it-bg
   h6
-    color: $fix-it-nav-bg
+    color: $fix-it-bg
+    a
+      color: inherit
+  .themed
+    color: $fix-it-bg
+  .headings
+    background-color: $fix-it-bg
 .body-explore-it
+  a
+    &:hover
+      color: $explore-it-bg
   h6
-    color: $explore-it-nav-bg
+    color: $explore-it-bg
+    a
+      color: inherit
+  .themed
+    color: $explore-it-bg
+  .headings
+    background-color: $explore-it-bg
 .body-share-it
+  a
+    &:hover
+      color: $share-it-bg
   h6
-    color: $share-it-nav-bg
+    color: $share-it-bg
+    a
+      color: inherit
+  .themed
+    color: $share-it-bg
+  .headings
+    background-color: $share-it-bg
 .body-about-it
+  a
+    &:hover
+      color: $about-it-bg
+    a
+      color: inherit
   h6
-    color: $about-it-nav-bg
+    color: $about-it-bg
+  .themed
+    color: $about-it-bg
+  .headings
+    background-color: $about-it-bg
 
 /*END: Kick-down classes*/
 
@@ -161,6 +232,10 @@ button.green, .button.green
 
 button.small, .button.small
   font-weight: normal
+
+.button
+  &:hover
+    color: #fff!important
 
 /*END: Buttons*/
 
@@ -320,32 +395,37 @@ h4
 /*START: background colour classes*/
 
 .use-it
-  background-color: $use-it-nav-bg!important
+  background-color: $use-it-bg!important
 
 .fix-it
-  background-color: $fix-it-nav-bg!important
+  background-color: $fix-it-bg!important
 
 .explore-it
-  background-color: $explore-it-nav-bg!important
+  background-color: $explore-it-bg!important
 
 .share-it
-  background-color: $share-it-nav-bg!important
+  background-color: $share-it-bg!important
 
 .about-it
-  background-color: $about-it-nav-bg!important
+  background-color: $about-it-bg!important
 
 .white
   background-color: #fff
   h1, h2, h3, h4, h5
     color: $h-tag-std-color
 
-.light-grey
-  background-color: $light-grey-bg
+.light-grey-light
+  background-color: $light-grey-light-bg
   h1, h2, h3, h4, h5
     color: $h-tag-std-color
 
 .dark-grey
   background-color: $dark-grey-bg
+  h1, h2, h3, h4, h5
+    color: #fff
+
+.dark-grey-mid
+  background-color: $dark-grey-mid-bg
 
 /*END: background colour classes*/
 
@@ -353,10 +433,42 @@ h4
 
 /*START: General usage classes*/
 .tile
-  width: 64%
-  padding: 18%
-  height: 378px
+  width: 100%
+  padding: 22px
+  height: 314px
   margin: 36px 0 0 0
+  overflow: hidden
+  .img-holder
+    position: relative
+    width: auto
+    height: 140px
+    line-height: 140px
+    display: table
+    text-align: center
+    padding: 0
+    margin: 0
+    overflow: hidden
+    img
+      display: inline-block
+      vertical-align: middle
+  .content
+    width: 100%
+    height: 155px
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    h3
+      font-weight: 400
+.tile-bottom
+  border-top:
+    style: solid
+    width: 1px
+    color: $light-grey-border
+  background-color: #fff
+  height: 45px
+  padding: 15px 22px
+
+.sml
+  padding: 18px 0
 
 .std
   padding: 50px 0
@@ -366,6 +478,9 @@ h4
 
 .light-grey-bottom-border
   border-bottom: 1px solid $light-grey-border
+
+.no-margin
+  margin: 0!important
 /*END: General usage classes*/
 
 .global-header
@@ -672,72 +787,72 @@ h4
           .use-it
             background-color: #fff!important
             &:hover
-              /*background-color: $use-it-nav-bg!important*/
+              /*background-color: $use-it-bg!important*/
               a
-                border-bottom-color: $use-it-nav-bg!important
+                border-bottom-color: $use-it-bg!important
                 color: $std-font-color
           .use-it.active
-            background-color: $use-it-nav-bg!important
+            background-color: $use-it-bg!important
             a
               color: #fff
           .fix-it
             background-color: #fff!important
             &:hover
-              /*background-color: $fix-it-nav-bg!important*/
+              /*background-color: $fix-it-bg!important*/
               a
-                border-bottom-color: $fix-it-nav-bg!important
+                border-bottom-color: $fix-it-bg!important
                 color: $std-font-color
           .fix-it.active
-            background-color: $fix-it-nav-bg!important
+            background-color: $fix-it-bg!important
             a
               color: #fff
           .explore-it
             background-color: #fff!important
             &:hover
-              /*background-color: $explore-it-nav-bg!important*/
+              /*background-color: $explore-it-bg!important*/
               a
-                border-bottom-color: $explore-it-nav-bg!important
+                border-bottom-color: $explore-it-bg!important
                 color: $std-font-color
           .explore-it.active
-            background-color: $explore-it-nav-bg!important
+            background-color: $explore-it-bg!important
             a
               color: #fff
           .share-it
             background-color: #fff!important
             &:hover
-              /*background-color: $share-it-nav-bg!important*/
+              /*background-color: $share-it-bg!important*/
               a
-                border-bottom-color: $share-it-nav-bg!important
+                border-bottom-color: $share-it-bg!important
                 color: $std-font-color
           .share-it.active
-            background-color: $share-it-nav-bg!important
+            background-color: $share-it-bg!important
             a
               color: #fff
           .about-it
             background-color: #fff!important
             &:hover
-              /*background-color: $about-it-nav-bg!important*/
+              /*background-color: $about-it-bg!important*/
               a
-                border-bottom-color: $about-it-nav-bg!important
+                border-bottom-color: $about-it-bg!important
                 color: $std-font-color
           .about-it.active
-            background-color: $about-it-nav-bg!important
+            background-color: $about-it-bg!important
             a
               color: #fff
           .search-it
             background-color: #fff!important
             &:hover
-              /*background-color: $search-it-nav-bg!important*/
+              /*background-color: $dark-grey-bg!important*/
               a
-                border-bottom-color: $search-it-nav-bg!important
+                border-bottom-color: $dark-grey-bg!important
               .dropdown
-                background-color: $search-it-nav-bg!important
+                background-color: $dark-grey-bg!important
                 li
                   background-color: inherit
           .search-it.hover
-            background-color: $search-it-nav-bg!important
+            background-color: $dark-grey-bg!important
             .dropdown
-              background-color: $search-it-nav-bg!important
+              background-color: $dark-grey-bg!important
               li
                 background-color: inherit
           a
@@ -798,7 +913,7 @@ h4
   box-shadow: 0px 5px 5px rgba(140,140,140,0.35)
 
 /*START: Headings classes*/
-.breadcrumbs, .subheader h3
+.breadcrumbs a, .subheader h3
   padding: 0
   margin: 0
   background: none
@@ -812,6 +927,9 @@ h4
     color: rgba(255,255,255,0.7)
   a
     color: rgba(255,255,255,0.7)
+    &:hover
+      color: rgba(255,255,255, 0.7)
+      text-decoration: underline
 
 .headings
   background-image: url(img/heading-bg-1.png), url(img/heading-bg-2.png), url(img/heading-bg-3.png), url(img/heading-bg-4.png), url(img/heading-bg-5.png)
@@ -837,15 +955,15 @@ h4
   overflow: hidden
   .orbit-container
     .use-it
-      background-color: $use-it-nav-bg
+      background-color: $use-it-bg
     .fix-it
-      background-color: $fix-it-nav-bg
+      background-color: $fix-it-bg
     .explore-it
-      background-color: $explore-it-nav-bg
+      background-color: $explore-it-bg
     .share-it
-      background-color: $share-it-nav-bg
+      background-color: $share-it-bg
     .about-it
-      background-color: $about-it-nav-bg
+      background-color: $about-it-bg
     .grey
       background-color: $grey-bg
     li
@@ -861,6 +979,60 @@ h4
       > span
         border-color: transparent transparent transparent #fff
         border-width: 0 0 0 8px
+
+.support-suite
+  display: block
+  position: relative
+  list-style: none
+  width: 100%
+  li
+    padding: 12px
+    height: 144px
+    display: list-item
+    margin: 0 0 10px 0
+    border: 1px solid transparent
+    border-radius: 3px
+    &:hover
+      background-color: $dark-grey-mid-bg
+    a
+      width: 100%
+      height: 100%
+      div
+        margin: 0 auto 10px auto
+        width: 44px
+        height: 44px
+        display: block
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          top: 0px
+          left: 0px
+          width: 44px
+          height: 44px
+          z-index: 0
+          background-image: url(img/icon-sprite.png)
+          background-position: -103px 0
+      .virtual-agent
+        &:before
+          background-position: -103px 0
+      .lodge-ticket
+        &:before
+          background-position: -103px -46px
+      .call-centre
+        &:before
+          background-position: -103px -92px
+      .knowledge-base
+        &:before
+          background-position: -103px -138px
+      .communities
+        &:before
+          background-position: -103px -184px
+      h5
+        font-size: 1em
+      p
+        font-size: 0.75em
+        color: $dark-grey-light-bg
 
 
 .support-area
@@ -910,36 +1082,36 @@ h4
 .use-it.support-area
   .search
     a
-      border-color: $use-it-nav-bg
-      background-color: $use-it-nav-bg
+      border-color: $use-it-bg
+      background-color: $use-it-bg
       &:before
         background-position: -54px -23px
 .fix-it.support-area
   .search
     a
-      border-color: $fix-it-nav-bg
-      background-color: $fix-it-nav-bg
+      border-color: $fix-it-bg
+      background-color: $fix-it-bg
       &:before
         background-position: -54px -23px
 .explore-it.support-area
   .search
     a
-      border-color: $explore-it-nav-bg
-      background-color: $explore-it-nav-bg
+      border-color: $explore-it-bg
+      background-color: $explore-it-bg
       &:before
         background-position: -54px -23px
 .share-it.support-area
   .search
     a
-      border-color: $share-it-nav-bg
-      background-color: $share-it-nav-bg
+      border-color: $share-it-bg
+      background-color: $share-it-bg
       &:before
         background-position: -54px -23px
 .about-it.support-area
   .search
     a
-      border-color: $about-it-nav-bg
-      background-color: $about-it-nav-bg
+      border-color: $about-it-bg
+      background-color: $about-it-bg
       &:before
         background-position: -54px -23px
 
@@ -1000,15 +1172,15 @@ h4
         margin: 0 20px 0 0
         display: inline-block
       .use-it
-        background-color: $use-it-nav-bg
+        background-color: $use-it-bg
       .fix-it
-        background-color: $fix-it-nav-bg
+        background-color: $fix-it-bg
       .explore-it
-        background-color: $explore-it-nav-bg
+        background-color: $explore-it-bg
       .share-it
-        background-color: $share-it-nav-bg
+        background-color: $share-it-bg
       .about-it
-        background-color: $about-it-nav-bg
+        background-color: $about-it-bg
 
       .holder
         clear: none
@@ -1102,34 +1274,34 @@ h4
             text-transform: uppercase
       .use-it
         img
-          border-color: $use-it-nav-bg
+          border-color: $use-it-bg
         .heading
           h4
-            color: $use-it-nav-bg
+            color: $use-it-bg
       .fix-it
         img
-          border-color: $fix-it-nav-bg
+          border-color: $fix-it-bg
         .heading
           h4
-            color: $fix-it-nav-bg
+            color: $fix-it-bg
       .explore-it
         img
-          border-color: $explore-it-nav-bg
+          border-color: $explore-it-bg
         .heading
           h4
-            color: $explore-it-nav-bg
+            color: $explore-it-bg
       .share-it
         img
-          border-color: $share-it-nav-bg
+          border-color: $share-it-bg
         .heading
           h4
-            color: $share-it-nav-bg
+            color: $share-it-bg
       .about-it
         img
-          border-color: $about-it-nav-bg
+          border-color: $about-it-bg
         .heading
           h4
-            color: $about-it-nav-bg
+            color: $about-it-bg
   .orbit-container
     background: inherit
     padding: 0 0 30px 0
@@ -1285,7 +1457,6 @@ blockquote
       style: italic
     &:last-child
       padding: 0
-
 
 @media only screen and (min-width: 768px)
   .nav-holder

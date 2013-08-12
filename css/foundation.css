@@ -1475,7 +1475,7 @@ button, .button {
     display: inline-block; } }
 /* Standard Forms */
 form {
-  margin: 0 0 1em; }
+  margin: 0; }
 
 /* Using forms within rows, we need to set some defaults */
 form .row .row {
@@ -3566,16 +3566,12 @@ form.custom {
 /* Breadcrumbs */
 .breadcrumbs {
   display: block;
-  padding: 0.5625em 0.875em 0.5625em;
+  padding: 0.5625em 0 0.5625em;
   overflow: hidden;
   margin-left: 0;
   list-style: none;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #f6f6f6;
-  border-color: gainsboro;
   -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;}
   .breadcrumbs > * {
     margin: 0;
     float: left;
@@ -3604,14 +3600,11 @@ form.custom {
         text-decoration: none;
         color: #999999;
         cursor: default; }
-    .breadcrumbs > *:before {
+    .breadcrumbs > *:after {
       content: "/";
-      margin: 0 0.75em;
+      margin: 0 0.25em;
       position: relative;
       top: 1px; }
-    .breadcrumbs > *:first-child:before {
-      content: " ";
-      margin: 0; }
 
 /* Keystroke Characters */
 .keystroke,

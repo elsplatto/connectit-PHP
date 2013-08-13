@@ -48,7 +48,7 @@ h6 {
   .body-use-it h6 a {
     color: inherit; }
 .body-use-it .themed {
-  color: #7d2d5c; }
+  color: #7d2d5c !important; }
 .body-use-it .headings {
   background-color: #7d2d5c; }
 
@@ -59,7 +59,7 @@ h6 {
   .body-fix-it h6 a {
     color: inherit; }
 .body-fix-it .themed {
-  color: #e28a00; }
+  color: #e28a00 !important; }
 .body-fix-it .headings {
   background-color: #e28a00; }
 

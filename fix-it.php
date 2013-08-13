@@ -85,53 +85,96 @@ $pageType = 'fix-it';
     <div class="row">
         <div class="large-6 columns">
             <h2>Products</h2>
-            <ul>
-                <li>
-                    <a href="#">ITD Products</a>
-                    <ul>
-                        <li>
-                            <a href="#">Email</a>
-                        </li>
-                        <li>
-                            <a href="#">Outlook Express</a>
-                        </li>
-                        <li>
-                            <a href="#">Outlook.com</a>
-                        </li>
-                        <li>
-                            <a href="#">Gmail</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Software</a>
-                </li>
-                <li>
-                    <a href="#">Printers</a>
-                </li>
-                <li>
-                    <a href="#">Tablets</a>
-                </li>
-                <li>
-                    <a href="#">White boards</a>
-                </li>
-                <li>
-                    <a href="#">Scanners</a>
-                </li>
-                <li>
-                    <a href="#">Computers</a>
-                </li>
-                <li>
-                    <a href="#">Cameras</a>
-                </li>
-                <li>
-                    <a href="#">Projectors</a>
-                </li>
-                <li><a href="themed">View All (227)</a></li>
-            </ul>
+            <section class="top-bar-section">
+                <ul>
+                    <li>
+                        <a href="#">ITD Products</a>
+                        <ul>
+                            <li>
+                                <a href="#">Email</a>
+                            </li>
+                            <li>
+                                <a href="#">Outlook Express</a>
+                            </li>
+                            <li>
+                                <a href="#">Outlook.com</a>
+                            </li>
+                            <li>
+                                <a href="#">Gmail</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Software</a>
+                    </li>
+                    <li>
+                        <a href="#">Printers</a>
+                    </li>
+                    <li>
+                        <a href="#">Tablets</a>
+                    </li>
+                    <li>
+                        <a href="#">White boards</a>
+                    </li>
+                    <li>
+                        <a href="#">Scanners</a>
+                    </li>
+                    <li>
+                        <a href="#">Computers</a>
+                    </li>
+                    <li>
+                        <a href="#">Cameras</a>
+                    </li>
+                    <li>
+                        <a href="#">Projectors</a>
+                    </li>
+                    <li><a href="#" class="themed">View All (227)</a></li>
+                </ul>
+            </section>
         </div>
         <div class="large-6 columns">
             <h2>Problems</h2>
+            <section class="top-bar-section">
+                <ul>
+                    <li>
+                        <a href="#">Connecting to the internet</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't access email</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't connect to printer</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't log on</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer won't start</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer is running slow</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't print from white board</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't download picture from camera</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't connect iPad to the network</a>
+                    </li>
+                    <li>
+                        <a href="#">Account locked</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't log on</a>
+                    </li>
+                    <li>
+                        <a href="#">Can't log on</a>
+                    </li>
+                    <li><a href="#" class="themed">View All (47)</a></li>
+                </ul>
+            </section>
         </div>
     </div>
 </section>

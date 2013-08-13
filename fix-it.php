@@ -81,56 +81,69 @@ $pageType = 'fix-it';
     </div>
 </section>
 
-<section class="light-grey-light std">
+<section id="trouble-shoot" class="light-grey-light std">
     <div class="row">
         <div class="large-6 columns">
             <h2>Products</h2>
-            <section class="top-bar-section">
-                <ul>
-                    <li>
-                        <a href="#">ITD Products</a>
-                        <ul>
-                            <li>
-                                <a href="#">Email</a>
-                            </li>
-                            <li>
-                                <a href="#">Outlook Express</a>
-                            </li>
-                            <li>
-                                <a href="#">Outlook.com</a>
-                            </li>
-                            <li>
-                                <a href="#">Gmail</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Software</a>
-                    </li>
-                    <li>
-                        <a href="#">Printers</a>
-                    </li>
-                    <li>
-                        <a href="#">Tablets</a>
-                    </li>
-                    <li>
-                        <a href="#">White boards</a>
-                    </li>
-                    <li>
-                        <a href="#">Scanners</a>
-                    </li>
-                    <li>
-                        <a href="#">Computers</a>
-                    </li>
-                    <li>
-                        <a href="#">Cameras</a>
-                    </li>
-                    <li>
-                        <a href="#">Projectors</a>
-                    </li>
-                    <li><a href="#" class="themed">View All (227)</a></li>
-                </ul>
-            </section>
+            <nav class="top-bar" data-options="is_hover:false">
+                <section class="top-bar-section">
+                    <ul>
+                        <li class="has-dropdown">
+                            <a href="#">ITD Products</a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">Email</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Outlook Express</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Outlook.com</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Gmail</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Printers</a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tablets</a>
+                        </li>
+                        <li>
+                            <a href="#">White boards</a>
+                        </li>
+                        <li>
+                            <a href="#">Scanners</a>
+                        </li>
+                        <li>
+                            <a href="#">Computers</a>
+                        </li>
+                        <li>
+                            <a href="#">Cameras</a>
+                        </li>
+                        <li>
+                            <a href="#">Projectors</a>
+                        </li>
+                        <li><a href="#" class="themed">View All (227)</a></li>
+                    </ul>
+                </section>
+            </nav>
         </div>
         <div class="large-6 columns">
             <h2>Problems</h2>

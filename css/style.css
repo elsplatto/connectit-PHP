@@ -1221,6 +1221,15 @@ h4 {
       font-size: 0.813em;
       font-weight: 400; }
 
+#trouble-shoot .top-bar {
+  background-color: transparent !important; }
+  #trouble-shoot .top-bar .top-bar-section ul {
+    position: block;
+    width: 100%; }
+    #trouble-shoot .top-bar .top-bar-section ul li {
+      clear: both;
+      width: 100%; }
+
 footer {
   border-bottom: 1px solid #424a53;
   padding: 30px 0 10px;

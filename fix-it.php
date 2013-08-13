@@ -29,7 +29,7 @@ $pageType = 'fix-it';
         <div class="large-12 columns">
             <form id="frmSearchProducts">
                 <label for="search-products" class="hide">Search</label>
-                <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search" type="search" class="large no-margin" placeholder="Search product guides" />
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search" type="search" class="large no-margin" placeholder="Search the knowledge base 24/7" />
             </form>
         </div>
     </div>
@@ -81,6 +81,60 @@ $pageType = 'fix-it';
     </div>
 </section>
 
+<section class="light-grey-light std">
+    <div class="row">
+        <div class="large-6 columns">
+            <h2>Products</h2>
+            <ul>
+                <li>
+                    <a href="#">ITD Products</a>
+                    <ul>
+                        <li>
+                            <a href="#">Email</a>
+                        </li>
+                        <li>
+                            <a href="#">Outlook Express</a>
+                        </li>
+                        <li>
+                            <a href="#">Outlook.com</a>
+                        </li>
+                        <li>
+                            <a href="#">Gmail</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Software</a>
+                </li>
+                <li>
+                    <a href="#">Printers</a>
+                </li>
+                <li>
+                    <a href="#">Tablets</a>
+                </li>
+                <li>
+                    <a href="#">White boards</a>
+                </li>
+                <li>
+                    <a href="#">Scanners</a>
+                </li>
+                <li>
+                    <a href="#">Computers</a>
+                </li>
+                <li>
+                    <a href="#">Cameras</a>
+                </li>
+                <li>
+                    <a href="#">Projectors</a>
+                </li>
+                <li><a href="themed">View All (227)</a></li>
+            </ul>
+        </div>
+        <div class="large-6 columns">
+            <h2>Problems</h2>
+        </div>
+    </div>
+</section>
 
 
 <?php include 'includes/footer.php'; ?>

@@ -53,7 +53,7 @@ $pageType = 'use-it';
         <div class="large-12 columns">
             <h2>Popular</h2>
         </div>
-        <div class="large-4 columns">
+        <div class="large-4 columns margin-top-20">
             <h6 class="light-grey-bottom-border"><a href="use-it-training-guides.php">Training Guides</a></h6>
 
             <div class="tile white">
@@ -110,7 +110,7 @@ $pageType = 'use-it';
             </div>
 
         </div>
-        <div class="large-4 columns">
+        <div class="large-4 columns margin-top-20">
             <h6 class="light-grey-bottom-border"><a href="use-it-product-guides.php">Product Guides</a></h6>
 
             <div class="tile white">
@@ -166,7 +166,7 @@ $pageType = 'use-it';
                 <a href="#" class="themed">Read Article</a>
             </div>
         </div>
-        <div class="large-4 columns">
+        <div class="large-4 columns margin-top-20">
             <h6 class="light-grey-bottom-border"><a href="use-it-guides.php">Use.It Guides</h6>
 
             <div class="tile white">

@@ -155,36 +155,40 @@
             e.preventDefault();
           }
 
+
           //this next tranche of code is specifically for the show/hide functionality of search
-          if (a.attr('data-isSearch') == 'true' && a.attr('data-closeOnClick') == 'true')
+          if (li.hasClass('search'))
           {
-              a.attr('data-closeOnClick','');
-              a.off('click');
+              if (a.attr('data-isSearch') == 'true' && a.attr('data-closeOnClick') == 'true')
+              {
+                  a.attr('data-closeOnClick','');
+                  a.off('click');
+              }
+              else
+              {
+                  a.attr('data-closeOnClick','true');
+                  a.on('click',function(e){
+                    e.preventDefault();
+                    $(this).closest('li').removeClass('hover');
+                    html.removeClass('search-showing');
+                  });
+                  if (!li.hasClass('hover')) {
+                      li.addClass('hover');
+                      html.addClass('search-showing');
+                  }
+              }
           }
           else
           {
-              a.attr('data-closeOnClick','true');
-              a.on('click',function(e){
-                e.preventDefault();
-                $(this).closest('li').removeClass('hover');
-                html.removeClass('search-showing');
-              });
-              if (!li.hasClass('hover')) {
-                  li.addClass('hover');
-                  html.addClass('search-showing');
+              if (li.hasClass('hover')) {
+                li
+                  .removeClass('hover')
+                  .find('li')
+                  .removeClass('hover');
+              } else {
+                li.addClass('hover');
               }
           }
-
-          /*
-          if (li.hasClass('hover')) {
-            li
-              .removeClass('hover')
-              .find('li')
-              .removeClass('hover');
-          } else {
-            li.addClass('hover');
-          }
-          */
         })
 
         .on('click.fndtn.topbar', '.top-bar .has-dropdown>a, [data-topbar] .has-dropdown>a', function (e) {

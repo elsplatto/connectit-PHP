@@ -42,7 +42,6 @@ $button-blue: #1a7bc0
 $button-blue-drop-shadow: #095389
 $button-green: #60cdaf
 $button-green-drop-shadow: #2b9477
-$light-grey-border: #cacdd1
 
 /*END: colors*/
 
@@ -242,7 +241,7 @@ button.small, .button.small
 /*START: Input Fields*/
 
 textarea
-  border: 1px solid $light-grey-border
+  border: 1px solid $light-grey-bg
   border-radius: 3px
   background-color: #fff
 
@@ -462,7 +461,7 @@ h4
   border-top:
     style: solid
     width: 1px
-    color: $light-grey-border
+    color: $light-grey-bg
   background-color: #fff
   height: 45px
   padding: 15px 22px
@@ -477,7 +476,7 @@ h4
   width: 100%
 
 .light-grey-bottom-border
-  border-bottom: 1px solid $light-grey-border
+  border-bottom: 1px solid $light-grey-bg
 
 .no-margin
   margin: 0!important
@@ -912,7 +911,7 @@ h4
 #nav-holder.respond
   position: fixed
   top: 50px
-  border-bottom: 1px solid $light-grey-border
+  border-bottom: 1px solid $light-grey-bg
   box-shadow: 0px 5px 5px rgba(140,140,140,0.35)
 
 /*START: Headings classes*/
@@ -1055,7 +1054,7 @@ h4
       float: left
       height: 3.2em
       width: 12%
-      border: 1px solid $light-grey-border
+      border: 1px solid $light-grey-bg
       border-left-width: 0px
       border-bottom-right-radius: 3px
       border-top-right-radius: 3px
@@ -1141,7 +1140,7 @@ h4
     float: left
     border:
       width: 1px 0 0 0
-      color: $light-grey-border
+      color: $light-grey-bg
       style: solid
   ul
     clear: both
@@ -1159,7 +1158,7 @@ h4
       padding: 15px 0
       overflow: hidden
       border:
-        color: $light-grey-border
+        color: $light-grey-bg
         width: 0 0 1px 0
         style: solid
       &:first-child
@@ -1350,11 +1349,11 @@ h4
   .desktop
     background: rgba(66,74,83,0.92)
 
-.slider-holder.light-grey
+.slider-holder.light-grey-light
   .orbit-bullets
     li
-      background-color: #555e68
-      border-color: #555e68
+      background-color: $dark-grey-mid-bg
+      border-color: $dark-grey-mid-bg
   .orbit-container
     .orbit-next
       height: 20.25em
@@ -1403,17 +1402,103 @@ h4
           weight: 400
 
 
-#trouble-shoot
+.trouble-shoot
   .top-bar
     background-color: transparent!important
     .top-bar-section
       ul
-        position: block
+        position: relative
         width: 100%
+        padding: 0!important
+        margin: 0!important
         li
           clear: both
           width: 100%
+          height: auto
+          transition:
+            property: background-color
+            duration: 0.5s
+            timing-function: ease-out
+          -webkit-transition:
+            property: background-color
+            duration: 0.5s
+            timing-function: ease-out
           a
+            transition:
+              property: padding-left
+              duration: 0.5s
+              timing-function: ease-out
+            -webkit-transition:
+              property: padding-left
+              duration: 0.5s
+              timing-function: ease-out
+            position: relative
+            background-color: transparent!important
+            color: $std-link-color
+            font:
+              weight: 400
+              size: 1em
+            line-height: 2.813em
+            padding: $topbar-link-padding
+            border:
+              width: 1px 0 0 0
+              color: $light-grey-bg
+              style: solid
+            span
+              position: absolute
+              right: 18px
+              top: 0
+              width: 11px
+              height: 100%
+              &:after
+                position: absolute
+                content: ""
+                top: 50%
+                left: 50%
+                display: block
+                width: 0
+                height: 0
+                border: solid 7px
+                border-color: transparent transparent transparent $std-font-color
+                margin-top: -8px
+          &:first-child
+            a
+              border: none
+          li
+            a
+              transition: padding-left 0.5s ease
+              padding: $topbar-link-padding
+
+        .has-dropdown
+          padding-left: 0
+          a
+            padding-left: 0!important
+          ul
+            display: none
+        .hover
+          background-color: #fff!important
+          a
+            font-weight: bold
+            padding-left: 20px!important
+            span
+              &:after
+                border-color: $std-font-color transparent transparent transparent
+          ul
+            position: relative
+            display: block
+            padding: 0!important
+            margin: 0!important
+            li
+              a
+                padding: $topbar-link-padding
+                font-weight: 400
+                border:
+                  width: 1px 0 0 0
+                  color: $light-grey-bg
+                  style: solid
+              &:first-child
+                a
+                  border: none
 
 
 footer

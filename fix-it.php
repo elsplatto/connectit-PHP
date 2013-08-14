@@ -81,7 +81,7 @@ $pageType = 'fix-it';
     </div>
 </section>
 
-<section id="trouble-shoot" class="light-grey-light std">
+<section class="light-grey-light std trouble-shoot">
     <div class="row">
         <div class="large-6 columns">
             <h2>Products</h2>
@@ -89,11 +89,19 @@ $pageType = 'fix-it';
                 <section class="top-bar-section">
                     <ul>
                         <li class="has-dropdown">
-                            <a href="#">ITD Products</a>
+                            <a href="#">ITD Services<span></span></a>
                             <ul class="dropdown">
                                 <li class="nav-item">
-                                    <a href="#">Email</a>
+                                    <a href="#">Identity Management</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="#">Schools Library Service</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Email<span></span></a>
+                            <ul class="dropdown">
                                 <li class="nav-item">
                                     <a href="#">Outlook Express</a>
                                 </li>
@@ -106,7 +114,7 @@ $pageType = 'fix-it';
                             </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#">Printers</a>
+                            <a href="#">Printers<span></span></a>
                             <ul class="dropdown">
                                 <li class="nav-item">
                                     <a href="#">List item 1</a>
@@ -122,23 +130,107 @@ $pageType = 'fix-it';
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">Tablets</a>
+                        <li class="has-dropdown">
+                            <a href="#">Tablets<span></span></a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">White boards</a>
+                        <li class="has-dropdown">
+                            <a href="#">White boards<span></span></a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Scanners</a>
+                        <li class="has-dropdown">
+                            <a href="#">Scanners<span></span></a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Computers</a>
+                        <li class="has-dropdown">
+                            <a href="#">Computers<span></span></a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Cameras</a>
+                        <li class="has-dropdown">
+                            <a href="#">Cameras<span></span></a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Projectors</a>
+                        <li class="has-dropdown">
+                            <a href="#">Projectors<span></span></a>
+                            <ul class="dropdown">
+                                <li class="nav-item">
+                                    <a href="#">List item 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">List item 4</a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="#" class="themed">View All (227)</a></li>
                     </ul>
@@ -147,47 +239,50 @@ $pageType = 'fix-it';
         </div>
         <div class="large-6 columns">
             <h2>Problems</h2>
-            <section class="top-bar-section">
-                <ul>
-                    <li>
-                        <a href="#">Connecting to the internet</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't access email</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't connect to printer</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't log on</a>
-                    </li>
-                    <li>
-                        <a href="#">Computer won't start</a>
-                    </li>
-                    <li>
-                        <a href="#">Computer is running slow</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't print from white board</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't download picture from camera</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't connect iPad to the network</a>
-                    </li>
-                    <li>
-                        <a href="#">Account locked</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't log on</a>
-                    </li>
-                    <li>
-                        <a href="#">Can't log on</a>
-                    </li>
-                    <li><a href="#" class="themed">View All (47)</a></li>
-                </ul>
-            </section>
+            <nav class="top-bar" data-options="is_hover:false">
+                <section class="top-bar-section">
+
+                    <ul>
+                        <li>
+                            <a href="#">Connecting to the internet</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't access email</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't connect to printer</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't log on</a>
+                        </li>
+                        <li>
+                            <a href="#">Computer won't start</a>
+                        </li>
+                        <li>
+                            <a href="#">Computer is running slow</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't print from white board</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't download picture from camera</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't connect iPad to the network</a>
+                        </li>
+                        <li>
+                            <a href="#">Account locked</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't log on</a>
+                        </li>
+                        <li>
+                            <a href="#">Can't log on</a>
+                        </li>
+                        <li><a href="#" class="themed">View All (47)</a></li>
+                    </ul>
+                </section>
+            </nav>
         </div>
     </div>
 </section>

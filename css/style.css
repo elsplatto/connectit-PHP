@@ -1175,19 +1175,19 @@ h4 {
 .slider-holder.dark-grey .desktop {
   background: rgba(66, 74, 83, 0.92); }
 
-.slider-holder.light-grey .orbit-bullets li {
+.slider-holder.light-grey-light .orbit-bullets li {
   background-color: #555e68;
   border-color: #555e68; }
-.slider-holder.light-grey .orbit-container .orbit-next {
+.slider-holder.light-grey-light .orbit-container .orbit-next {
   height: 20.25em;
   margin: 0; }
-  .slider-holder.light-grey .orbit-container .orbit-next:before {
+  .slider-holder.light-grey-light .orbit-container .orbit-next:before {
     background-position: -35px -101px; }
-.slider-holder.light-grey .orbit-container .orbit-prev {
+.slider-holder.light-grey-light .orbit-container .orbit-prev {
   height: 20.25em; }
-  .slider-holder.light-grey .orbit-container .orbit-prev:before {
+  .slider-holder.light-grey-light .orbit-container .orbit-prev:before {
     background-position: 0px -101px; }
-.slider-holder.light-grey .orbit-container .desktop {
+.slider-holder.light-grey-light .orbit-container .desktop {
   background: rgba(238, 239, 241, 0.92); }
 
 #featured-software-slider div {
@@ -1221,14 +1221,88 @@ h4 {
       font-size: 0.813em;
       font-weight: 400; }
 
-#trouble-shoot .top-bar {
+.trouble-shoot .top-bar {
   background-color: transparent !important; }
-  #trouble-shoot .top-bar .top-bar-section ul {
-    position: block;
-    width: 100%; }
-    #trouble-shoot .top-bar .top-bar-section ul li {
+  .trouble-shoot .top-bar .top-bar-section ul {
+    position: relative;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important; }
+    .trouble-shoot .top-bar .top-bar-section ul li {
       clear: both;
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      transition-property: background-color;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+      -webkit-transition-property: background-color;
+      -webkit-transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out; }
+      .trouble-shoot .top-bar .top-bar-section ul li a {
+        transition-property: padding-left;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        -webkit-transition-property: padding-left;
+        -webkit-transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        position: relative;
+        background-color: transparent !important;
+        color: #454d54;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 2.813em;
+        padding: 0.3em 1em 0.3em !important;
+        border-width: 1px 0 0 0;
+        border-color: #cacdd1;
+        border-style: solid; }
+        .trouble-shoot .top-bar .top-bar-section ul li a span {
+          position: absolute;
+          right: 18px;
+          top: 0;
+          width: 11px;
+          height: 100%; }
+          .trouble-shoot .top-bar .top-bar-section ul li a span:after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid 7px;
+            border-color: transparent transparent transparent #454d54;
+            margin-top: -8px; }
+      .trouble-shoot .top-bar .top-bar-section ul li:first-child a {
+        border: none; }
+      .trouble-shoot .top-bar .top-bar-section ul li li a {
+        transition: padding-left 0.5s ease;
+        padding: 0.3em 1em 0.3em !important; }
+    .trouble-shoot .top-bar .top-bar-section ul .has-dropdown {
+      padding-left: 0; }
+      .trouble-shoot .top-bar .top-bar-section ul .has-dropdown a {
+        padding-left: 0 !important; }
+      .trouble-shoot .top-bar .top-bar-section ul .has-dropdown ul {
+        display: none; }
+    .trouble-shoot .top-bar .top-bar-section ul .hover {
+      background-color: white !important; }
+      .trouble-shoot .top-bar .top-bar-section ul .hover a {
+        font-weight: bold;
+        padding-left: 20px !important; }
+        .trouble-shoot .top-bar .top-bar-section ul .hover a span:after {
+          border-color: #454d54 transparent transparent transparent; }
+      .trouble-shoot .top-bar .top-bar-section ul .hover ul {
+        position: relative;
+        display: block;
+        padding: 0 !important;
+        margin: 0 !important; }
+        .trouble-shoot .top-bar .top-bar-section ul .hover ul li a {
+          padding: 0.3em 1em 0.3em !important;
+          font-weight: 400;
+          border-width: 1px 0 0 0;
+          border-color: #cacdd1;
+          border-style: solid; }
+        .trouble-shoot .top-bar .top-bar-section ul .hover ul li:first-child a {
+          border: none; }
 
 footer {
   border-bottom: 1px solid #424a53;

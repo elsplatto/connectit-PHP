@@ -629,6 +629,12 @@ h4 {
               height: 54px;
               color: #434a52;
               text-align: center;
+              transition-property: border-bottom-color;
+              transition-duration: 0.5s;
+              transition-timing-function: ease-out;
+              -webkit-transition-property: border-bottom-color;
+              -webkit-transition-duration: 0.5s;
+              -webkit-transition-timing-function: ease-out;
               border-bottom-width: 3px;
               border-bottom-color: transparent;
               border-bottom-style: solid; }
@@ -758,6 +764,7 @@ h4 {
                 .nav-holder .row nav.top-bar section ul.top-level li ul .search-holder form label {
                   display: none; }
                 .nav-holder .row nav.top-bar section ul.top-level li ul .search-holder form input[type="search"] {
+                  -webkit-appearance: textfield;
                   font-size: 30px;
                   margin: 0;
                   height: 72px; }
@@ -865,106 +872,71 @@ h4 {
       height: 100%; }
       .support-suite li a div {
         margin: 0 auto 10px auto;
-        width: 44px;
-        height: 44px;
+        border-width: 1px;
+        border-color: #8a9096;
+        border-style: solid;
+        border-radius: 1.375em;
+        width: 2.75em;
+        height: 2.75em;
         display: block;
-        position: relative; }
+        position: relative;
+        background-color: #8a9096; }
         .support-suite li a div:before {
           content: "";
           position: absolute;
-          top: 0px;
-          left: 0px;
-          width: 44px;
-          height: 44px;
+          top: 10px;
+          left: 9px;
+          width: 25px;
+          height: 24px;
           z-index: 0;
           background-image: url(img/icon-sprite.png);
           background-position: -103px 0; }
       .support-suite li a .virtual-agent:before {
-        background-position: -103px 0; }
+        background-position: -103px 0;
+        top: 10px;
+        left: 9px;
+        width: 25px;
+        height: 24px; }
       .support-suite li a .lodge-ticket:before {
-        background-position: -103px -46px; }
+        background-position: -103px -25px;
+        top: 9px;
+        left: 9px;
+        width: 24px;
+        height: 24px; }
       .support-suite li a .call-centre:before {
-        background-position: -103px -92px; }
+        background-position: -103px -49px;
+        top: 9px;
+        left: 9px;
+        width: 24px;
+        height: 24px; }
       .support-suite li a .knowledge-base:before {
-        background-position: -103px -138px; }
+        background-position: -103px -73px;
+        top: 9px;
+        left: 8px;
+        width: 25px;
+        height: 24px; }
       .support-suite li a .communities:before {
-        background-position: -103px -184px; }
+        background-position: -103px -97px;
+        top: 9px;
+        left: 9px;
+        width: 24px;
+        height: 24px; }
       .support-suite li a h5 {
         font-size: 1em; }
       .support-suite li a p {
         font-size: 0.75em;
         color: #8a9096; }
 
-.support-area {
-  background-color: #eeeff1;
-  padding: 36px 0 25px; }
-  .support-area .search label {
-    display: none; }
-  .support-area .search input[type="search"] {
-    width: 88%;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-right-width: 0px;
-    float: left; }
-  .support-area .search a {
-    position: relative;
-    float: left;
-    height: 3.2em;
-    width: 12%;
-    border: 1px solid #cacdd1;
-    border-left-width: 0px;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background-color: white; }
-    .support-area .search a:before {
-      content: "";
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      width: 22px;
-      height: 22px;
-      z-index: 0;
-      background-image: url(img/icon-sprite.png);
-      background-position: -54px 0px; }
-  .support-area p {
-    font-size: 1.2em;
-    font-family: "Gotham";
-    font-weight: 300;
-    margin: 0; }
-  .support-area button, .support-area .button {
-    width: 100%; }
-
-.use-it.support-area .search a {
-  border-color: #7d2d5c;
-  background-color: #7d2d5c; }
-  .use-it.support-area .search a:before {
-    background-position: -54px -23px; }
-
-.fix-it.support-area .search a {
-  border-color: #e28a00;
-  background-color: #e28a00; }
-  .fix-it.support-area .search a:before {
-    background-position: -54px -23px; }
-
-.explore-it.support-area .search a {
-  border-color: #c43442;
-  background-color: #c43442; }
-  .explore-it.support-area .search a:before {
-    background-position: -54px -23px; }
-
-.share-it.support-area .search a {
-  border-color: #0e5992;
-  background-color: #0e5992; }
-  .share-it.support-area .search a:before {
-    background-position: -54px -23px; }
-
-.about-it.support-area .search a {
-  border-color: #3aa385;
-  background-color: #3aa385; }
-  .about-it.support-area .search a:before {
-    background-position: -54px -23px; }
+.light-grey-light .support-suite li:hover {
+  background-color: white !important; }
+.light-grey-light .support-suite a div {
+  border-width: 1px;
+  border-color: #cacdd1;
+  border-style: solid;
+  border-radius: 1.375em;
+  background-color: #cacdd1; }
+.light-grey-light .support-suite a:hover div {
+  background-color: #8a9096; }
 
 .whats-new {
   background-color: white;
@@ -1251,7 +1223,7 @@ h4 {
         font-weight: 400;
         font-size: 1em;
         line-height: 2.813em;
-        padding: 0.3em 1em 0.3em !important;
+        padding: 0.3em 2em 0.3em 0 !important;
         border-width: 1px 0 0 0;
         border-color: #cacdd1;
         border-style: solid; }

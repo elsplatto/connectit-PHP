@@ -25,19 +25,46 @@
     </div>
 </section>
 
-<section class="support-area">
+<section class="light-grey-light sml">
     <div class="row">
-        <div class="large-6 columns">
-            <form class="search">
-                <label for="support-search">Support Search</label>
-                <input id="support-search" type="search" placeholder="Have a question?" /><a href="#"></a>
-            </form>
-        </div>
-        <div class="large-6 columns">
-            <a href="#" class="button">Got something to share? Submit an Article</a>
-        </div>
         <div class="large-12 columns">
-            <p class="text-center">Urgent problem that can’t wait? Call the Support desk on 02 9561 8000</p>
+            <ul class="large-block-grid-5 support-suite">
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="virtual-agent"></div>
+                        <h5>Virtual Agent</h5>
+                        <p>Get answers by talking to our virtual agent</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="lodge-ticket"></div>
+                        <h5>Lodge a Ticket</h5>
+                        <p>Cot a problem? Lodge a support ticket</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="call-centre"></div>
+                        <h5>Call Centre</h5>
+                        <p>Call us on 8888 8888 or request a call back</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="knowledge-base"></div>
+                        <h5>Knowledge Base</h5>
+                        <p>Call us on 8888 8888 or request a call back</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="communities"></div>
+                        <h5>Communities</h5>
+                        <p>Find and share solutions with other users</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

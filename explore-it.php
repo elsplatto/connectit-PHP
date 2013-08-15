@@ -19,208 +19,37 @@ $pageType = 'explore-it';
     <div class="row">
         <div class="large-12 columns">
             <div class="subheader"><h3>Be Inspired</h3></div>
-            <h2>Explore.It</h2>
+            <h2>Explore.It</h2> <a href="#" class="button dark-red small">Subscribe</a>
         </div>
     </div>
 </section>
 
 
-<section class="white std">
+<section class="dark-grey-dark std">
     <div class="row">
-        <div class="large-4 columns">
-            <h2>Training Guides</h2>
-            <p>Training in the Products and Services available through the DEC.</p>
-            <a href="use-it-training-guides.php" class="button small green full-width">View all Training Guides</a>
-        </div>
-
-        <div class="large-4 columns">
-            <h2>Product Guides</h2>
-            <p>Get support and information on the products you used anyway.</p>
-            <a href="use-it-product-guides.php" class="button small green full-width">View all Product Guides</a>
-        </div>
-
-        <div class="large-4 columns">
-            <h2>Use.It Guides</h2>
-            <p>Discover how to use technology to get the most from you professional practice.</p>
-            <a href="use-it-guides.php" class="button small green full-width">View all Use.It Guides</a>
+        <div class="large-12 columns text-center">
+            <div class="flex-video">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI?rel=0&controls=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h2 class="margin-top-40">Teaching - we're about outcomes, not incomes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
         </div>
     </div>
 </section>
 
 
-<section class="light-grey-light std">
+<section class="filter-holder white std">
     <div class="row">
         <div class="large-12 columns">
-            <h2>Popular</h2>
+            <h2>Filter</h2>
+            <a href="#" class="toggle-view toggle-icon large" data-target="explore-it-filters" data-state="open">Toggle Filter View</a>
         </div>
-        <div class="large-4 columns margin-top-20">
-            <h6 class="light-grey-bottom-border"><a href="use-it-training-guides.php">Training Guides</a></h6>
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">ITD Products</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Audio</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Tablet</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-
+        <div id="explore-it-filters" class="large-12 columns">
+            <h6>By Outcome</h6>
+            <a href="#" class="select-all">Select All</a> <a href="#" class="clear-all">Clear All</a>
         </div>
-        <div class="large-4 columns margin-top-20">
-            <h6 class="light-grey-bottom-border"><a href="use-it-product-guides.php">Product Guides</a></h6>
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Email</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
 
 
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Phones</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Whiteboards</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-        </div>
-        <div class="large-4 columns margin-top-20">
-            <h6 class="light-grey-bottom-border"><a href="use-it-guides.php">Use.It Guides</h6>
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Software</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Printers</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
-
-
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Projects</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#" class="themed">Read Article</a>
-            </div>
         </div>
     </div>
 </section>
@@ -230,6 +59,26 @@ $pageType = 'explore-it';
 <?php include 'includes/footer.php'; ?>
 
 <?php include 'includes/global-js.php'; ?>
+
+<script>
+$(function() {
+    $('.toggle-view').click(function(e){
+        e.preventDefault();
+        var targetEl = $('#'+$(this).attr('data-target'));
+        var targetState = $(this).attr('data-state').toLowerCase();
+        if (targetState === 'open')
+        {
+            targetEl.hide();
+            $(this).attr('data-state','closed');
+        }
+        else
+        {
+            targetEl.show();
+            $(this).attr('data-state','open');
+        }
+    });
+});
+</script>
 
 </body>
 </html>

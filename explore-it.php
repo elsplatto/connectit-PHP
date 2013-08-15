@@ -46,14 +46,54 @@ $pageType = 'explore-it';
         </div>
         <div id="explore-it-filters" class="large-12 columns">
             <h6>By Outcome</h6>
-            <a href="#" class="select-all">Select All</a> <a href="#" class="clear-all">Clear All</a>
-        </div>
+            <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
+            <div class="filter-box light-grey-top-border">
+                <a href="#" title="Click to select/deselect">BYOD</a>
+                <a href="#" title="Click to select/deselect">Tools for this and that...</a>
+                <a href="#" title="Click to select/deselect">Building Networks Through Social Media</a>
+                <a href="#" title="Click to select/deselect">Gaming for Learning</a>
+                <a href="#" title="Click to select/deselect" class="selected">Web Tools For All Classrooms</a>
+                <a href="#" title="Click to select/deselect">Contemporary Learning Through 21st Century Skills</a>
+                <a href="#" title="Click to select/deselect">Collaborating in the Cloud</a>
+                <a href="#" title="Click to select/deselect">Connect Classrooms</a>
+                <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
+            </div>
 
+            <h6>By Product</h6>
+            <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
+            <div class="filter-box light-grey-top-border">
+                <a href="#" title="Click to select/deselect">ITD Products</a>
+                <a href="#" title="Click to select/deselect">Email</a>
+                <a href="#" title="Click to select/deselect">Software</a>
+                <a href="#" title="Click to select/deselect">Audio</a>
+                <a href="#" title="Click to select/deselect" class="selected">Phones</a>
+                <a href="#" title="Click to select/deselect">Printers</a>
+                <a href="#" title="Click to select/deselect">Tablets</a>
+                <a href="#" title="Click to select/deselect">Whiteboards</a>
+            </div>
 
         </div>
     </div>
 </section>
 
+<section class="light-grey-light std">
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>Showing inspiration for</h2>
+            <h6>collaborating in the cloud, printers, whiteboards, scanners</h6>
+
+            <div class="tile-holder light-grey-top-border">
+                <div class="fix-it">
+                    <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
+                    <div class="heading">
+                        <h4>Fix.IT / Video</h4>
+                        <h3>Bring in your own device scheme</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php include 'includes/footer.php'; ?>
@@ -76,6 +116,47 @@ $(function() {
             targetEl.show();
             $(this).attr('data-state','open');
         }
+    });
+
+    $('.filter-box a').click(function(e) {
+        e.preventDefault();
+        if($(this).hasClass('selected'))
+        {
+            $(this).removeClass('selected');
+        }
+        else
+        {
+            $(this).addClass('selected')
+        }
+    });
+
+    $('.clear-all').each(function( index ) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
+            var targetEls =  targetHolder.children('a');
+            var i;
+            for (i = 0;i < targetEls.length; i++)
+            {
+                $(targetEls[i]).removeClass('selected');
+
+            }
+        });
+    });
+
+    $('.select-all').each(function( index ) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
+            var targetEls =  targetHolder.children('a');
+            console.log('['+targetEls.length+']');
+            var i;
+            for (i = 0;i < targetEls.length; i++)
+            {
+                $(targetEls[i]).addClass('selected');
+
+            }
+        });
     });
 });
 </script>

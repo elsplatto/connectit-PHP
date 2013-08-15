@@ -37,7 +37,8 @@ h6 {
   font-weight: 400;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  padding: 0 0 10px 0; }
+  padding: 0 0 10px 0;
+  margin: 0; }
 
 /*START: Kick-down classes */
 /*Classes that don't have properties but are used to manipulate other classes */
@@ -181,6 +182,9 @@ input[type='url'] {
   -moz-box-shadow: none;
   font-family: "Gotham";
   font-size: 1em; }
+
+input[type='search'] {
+  -webkit-appearance: textfield; }
 
 /*END: Input Fields */
 @media only screen and (min-width: 58.75em) {
@@ -382,6 +386,9 @@ h4 {
 
 .light-grey-bottom-border {
   border-bottom: 1px solid #dfe0e3; }
+
+.light-grey-top-border {
+  border-top: 1px solid #dfe0e3; }
 
 .no-margin {
   margin: 0 !important; }
@@ -1326,8 +1333,44 @@ h4 {
   float: right; }
 .filter-holder h6 {
   float: left; }
-.filter-holder h6 + .select-all, .filter-holder h6 + .select-all + .clear-all {
-  float: right; }
+.filter-holder h6 + .clear-all, .filter-holder h6 + .clear-all + .select-all {
+  float: right;
+  margin-left: 10px;
+  font-size: 0.813em;
+  color: #8a9096;
+  text-decoration: underline; }
+.filter-holder .filter-box {
+  postion: relative;
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 90px;
+  padding: 6px 0 16px 0;
+  margin: 0 0 30px 0;
+  overflow: hidden; }
+  .filter-holder .filter-box:hover {
+    overflow-y: scroll; }
+  .filter-holder .filter-box a {
+    padding: 5px 6px;
+    float: left;
+    margin: 10px 10px 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8a9096;
+    border-radius: 3px;
+    font-size: 1em;
+    font-color: #454d54;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out; }
+    .filter-holder .filter-box a:hover {
+      color: #454d54; }
+  .filter-holder .filter-box .selected {
+    background-color: #8a9096;
+    color: white; }
+    .filter-holder .filter-box .selected:hover {
+      background-color: #8a9096;
+      color: white; }
 
 /*END: Filter classes */
 footer {

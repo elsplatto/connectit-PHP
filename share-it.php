@@ -1,5 +1,5 @@
 <?php
-$pageType = 'explore-it';
+$pageType = 'share-it';
 ?>
 
 <!DOCTYPE html>
@@ -19,20 +19,7 @@ $pageType = 'explore-it';
     <div class="row">
         <div class="large-12 columns">
             <div class="subheader"><h3>Be Inspired</h3></div>
-            <h2>Explore.It</h2> <a href="#" class="button dark-red small">Subscribe</a>
-        </div>
-    </div>
-</section>
-
-
-<section class="dark-grey-dark std">
-    <div class="row">
-        <div class="large-12 columns text-center">
-            <div class="flex-video">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI?rel=0&controls=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <h2 class="margin-top-40">Teaching - we're about outcomes, not incomes</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+            <h2>Explore.It</h2>
         </div>
     </div>
 </section>
@@ -206,64 +193,64 @@ $pageType = 'explore-it';
 <?php include 'includes/global-js.php'; ?>
 
 <script>
-$(function() {
-    $('.toggle-view').click(function(e){
-        e.preventDefault();
-        var targetEl = $('#'+$(this).attr('data-target'));
-        var targetState = $(this).attr('data-state').toLowerCase();
-        if (targetState === 'open')
-        {
-            targetEl.hide();
-            $(this).attr('data-state','closed');
-        }
-        else
-        {
-            targetEl.show();
-            $(this).attr('data-state','open');
-        }
-    });
-
-    $('.filter-box a').click(function(e) {
-        e.preventDefault();
-        if($(this).hasClass('selected'))
-        {
-            $(this).removeClass('selected');
-        }
-        else
-        {
-            $(this).addClass('selected')
-        }
-    });
-
-    $('.clear-all').each(function( index ) {
-        $(this).on('click', function(e) {
+    $(function() {
+        $('.toggle-view').click(function(e){
             e.preventDefault();
-            var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
-            var targetEls =  targetHolder.children('a');
-            var i;
-            for (i = 0;i < targetEls.length; i++)
+            var targetEl = $('#'+$(this).attr('data-target'));
+            var targetState = $(this).attr('data-state').toLowerCase();
+            if (targetState === 'open')
             {
-                $(targetEls[i]).removeClass('selected');
-
+                targetEl.hide();
+                $(this).attr('data-state','closed');
+            }
+            else
+            {
+                targetEl.show();
+                $(this).attr('data-state','open');
             }
         });
-    });
 
-    $('.select-all').each(function( index ) {
-        $(this).on('click', function(e) {
+        $('.filter-box a').click(function(e) {
             e.preventDefault();
-            var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
-            var targetEls =  targetHolder.children('a');
-            console.log('['+targetEls.length+']');
-            var i;
-            for (i = 0;i < targetEls.length; i++)
+            if($(this).hasClass('selected'))
             {
-                $(targetEls[i]).addClass('selected');
-
+                $(this).removeClass('selected');
+            }
+            else
+            {
+                $(this).addClass('selected')
             }
         });
+
+        $('.clear-all').each(function( index ) {
+            $(this).on('click', function(e) {
+                e.preventDefault();
+                var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
+                var targetEls =  targetHolder.children('a');
+                var i;
+                for (i = 0;i < targetEls.length; i++)
+                {
+                    $(targetEls[i]).removeClass('selected');
+
+                }
+            });
+        });
+
+        $('.select-all').each(function( index ) {
+            $(this).on('click', function(e) {
+                e.preventDefault();
+                var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
+                var targetEls =  targetHolder.children('a');
+                console.log('['+targetEls.length+']');
+                var i;
+                for (i = 0;i < targetEls.length; i++)
+                {
+                    $(targetEls[i]).addClass('selected');
+
+                }
+            });
+        });
     });
-});
 </script>
 
 </body>

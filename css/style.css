@@ -8,6 +8,10 @@
 /* Top menu icon styles */
 /* Transitions and breakpoint styles */
 /* START: override foundation classes */
+html > * {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+
 html.search-showing body {
   overflow: hidden; }
 
@@ -384,6 +388,12 @@ h4 {
 .full-width {
   width: 100%; }
 
+hr {
+  height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
 .light-grey-bottom-border {
   border-bottom: 1px solid #dfe0e3; }
 
@@ -393,11 +403,23 @@ h4 {
 .no-margin {
   margin: 0 !important; }
 
+.margin-top-18 {
+  margin-top: 18px !important; }
+
+.margin-bottom-18 {
+  margin-bottom: 18px !important; }
+
 .margin-top-20 {
   margin-top: 20px !important; }
 
+.margin-bottom-20 {
+  margin-bottom: 20px !important; }
+
 .margin-top-40 {
   margin-top: 40px !important; }
+
+.margin-bottom-40 {
+  margin-bottom: 40px !important; }
 
 /*END: General usage classes */
 .global-header {
@@ -639,7 +661,7 @@ h4 {
           .nav-holder .row nav.top-bar section ul.top-level li {
             height: 54px;
             background-color: white;
-            width: 18.73%;
+            width: 16.33333%;
             padding: 0;
             border-style: solid;
             border-color: #e0e0e2;
@@ -660,15 +682,13 @@ h4 {
               border-bottom-width: 3px;
               border-bottom-color: transparent;
               border-bottom-style: solid; }
-            .nav-holder .row nav.top-bar section ul.top-level li:hover a {
-              color: white; }
           .nav-holder .row nav.top-bar section ul.top-level li.search-it {
             position: static;
-            width: 4.762%;
+            /*width: 4.762% */
             border-width: 0px; }
             .nav-holder .row nav.top-bar section ul.top-level li.search-it a {
               position: relative;
-              text-indent: -10000px; }
+              /*text-indent: -10000px */ }
               .nav-holder .row nav.top-bar section ul.top-level li.search-it a:before {
                 content: "";
                 position: absolute;
@@ -681,12 +701,14 @@ h4 {
                 background-position: -76px -48px; }
             .nav-holder .row nav.top-bar section ul.top-level li.search-it:hover a:before {
               /*background-position: -76px -64px */ }
-          .nav-holder .row nav.top-bar section ul.top-level li.search-it.hover a:before {
-            top: 18px;
-            left: 14px;
-            width: 15px;
-            height: 15px;
-            background-position: -77px 0px; }
+          .nav-holder .row nav.top-bar section ul.top-level li.search-it.hover a {
+            color: white; }
+            .nav-holder .row nav.top-bar section ul.top-level li.search-it.hover a:before {
+              top: 18px;
+              left: 14px;
+              width: 15px;
+              height: 15px;
+              background-position: -77px 0px; }
           .nav-holder .row nav.top-bar section ul.top-level .use-it {
             background-color: white !important; }
             .nav-holder .row nav.top-bar section ul.top-level .use-it:hover {
@@ -890,7 +912,16 @@ h4 {
     display: list-item;
     margin: 0 0 10px 0;
     border: 1px solid transparent;
-    border-radius: 3px; }
+    border-radius: 3px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-out; }
     .support-suite li:hover {
       background-color: #424a53; }
     .support-suite li a {
@@ -906,7 +937,16 @@ h4 {
         height: 2.75em;
         display: block;
         position: relative;
-        background-color: #8a9096; }
+        background-color: #8a9096;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        -webkit-transition-property: background-color;
+        -webkit-transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-property: background-color;
+        -moz-transition-duration: 0.5s;
+        -moz-transition-timing-function: ease-out; }
         .support-suite li a div:before {
           content: "";
           position: absolute;
@@ -1344,7 +1384,8 @@ h4 {
   display: block;
   clear: both;
   width: 100%;
-  height: 90px;
+  height: auto;
+  max-height: 90px;
   padding: 6px 0 16px 0;
   margin: 0 0 30px 0;
   overflow: hidden; }
@@ -1362,7 +1403,13 @@ h4 {
     font-color: #454d54;
     transition-property: background-color, color;
     transition-duration: 0.5s;
-    transition-timing-function: ease-out; }
+    transition-timing-function: ease-out;
+    -moz-transition-property: background-color, color;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out; }
     .filter-holder .filter-box a:hover {
       color: #454d54; }
   .filter-holder .filter-box .selected {
@@ -1373,6 +1420,55 @@ h4 {
       color: white; }
 
 /*END: Filter classes */
+.tile-holder {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 18px 0;
+  position: relative;
+  overflow: hidden; }
+  .tile-holder div {
+    float: left;
+    height: 20.25em;
+    width: 17.75em;
+    background-color: white;
+    overflow: hidden; }
+    .tile-holder div img {
+      border-width: 0 0 3px 0;
+      border-style: solid; }
+    .tile-holder div .heading {
+      position: relative;
+      margin: 0;
+      clear: both;
+      height: 8.813em;
+      padding: 1.25em;
+      text-align: center; }
+      .tile-holder div .heading h3 {
+        line-height: 1.6em;
+        font-size: 1.313em;
+        font-weight: 400;
+        color: #222529; }
+      .tile-holder div .heading h4 {
+        font-size: 0.75em;
+        text-transform: uppercase; }
+      .tile-holder div .heading .tags {
+        position: absolute;
+        bottom: 18px;
+        left: 18px;
+        width: 20em;
+        height: auto;
+        font-size: 0.75em;
+        text-align: left; }
+        .tile-holder div .heading .tags p {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin: 0;
+          padding: 0; }
+
+.body-explore-it .tile-holder div img {
+  border-color: #e14d5b; }
+
 footer {
   border-bottom: 1px solid #424a53;
   padding: 30px 0 10px;

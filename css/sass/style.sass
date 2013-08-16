@@ -103,6 +103,10 @@ $drop-down-border-color: #e0e0e0
 
 /* START: override foundation classes */
 
+html > *
+  -webkit-font-smoothing: antialiased !important
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
+
 html.search-showing
   body
     overflow: hidden
@@ -498,6 +502,12 @@ h4
 .full-width
   width: 100%
 
+hr
+  height: 0
+  width: 100%
+  margin: 0
+  padding: 0
+
 .light-grey-bottom-border
   border-bottom: 1px solid $light-grey-bg
 
@@ -507,11 +517,23 @@ h4
 .no-margin
   margin: 0!important
 
+.margin-top-18
+  margin-top: 18px!important
+
+.margin-bottom-18
+  margin-bottom: 18px!important
+
 .margin-top-20
   margin-top: 20px!important
 
+.margin-bottom-20
+  margin-bottom: 20px!important
+
 .margin-top-40
   margin-top: 40px!important
+
+.margin-bottom-40
+  margin-bottom: 40px!important
 /*END: General usage classes*/
 
 .global-header
@@ -541,7 +563,6 @@ h4
       position: relative
       width: auto
       z-index: 500
-
     .f-dropdown
       text-align: left
       li
@@ -560,7 +581,6 @@ h4
       .title
         color: #212429
         padding: 10px
-
       a
         display: inline
         margin: 0
@@ -578,7 +598,6 @@ h4
         display: inline
         font-size: 0.8em
         line-height: 1.8em
-
       li.read
         background-color: #fff
         &:before
@@ -639,10 +658,6 @@ h4
           z-index: 0
           background-image: url(img/icon-sprite.png)
           background-position: -14px -18px
-
-
-
-
     .notification
       position: relative
       background-color: $circle-bg
@@ -706,8 +721,6 @@ h4
       display: block
       z-index: 100
 
-
-
 .banner-holder
   position: relative
   width: 100%
@@ -767,7 +780,7 @@ h4
           li
             height: $topbar-height
             background-color: $topbar-bg
-            width: 18.73%
+            width: 16.3333333%
             padding: 0
             border-style: solid
             border-color: $topbar-nav-border-color
@@ -791,16 +804,14 @@ h4
                 width: 3px
                 color: transparent
                 style: solid
-            &:hover
-              a
-                color: #fff
+
           li.search-it
             position: static
-            width: 4.762%
+            /*width: 4.762%*/
             border-width: 0px
             a
               position: relative
-              text-indent: -10000px
+              /*text-indent: -10000px*/
               &:before
                 content: ''
                 position: absolute
@@ -817,6 +828,7 @@ h4
                   /*background-position: -76px -64px*/
           li.search-it.hover
             a
+              color: #fff
               &:before
                 top: 18px
                 left: 14px
@@ -1036,6 +1048,18 @@ h4
     margin: 0 0 10px 0
     border: 1px solid transparent
     border-radius: 3px
+    transition:
+      property: background-color
+      duration: 0.5s
+      timing-function: ease-out
+    -webkit-transition:
+      property: background-color
+      duration: 0.5s
+      timing-function: ease-out
+    -moz-transition:
+      property: background-color
+      duration: 0.5s
+      timing-function: ease-out
     &:hover
       background-color: $dark-grey-dark-bg
     a
@@ -1053,6 +1077,18 @@ h4
         display: block
         position: relative
         background-color: $dark-grey-light-bg
+        transition:
+          property: background-color
+          duration: 0.5s
+          timing-function: ease-out
+        -webkit-transition:
+          property: background-color
+          duration: 0.5s
+          timing-function: ease-out
+        -moz-transition:
+          property: background-color
+          duration: 0.5s
+          timing-function: ease-out
         &:before
           content: ''
           position: absolute
@@ -1550,7 +1586,8 @@ h4
     display: block
     clear: both
     width: 100%
-    height: 90px
+    height: auto
+    max-height: 90px
     padding: 6px 0 16px 0
     margin: 0 0 30px 0
     overflow: hidden
@@ -1572,6 +1609,14 @@ h4
         property: background-color, color
         duration: 0.5s
         timing-function: ease-out
+      -moz-transition:
+        property: background-color, color
+        duration: 0.5s
+        timing-function: ease-out
+      -webkit-transition:
+        property: background-color, color
+        duration: 0.5s
+        timing-function: ease-out
       &:hover
         color: $std-font-color
     .selected
@@ -1581,6 +1626,60 @@ h4
         background-color: $dark-grey-light-bg
         color: #fff
 /*END: Filter classes*/
+
+.tile-holder
+  display: block
+  width: 100%
+  height: auto
+  padding: 18px 0
+  position: relative
+  overflow: hidden
+  div
+    float: left
+    height: 20.25em
+    width: 17.75em
+    background-color: #fff
+    overflow: hidden
+    img
+      border:
+        width: 0 0 3px 0
+        style: solid
+    .heading
+      position: relative
+      margin: 0
+      clear: both
+      height: 8.813em
+      padding: 1.25em
+      text-align: center
+      h3
+        line-height: 1.6em
+        font:
+          size: 1.313em
+          weight: 400
+        color: $h-tag-std-color
+      h4
+        font-size: 0.75em
+        text-transform: uppercase
+      .tags
+        position: absolute
+        bottom: 18px
+        left: 18px
+        width: 20em
+        height: auto
+        font-size: 0.75em
+        text-align: left
+        p
+          overflow: hidden
+          white-space: nowrap
+          text-overflow: ellipsis
+          margin: 0
+          padding: 0
+
+.body-explore-it
+  .tile-holder
+    div
+      img
+        border-color: $explore-it-bg
 
 
 footer

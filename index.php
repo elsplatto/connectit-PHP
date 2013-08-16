@@ -70,7 +70,7 @@
 </section>
 
 
-<section class="whats-new">
+<section class="whats-new white std">
     <div class="row">
         <div class="large-12 columns text-center list-holder">
             <h2>What's New</h2>
@@ -120,7 +120,7 @@
     <div class="row">
         <div class="large-12 columns">
             <h2>Learn &amp; Get Inspired</h2>
-            <div class="orbit-container dark-grey">
+            <div class="orbit-container dark-grey margin">
                 <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container dark-grey">
                     <li>
                         <div class="fix-it">
@@ -203,7 +203,7 @@
     </div>
 </section>
 
-<section class="icon-community">
+<section class="icon-community white std">
     <div class="row">
         <div class="large-12 columns text-center list-holder">
             <h2>Your Community</h2>
@@ -252,7 +252,7 @@
     </div>
 </section>
 
-<section id="featured-software-slider" class="slider-holder light-grey-light">
+<section id="featured-software-slider" class="slider-holder light-grey-light std">
     <div class="row">
         <div class="large-12 columns">
             <h2>Featured Software</h2>
@@ -390,38 +390,42 @@
     $(document).foundation('orbit');
 
     $(function() {
+        var offset = 18 //half the width of the gutters
         var sliderNextArrow = $('.orbit-container .orbit-next');
         var sliderPrevArrow = $('.orbit-container .orbit-prev');
         var orbitContainer = $('.slider-holder .orbit-container');
         var sliderMarginWidth = 0;
+        var arrowPosition = 0;
         var i = 0;
 
         for (i = 0;i < sliderNextArrow.length; i++)
         {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left;
+            sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
+            arrowPosition = sliderMarginWidth + offset;
             $(sliderNextArrow[i]).addClass('desktop');
             $(sliderPrevArrow[i]).addClass('desktop');
             $(sliderNextArrow[i]).css({
                 'width': sliderMarginWidth + 'px',
-                'right': '-' +  sliderMarginWidth + 'px'
+                'right': '-' +  arrowPosition + 'px'
             });
             $(sliderPrevArrow[i]).css({
                 'width': sliderMarginWidth + 'px',
-                'left': '-' +  sliderMarginWidth + 'px'
+                'left': '-' +  arrowPosition + 'px'
             });
         }
 
         $(window).resize(function() {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left;
+            sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
+            arrowPosition = sliderMarginWidth + offset;
             for (i = 0;i < sliderNextArrow.length; i++)
             {
                 $(sliderNextArrow[i]).css({
                     'width': sliderMarginWidth + 'px',
-                    'right': '-' +  sliderMarginWidth + 'px'
+                    'right': '-' +  arrowPosition + 'px'
                 });
                 $(sliderPrevArrow[i]).css({
                     'width': sliderMarginWidth + 'px',
-                    'left': '-' +  sliderMarginWidth + 'px'
+                    'left': '-' +  arrowPosition + 'px'
                 });
             }
         });

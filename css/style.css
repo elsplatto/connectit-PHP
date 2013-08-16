@@ -1368,7 +1368,8 @@ hr {
 
 /*START: Filter classes */
 .filter-holder h2 {
-  float: left; }
+  float: left;
+  margin: 0; }
 .filter-holder h2 + .toggle-view {
   float: right; }
 .filter-holder h6 {
@@ -1379,6 +1380,8 @@ hr {
   font-size: 0.813em;
   color: #8a9096;
   text-decoration: underline; }
+.filter-holder .filter-area {
+  margin-top: 20px; }
 .filter-holder .filter-box {
   postion: relative;
   display: block;

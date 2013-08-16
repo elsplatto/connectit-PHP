@@ -29,9 +29,9 @@ $pageType = 'share-it';
     <div class="row">
         <div class="large-12 columns">
             <h2>Filter</h2>
-            <a href="#" class="toggle-view toggle-icon large" data-target="explore-it-filters" data-state="open">Toggle Filter View</a>
+            <a href="#" class="toggle-view toggle-icon large" data-target="share-it-filters" data-state="open">Toggle Filter View</a>
         </div>
-        <div id="explore-it-filters" class="large-12 columns">
+        <div id="share-it-filters" class="large-12 columns filter-area">
             <h6>By Outcome</h6>
             <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
             <div class="filter-box light-grey-top-border">

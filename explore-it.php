@@ -44,7 +44,7 @@ $pageType = 'explore-it';
             <h2>Filter</h2>
             <a href="#" class="toggle-view toggle-icon large" data-target="explore-it-filters" data-state="open">Toggle Filter View</a>
         </div>
-        <div id="explore-it-filters" class="large-12 columns">
+        <div id="explore-it-filters" class="large-12 columns filter-area">
             <h6>By Outcome</h6>
             <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
             <div class="filter-box light-grey-top-border">

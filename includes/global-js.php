@@ -9,53 +9,67 @@
 
 <script>
     $(function() {
-        var startPos = 0;
-        var stopPos = 0;
-        var scrollPos = 0;
-
-        var bannerHolder = $('#banner-holder');
-        var navHolder = $('#nav-holder');
-        var navPad = $('#nav-pad');
-        var bannerHolderHeight = bannerHolder.height();
-        var navHolderHeight = navHolder.height();
-        var bannerNavHeight = bannerHolderHeight + navHolderHeight;
-        var scrollingDistance = 0;
-
-        $(window).bind('scrollstart', function() {
-            startPos = $(window).scrollTop();
+        $('#btnSideNav').click( function(e) {
+            e.preventDefault();
+            if ($('body').hasClass('active'))
+            {
+                $('body').removeClass('active');
+            }
+            else
+            {
+                $('body').addClass('active');
+            }
         });
 
-        $(window).bind('scrollstop', function(){
-            stopPos = $(window).scrollTop();
-        });
-
-        $(window).scroll(function(event)
+        if ($('html').hasClass('no-touch'))
         {
-            scrollPos = $(this).scrollTop();
-            scrollingDistance = startPos - scrollPos;
+            var startPos = 0;
+            var stopPos = 0;
+            var scrollPos = 0;
 
-            if (((scrollPos + navHolderHeight) >= bannerNavHeight) && !navHolder.hasClass('respond'))
+            var bannerHolder = $('#banner-holder');
+            var navHolder = $('#nav-holder');
+            var navPad = $('#nav-pad');
+            var bannerHolderHeight = bannerHolder.height();
+            var navHolderHeight = navHolder.height();
+            var bannerNavHeight = bannerHolderHeight + navHolderHeight;
+            var scrollingDistance = 0;
+
+            $(window).bind('scrollstart', function() {
+                startPos = $(window).scrollTop();
+            });
+
+            $(window).bind('scrollstop', function(){
+                stopPos = $(window).scrollTop();
+            });
+
+            $(window).scroll(function(event)
             {
-                //scrolled past height where we want the nav to 'float/fix'
-                //add class to navHolder to fix it
-                //add class to navPad to keep doc size the same
-                navHolder.addClass('respond');
-                navPad.addClass('respond');
+                scrollPos = $(this).scrollTop();
+                scrollingDistance = startPos - scrollPos;
 
-            }
-            else if (((scrollPos + navHolderHeight) <= bannerNavHeight) && navHolder.hasClass('respond'))
-            {
-                //scrolled back up to the  height where we want the nav to stay in original spot
-                //remove class from navHolder to keep it relative
-                //remove class from navPad to keep doc size the same
-                navHolder.removeClass('respond');
-                navPad.removeClass('respond');
-            }
-        });
+                if (((scrollPos + navHolderHeight) >= bannerNavHeight) && !navHolder.hasClass('respond'))
+                {
+                    //scrolled past height where we want the nav to 'float/fix'
+                    //add class to navHolder to fix it
+                    //add class to navPad to keep doc size the same
+                    navHolder.addClass('respond');
+                    navPad.addClass('respond');
 
-        var difference = function (a, b) { return Math.abs(a - b) }
+                }
+                else if (((scrollPos + navHolderHeight) <= bannerNavHeight) && navHolder.hasClass('respond'))
+                {
+                    //scrolled back up to the  height where we want the nav to stay in original spot
+                    //remove class from navHolder to keep it relative
+                    //remove class from navPad to keep doc size the same
+                    navHolder.removeClass('respond');
+                    navPad.removeClass('respond');
+                }
+            });
 
+            var difference = function (a, b) { return Math.abs(a - b) }
 
+        }
 
     });
 </script>

@@ -8,6 +8,8 @@ $banner-height: 144px
 
 /*START: colors*/
 
+$connect-it-black: #222529
+
 $use-it-dark-bg: #7d2d5c
 $use-it-bg: #994275
 $use-it-light-bg: #e8a4cb
@@ -542,6 +544,8 @@ hr
   width: 100%
   position: fixed
   z-index: 200
+  .menu-icon
+    display: none
   .NSWlogo
     position: relative
     float: left
@@ -563,6 +567,7 @@ hr
       position: relative
       width: auto
       z-index: 500
+      background-size: 30px 30px!important
     .f-dropdown
       text-align: left
       li
@@ -976,11 +981,11 @@ hr
     size: 24px
     weight: 300
   &:before
-    color: rgba(255,255,255,0.7)
+    color: rgba(255,255,255,0.5)
   a
-    color: rgba(255,255,255,0.7)
+    color: rgba(255,255,255,0.5)
     &:hover
-      color: rgba(255,255,255, 0.7)
+      color: rgba(255,255,255, 0.5)
       text-decoration: underline
 
 .headings
@@ -991,12 +996,19 @@ hr
   h2
     float: left
     padding: 0
-    margin: 0
+    margin: 0 20px 0 0
     line-height: 1em
     color: rgba(255,255,255,1)
     font:
       family: $gothic-font-family
       size: 44px
+    a
+      color: rgba(255,255,255,0.5)
+      text-decoration: none
+      border-bottom: 3px rgba(255,255,255,0.5) solid
+      &:hover
+        color:  rgba(255,255,255,0.5)
+
   .button.small
     margin-left: 20px
     margin-top: 3px
@@ -1576,8 +1588,14 @@ hr
     float: right
   h6
     float: left
-  h6 + .clear-all, h6 + .clear-all + .select-all
+  h6 ~ .clear-all, h6 ~ .clear-all + .select-all
     float: right
+    margin-left: 10px
+    font-size: 0.813em
+    color: $dark-grey-light-bg
+    text-decoration: underline
+  h6 ~ .select-my-groups, h6 ~ .make-selected-my-groups
+    float: left
     margin-left: 10px
     font-size: 0.813em
     color: $dark-grey-light-bg
@@ -1593,9 +1611,8 @@ hr
     max-height: 90px
     padding: 6px 0 16px 0
     margin: 0 0 30px 0
-    overflow: hidden
-    &:hover
-      overflow-y: scroll
+    overflow: auto
+    -webkit-overflow-scrolling: touch
     a
       padding: 5px 6px
       float: left
@@ -1678,11 +1695,128 @@ hr
           margin: 0
           padding: 0
 
+
+.wide-tile
+  position: relative
+  width: 100%
+  height: auto
+  overflow: hidden
+  clear: both
+  display: block
+  &:before
+    content: ''
+    position: absolute
+    top: 20px
+    right: 20px
+    background-image: url(img/icon-sprite.png)
+    background-position: 0px -214px
+  .avatar-holder
+    height: 100%
+    width: auto
+    float: left
+    padding: 0 20px
+    img
+      width: 60px
+      height: 60px
+  .content
+    float: left
+    width: 750px
+    .header
+      font-size: 1em
+      margin-bottom: 40px
+      span, a, strong
+        float: left
+      .timestamp
+        font-size: 0.875em
+        color: $dark-grey-light-bg
+        font-style: italic
+        display: list-item
+        float: left
+        margin-left: 25px
+        position: relative
+        top: 1px
+    h5
+      font-size: 1.2em
+    p
+      clear: both
+      font-size: 1.313em
+      margin-bottom: 10px
+    .functions
+      margin: 0
+      a
+        position: relative
+        font-size: 0.75em
+        padding: 0 0 0 18px
+        margin-left: 10px
+        &:first-child
+          margin-left: 0
+        &:before
+          content: ''
+          position: absolute
+          top: 2px
+          left: 0
+          width: 11px
+          height: 11px
+          background-image: url(img/icon-sprite.png)
+      .reply
+        &:before
+          background-position: -76px -126px
+      .retweet
+        &:before
+          width: 12px
+          background-position: -89px -126px
+      .favourite
+        &:before
+          width: 12px
+          background-position: -103px -126px
+      .subscribe
+        &:before
+          width: 11px
+          background-position: -117px -126px
+      .replies
+        &:before
+          width: 13px
+          background-position: -130px -126px
+      .share
+        &:before
+          width: 12px
+          background-position: -144px -126px
+
+
+.wide-tile.twitter
+  &:before
+    width: 25px
+    height: 21px
+    background-position: 0px -214px
+
+.wide-tile.yammer
+  &:before
+    width: 28px
+    height: 24px
+    background-position: -29px -215px
+
+.body-share-it
+  .wide-tile
+    a
+      color: $share-it-bg
+
+
 .body-explore-it
   .tile-holder
     div
       img
         border-color: $explore-it-bg
+
+
+.new-discussion
+  .avatar
+    width: 124px
+    height: 124px
+    border:
+      width: 1px
+      style: solid
+      color: transparent
+    border-radius: 62px
 
 
 footer
@@ -1758,50 +1892,436 @@ blockquote
             li
               height: $topbar-height-mob
 
-
+//phone
 @media only screen and (max-width: 768px)
-  .global-header
-    .NSWlogo
-      width: 50px
-      background-color: #fff
-    .rightside
-      a.logout
-        display: none!important
-    .f-dropdown
-      li.drop-logout
-        display: inline-block!important
+  body
+    overflow-x: hidden
+    .global-header
+      position: fixed
+      height: 38px
+      .menu-icon
+        display: inline-block
+        position: relative
+        width: 21px
+        height: 15px
+        margin: 10px 0 0 0
+        margin: 10px 0 0 0
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 21px
+          height: 15px
+          background-image: url(img/icon-sprite.png)
+          background-position: -137px -73px
+      .NSWlogo
+        width: 27px
+        position: absolute
+        top: 0px
+        left: 50%
+        margin-left: -15px
+        height: 33px
+        background-size: 90px 28px
+        a
+          width: 30px
 
-  .nav-holder
-    .row
-      min-height: $topbar-height-mob
-      .large-12
-        padding: 0
-        nav.top-bar
-          section
-            ul.top-level
-              li
-                height: $topbar-height-mob
-                width: 100%
-                border:
-                  style: solid
-                  color: $topbar-nav-border-color
-                  width: 0 0 1px 0
-                &:first-child
-                  border-width: 1px 0
-  #nav-pad
-    height: 50px
+      .rightside
+        height: 34px
+        .circle
+          margin: 4px 0 0 10px
+          width: 25px
+          height: 25px
+          .badge
+            top: -3px
+            left: 15px
+        .notification
+          &:before
+            top: 2px
+            left: 3px
+        .profile
+          background-size: 26px 26px!important
+        a.logout
+          display: none!important
+      .f-dropdown
+        li.drop-logout
+          display: inline-block!important
 
-  .orbit-bullets
+    .banner-holder
+      height: 124px
+      padding-top: 30px
+      row
+        large-12
+          h1
+            margin: 25px 0
+    #nav-pad
+      display: none
+
+    .nav-holder
+      display: none
+      .row
+        min-height: $topbar-height-mob
+        .large-12
+          padding: 0
+          nav.top-bar
+            section
+              ul.top-level
+                li
+                  height: $topbar-height-mob
+                  width: 100%
+                  border:
+                    style: solid
+                    color: $topbar-nav-border-color
+                    width: 0 0 1px 0
+                  &:first-child
+                    border-width: 1px 0
+    #nav-pad
+      height: 50px
+
+    .orbit-bullets
+      li
+        width: 8px
+        height: 8px
+
+  .support-suite
+    margin: 0 auto !important
     li
-      width: 8px
-      height: 8px
+      width: 100%
 
 
 
 
+/*Sidebar nav classes*/
 
+body.off-canvas
+  padding: 0
+  margin: 0
 
+canvas
+  background: #fff
 
+#sidebar
+  .container
+    width: 100%
+  .row
+    overflow: hidden
+    .row
+      overflow: visible
+  .paneled .container
+    overflow: hidden
+
+/* ==============================
+ *     ---- Main Nav Styles ----
+ *=================================
+
+a.sidebar-button
+  margin-top: 8px
+  margin-bottom: 6px
+  display: inline-block
+  img
+    margin-top: -6px
+    width: 23px
+  h4
+    font-size: 22px !important
+    display: inline !important
+    margin-left: 10px
+    line-height: 1
+    color: #fff
+    font-weight: bold !important
+
+#sidebar
+  position: absolute
+  background: $dark-grey-bg
+  height: 100%
+  padding: 0px
+  -webkit-box-shadow: inset -2px 0px 8px -1px #111111
+  box-shadow: inset -2px 0px 8px -1px #111111
+  padding-top: 10px
+  h5 a
+    font-size: 20px !important
+  hr
+    margin: 8px 0 20px 0
+    border-color: #444444 !important
+  h6, h5
+    color: #fff
+    text-transform: uppercase
+    margin-bottom: 0px
+    font-family: $serif-font-family
+  h6
+    font-size: 14px
+    font-weight: bold
+  .nav-bar
+    background: none
+    margin-bottom: 0px
+    li
+      width: 100%
+      box-shadow: none !important
+      a
+        font-size: 20px !important
+        font-weight: 500
+        color: #ccc
+        font-family: $serif-font-family
+        font-weight: 600
+        padding: 10px !important
+
+.nav-bar
+  height: 110px
+  background: #4d4d4d
+  margin-left: 0
+  margin-top: 8px !important
+  &.goodness
+    height: 120px
+    background: #4d4d4d
+    margin-left: 0
+    margin-top: 20px
+    padding: 0
+  > li
+    float: left
+    display: block
+    position: relative
+    padding: 0
+    margin: 0
+    line-height: 38px
+    a.current
+      color: #ffffff !important
+      font-weight: 700
+    > a
+      color: #bbbbbb
+      display: block
+    ul
+      margin-bottom: 0
+    .flyout
+      display: none
+
+#sidebar
+  .main-menu
+    overflow-x: hidden
+    padding: 0px 15px
+  .more-goodness, .zurb-links
+    padding: 0px 15px
+  #passport
+    display: inline-block
+    width: 100%
+    border-bottom: #444444 1px solid
+    margin-bottom: 10px
+    a
+      &#user
+        float: left
+        display: inline-block
+        max-width: 260px
+      &#ava
+        float: right
+        display: inline-block
+        max-width: 70px
+    p
+      margin-bottom: 10px
+      color: #ccc
+      margin-left: 15px
+      display: inline-block
+    h5
+      padding-left: 15px
+      margin-top: 15px
+      display: inline-block
+      color: #ffffff
+      text-transform: none
+    .avatar
+      height: 70px
+      float: right
+      width: 70px
+  .zurb-links
+    padding-bottom: 25px
+    margin-top: -5px
+    ul
+      &.top li
+        display: inline-block
+        margin-left: 0px
+        line-height: 1
+        font-family: 'Proxima Nova Condensed', 'proxima-nova-condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif
+        &.logo
+          margin-left: 0px
+          a
+            padding: 3px 8px 3px 0px
+            font-size: 0.9em
+          img
+            width: 60px
+            margin-top: -4px
+        a
+          color: #727272
+          text-transform: uppercase
+          font-size: 13px
+          padding: 5px
+          font-weight: 600
+      &.pillars
+        list-style: none
+    .footer-link-block
+      span
+        &.title
+          padding-bottom: 0px
+          padding-left: 40px
+          font-family: "ProximaNova" , "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif
+          font-size: 1.3em
+          margin-bottom: 8px
+          color: #cccccc
+        display: block
+        color: #ccc
+        font-size: 1.0em
+        line-height: 18px
+        margin-bottom: 18px
+        line-height: 20px
+        margin-bottom: 24px
+        color: #727272
+        padding-left: 0
+        font-size: 0.9em
+      font-weight: normal
+      background: url("../images/offcanvas/footer-icons.png") no-repeat 0 0
+      display: block
+      margin-bottom: 14px
+      padding-top: 6px
+      &.expo
+        background-position: 0 -798px
+      &.services
+        background-position: 0 -198px
+      &.apps
+        background-position: 0 -598px
+      &.foundation
+        background-position: 0 -398px
+
+/* ==============================
+ *   ZURB Passport Section
+ *==============================
+
+/* ==============================
+ *     ---- ZURB Pillars ----
+ *=================================
+
+[role="main"]
+  &:before
+    content: " "
+    position: absolute
+    z-index: -1
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100%
+    background: #fff
+  width: 100%
+
+[role="complementary"], [role="main"]
+  display: block
+  position: relative
+  z-index: 1
+  -webkit-transition: 0.08s all
+  -moz-transition: 0.08s all
+  -o-transition: 0.8s all
+  transition: 0.08s all
+
+.paneled [role="main"]
+  padding: 0
+
+.page-panel
+  width: 100%
+  padding: 0 15px
+  -webkit-transition: 0.05s margin linear-out
+  -moz-transition: 0.05s margin linear-out
+  -o-transition: 0.05s margin linear-out
+  transition: 0.05s margin linear-out
+  background: #fff
+
+#switchPanels
+  margin: 0 -15px
+
+.hide-extras [role="complementary"]
+  display: block
+
+[role="navigation"]#topMenu
+  -webkit-transition: 0.05s all linear
+  -moz-transition: 0.05s all linear
+  -o-transition: 0.05s all linear
+  transition: 0.05s all linear
+  ul
+    margin-top: 0
+
+[role="complementary"]
+  margin-left: -85%
+  width: 85%
+  float: left
+  z-index: 2
+
+[role="main"]
+  margin-left: 0
+  float: right
+  z-index: 1
+  position: relative
+  background: #fff
+
+.paneled [role="main"]
+  background: #fff
+  width: 500%
+  overflow: hidden
+  float: none
+  position: relative
+  left: 0
+  -webkit-transition: 0.00s all linear
+  -moz-transition: 0.00s all linear
+  -o-transition: 0.00s all linear
+  transition: 0.00s all linear
+
+.page-panel
+  min-height: 400px
+  float: left
+  margin: 0
+  width: 20%
+
+.active
+  [role="complementary"]
+    margin-left: 0
+  [role="main"]
+    margin-right: -85%
+
+.active-menu [role="navigation"]#topMenu
+  margin-top: 0 !important
+
+@media all and (min-width: 768px)
+  menu-button, .sidebar-button
+    display: none
+  [role="complementary"]
+    width: 20%
+    margin-left: 0
+    float: left
+  [role="main"]
+    width: 80%
+  .paneled [role="main"]
+    width: 100%
+    padding: 0
+    background: #f4f4f4
+    left: 0 !important
+  .page-panel
+    display: block
+    min-height: 800px
+    float: none
+    margin: 0
+    width: 100%
+    background: #f4f4f4
+  .hide-extras
+    [role="main"]
+      width: 100%
+    [role="complementary"]
+      display: none
+  [role="navigation"]#topMenu
+    display: none
+  .active [role="main"]
+    margin-right: 0%
+
+/* ------------------------------------------------------------
+ *  Disables Overflow on mobile - Had issues with Foundation 4
+ *------------------------------------------------------------
+@media all and (max-width: 767px)
+  html
+    overflow-x: hidden
+  body.off-canvas
+    padding: 0
+    margin: 0
+    overflow-x: hidden
 
 
 

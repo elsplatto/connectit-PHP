@@ -1,6 +1,7 @@
 <section id="global-header" class="global-header">
     <div class="row">
         <div class="large-12 columns">
+            <a href="#" id="btnSideNav" class="menu-icon"></a>
             <div class="NSWlogo"><a href="#" title="Link to NSW Department of Education and Communities"></a></div>
             <div class="rightside">
                 <!--NB: Remove 'alert' class to show normal notification icon. Remove the 'badge' span too-->
@@ -15,7 +16,7 @@
                     <li class="see-all"><a href="#">See all</a></li>
                 </ul>
                 <!--NB: Remove the 'badge' span if no alerts for this user-->
-                <a href="#" class="profile circle" style="background: url(media/img/profile-1.jpg) no-repeat center center;background-size: 30px 30px" data-dropdown="profile-drop"><span class="badge">5</span></a>
+                <a href="#" class="profile circle" style="background: url(media/img/profile-1.jpg) no-repeat center center;" data-dropdown="profile-drop"><span class="badge">5</span></a>
                 <ul id="profile-drop" class="f-dropdown" data-dropdown-content>
 
                     <li class="drop-logout"><a href="#">Logout</a></li>

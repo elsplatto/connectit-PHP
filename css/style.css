@@ -428,6 +428,8 @@ hr {
   width: 100%;
   position: fixed;
   z-index: 200; }
+  .global-header .menu-icon {
+    display: none; }
   .global-header .NSWlogo {
     position: relative;
     float: left;
@@ -448,7 +450,8 @@ hr {
     .global-header .rightside .profile {
       position: relative;
       width: auto;
-      z-index: 500; }
+      z-index: 500;
+      background-size: 30px 30px !important; }
     .global-header .rightside .f-dropdown {
       text-align: left; }
       .global-header .rightside .f-dropdown li {
@@ -847,11 +850,11 @@ hr {
   font-size: 24px;
   font-weight: 300; }
   .breadcrumbs a:before, .subheader h3:before {
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.5); }
   .breadcrumbs a a, .subheader h3 a {
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.5); }
     .breadcrumbs a a:hover, .subheader h3 a:hover {
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.5);
       text-decoration: underline; }
 
 .headings {
@@ -862,11 +865,17 @@ hr {
   .headings h2 {
     float: left;
     padding: 0;
-    margin: 0;
+    margin: 0 20px 0 0;
     line-height: 1em;
     color: white;
     font-family: "Gotham";
     font-size: 44px; }
+    .headings h2 a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      border-bottom: 3px rgba(255, 255, 255, 0.5) solid; }
+      .headings h2 a:hover {
+        color: rgba(255, 255, 255, 0.5); }
   .headings .button.small {
     margin-left: 20px;
     margin-top: 3px; }
@@ -1374,8 +1383,14 @@ hr {
   float: right; }
 .filter-holder h6 {
   float: left; }
-.filter-holder h6 + .clear-all, .filter-holder h6 + .clear-all + .select-all {
+.filter-holder h6 ~ .clear-all, .filter-holder h6 ~ .clear-all + .select-all {
   float: right;
+  margin-left: 10px;
+  font-size: 0.813em;
+  color: #8a9096;
+  text-decoration: underline; }
+.filter-holder h6 ~ .select-my-groups, .filter-holder h6 ~ .make-selected-my-groups {
+  float: left;
   margin-left: 10px;
   font-size: 0.813em;
   color: #8a9096;
@@ -1391,9 +1406,8 @@ hr {
   max-height: 90px;
   padding: 6px 0 16px 0;
   margin: 0 0 30px 0;
-  overflow: hidden; }
-  .filter-holder .filter-box:hover {
-    overflow-y: scroll; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
   .filter-holder .filter-box a {
     padding: 5px 6px;
     float: left;
@@ -1469,8 +1483,109 @@ hr {
           margin: 0;
           padding: 0; }
 
+.wide-tile {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  clear: both;
+  display: block; }
+  .wide-tile:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url(img/icon-sprite.png);
+    background-position: 0px -214px; }
+  .wide-tile .avatar-holder {
+    height: 100%;
+    width: auto;
+    float: left;
+    padding: 0 20px; }
+    .wide-tile .avatar-holder img {
+      width: 60px;
+      height: 60px; }
+  .wide-tile .content {
+    float: left;
+    width: 750px; }
+    .wide-tile .content .header {
+      font-size: 1em;
+      margin-bottom: 40px; }
+      .wide-tile .content .header span, .wide-tile .content .header a, .wide-tile .content .header strong {
+        float: left; }
+      .wide-tile .content .header .timestamp {
+        font-size: 0.875em;
+        color: #8a9096;
+        font-style: italic;
+        display: list-item;
+        float: left;
+        margin-left: 25px;
+        position: relative;
+        top: 1px; }
+    .wide-tile .content h5 {
+      font-size: 1.2em; }
+    .wide-tile .content p {
+      clear: both;
+      font-size: 1.313em;
+      margin-bottom: 10px; }
+    .wide-tile .content .functions {
+      margin: 0; }
+      .wide-tile .content .functions a {
+        position: relative;
+        font-size: 0.75em;
+        padding: 0 0 0 18px;
+        margin-left: 10px; }
+        .wide-tile .content .functions a:first-child {
+          margin-left: 0; }
+        .wide-tile .content .functions a:before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 0;
+          width: 11px;
+          height: 11px;
+          background-image: url(img/icon-sprite.png); }
+      .wide-tile .content .functions .reply:before {
+        background-position: -76px -126px; }
+      .wide-tile .content .functions .retweet:before {
+        width: 12px;
+        background-position: -89px -126px; }
+      .wide-tile .content .functions .favourite:before {
+        width: 12px;
+        background-position: -103px -126px; }
+      .wide-tile .content .functions .subscribe:before {
+        width: 11px;
+        background-position: -117px -126px; }
+      .wide-tile .content .functions .replies:before {
+        width: 13px;
+        background-position: -130px -126px; }
+      .wide-tile .content .functions .share:before {
+        width: 12px;
+        background-position: -144px -126px; }
+
+.wide-tile.twitter:before {
+  width: 25px;
+  height: 21px;
+  background-position: 0px -214px; }
+
+.wide-tile.yammer:before {
+  width: 28px;
+  height: 24px;
+  background-position: -29px -215px; }
+
+.body-share-it .wide-tile a {
+  color: #1a7bc0; }
+
 .body-explore-it .tile-holder div img {
   border-color: #e14d5b; }
+
+.new-discussion .avatar {
+  width: 124px;
+  height: 124px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 62px; }
 
 footer {
   border-bottom: 1px solid #424a53;
@@ -1538,30 +1653,411 @@ blockquote {
       .nav-holder .row .columns section ul.top-level li {
         height: 50px; } }
 @media only screen and (max-width: 768px) {
-  .global-header .NSWlogo {
-    width: 50px;
-    background-color: white; }
-  .global-header .rightside a.logout {
-    display: none !important; }
-  .global-header .f-dropdown li.drop-logout {
-    display: inline-block !important; }
+  body {
+    overflow-x: hidden; }
+    body .global-header {
+      position: fixed;
+      height: 38px; }
+      body .global-header .menu-icon {
+        display: inline-block;
+        position: relative;
+        width: 21px;
+        height: 15px;
+        margin: 10px 0 0 0;
+        margin: 10px 0 0 0; }
+        body .global-header .menu-icon:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 21px;
+          height: 15px;
+          background-image: url(img/icon-sprite.png);
+          background-position: -137px -73px; }
+      body .global-header .NSWlogo {
+        width: 27px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin-left: -15px;
+        height: 33px;
+        background-size: 90px 28px; }
+        body .global-header .NSWlogo a {
+          width: 30px; }
+      body .global-header .rightside {
+        height: 34px; }
+        body .global-header .rightside .circle {
+          margin: 4px 0 0 10px;
+          width: 25px;
+          height: 25px; }
+          body .global-header .rightside .circle .badge {
+            top: -3px;
+            left: 15px; }
+        body .global-header .rightside .notification:before {
+          top: 2px;
+          left: 3px; }
+        body .global-header .rightside .profile {
+          background-size: 26px 26px !important; }
+        body .global-header .rightside a.logout {
+          display: none !important; }
+      body .global-header .f-dropdown li.drop-logout {
+        display: inline-block !important; }
+    body .banner-holder {
+      height: 124px;
+      padding-top: 30px; }
+      body .banner-holder row large-12 h1 {
+        margin: 25px 0; }
+    body #nav-pad {
+      display: none; }
+    body .nav-holder {
+      display: none; }
+      body .nav-holder .row {
+        min-height: 50px; }
+        body .nav-holder .row .large-12 {
+          padding: 0; }
+          body .nav-holder .row .large-12 nav.top-bar section ul.top-level li {
+            height: 50px;
+            width: 100%;
+            border-style: solid;
+            border-color: #e0e0e2;
+            border-width: 0 0 1px 0; }
+            body .nav-holder .row .large-12 nav.top-bar section ul.top-level li:first-child {
+              border-width: 1px 0; }
+    body #nav-pad {
+      height: 50px; }
+    body .orbit-bullets li {
+      width: 8px;
+      height: 8px; }
 
-  .nav-holder .row {
-    min-height: 50px; }
-    .nav-holder .row .large-12 {
-      padding: 0; }
-      .nav-holder .row .large-12 nav.top-bar section ul.top-level li {
-        height: 50px;
-        width: 100%;
-        border-style: solid;
-        border-color: #e0e0e2;
-        border-width: 0 0 1px 0; }
-        .nav-holder .row .large-12 nav.top-bar section ul.top-level li:first-child {
-          border-width: 1px 0; }
+  .support-suite {
+    margin: 0 auto !important; }
+    .support-suite li {
+      width: 100%; } }
+/*Sidebar nav classes */
+body.off-canvas {
+  padding: 0;
+  margin: 0; }
 
-  #nav-pad {
-    height: 50px; }
+canvas {
+  background: white; }
 
-  .orbit-bullets li {
-    width: 8px;
-    height: 8px; } }
+#sidebar .container {
+  width: 100%; }
+#sidebar .row {
+  overflow: hidden; }
+  #sidebar .row .row {
+    overflow: visible; }
+#sidebar .paneled .container {
+  overflow: hidden; }
+
+/* ==============================
+ *     ---- Main Nav Styles ----
+ *================================= */
+a.sidebar-button {
+  margin-top: 8px;
+  margin-bottom: 6px;
+  display: inline-block; }
+  a.sidebar-button img {
+    margin-top: -6px;
+    width: 23px; }
+  a.sidebar-button h4 {
+    font-size: 22px !important;
+    display: inline !important;
+    margin-left: 10px;
+    line-height: 1;
+    color: white;
+    font-weight: bold !important; }
+
+#sidebar {
+  position: absolute;
+  background: #555e68;
+  height: 100%;
+  padding: 0px;
+  -webkit-box-shadow: inset -2px 0px 8px -1px #111111;
+  box-shadow: inset -2px 0px 8px -1px #111111;
+  padding-top: 10px; }
+  #sidebar h5 a {
+    font-size: 20px !important; }
+  #sidebar hr {
+    margin: 8px 0 20px 0;
+    border-color: #444444 !important; }
+  #sidebar h6, #sidebar h5 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-family: "PMN Caecilia", serif; }
+  #sidebar h6 {
+    font-size: 14px;
+    font-weight: bold; }
+  #sidebar .nav-bar {
+    background: none;
+    margin-bottom: 0px; }
+    #sidebar .nav-bar li {
+      width: 100%;
+      box-shadow: none !important; }
+      #sidebar .nav-bar li a {
+        font-size: 20px !important;
+        font-weight: 500;
+        color: #cccccc;
+        font-family: "PMN Caecilia", serif;
+        font-weight: 600;
+        padding: 10px !important; }
+
+.nav-bar {
+  height: 110px;
+  background: #4d4d4d;
+  margin-left: 0;
+  margin-top: 8px !important; }
+  .nav-bar.goodness {
+    height: 120px;
+    background: #4d4d4d;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0; }
+  .nav-bar > li {
+    float: left;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    line-height: 38px; }
+    .nav-bar > li a.current {
+      color: white !important;
+      font-weight: 700; }
+    .nav-bar > li > a {
+      color: #bbbbbb;
+      display: block; }
+    .nav-bar > li ul {
+      margin-bottom: 0; }
+    .nav-bar > li .flyout {
+      display: none; }
+
+#sidebar .main-menu {
+  overflow-x: hidden;
+  padding: 0px 15px; }
+#sidebar .more-goodness, #sidebar .zurb-links {
+  padding: 0px 15px; }
+#sidebar #passport {
+  display: inline-block;
+  width: 100%;
+  border-bottom: #444444 1px solid;
+  margin-bottom: 10px; }
+  #sidebar #passport a#user {
+    float: left;
+    display: inline-block;
+    max-width: 260px; }
+  #sidebar #passport a#ava {
+    float: right;
+    display: inline-block;
+    max-width: 70px; }
+  #sidebar #passport p {
+    margin-bottom: 10px;
+    color: #cccccc;
+    margin-left: 15px;
+    display: inline-block; }
+  #sidebar #passport h5 {
+    padding-left: 15px;
+    margin-top: 15px;
+    display: inline-block;
+    color: white;
+    text-transform: none; }
+  #sidebar #passport .avatar {
+    height: 70px;
+    float: right;
+    width: 70px; }
+#sidebar .zurb-links {
+  padding-bottom: 25px;
+  margin-top: -5px; }
+  #sidebar .zurb-links ul.top li {
+    display: inline-block;
+    margin-left: 0px;
+    line-height: 1;
+    font-family: "Proxima Nova Condensed", "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    #sidebar .zurb-links ul.top li.logo {
+      margin-left: 0px; }
+      #sidebar .zurb-links ul.top li.logo a {
+        padding: 3px 8px 3px 0px;
+        font-size: 0.9em; }
+      #sidebar .zurb-links ul.top li.logo img {
+        width: 60px;
+        margin-top: -4px; }
+    #sidebar .zurb-links ul.top li a {
+      color: #727272;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 5px;
+      font-weight: 600; }
+  #sidebar .zurb-links ul.pillars {
+    list-style: none; }
+  #sidebar .zurb-links .footer-link-block {
+    font-weight: normal;
+    background: url("../images/offcanvas/footer-icons.png") no-repeat 0 0;
+    display: block;
+    margin-bottom: 14px;
+    padding-top: 6px; }
+    #sidebar .zurb-links .footer-link-block span {
+      display: block;
+      color: #cccccc;
+      font-size: 1em;
+      line-height: 18px;
+      margin-bottom: 18px;
+      line-height: 20px;
+      margin-bottom: 24px;
+      color: #727272;
+      padding-left: 0;
+      font-size: 0.9em; }
+      #sidebar .zurb-links .footer-link-block span.title {
+        padding-bottom: 0px;
+        padding-left: 40px;
+        font-family: "ProximaNova", "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        margin-bottom: 8px;
+        color: #cccccc; }
+    #sidebar .zurb-links .footer-link-block.expo {
+      background-position: 0 -798px; }
+    #sidebar .zurb-links .footer-link-block.services {
+      background-position: 0 -198px; }
+    #sidebar .zurb-links .footer-link-block.apps {
+      background-position: 0 -598px; }
+    #sidebar .zurb-links .footer-link-block.foundation {
+      background-position: 0 -398px; }
+
+/* ==============================
+ *   ZURB Passport Section
+ *============================== */
+/* ==============================
+ *     ---- ZURB Pillars ----
+ *================================= */
+[role="main"] {
+  width: 100%; }
+  [role="main"]:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: white; }
+
+[role="complementary"], [role="main"] {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.08s all;
+  -moz-transition: 0.08s all;
+  -o-transition: 0.8s all;
+  transition: 0.08s all; }
+
+.paneled [role="main"] {
+  padding: 0; }
+
+.page-panel {
+  width: 100%;
+  padding: 0 15px;
+  -webkit-transition: 0.05s margin linear-out;
+  -moz-transition: 0.05s margin linear-out;
+  -o-transition: 0.05s margin linear-out;
+  transition: 0.05s margin linear-out;
+  background: white; }
+
+#switchPanels {
+  margin: 0 -15px; }
+
+.hide-extras [role="complementary"] {
+  display: block; }
+
+[role="navigation"]#topMenu {
+  -webkit-transition: 0.05s all linear;
+  -moz-transition: 0.05s all linear;
+  -o-transition: 0.05s all linear;
+  transition: 0.05s all linear; }
+  [role="navigation"]#topMenu ul {
+    margin-top: 0; }
+
+[role="complementary"] {
+  margin-left: -85%;
+  width: 85%;
+  float: left;
+  z-index: 2; }
+
+[role="main"] {
+  margin-left: 0;
+  float: right;
+  z-index: 1;
+  position: relative;
+  background: white; }
+
+.paneled [role="main"] {
+  background: white;
+  width: 500%;
+  overflow: hidden;
+  float: none;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0s all linear;
+  -moz-transition: 0s all linear;
+  -o-transition: 0s all linear;
+  transition: 0s all linear; }
+
+.page-panel {
+  min-height: 400px;
+  float: left;
+  margin: 0;
+  width: 20%; }
+
+.active [role="complementary"] {
+  margin-left: 0; }
+.active [role="main"] {
+  margin-right: -85%; }
+
+.active-menu [role="navigation"]#topMenu {
+  margin-top: 0 !important; }
+
+@media all and (min-width: 768px) {
+  menu-button, .sidebar-button {
+    display: none; }
+
+  [role="complementary"] {
+    width: 20%;
+    margin-left: 0;
+    float: left; }
+
+  [role="main"] {
+    width: 80%; }
+
+  .paneled [role="main"] {
+    width: 100%;
+    padding: 0;
+    background: #f4f4f4;
+    left: 0 !important; }
+
+  .page-panel {
+    display: block;
+    min-height: 800px;
+    float: none;
+    margin: 0;
+    width: 100%;
+    background: #f4f4f4; }
+
+  .hide-extras [role="main"] {
+    width: 100%; }
+  .hide-extras [role="complementary"] {
+    display: none; }
+
+  [role="navigation"]#topMenu {
+    display: none; }
+
+  .active [role="main"] {
+    margin-right: 0%; } }
+/* ------------------------------------------------------------
+ *  Disables Overflow on mobile - Had issues with Foundation 4
+ *------------------------------------------------------------ */
+@media all and (max-width: 767px) {
+  html {
+    overflow-x: hidden; }
+
+  body.off-canvas {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; } }

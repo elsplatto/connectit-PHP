@@ -215,7 +215,7 @@ $(function() {
         }
     });
 
-    $('.filter-box a').click(function(e) {
+    $('.filter-box a, .tag-box a').click(function(e) {
         e.preventDefault();
         if($(this).hasClass('selected'))
         {

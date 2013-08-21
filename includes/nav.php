@@ -19,7 +19,7 @@
                         <li class="fix-it<?if ($pageType == 'fix-it') {echo ' active';} ?>"><a href="fix-it.php">Fix.It</a></li>
                         <li class="explore-it<?if ($pageType == 'explore-it') {echo ' active';} ?>"><a href="explore-it.php">Explore.It</a></li>
                         <li class="share-it<?if ($pageType == 'share-it') {echo ' active';} ?>"><a href="share-it.php">Share.It</a></li>
-                        <li class="about-it<?if ($pageType == 'about-it') {echo ' active';} ?>"><a href="#">About.It</a></li>
+                        <li class="about-it<?if ($pageType == 'about-it') {echo ' active';} ?>"><a href="about-it.php">About.It</a></li>
                         <li class="search-it has-dropdown search"><a href="#" data-isSearch="true" data-closeOnClick>Find.It</a>
                             <ul class="dropdown">
                                 <li class="search-holder">

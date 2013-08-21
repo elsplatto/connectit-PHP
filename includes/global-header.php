@@ -20,7 +20,7 @@
                 <ul id="profile-drop" class="f-dropdown" data-dropdown-content>
 
                     <li class="drop-logout"><a href="#">Logout</a></li>
-                    <li class="my-profile"><a href="#">My Profile</a></li>
+                    <li class="my-profile"><a href="my-profile.php">My Profile</a></li>
                     <li class="title">Subscriptions</li>
                     <li class="unread"><a href="#">You need to approve an action</a><br /><span class="time">3 hours ago</span></li>
                     <li class="unread"><a href="#">3 comments to moderate in</a> <a href="#" class="underline">How to connect to network</a><br /><span class="time">5 hours ago</span></li>
@@ -29,7 +29,7 @@
                     <li class="read"><a href="#" class="underline">Windows 8</a> requires a license<br /><span class="time">Yesterday</span></li>
                     <li class="see-all"><a href="#">See all</a></li>
                 </ul>
-                <!--span class="name">Jason Taikato</span-->
+                <span class="name">Jason Taikato</span>
                 <a href="#" class="logout">Logout</a>
             </div>
         </div>

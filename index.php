@@ -40,7 +40,7 @@ $pageType = 'home';
                         <a href="#" class="text-center">
                             <div class="lodge-ticket"></div>
                             <h5>Lodge a Ticket</h5>
-                            <p>Cot a problem? Lodge a support ticket</p>
+                            <p>Got a problem? Lodge a support ticket</p>
                         </a>
                     </li>
                     <li>

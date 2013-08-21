@@ -145,8 +145,6 @@ $pageType = 'share-it';
                 </div>
             </div>
 
-
-
             <div class="large-12 columns text-center">
                 <a href="#" class="button blue">Load More</a>
             </div>
@@ -220,4 +218,3 @@ $pageType = 'share-it';
     </script>
 
 <?php include 'includes/footer.php'; ?>
-<?php include 'includes/sidebar.php'; ?>

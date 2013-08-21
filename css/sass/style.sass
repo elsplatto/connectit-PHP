@@ -30,6 +30,10 @@ $about-it-dark-bg: #3aa385
 $about-it-bg: #60cdae
 $about-it-light-bg: #aef9e4
 
+$other-dark-bg: #3aa385
+$other-bg: #60cdae
+$other-light-bg: #aef9e4
+
 $dark-grey-dark-bg: #424a53
 $dark-grey-bg: #555e68
 $dark-grey-light-bg: #8a9096
@@ -88,6 +92,7 @@ $topbar-link-color: #434a52
 $topbar-link-weight: normal
 $topbar-link-font-size: 1em
 $topbar-link-padding: 0.3em 1em 0.3em!important
+$lt-ie9-topbar-link-padding: 0.9em 1em 0.3em!important
 $topbar-link-second-level-padding: 2em 3em!important
 
 
@@ -137,7 +142,7 @@ h6
   font:
     family: $gothic-font-family
     size: 0.8em
-    weight: 400
+    weight: 425
   letter-spacing: 0.15em
   text-transform: uppercase
   padding: 0 0 10px 0
@@ -223,6 +228,9 @@ h6
 .top-bar-section .has-dropdown > a
   padding: $topbar-link-padding
 
+.lt-ie9 .has-dropdown > a
+  padding: $lt-ie9-topbar-link-padding
+
 .top-bar .toggle-topbar.menu-icon a
   width: auto
 
@@ -230,6 +238,24 @@ h6
   width: 100%
 
 /*START: Buttons*/
+
+.button.flat
+  box-shadow: none!important
+
+.button.download
+  font:
+    size: 0.813em
+    weight: 450!important
+  padding: 0.625em 1em 0.625em 2.125em
+  &:before
+    content: ''
+    position: absolute
+    width: 13px
+    height: 12px
+    top: 8px
+    left: 8px
+    background-image: url(img/icon-sprite.png)
+    background-position: -76px -142px
 
 button, .button
   font-family: $gothic-font-family
@@ -281,7 +307,7 @@ input[type='tel'],
 input[type='time'],
 input[type='url']
   @extend textarea
-  height: 3.2em
+  height: 3.2em!important
   box-shadow: none
   -webkit-box-shadow: none
   -moz-box-shadow: none
@@ -403,6 +429,340 @@ input[type='search']
 
 /*END: Orbit Classes*/
 
+/*START: Form Classes*/
+
+label, form h5
+  font:
+    size: 1em
+    weight: bold
+  padding-bottom: 10px
+  color: $std-font-color
+
+input[type="checkbox"] + label
+  margin-left: 10px
+  font-size: 1em
+  color: $dark-grey-light-bg
+  font-style: italic
+  font-weight: 400
+
+input[type="checkbox"]
+  width: 20px
+  height: 20px
+  margin: 17px 0 0 0!important
+  padding: 0!important
+  background-color: $light-grey-light-bg
+
+input
+  &[type="text"], &[type="password"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="month"], &[type="week"], &[type="email"], &[type="number"], &[type="search"], &[type="tel"], &[type="time"], &[type="url"]
+    background-color: $light-grey-light-bg
+    /* font-family: inherit
+    /*border: 1px solid #cccccc
+    /*-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+    /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+    /*color: rgba(0, 0, 0, 0.75)
+    /*display: block
+    /*font-size: 0.875em
+    /*margin: 0 0 1em 0
+    /*padding: 0.5em
+    /*height: 2.3125em
+    /*width: 100%
+    /*-moz-box-sizing: border-box
+    /*-webkit-box-sizing: border-box
+    /*box-sizing: border-box
+    /*-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out
+    /*-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out
+    /*transition: box-shadow 0.45s, border-color 0.45s ease-in-out */
+
+textarea
+  background-color: $light-grey-light-bg
+  font-family: inherit
+  border: 1px solid #cccccc
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+  color: rgba(0, 0, 0, 0.75)
+  display: block
+  font-size: 0.875em
+  margin: 0 0 2em 0
+  padding: 0.5em
+  height: 12.5em
+  width: 100%
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out
+  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out
+
+input
+  &[type="text"]:focus, &[type="password"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="month"]:focus, &[type="week"]:focus, &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="time"]:focus, &[type="url"]:focus
+    -webkit-box-shadow: 0 0 5px #999999
+    -moz-box-shadow: 0 0 5px #999999
+    box-shadow: 0 0 5px #999999
+    border-color: #999999
+
+textarea:focus
+  -webkit-box-shadow: 0 0 5px #999999
+  -moz-box-shadow: 0 0 5px #999999
+  box-shadow: 0 0 5px #999999
+  border-color: #999999
+
+input
+  &[type="text"]:focus, &[type="password"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="month"]:focus, &[type="week"]:focus, &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="time"]:focus, &[type="url"]:focus
+    background: #fafafa
+    border-color: #999999
+    outline: none
+
+textarea:focus
+  background: #fafafa
+  border-color: #999999
+  outline: none
+
+input
+  &[type="text"][disabled], &[type="password"][disabled], &[type="date"][disabled], &[type="datetime"][disabled], &[type="datetime-local"][disabled], &[type="month"][disabled], &[type="week"][disabled], &[type="email"][disabled], &[type="number"][disabled], &[type="search"][disabled], &[type="tel"][disabled], &[type="time"][disabled], &[type="url"][disabled]
+    background-color: #dddddd
+
+textarea[disabled]
+  background-color: #dddddd
+
+/* Adjust margin for form elements below
+
+input
+  &[type="file"], &[type="checkbox"], &[type="radio"]
+    margin: 0 0 1em 0
+
+select
+  margin: 0 0 1em 0
+
+/* Normalize file input width
+
+input[type="file"]
+  width: 100%
+
+/* We add basic fieldset styling
+
+fieldset
+  border: solid 1px #dddddd
+  padding: 1.25em
+  margin: 1.125em 0
+  legend
+    font-weight: bold
+    background: white
+    padding: 0 0.1875em
+    margin: 0
+    margin-left: -0.1875em
+
+/* Error Handling
+
+.error input, input.error, .error textarea, textarea.error
+  border-color: #c60f13
+  background-color: rgba(198, 15, 19, 0.1)
+
+.error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus
+  background: #fafafa
+  border-color: #999999
+
+.error label, label.error
+  color: #c60f13
+
+.error small, small.error
+  display: block
+  padding: 0.375em 0.25em
+  margin-top: -1.3125em
+  margin-bottom: 1em
+  font-size: 0.75em
+  font-weight: bold
+  background: #c60f13
+  color: white
+
+/* Custom Checkbox and Radio Inputs
+
+form.custom
+  .hidden-field
+    margin-left: -99999px
+    position: absolute
+    visibility: hidden
+  .custom
+    display: inline-block
+    width: 16px
+    height: 16px
+    position: relative
+    vertical-align: middle
+    border: solid 1px #cccccc
+    background: white
+    &.checkbox
+      -webkit-border-radius: 0px
+      border-radius: 0px
+      padding: -1px
+    &.radio
+      -webkit-border-radius: 1000px
+      border-radius: 1000px
+      padding: 3px
+    &.checkbox:before
+      content: ""
+      display: block
+      font-size: 16px
+      color: white
+    &.radio.checked:before
+      content: ""
+      display: block
+      width: 8px
+      height: 8px
+      -webkit-border-radius: 1000px
+      border-radius: 1000px
+      background: #222222
+      position: relative
+    &.checkbox.checked:before
+      content: "\00d7"
+      color: #222222
+      position: absolute
+      top: -50%
+      left: 50%
+      margin-top: 4px
+      margin-left: -5px
+    &.dropdown
+      display: block
+      position: relative
+      top: 0
+      height: 2.3125em
+      margin-bottom: 1.25em
+      margin-top: 0px
+      padding: 0px
+      width: 100%
+      background: white
+      background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%)
+      background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%)
+      -webkit-box-shadow: none
+      background: linear-gradient(to bottom, white 0%, #f3f3f3 100%)
+      box-shadow: none
+      font-size: 0.875em
+      vertical-align: top
+      ul
+        overflow-y: auto
+        max-height: 200px
+      .current
+        cursor: default
+        white-space: nowrap
+        line-height: 2.25em
+        color: rgba(0, 0, 0, 0.75)
+        text-decoration: none
+        overflow: hidden
+        display: block
+        margin-left: 0.5em
+        margin-right: 2.3125em
+      .selector
+        cursor: default
+        position: absolute
+        width: 2.5em
+        height: 2.3125em
+        display: block
+        right: 0
+        top: 0
+        &:after
+          content: ""
+          display: block
+          content: ""
+          display: block
+          width: 0
+          height: 0
+          border: inset 5px
+          border-color: #aaaaaa transparent transparent transparent
+          border-top-style: solid
+          position: absolute
+          left: 0.9375em
+          top: 50%
+          margin-top: -3px
+      &:hover a.selector:after, &.open a.selector:after
+        content: ""
+        display: block
+        width: 0
+        height: 0
+        border: inset 5px
+        border-color: #222222 transparent transparent transparent
+        border-top-style: solid
+      .disabled
+        color: #888888
+        &:hover
+          background: transparent
+          color: #888888
+          &:after
+            display: none
+      &.open ul
+        display: block
+        z-index: 10
+        min-width: 100%
+        -moz-box-sizing: content-box
+        -webkit-box-sizing: content-box
+        box-sizing: content-box
+      &.small
+        max-width: 134px
+      &.medium
+        max-width: 254px
+      &.large
+        max-width: 434px
+      &.expand
+        width: 100% !important
+      &.open
+        &.small ul
+          min-width: 134px
+          -moz-box-sizing: border-box
+          -webkit-box-sizing: border-box
+          box-sizing: border-box
+        &.medium ul
+          min-width: 254px
+          -moz-box-sizing: border-box
+          -webkit-box-sizing: border-box
+          box-sizing: border-box
+        &.large ul
+          min-width: 434px
+          -moz-box-sizing: border-box
+          -webkit-box-sizing: border-box
+          box-sizing: border-box
+      ul
+        position: absolute
+        width: auto
+        display: none
+        margin: 0
+        left: -1px
+        top: auto
+        -webkit-box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1)
+        box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1)
+        margin: 0
+        padding: 0
+        background: white
+        border: solid 1px #cccccc
+        font-size: 16px
+        li
+          color: #555555
+          font-size: 0.875em
+          cursor: default
+          padding-top: 0.25em
+          padding-bottom: 0.25em
+          padding-left: 0.375em
+          padding-right: 2.375em
+          min-height: 1.5em
+          line-height: 1.5em
+          margin: 0
+          white-space: nowrap
+          list-style: none
+          &.selected
+            background: #eeeeee
+            color: black
+          &:hover
+            background-color: #e4e4e4
+            color: black
+          &.selected:hover
+            background: #eeeeee
+            cursor: default
+            color: black
+        &.show
+          display: block
+    &.disabled
+      background: #dddddd
+/* Custom input, disabled
+
+/* Custom Select Options and Dropdowns
+/*END: Form Classes*/
+
 /* END: override foundation classes */
 
 /*START: Header classes*/
@@ -443,6 +803,9 @@ h4
   h1, h2, h3, h4, h5
     color: $h-tag-std-color
 
+.light-grey-dark
+  background-color: $light-grey-dark-bg !important
+
 .dark-grey
   background-color: $dark-grey-bg
   h1, h2, h3, h4, h5
@@ -460,6 +823,30 @@ h4
 
 
 /*START: General usage classes*/
+.action-list
+  list-style: none
+  display: block
+  position: relative
+  li
+    width: 100%
+    display: list-item
+    height: auto
+    margin: 0
+    padding: 10px 8px 10px 20px
+    background-color: #fff
+    line-height: 2.3em
+    overflow: hidden
+    border-top: 1px solid $light-grey-light-bg
+    &:first-child
+      border-top: none
+    span
+      color: $dark-grey-dark-bg
+    .weight
+      color: $dark-grey-light-bg
+      font-size: 0.875em
+    .button
+      margin: 0!important
+
 .tile
   width: 100%
   padding: 22px
@@ -494,11 +881,27 @@ h4
   background-color: #fff
   height: 45px
   padding: 15px 22px
+  font-size: 0.9em
+  a
+    color: $use-it-bg
+    &:hover
+      color: $use-it-bg
+
+
+
+.o-flow-hidden
+  overflow: hidden
 
 .sml
   padding: 18px 0
 
 .std
+  padding: 50px 0
+
+.std-repeater
+  padding: 50px 0 0 0
+
+.std-repeater-last
   padding: 50px 0
 
 .full-width
@@ -515,6 +918,12 @@ hr
 
 .light-grey-top-border
   border-top: 1px solid $light-grey-bg
+
+.light-grey-top-bottom-border
+  border:
+    width: 1px 0
+    style: solid
+    color: $light-grey-bg
 
 .no-margin
   margin: 0!important
@@ -536,6 +945,20 @@ hr
 
 .margin-bottom-40
   margin-bottom: 40px!important
+
+p.intro
+  font:
+    size: 1.313em
+    weight: 400
+
+p
+  a
+    color: $dark-grey-light-bg
+    text-decoration: underline
+    &:hover
+      color: $dark-grey-light-bg
+
+
 /*END: General usage classes*/
 
 .global-header
@@ -684,7 +1107,11 @@ hr
         background-position: -32px 0px
 
     .name
-      padding-top: 18px
+      color: #fff
+      font-weight: 700
+      vertical-align: middle
+      top: -10px
+      padding-left: 10px
     a, span
       display: inline-block
       height: auto
@@ -699,7 +1126,7 @@ hr
       color: #929292
       text-decoration: underline
       padding-top: 0px
-      padding-left: 10px
+      padding-left: 0px
       font-style: italic
       vertical-align: middle
       top: -10px
@@ -761,6 +1188,9 @@ hr
   .respond
     display: block
 
+
+.lt-ie9 .nav-holder .row nav.top-bar section ul.top-level li a
+  padding: $lt-ie9-topbar-link-padding
 
 .nav-holder
   font-family: $gothic-font-family
@@ -904,13 +1334,13 @@ hr
               .dropdown
                 background-color: $dark-grey-bg!important
                 li
-                  background-color: inherit
+                  background-color: $dark-grey-bg!important
           .search-it.hover
             background-color: $dark-grey-bg!important
             .dropdown
               background-color: $dark-grey-bg!important
               li
-                background-color: inherit
+                background-color: $dark-grey-bg!important
           a
             background-color: transparent
             font-size: $topbar-link-font-size
@@ -922,6 +1352,7 @@ hr
               width: 100%
               margin: 0
               padding: 0
+              list-style: none
               .search-holder
                 padding: 2.7em 0 3.5em
                 height: auto
@@ -988,6 +1419,13 @@ hr
       color: rgba(255,255,255, 0.5)
       text-decoration: underline
 
+.lt-ie9
+  .breadcrumbs a, .subheader h3
+    color: #fff
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
+    &:before
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
+
 .headings
   background-image: url(img/heading-bg-1.png), url(img/heading-bg-2.png), url(img/heading-bg-3.png), url(img/heading-bg-4.png), url(img/heading-bg-5.png)
   background-repeat: no-repeat, repeat-y, repeat-y, repeat-y, repeat-y
@@ -1003,6 +1441,7 @@ hr
       family: $gothic-font-family
       size: 44px
     a
+      display: inline-block
       color: rgba(255,255,255,0.5)
       text-decoration: none
       border-bottom: 3px rgba(255,255,255,0.5) solid
@@ -1012,6 +1451,15 @@ hr
   .button.small
     margin-left: 20px
     margin-top: 3px
+
+.lt-ie9
+  .headings
+    h2
+      color: #fff
+      a
+        text-decoration: underline
+        color: #fff
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
 
 /*END: Headings classes*/
 
@@ -1048,7 +1496,7 @@ hr
         border-color: transparent transparent transparent #fff
         border-width: 0 0 0 8px
 
-.support-suite
+.support-suite, .share-suite
   display: block
   position: relative
   list-style: none
@@ -1057,7 +1505,7 @@ hr
     padding: 12px
     height: 144px
     display: list-item
-    margin: 0 0 10px 0
+    margin: 0 0 0 0
     border: 1px solid transparent
     border-radius: 3px
     transition:
@@ -1146,14 +1594,54 @@ hr
           left: 9px
           width: 24px
           height: 24px
+      .comment
+        &:before
+          background-position: -76px -155px
+          top: 9px
+          left: 9px
+          width: 24px
+          height: 24px
+      .add-comment
+        &:before
+          background-position: -101px -155px
+          top: 9px
+          left: 9px
+          width: 24px
+          height: 23px
+      .like
+        &:before
+          background-position: -127px -155px
+          top: 10px
+          left: 9px
+          width: 24px
+          height: 24px
+      .subscribe
+        &:before
+          background-position: -157px -155px
+          top: 8px
+          left: 10px
+          width: 24px
+          height: 24px
+      .share
+        &:before
+          background-position: -187px -155px
+          top: 10px
+          left: 9px
+          width: 24px
+          height: 24px
       h5
         font-size: 1em
+        span
+          font:
+            size: 0.75em
+            weight: 300
+          color: $dark-grey-light-bg
       p
         font-size: 0.75em
         color: $dark-grey-light-bg
 
 .light-grey-light
-  .support-suite
+  .support-suite, .share-suite
     li
       &:hover
         background-color: #fff!important
@@ -1169,6 +1657,9 @@ hr
         div
           background-color: $dark-grey-light-bg
 
+.share-suite
+  li
+    height: 110px!important
 
 .whats-new
   background-color: #fff
@@ -1280,7 +1771,7 @@ hr
           position: relative
           float: left
           clear: right
-          color: #8a9096
+          color: $dark-grey-light-bg
           font:
             size: 0.8em
             family: $body-font-family
@@ -1288,7 +1779,7 @@ hr
             position: relative
             text-decoration: underline
             display: inline
-            color: #8a9096
+            color: $dark-grey-light-bg
 
 .slider-holder
   width: 100%
@@ -1579,7 +2070,7 @@ hr
 
 
 
-/*START: Filter classes*/
+/*START: Filter/Tag classes*/
 .filter-holder
   h2
     float: left
@@ -1600,9 +2091,10 @@ hr
     font-size: 0.813em
     color: $dark-grey-light-bg
     text-decoration: underline
-  .filter-area
-    margin-top: 20px
-  .filter-box
+
+.filter-area, .tag-area
+  margin-top: 20px
+  .filter-box, .tag-box
     postion: relative
     display: block
     clear: both
@@ -1627,15 +2119,15 @@ hr
         color: $std-font-color
       transition:
         property: background-color, color
-        duration: 0.5s
+        duration: 0.25s
         timing-function: ease-out
       -moz-transition:
         property: background-color, color
-        duration: 0.5s
+        duration: 0.25s
         timing-function: ease-out
       -webkit-transition:
         property: background-color, color
-        duration: 0.5s
+        duration: 0.25s
         timing-function: ease-out
       &:hover
         color: $std-font-color
@@ -1645,7 +2137,13 @@ hr
       &:hover
         background-color: $dark-grey-light-bg
         color: #fff
+
+.tag-area
+  margin-top: 0px!important
+  .tag-box
+    max-height: 45px
 /*END: Filter classes*/
+
 
 .tile-holder
   display: block
@@ -1809,6 +2307,8 @@ hr
 
 
 .new-discussion
+  h2
+    font-family: $gothic-font-family
   .avatar
     width: 124px
     height: 124px
@@ -1820,7 +2320,7 @@ hr
 
 
 footer
-  border-bottom: 1px solid #424a53
+  border-bottom: 1px solid $dark-grey-dark-bg
   padding: 30px 0 10px
   margin: 0
   text-align: center
@@ -1983,8 +2483,8 @@ blockquote
         width: 8px
         height: 8px
 
-  .support-suite
-    margin: 0 auto !important
+  .support-suite, .share-suite
+    margin: 0 auto 10px auto!important
     li
       width: 100%
 

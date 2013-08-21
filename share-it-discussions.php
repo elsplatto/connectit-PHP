@@ -74,7 +74,7 @@ $pageType = 'share-it';
         </div>
     </section>
 
-    <section class="light-grey-light std">
+    <section class="light-grey-light std o-flow-hidden">
         <div class="row">
             <div class="large-12 columns margin-bottom-18">
                 <h2>Showing discussions for</h2>

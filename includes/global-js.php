@@ -6,9 +6,11 @@
 
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/plugins/jquery/scroll-start-stop.js"></script>
+<script src="js/vendor/plugins/jquery/jq-slickWrap.js"></script>
 
 <script>
     $(function() {
+        $('img.wrap').slickWrap();
         $('#btnSideNav').click( function(e) {
             e.preventDefault();
             if ($('body').hasClass('active'))

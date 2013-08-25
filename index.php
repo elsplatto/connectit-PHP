@@ -392,6 +392,11 @@ $pageType = 'home';
         var arrowPosition = 0;
         var i = 0;
 
+        if ($('html').hasClass('lt-ie9'))
+        {
+            offset = 14;
+        }
+
         for (i = 0;i < sliderNextArrow.length; i++)
         {
             sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;

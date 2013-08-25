@@ -28,33 +28,21 @@ $pageType = 'share-it';
                 <a href="#" class="toggle-view toggle-icon large" data-target="share-it-filters" data-state="open">Toggle Filter View</a>
             </div>
             <div id="share-it-filters" class="large-12 columns filter-area">
-                <h6>By Outcome</h6>
+                <h6>Show activity for:</h6>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
                 <div class="filter-box light-grey-top-border">
-                    <a href="#" title="Click to select/deselect">BYOD</a>
-                    <a href="#" title="Click to select/deselect">Tools for this and that...</a>
-                    <a href="#" title="Click to select/deselect">Building Networks Through Social Media</a>
-                    <a href="#" title="Click to select/deselect">Gaming for Learning</a>
-                    <a href="#" title="Click to select/deselect" class="selected">Web Tools For All Classrooms</a>
-                    <a href="#" title="Click to select/deselect">Contemporary Learning Through 21st Century Skills</a>
-                    <a href="#" title="Click to select/deselect">Collaborating in the Cloud</a>
-                    <a href="#" title="Click to select/deselect">Connect Classrooms</a>
-                    <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
+                    <a href="#nswprimaryteachers" title="Click to select/deselect">#nswprimaryteachers</a>
+                    <a href="#nswsecondaryteachers" title="Click to select/deselect">#nswsecondaryteachers</a>
+                    <a href="#education" title="Click to select/deselect">#education</a>
+                    <a href="#water" title="Click to select/deselect">#water</a>
+                    <a href="#nswgovt" title="Click to select/deselect" class="selected">#nswgovt</a>
                 </div>
-
-                <h6>By Product</h6>
-                <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
-                <div class="filter-box light-grey-top-border">
-                    <a href="#" title="Click to select/deselect">ITD Products</a>
-                    <a href="#" title="Click to select/deselect">Email</a>
-                    <a href="#" title="Click to select/deselect">Software</a>
-                    <a href="#" title="Click to select/deselect">Audio</a>
-                    <a href="#" title="Click to select/deselect" class="selected">Phones</a>
-                    <a href="#" title="Click to select/deselect">Printers</a>
-                    <a href="#" title="Click to select/deselect">Tablets</a>
-                    <a href="#" title="Click to select/deselect">Whiteboards</a>
+                <div class="soc-media-search light-grey-top-border padding-top-20">
+                    <form id="frmSocMediaSearch">
+                        <label for="search-social" class="hide">Search</label>
+                        <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search-social" type="search" class="large no-margin" placeholder="Enter keyword" />
+                    </form>
                 </div>
-
             </div>
         </div>
     </section>
@@ -66,6 +54,8 @@ $pageType = 'share-it';
                 <h6>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h6>
                 <hr />
             </div>
+
+            <div class="twitterfeed"></div>
 
             <div class="large-12 columns margin-bottom-18">
                 <div class="wide-tile white sml twitter">
@@ -158,6 +148,10 @@ $pageType = 'share-it';
 
     <script>
         $(function() {
+
+
+
+
             $('.toggle-view').click(function(e){
                 e.preventDefault();
                 var targetEl = $('#'+$(this).attr('data-target'));

@@ -19,6 +19,9 @@
                     <a href="share-it.php">Share.It</a>
                 </li>
                 <li>
+                    <a href="about-it.php">About.It</a>
+                </li>
+                <li>
                     <a href="#">Find.It</a>
                 </li>
             </ul>

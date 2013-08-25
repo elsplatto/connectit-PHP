@@ -26,7 +26,7 @@ $pageType = 'fix-it';
             <div class="large-12 columns">
                 <form id="frmSearchProducts">
                     <label for="search-products" class="hide">Search</label>
-                    <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search" type="search" class="large no-margin" placeholder="Search the knowledge base 24/7" />
+                    <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search-products" type="search" class="large no-margin" placeholder="Search the knowledge base 24/7" />
                 </form>
             </div>
         </div>

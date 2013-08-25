@@ -266,12 +266,12 @@ $pageType = 'about-it';
             <h2>Policies</h2>
 
             <ul class="action-list text-left margin-top-40">
-                <li><span">Social Media Policy</span> <span class="weight">(.PDF 800kB)</span><a href="#" class="button flat green download right">Download</a></li>
-                <li><span">Social Media Policy</span> <span class="weight">(.PDF 800kB)</span><a href="#" class="button flat green download right">Download</a></li>
-                <li><span">Social Media Policy</span> <span class="weight">(.PDF 800kB)</span><a href="#" class="button flat green download right">Download</a></li>
-                <li><span">Social Media Policy</span> <span class="weight">(.PDF 800kB)</span><a href="#" class="button flat green download right">Download</a></li>
-                <li><span">Social Media Policy</span> <span class="weight">(.PDF 800kB)</span><a href="#" class="button flat green download right">Download</a></li>
-                <li><span">Social Media Policy</span> <span class="weight">(.PDF 800kB)</span><a href="#" class="button flat green download right">Download</a></li>
+                <li><div><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
+                <li><div><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
+                <li><div><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
+                <li><div><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
+                <li><div><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
+                <li><div><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
             </ul>
 
         </div>

@@ -1,4 +1,4 @@
-/*jslint unparam: true, browser: true, indent: 2 */
+ /*jslint unparam: true, browser: true, indent: 2 */
 
 ;(function ($, window, document, undefined) {
   'use strict';
@@ -38,7 +38,7 @@
 
     init : function (scope, method, options) {
       Foundation.inherit(this, 'data_options delay');
-
+        //console.dir(scope)
       if (typeof method === 'object') {
         $.extend(true, this.settings, method);
       } else if (typeof options !== 'undefined') {
@@ -52,6 +52,8 @@
       } else {
         return this[method].call(this, options);
       }
+
+
     },
 
     events : function () {
@@ -109,6 +111,7 @@
 
     open : function (target, ajax_settings) {
       if (target) {
+
         if (typeof target.selector !== 'undefined') {
           var modal = $('#' + target.data('reveal-id'));
         } else {
@@ -128,7 +131,11 @@
             .data('offset', this.cache_offset(modal));
         }
 
+        //console.log(modal.data('css-top'));
+
         modal.trigger('open');
+
+
 
         if (open_modal.length < 1) {
           this.toggle_bg(modal);
@@ -200,6 +207,9 @@
       // is modal
       if (css) {
         if (/pop/i.test(this.settings.animation)) {
+          console.log(el.data('offset')) ;
+          console.log(el.data('css-top'));
+          console.log($(window).scrollTop());
           css.top = $(window).scrollTop() - el.data('offset') + 'px';
           var end_css = {
             top: $(window).scrollTop() + el.data('css-top') + 'px',

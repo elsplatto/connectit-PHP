@@ -25,7 +25,7 @@ $pageType = 'share-it';
                 <img src="media/img/avatars/profileLge.jpg" class="avatar" />
             </div>
             <div class="large-10 columns">
-                <h2>Jason Taikato</h2>
+                <h3>Jason Taikato</h3>
                 <form id="frmNewDiscussion" data-abide>
                     <label for="fldSubject">Subject</label>
                     <input type="text" id="fldSubject" name="fldSubject" />

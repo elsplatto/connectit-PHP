@@ -125,29 +125,122 @@ body
   font-family: $body-font-family
   background-color: $footer-bg!important
 
-h1, h2, h3
+
+/*START: Header classes*/
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1em !important
+
+h1
+  font-size: 2.75em
+  font-weight: 400 !important
+  color: #fff !important
+
+h2, h4
   font-family: $serif-font-family
-  color: $h-tag-std-color
+h1, h3, h5, h6
+  font-family: $gothic-font-family
+
+
 h2
-  font-size: 1.875em
+  font-size: 1.875em !important
   font-weight: 400
+  margin-bottom: 20px !important
+  a
+    color: inherit
+    &:hover
+      color: inherit
 
+h3
+  font-size: 1.5em!important
+  font-weight: 400
+  margin-bottom: 18px !important
+  a
+    color: inherit
+    &:hover
+      color: inherit
+h4
+  font-size: 1.313em!important
+  font-weight: 300!important
+  margin-bottom: 16px !important
+  a
+    color: inherit
+    &:hover
+      color: inherit
 h5
-  font:
-    family: $gothic-font-family
-    size: 0.75em
-    weight: 500
-
+  font-size: 0.813em !important
+  text-transform: uppercase !important
+  margin-bottom: 14px !important
+  color: $dark-grey-light-bg !important
+  a
+    color: inherit
+    &:hover
+      color: inherit
 h6
-  font:
-    family: $gothic-font-family
-    size: 0.8em
-    weight: 425
-  letter-spacing: 0.15em
-  text-transform: uppercase
-  padding: 0 0 10px 0
-  margin: 0
+  font-size: 1em!important
+  margin-bottom: 14px !important
+  a
+    color: inherit
+    &:hover
+      color: inherit
 
+/*END: Header classes*/
+
+/*START: Standard Typography*/
+p.intro
+  font:
+    size: 1.313em
+    weight: 400
+
+p
+  a
+    color: $about-it-dark-bg
+    text-decoration: underline
+    &:hover
+      color: $about-it-dark-bg
+
+.caption
+  color: $dark-grey-light-bg
+  font-size: 0.875em
+  font-style: italic
+
+ol, ul
+  list-style-position: outside
+  padding-left: 10px
+  li
+    margin: 0 20px 0 40px
+    padding: 0 0 20px 20px
+
+blockquote
+  margin: 20px 0 20px -40px
+  border-left: 3px solid $explore-it-bg
+  padding: 0 0 0 40px
+  p
+    padding: 0 0 20px 0
+    margin: 0
+    color: $explore-it-bg
+    font:
+      size: 1.625em
+    &:last-child
+      padding: 0
+
+img.right
+  margin: 0 0 20px 36px
+
+img.left
+  margin: 0 36px 20px 0
+
+.content-offset
+  img.right
+    margin: 0 -80px 20px 36px
+
+.content-offset
+  img.left
+    margin: 0 36px 20px -80px
+
+
+
+/*END: Standard Typography*/
 
 /*START: Kick-down classes*/
 /*Classes that don't have properties but are used to manipulate other classes*/
@@ -156,32 +249,32 @@ h6
   a
     &:hover
       color: $use-it-bg
-  h6
-    color: $use-it-bg
+  h5
+    color: $use-it-bg !important
     a
       color: inherit
   .themed
-    color: $use-it-bg!important
+    color: $use-it-bg !important
   .headings
     background-color: $use-it-bg
 .body-fix-it
   a
     &:hover
       color: $fix-it-bg
-  h6
-    color: $fix-it-bg
+  h5
+    color: $fix-it-bg !important
     a
       color: inherit
   .themed
-    color: $fix-it-bg!important
+    color: $fix-it-bg !important
   .headings
     background-color: $fix-it-bg
 .body-explore-it
   a
     &:hover
       color: $explore-it-bg
-  h6
-    color: $explore-it-bg
+  h5
+    color: $explore-it-bg !important
     a
       color: inherit
   .themed
@@ -192,8 +285,8 @@ h6
   a
     &:hover
       color: $share-it-bg
-  h6
-    color: $share-it-bg
+  h5
+    color: $share-it-bg !important
     a
       color: inherit
   .themed
@@ -206,8 +299,8 @@ h6
       color: $about-it-bg
     a
       color: inherit
-  h6
-    color: $about-it-bg
+  h5
+    color: $about-it-bg !important
   .themed
     color: $about-it-bg
   .headings
@@ -218,8 +311,8 @@ h6
       color: $other-bg
     a
       color: inherit
-  h6
-    color: $other-bg
+  h5
+    color: $other-bg!important
   .themed
     color: $other-bg
   .headings
@@ -251,10 +344,32 @@ h6
 
 /*START: Buttons*/
 
+.mark-as-read
+  position: relative
+  text-indent: -10000px
+  width: 36px
+  height: 36px
+  padding: 0px
+  &:before
+    content: ''
+    position: absolute
+    width: 18px
+    height: 18px
+    top: 5px
+    left: 7px
+    background-image: url(img/icon-sprite.png)
+    background-position: -217px -161px
+
+
+
+h1 + .button
+  position: relative
+  float: left
+
 .button.flat
   box-shadow: none!important
-  padding: 0.6em 1em!important
-  font-weight: 300!important
+  padding: 0.65em 1em!important
+  font-weight: 500!important
   font-size: 0.813em!important
 
 .lt-ie9
@@ -310,14 +425,19 @@ button.dark-red, .button.dark-red
   box-shadow: none
 
 button.small, .button.small
-  font-weight: normal
+  font-weight: 500
 
 .button
   &:hover
     color: #fff!important
 
+.action-list
+  li
+    .button + .button
+      margin-right: 10px!important
+
 .button + .button
-  margin-right: 20px
+  margin-right: 20px!important
 
 /*END: Buttons*/
 
@@ -804,17 +924,30 @@ form.custom
 /* Custom Select Options and Dropdowns
 /*END: Form Classes*/
 
+/*START: Sidenav Classes*/
+.side-nav
+  font-size: 1em
+  margin: 0
+  padding: 20px 0
+  border-top: 1px solid $light-grey-dark-bg
+  li
+    font-size: 1em !important
+    padding: 0 0 10px 0 !important
+    a
+      color: $dark-grey-light-bg
+      font-size: 1em
+      font-weight: 500
+  .active
+    a
+      color: $other-dark-bg!important
+      font-weight: 500!important
+
+
+/*END: Sidenav Classes*/
+
 /* END: override foundation classes */
 
-/*START: Header classes*/
 
-h1, h2, h3
-  color: #fff
-  font-family: $serif-font-family
-h4
-  font-family: $gothic-font-family
-
-/*END: Header classes*/
 
 
 /*START: background colour classes*/
@@ -836,26 +969,30 @@ h4
 
 .white
   background-color: #fff
-  h1, h2, h3, h4, h5
+  h1, h2, h3, h4, h5, h6
     color: $h-tag-std-color
 
 .light-grey-light
   background-color: $light-grey-light-bg
   h1, h2, h3, h4, h5
     color: $h-tag-std-color
+  h6
+    color: $dark-grey-dark-bg
 
 .light-grey-dark
   background-color: $light-grey-dark-bg !important
 
 .dark-grey
   background-color: $dark-grey-bg
-  h1, h2, h3, h4, h5
+  h1, h2, h3, h4, h5, h6
     color: #fff
   p
     color: $light-grey-dark-bg
 
 .dark-grey-dark
   background-color: $dark-grey-dark-bg
+  h1, h2, h3, h4, h5, h6
+    color: #fff
   p
     color: $light-grey-dark-bg
 
@@ -864,6 +1001,49 @@ h4
 
 
 /*START: General usage classes*/
+
+.news-list
+  .list
+    .date
+      color: $dark-grey-light-bg
+    h2
+      font-family: $gothic-font-family
+      margin: 0.3em 0 0.5em 0
+      a
+        color: inherit
+    p
+      .read-more
+        color: $about-it-dark-bg
+        text-decoration: none
+
+
+.content
+  float: left
+  .header
+    font-size: 1em
+    margin-bottom: 40px
+    span, a, strong
+      float: left
+    .timestamp
+      font-size: 0.875em
+      color: $dark-grey-light-bg
+      font-style: italic
+      display: list-item
+      float: left
+      margin-left: 25px
+      position: relative
+      top: 1px
+      list-style-type: disc
+  h5
+    font-size: 1.2em
+  p
+    clear: both
+    font-size: 1em
+    margin-bottom: 10px
+    .read-more
+      color: $about-it-dark-bg
+      text-decoration: none
+
 .action-list
   list-style: none
   display: block
@@ -881,8 +1061,8 @@ h4
     border-top: 1px solid $light-grey-dark-bg
     &:first-child
       border-top: none
-    div
-      width: 80%!important
+    div.header
+      width: 70%!important
       overflow: hidden
       text-overflow: ellipsis
       white-space: nowrap
@@ -899,6 +1079,10 @@ h4
       font-size: 0.875em
     .button
       margin: 0!important
+    .preview
+      display: block
+      .content
+        margin-top: 20px
 
 .urgent
   li
@@ -914,7 +1098,7 @@ h4
       left: 16px
       background-image: url(img/icon-sprite.png)
       background-position: -76px -181px
-    div
+    div.header
       width: 80%!important
       overflow: hidden
       text-overflow: ellipsis
@@ -1057,6 +1241,10 @@ hr
 .margin-bottom-20
   margin-bottom: 20px!important
 
+.margin-top-bottom-20
+  margin-top: 20px!important
+  margin-bottom: 20px!important
+
 .margin-left-20
   margin-left: 20px!important
 
@@ -1066,17 +1254,11 @@ hr
 .margin-bottom-40
   margin-bottom: 40px!important
 
-p.intro
-  font:
-    size: 1.313em
-    weight: 400
+.margin-top-bottom-40
+  margin-top: 40px!important
+  margin-bottom: 40px!important
 
-p
-  a
-    color: $dark-grey-light-bg
-    text-decoration: underline
-    &:hover
-      color: $dark-grey-light-bg
+
 
 .reveal-modal
   border:
@@ -1235,6 +1417,7 @@ p
         background-position: -32px 0px
 
     .name
+      font-size: 0.875em
       color: #fff
       font-weight: 700
       vertical-align: middle
@@ -1251,6 +1434,7 @@ p
       color: #fff
       padding: 0 10px
     .logout
+      font-size: 0.875em
       color: #929292
       text-decoration: underline
       padding-top: 0px
@@ -1369,8 +1553,9 @@ li.unread
           li
             height: $topbar-height
             background-color: $topbar-bg
-            width: 16.3333333%
+            width: 16.05%
             padding: 0
+            margin: 0
             border-style: solid
             border-color: $topbar-nav-border-color
             border-width: 0 1px 0 0
@@ -1556,7 +1741,7 @@ li.unread
 
 /*START: Headings classes*/
 .breadcrumbs a, .subheader h3
-  padding: 0
+  padding: 0 0 10px 0
   margin: 0
   background: none
   border: none!important
@@ -1580,34 +1765,51 @@ li.unread
     &:before
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
 
+.headings.public-profile
+  text-align: center
+  max-height: 180px
+  overflow: visible
+  h1
+    display: block
+    clear: both
+    width: 100%
+    text-align: center
+    margin-bottom: 15px
+  .avatar-holder
+    clear: both
+
+
+
 .headings
   background-image: url(img/heading-bg-1.png), url(img/heading-bg-2.png), url(img/heading-bg-3.png), url(img/heading-bg-4.png), url(img/heading-bg-5.png)
   background-repeat: no-repeat, repeat-y, repeat-y, repeat-y, repeat-y
   background-position: bottom right, 90% 99%, 85% 99%, 88% 99%, 99% 79%
   padding: 50px 0
-  h2
+  h1, h2
     float: left
     padding: 0
-    margin: 0 20px 0 0
-    line-height: 1em
+    margin: 0 20px 0 0 !important
+    line-height: 1em !important
     color: rgba(255,255,255,1)
     font:
       family: $gothic-font-family
-      size: 44px
+      size: 2.75em !important
     a
       display: inline-block
-      color: rgba(255,255,255,0.5)
+      color: rgba(255,255,255,0.8)
       text-decoration: none
-      border-bottom: 3px rgba(255,255,255,0.5) solid
+      border-bottom: 3px rgba(255,255,255,0.8) solid
       &:hover
-        color:  rgba(255,255,255,0.5)
+        color:  rgba(255,255,255,0.8)
+  h3
+    margin-bottom: 10px !important
 
   .button.small
     margin-top: 3px
 
 .lt-ie9
   .headings
-    h2
+    h1, h2
       color: #fff
       a
         text-decoration: underline
@@ -1636,6 +1838,8 @@ li.unread
     .grey
       background-color: $grey-bg
     li
+      margin: 0
+      padding: 0
       img
         margin: 0 auto
   .orbit-timer
@@ -1852,6 +2056,7 @@ li.unread
       display: block
       width: 100%
       height: auto
+      margin: 0
       padding: 15px 0
       overflow: hidden
       border:
@@ -1945,7 +2150,10 @@ li.unread
     padding: 0
   ul
     width: 100%
+    margin: 0
     li
+      margin: 0
+      padding: 0
       width: 100%
       div
         float: left
@@ -1964,43 +2172,49 @@ li.unread
           clear: both
           height: 8.813em
           padding: 1.25em
-          h3
+          h4
             font:
               size: 1.313em
               weight: 400
             color: $h-tag-std-color
-          h4
+          h5
             font-size: 0.75em
             text-transform: uppercase
       .use-it
         img
           border-color: $use-it-bg
         .heading
-          h4
+          h5
             color: $use-it-bg
       .fix-it
         img
           border-color: $fix-it-bg
         .heading
-          h4
+          h5
             color: $fix-it-bg
       .explore-it
         img
           border-color: $explore-it-bg
         .heading
-          h4
+          h5
             color: $explore-it-bg
       .share-it
         img
           border-color: $share-it-bg
         .heading
-          h4
+          h5
             color: $share-it-bg
       .about-it
         img
           border-color: $about-it-bg
         .heading
-          h4
+          h5
+            color: $about-it-bg
+      .other
+        img
+          border-color: $about-it-bg
+        .heading
+          h5
             color: $about-it-bg
   .orbit-container
     background: inherit
@@ -2012,6 +2226,7 @@ li.unread
     .orbit-bullets
       position: relative
       top: 20px
+
     .orbit-next
       height: 20.25em
       margin: 0
@@ -2128,6 +2343,8 @@ li.unread
         padding: 0!important
         margin: 0!important
         li
+          padding: 0!important
+          margin: 0!important
           clear: both
           width: 100%
           height: auto
@@ -2249,15 +2466,15 @@ li.unread
     margin: 0
   h2 + .toggle-view
     float: right
-  h6
+  h5
     float: left
-  h6 ~ .clear-all, h6 ~ .clear-all + .select-all
+  h5 ~ .clear-all, h5 ~ .clear-all + .select-all
     float: right
     margin-left: 10px
     font-size: 0.813em
     color: $dark-grey-light-bg
     text-decoration: underline
-  h6 ~ .select-my-groups, h6 ~ .make-selected-my-groups
+  h5 ~ .select-my-groups, h5 ~ .make-selected-my-groups
     float: left
     margin-left: 10px
     font-size: 0.813em
@@ -2389,35 +2606,15 @@ li.unread
       width: 60px
       height: 60px
   .content
-    float: left
     width: 750px
-    .header
-      font-size: 1em
-      margin-bottom: 40px
-      span, a, strong
-        float: left
-      .timestamp
-        font-size: 0.875em
-        color: $dark-grey-light-bg
-        font-style: italic
-        display: list-item
-        float: left
-        margin-left: 25px
-        position: relative
-        top: 1px
-    h5
-      font-size: 1.2em
     p
-      clear: both
-      font-size: 1.313em
-      margin-bottom: 10px
     .functions
       margin: 0
       a
         position: relative
-        font-size: 0.75em
         padding: 0 0 0 18px
         margin-left: 10px
+        text-decoration: none
         &:first-child
           margin-left: 0
         &:before
@@ -2487,7 +2684,7 @@ li.unread
   h3
     padding-bottom: 20px
 
-.my-profile
+.my-profile, .public-profile
   .profile-bar
     display: block
     width: 100%
@@ -2595,19 +2792,7 @@ footer
       width: 124px
       height: 50px
 
-blockquote
-  margin: 20px 0 13px 20px
-  border-left: 3px solid #1a7bc1
-  padding: 0 0 0 20px
-  p
-    padding: 0 0 20px 0
-    margin: 0
-    color: #7b7b7b
-    font:
-      size: 1.125em
-      style: italic
-    &:last-child
-      padding: 0
+
 
 
 
@@ -3065,8 +3250,8 @@ blockquote
 
     .orbit-bullets
       li
-        width: 8px
-        height: 8px
+        width: 0.5em
+        height: 0.5em
 
   .support-suite, .share-suite
     margin: 0 auto 10px auto!important
@@ -3074,7 +3259,19 @@ blockquote
       width: 100%
 
 
+  blockquote
+    margin: 20px 0 20px 0
 
+  .content-offset
+    img.right
+      margin: 0 0px 20px 36px
+
+  .content-offset
+    img.left
+      margin: 0 36px 20px 0px
+
+  .heading
+    background-image: none
 
 /*Sidebar nav classes*/
 

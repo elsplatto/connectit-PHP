@@ -16,7 +16,7 @@ $pageType = 'other';
     <div class="row">
         <div class="large-12 columns">
             <div class="breadcrumbs"><a href="my-profile.php">Profile</a></div>
-            <h2>Your Profile</h2><h2><a href="my-subscriptions.php">Subscriptions</a></h2>
+            <h1>Your Profile</h1><h2><a href="my-subscriptions.php">Subscriptions</a></h2>
         </div>
     </div>
 </section>
@@ -92,8 +92,9 @@ $(function() {
             }
         });
     });
-    $('.reveal-close').click(function() {
-        $('#fileModal').trigger('reveal:close');
+    $('.reveal-close').click(function(e) {
+        e.preventDefault();
+        $('#fileModal').foundation('reveal','close');
     });
 });
 
@@ -118,10 +119,8 @@ $(function() {
             <input type="submit" class="button green right" value="Upload Now" />
             <a href="#" class="button secondary reveal-close right">Cancel</a>
         </div>
-
-
-
     </form>
+    <a class="close-reveal-modal reveal-close">x</a>
 </div>
 <div class="reveal-modal-bg" style="display: none"></div>
 

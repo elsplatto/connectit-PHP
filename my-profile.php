@@ -16,7 +16,7 @@ $pageType = 'other';
     <div class="row">
         <div class="large-12 columns">
             <div class="breadcrumbs"><a href="my-profile.php">Profile</a></div>
-            <h2>Your Profile</h2><h2><a href="my-subscriptions.php">Subscriptions</a></h2>
+            <h1>Your Profile</h1><h2><a href="my-subscriptions.php">Subscriptions</a></h2>
         </div>
     </div>
 </section>
@@ -48,17 +48,17 @@ $pageType = 'other';
             <h2 class="margin-bottom-40">Notifications</h2>
 
             <ul class="action-list urgent">
-                <li><div><strong>Urgent!</strong> You have need to <a href="#">approve a comment</a> on this article.</div><a href="#" class="button flat transparent right">Action</a></li>
-                <li><div><strong>Urgent!</strong> You have need to <a href="#">approve a comment</a> on this article.</div><a href="#" class="button flat transparent right">Action</a></li>
-                <li><div><strong>Urgent!</strong> You have need to <a href="#">approve a comment</a> on this article.</div><a href="#" class="button flat transparent right">Action</a></li>
+                <li><div class="header"><strong>Urgent!</strong> You have need to <a href="#">approve a comment</a> on this article.</div><a href="#" class="button flat transparent right">Action</a></li>
+                <li><div class="header"><strong>Urgent!</strong> You have need to <a href="#">approve a comment</a> on this article.</div><a href="#" class="button flat transparent right">Action</a></li>
+                <li><div class="header"><strong>Urgent!</strong> You have need to <a href="#">approve a comment</a> on this article.</div><a href="#" class="button flat transparent right">Action</a></li>
             </ul>
 
             <ul class="action-list notifications">
-                <li class="unread"><div>You have <a href="#">3 new comments</a> and <a href="#">4 forum post replies</a> in areas you subscribe to</div><a href="#" class="button flat light-grey-dark right">Action</a></li>
-                <li class="unread"><div>The application <a href="#">Photoshop CC</a> requires a licence before you can download it.</a></div><a href="#" class="button flat light-grey-dark right">Action</a></li>
-                <li class="read"><div>You have <a href="#">3 new comments</a> and <a href="#">4 forum post replies</a> in areas you subscribe to</div></li>
-                <li class="read"><div>You have <a href="#">3 new comments</a> and <a href="#">4 forum post replies</a> in areas you subscribe to</div></li>
-                <li class="read"><div>The application <a href="#">Photoshop CC</a> requires a licence before you can download it.</a></div></li>
+                <li class="unread"><div class="header">You have <a href="#">3 new comments</a> and <a href="#">4 forum post replies</a> in areas you subscribe to</div><a href="#" class="button flat light-grey-dark right">Action</a></li>
+                <li class="unread"><div class="header">The application <a href="#">Photoshop CC</a> requires a licence before you can download it.</a></div><a href="#" class="button flat light-grey-dark right">Action</a></li>
+                <li class="read"><div class="header">You have <a href="#">3 new comments</a> and <a href="#">4 forum post replies</a> in areas you subscribe to</div></li>
+                <li class="read"><div class="header">You have <a href="#">3 new comments</a> and <a href="#">4 forum post replies</a> in areas you subscribe to</div></li>
+                <li class="read"><div class="header">The application <a href="#">Photoshop CC</a> requires a licence before you can download it.</a></div></li>
             </ul>
         </div>
     </div>

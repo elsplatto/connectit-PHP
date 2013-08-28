@@ -16,7 +16,7 @@ $pageType = 'about-it';
     <div class="row">
         <div class="large-12 columns">
             <div class="breadcrumbs"><a href="about-it.php">About.It</a></div>
-            <h2>BYOD</h2>
+            <h1>BYOD</h1>
         </div>
     </div>
 </section>
@@ -45,31 +45,31 @@ $pageType = 'about-it';
                 <li>
                     <a href="#" class="text-center">
                         <div class="comment"></div>
-                        <h5>3 Comments</h5>
+                        <h6>3 Comments</h6>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="text-center">
                         <div class="add-comment"></div>
-                        <h5>Add Comment</h5>
+                        <h6>Add Comment</h6>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="text-center">
                         <div class="like"></div>
-                        <h5>Like it <span>(33 likes)</span></h5>
+                        <h6>Like it <span>(33 likes)</span></h6>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="text-center">
                         <div class="subscribe"></div>
-                        <h5>Subscribe</h5>
+                        <h6>Subscribe</h6>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="text-center">
                         <div class="share"></div>
-                        <h5>Share</h5>
+                        <h6>Share</h6>
                     </a>
                 </li>
             </ul>
@@ -145,60 +145,60 @@ $pageType = 'about-it';
                 <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container dark-grey">
                     <li>
                         <div class="fix-it">
-                            <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Fix.IT / Video</h4>
-                                <h3>Bring in your own device scheme</h3>
+                                <h3><a href="#">Bring in your own device scheme</a></h3>
                             </div>
                         </div>
 
                         <div class="use-it">
-                            <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Use.IT / Article</h4>
-                                <h3>How to design and build a website</h3>
+                                <h3><a href="#">How to design and build a website</a></h3>
                             </div>
                         </div>
 
                         <div class="share-it">
-                            <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Share.IT / Article</h4>
-                                <h3>Connecting with your peer community</h3>
+                                <h3><a href="#">Connecting with your peer community</a></h3>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fix-it">
-                            <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Fix.IT / Video</h4>
-                                <h3>Bring in your own device scheme</h3>
+                                <h3><a href="#">Bring in your own device scheme</a></h3>
                             </div>
                         </div>
 
                         <div class="use-it">
-                            <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Use.IT / Article</h4>
-                                <h3>How to design and build a website</h3>
+                                <h3><a href="#">How to design and build a website</a></h3>
                             </div>
                         </div>
 
                         <div class="share-it">
-                            <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Share.IT / Article</h4>
-                                <h3>Connecting with your peer community</h3>
+                                <h3><a href="#">Connecting with your peer community</a></h3>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="fix-it">
-                            <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Fix.IT / Video</h4>
-                                <h3>Bring in your own device scheme</h3>
+                                <h3><a href="#">Bring in your own device scheme</a></h3>
                             </div>
                         </div>
 
@@ -211,10 +211,10 @@ $pageType = 'about-it';
                         </div>
 
                         <div class="share-it">
-                            <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
+                            <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
                             <div class="heading">
                                 <h4>Share.IT / Article</h4>
-                                <h3>Connecting with your peer community</h3>
+                                <h3><a href="#">Connecting with your peer community</a></h3>
                             </div>
                         </div>
                     </li>

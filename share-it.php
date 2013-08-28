@@ -14,7 +14,7 @@ $pageType = 'share-it';
         <div class="row">
             <div class="large-12 columns">
                 <div class="breadcrumbs"><a href="share-it.php">Share.It</a></div>
-                <h2>Social Media</h2>
+                <h1>Social Media</h1>
                 <h2><a href="share-it-discussions.php">Discussions</a></h2>
             </div>
         </div>
@@ -28,7 +28,7 @@ $pageType = 'share-it';
                 <a href="#" class="toggle-view toggle-icon large" data-target="share-it-filters" data-state="open">Toggle Filter View</a>
             </div>
             <div id="share-it-filters" class="large-12 columns filter-area">
-                <h6>Show activity for:</h6>
+                <h5>Show activity for:</h5>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
                 <div class="filter-box light-grey-top-border">
                     <a href="#nswprimaryteachers" title="Click to select/deselect">#nswprimaryteachers</a>
@@ -51,7 +51,7 @@ $pageType = 'share-it';
         <div class="row">
             <div class="large-12 columns margin-bottom-18">
                 <h2>Showing social media activity for</h2>
-                <h6>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h6>
+                <h5>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h5>
                 <hr />
             </div>
 

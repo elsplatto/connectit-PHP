@@ -15,7 +15,7 @@ $pageType = 'use-it'
         <div class="row">
             <div class="large-12 columns">
                 <div class="breadcrumbs"><a href="use-it.php">Use.It</a></div>
-                <h2>Training Guides</h2>
+                <h1>Training Guides</h1>
             </div>
         </div>
     </section>

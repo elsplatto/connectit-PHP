@@ -1,5 +1,5 @@
 <?php
-$pageType = 'about-it';
+$pageType = 'other';
 ?>
 
 
@@ -15,31 +15,57 @@ $pageType = 'about-it';
 <section class="headings">
     <div class="row">
         <div class="large-12 columns">
-            <div class="subheader"><h3>Services &amp; Partners</h3></div>
-            <h1>About.It</h1>
+            <div class="breadcrumbs"><a href="#">Tag List</a></div>
+            <h1>Tags</h1>
         </div>
     </div>
 </section>
 
-<section class="white std">
+<section class="filter-holder white std">
     <div class="row">
         <div class="large-12 columns">
-            <p class="intro">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-            </p>
+            <h2>Filter</h2>
+            <!--Note: data-target attribute in anchor element should be the ID of the element you want to hide/show-->
+            <a href="#" class="toggle-view toggle-icon large" data-target="tag-filters" data-state="open">Toggle Filter View</a>
+        </div>
+        <div id="tag-filters" class="large-12 columns filter-area">
+            <h5>By Outcome</h5>
+            <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
+            <div class="filter-box light-grey-top-border">
+                <a href="#" title="Click to select/deselect">BYOD</a>
+                <a href="#" title="Click to select/deselect">Tools for this and that...</a>
+                <a href="#" title="Click to select/deselect">Building Networks Through Social Media</a>
+                <a href="#" title="Click to select/deselect">Gaming for Learning</a>
+                <a href="#" title="Click to select/deselect" class="selected">Web Tools For All Classrooms</a>
+                <a href="#" title="Click to select/deselect">Contemporary Learning Through 21st Century Skills</a>
+                <a href="#" title="Click to select/deselect">Collaborating in the Cloud</a>
+                <a href="#" title="Click to select/deselect">Connect Classrooms</a>
+                <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
+            </div>
+
+            <h5>By Product</h5>
+            <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
+            <div class="filter-box light-grey-top-border">
+                <a href="#" title="Click to select/deselect">ITD Products</a>
+                <a href="#" title="Click to select/deselect">Email</a>
+                <a href="#" title="Click to select/deselect">Software</a>
+                <a href="#" title="Click to select/deselect">Audio</a>
+                <a href="#" title="Click to select/deselect" class="selected">Phones</a>
+                <a href="#" title="Click to select/deselect">Printers</a>
+                <a href="#" title="Click to select/deselect">Tablets</a>
+                <a href="#" title="Click to select/deselect">Whiteboards</a>
+            </div>
+
         </div>
     </div>
 </section>
-
-
 
 <section class="light-grey-light std-repeater">
     <div class="row">
-        <div class="large-12 columns text-center">
-            <h2>Connect.It Services</h2>
+        <div class="large-12 columns margin-bottom-18">
+            <h2>Showing content tagged with</h2>
+            <h5>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h5>
+            <hr />
         </div>
 
         <div class="large-4 columns">
@@ -195,88 +221,15 @@ $pageType = 'about-it';
             </div>
         </div>
 
-    </div>
-</section>
-
-
-<section class="light-grey-light std-repeater-last">
-    <div class="row">
-        <div class="large-12 columns text-center">
-            <h2>Partner Services</h2>
-        </div>
-
-        <div class="large-4 columns">
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/logos/adobe.png" alt="Adobe Logo" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Adobe</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#">Read Article</a>
-            </div>
-        </div>
-
-        <div class="large-4 columns">
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/logos/microsoft.png" alt="Microsoft Logo" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Microsoft</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#">Read Article</a>
-            </div>
-        </div>
-
-        <div class="large-4 columns">
-            <div class="tile white">
-                <div class="img-holder">
-                    <a href="#"><img src="media/img/logos/google.png" alt="Google Logo" /></a>
-                </div>
-                <div class="content">
-                    <h3><a href="#">Google</a></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                    </p>
-                </div>
-            </div>
-            <div class="tile-bottom">
-                <a href="#">Read Article</a>
-            </div>
+        <div class="large-12 columns text-center margin-top-bottom-40">
+            <a href="#" class="button blue">Load More</a>
         </div>
 
     </div>
 </section>
 
-<section class="light-grey-light std light-grey-top-border">
-    <div class="row">
 
-        <div class="large-12 columns text-center">
-            <h2>Policies</h2>
 
-            <ul class="action-list text-left margin-top-40">
-                <li><div class="header"><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-                <li><div class="header"><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-                <li><div class="header"><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-                <li><div class="header"><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-                <li><div class="header"><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-                <li><div class="header"><span>Social Media Policy</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-            </ul>
-
-        </div>
-    </div>
-</section>
 
 
 <?php include 'includes/global-js.php'; ?>

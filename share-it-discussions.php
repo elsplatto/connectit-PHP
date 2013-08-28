@@ -14,7 +14,7 @@ $pageType = 'share-it';
             <div class="large-12 columns">
                 <div class="breadcrumbs"><a href="share-it.php">Share.It</a></div>
                 <h2><a href="share-it.php">Social Media</a></h2>
-                <h2>Discussions</h2>
+                <h1>Discussions</h1>
             </div>
         </div>
     </section>
@@ -24,10 +24,11 @@ $pageType = 'share-it';
         <div class="row">
             <div class="large-12 columns">
                 <h2>Filter</h2>
+                <!--Note: data-target attribute in anchor element should be the ID of the element you want to hide/show-->
                 <a href="#" class="toggle-view toggle-icon large" data-target="group-it-filters" data-state="open">Toggle Filter View</a>
             </div>
             <div id="group-it-filters" class="large-12 columns filter-area">
-                <h6>Groups</h6>
+                <h5>Groups</h5>
                 <a href="#" class="select-my-groups">Select my Groups</a>
                 <a href="#" class="make-selected-my-groups">Make Selected my Groups</a>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
@@ -43,7 +44,7 @@ $pageType = 'share-it';
                     <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
                 </div>
 
-                <h6>By Outcome</h6>
+                <h5>By Outcome</h5>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
                 <div class="filter-box light-grey-top-border">
                     <a href="#" title="Click to select/deselect">BYOD</a>
@@ -57,7 +58,7 @@ $pageType = 'share-it';
                     <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
                 </div>
 
-                <h6>By Product</h6>
+                <h5>By Product</h5>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
                 <div class="filter-box light-grey-top-border">
                     <a href="#" title="Click to select/deselect">ITD Products</a>
@@ -78,7 +79,7 @@ $pageType = 'share-it';
         <div class="row">
             <div class="large-12 columns margin-bottom-18">
                 <h2>Showing discussions for</h2>
-                <h6>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h6>
+                <h5>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h5>
                 <hr />
             </div>
 
@@ -94,7 +95,7 @@ $pageType = 'share-it';
                     <div class="content">
                         <p class="header"><span class="handle"><strong>John Smith</strong> <span class="timestamp">2 hours ago</span></p>
                         <h5>Help setting up a printer on the school network</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">Read more</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#" class="read-more">Read more</a></p>
                         <p class="functions"><a href="#" class="subscribe">Subscribe</a> <a href="#" class="replies">10 replies</a> <a href="#" class="share">Share</a></p>
                     </div>
                 </div>
@@ -108,7 +109,7 @@ $pageType = 'share-it';
                     <div class="content">
                         <p class="header"><span class="handle"><strong>John Smith</strong> <span class="timestamp">2 hours ago</span></p>
                         <h5>Help setting up a printer on the school network</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">Read more</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#" class="read-more">Read more</a></p>
                         <p class="functions"><a href="#" class="subscribe">Subscribe</a> <a href="#" class="replies">10 replies</a> <a href="#" class="share">Share</a></p>
                     </div>
                 </div>
@@ -122,7 +123,7 @@ $pageType = 'share-it';
                     <div class="content">
                         <p class="header"><span class="handle"><strong>John Smith</strong> <span class="timestamp">2 hours ago</span></p>
                         <h5>Help setting up a printer on the school network</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">Read more</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#" class="read-more">Read more</a></p>
                         <p class="functions"><a href="#" class="subscribe">Subscribe</a> <a href="#" class="replies">10 replies</a> <a href="#" class="share">Share</a></p>
                     </div>
                 </div>
@@ -136,7 +137,7 @@ $pageType = 'share-it';
                     <div class="content">
                         <p class="header"><span class="handle"><strong>John Smith</strong> <span class="timestamp">2 hours ago</span></p>
                         <h5>Help setting up a printer on the school network</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#">Read more</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <a href="#" class="read-more">Read more</a></p>
                         <p class="functions"><a href="#" class="subscribe">Subscribe</a> <a href="#" class="replies">10 replies</a> <a href="#" class="share">Share</a></p>
                     </div>
                 </div>

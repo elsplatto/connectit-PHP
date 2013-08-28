@@ -13,7 +13,7 @@ $pageType = 'explore-it';
         <div class="row">
             <div class="large-12 columns">
                 <div class="subheader"><h3>Be Inspired</h3></div>
-                <h2>Explore.It</h2> <a href="#" class="button dark-red small">Subscribe</a>
+                <h1>Explore.It</h1> <a href="#" class="button dark-red small">Subscribe</a>
             </div>
         </div>
     </section>
@@ -39,7 +39,7 @@ $pageType = 'explore-it';
                 <a href="#" class="toggle-view toggle-icon large" data-target="explore-it-filters" data-state="open">Toggle Filter View</a>
             </div>
             <div id="explore-it-filters" class="large-12 columns filter-area">
-                <h6>By Outcome</h6>
+                <h5>By Outcome</h5>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
                 <div class="filter-box light-grey-top-border">
                     <a href="#" title="Click to select/deselect">BYOD</a>
@@ -53,7 +53,7 @@ $pageType = 'explore-it';
                     <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
                 </div>
 
-                <h6>By Product</h6>
+                <h5>By Product</h5>
                 <a href="#" class="clear-all">Clear All</a> <a href="#" class="select-all">Select All</a>
                 <div class="filter-box light-grey-top-border">
                     <a href="#" title="Click to select/deselect">ITD Products</a>
@@ -74,7 +74,7 @@ $pageType = 'explore-it';
         <div class="row">
             <div class="large-12 columns margin-bottom-18">
                 <h2>Showing inspiration for</h2>
-                <h6>collaborating in the cloud, printers, whiteboards, scanners</h6>
+                <h5>collaborating in the cloud, printers, whiteboards, scanners</h5>
                 <hr />
             </div>
 

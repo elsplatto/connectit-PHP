@@ -13,7 +13,7 @@ $pageType = 'share-it';
         <div class="row">
             <div class="large-12 columns">
                 <div class="breadcrumbs"><a href="share-it.php">Share.It</a> <a href="share-it-discussions.php">Discussions</a></div>
-                <h2>New Discussion</h2>
+                <h1>New Discussion</h1>
             </div>
         </div>
     </section>
@@ -37,7 +37,7 @@ $pageType = 'share-it';
 
 
                     <div class="tag-area">
-                        <h6>Product Groups</h6>
+                        <h5>Product Groups</h5>
 
                         <div class="tag-box light-grey-top-border">
                             <a href="#" title="Click to select/deselect">BYOD</a>
@@ -51,7 +51,7 @@ $pageType = 'share-it';
                             <a href="#" title="Click to select/deselect">Flipping the Classroom</a>
                         </div>
 
-                        <h6>Outcome</h6>
+                        <h5>Outcome</h5>
                         <div class="filter-box light-grey-top-border">
                             <a href="#" title="Click to select/deselect">ITD Products</a>
                             <a href="#" title="Click to select/deselect">Email</a>
@@ -64,7 +64,7 @@ $pageType = 'share-it';
                         </div>
 
 
-                        <h6>Group</h6>
+                        <h5>Group</h5>
                         <div class="filter-box light-grey-top-border">
                             <a href="#" title="Click to select/deselect">ITD Products</a>
                             <a href="#" title="Click to select/deselect">Email</a>

@@ -32,35 +32,35 @@ $pageType = 'home';
                     <li>
                         <a href="#" class="text-center">
                             <div class="virtual-agent"></div>
-                            <h5>Virtual Agent</h5>
+                            <h6>Virtual Agent</h6>
                             <p>Get answers by talking to our virtual agent</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="text-center">
                             <div class="lodge-ticket"></div>
-                            <h5>Lodge a Ticket</h5>
+                            <h6>Lodge a Ticket</h6>
                             <p>Got a problem? Lodge a support ticket</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="text-center">
                             <div class="call-centre"></div>
-                            <h5>Call Centre</h5>
+                            <h6>Call Centre</h6>
                             <p>Call us on 8888 8888 or request a call back</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="text-center">
                             <div class="knowledge-base"></div>
-                            <h5>Knowledge Base</h5>
+                            <h6>Knowledge Base</h6>
                             <p>Call us on 8888 8888 or request a call back</p>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="text-center">
                             <div class="communities"></div>
-                            <h5>Communities</h5>
+                            <h6>Communities</h6>
                             <p>Find and share solutions with other users</p>
                         </a>
                     </li>
@@ -73,40 +73,40 @@ $pageType = 'home';
     <section class="whats-new white std">
         <div class="row">
             <div class="large-12 columns text-center list-holder">
-                <h2>What's New</h2>
+                <h2><a href="news.php">What's New</a></h2>
                 <ul>
                     <li>
                         <div class="holder">
-                            <h4><a href="#">$5M capital funding for NSW rural and regional community-based preschool providers</a></h4>
+                            <h6><a href="#">$5M capital funding for NSW rural and regional community-based preschool providers</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div class="holder">
-                            <h4><a href="#">Last few days left to enrol. Check out our course vacancies here & take the path to success!</a></h4>
+                            <h6><a href="#">Last few days left to enrol. Check out our course vacancies here & take the path to success!</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div class="holder">
-                            <h4><a href="#">FREE fun app for preschoolers - develops literacy and numeracy skills</a></h4>
+                            <h6><a href="#">FREE fun app for preschoolers - develops literacy and numeracy skills</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div class="holder">
-                            <h4>Good luck to the <a href="#">#SWSI</a> <a href="#">#TAFE</a> students competing in the <a href="#">@WorldSkills_AU</a> joinery regionals today!</a></h4>
+                            <h6>Good luck to the <a href="#">#SWSI</a> <a href="#">#TAFE</a> students competing in the <a href="#">@WorldSkills_AU</a> joinery regionals today!</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div class="holder">
-                            <h4><a href="#">Our #Forklift program for #Moree is now next week - 23 & 24 July for training & 27 July for assessment.</a></h4>
+                            <h6><a href="#">Our #Forklift program for #Moree is now next week - 23 & 24 July for training & 27 July for assessment.</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                 </ul>
-                <a href="#" class="small button green">See all news</a>
+                <a href="news.php" class="small button green">See all news</a>
             </div>
         </div>
     </section>
@@ -119,76 +119,76 @@ $pageType = 'home';
                     <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container dark-grey">
                         <li>
                             <div class="fix-it">
-                                <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Fix.IT / Video</h4>
-                                    <h3>Bring in your own device scheme</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Fix.IT / Video</h5>
+                                    <h4><a href="#">Bring in your own device scheme</a></h4>
                                 </div>
                             </div>
 
                             <div class="use-it">
-                                <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Use.IT / Article</h4>
-                                    <h3>How to design and build a website</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Use.IT / Article</h5>
+                                    <h4><a href="#">How to design and build a website</a></h4>
                                 </div>
                             </div>
 
                             <div class="share-it">
-                                <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Share.IT / Article</h4>
-                                    <h3>Connecting with your peer community</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Share.IT / Article</h5>
+                                    <h4><a href="#">Connecting with your peer community</a></h4>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="fix-it">
-                                <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Fix.IT / Video</h4>
-                                    <h3>Bring in your own device scheme</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Fix.IT / Video</h5>
+                                    <h4><a href="#">Bring in your own device scheme</a></h4>
                                 </div>
                             </div>
 
                             <div class="use-it">
-                                <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Use.IT / Article</h4>
-                                    <h3>How to design and build a website</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
+                                <div class="heading white">
+                                    <h5>Use.IT / Article</h5>
+                                    <h4><a href="#">How to design and build a website</h4>
                                 </div>
                             </div>
 
                             <div class="share-it">
-                                <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Share.IT / Article</h4>
-                                    <h3>Connecting with your peer community</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Share.IT / Article</h5>
+                                    <h4><a href="#">Connecting with your peer community</a></h4>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="fix-it">
-                                <img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Fix.IT / Video</h4>
-                                    <h3>Bring in your own device scheme</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Fix.IT / Video</h5>
+                                    <h4><a href="#">Bring in your own device scheme</a></h4>
                                 </div>
                             </div>
 
                             <div class="use-it">
-                                <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Use.IT / Article</h4>
-                                    <h3>How to design and build a website</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Use.IT / Article</h5>
+                                    <h4><a href="#">How to design and build a website</a></h4>
                                 </div>
                             </div>
 
                             <div class="share-it">
-                                <img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" />
-                                <div class="heading">
-                                    <h4>Share.IT / Article</h4>
-                                    <h3>Connecting with your peer community</h3>
+                                <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Share.IT / Article</h5>
+                                    <h4><a href="#">Connecting with your peer community</a></h4>
                                 </div>
                             </div>
                         </li>
@@ -208,35 +208,35 @@ $pageType = 'home';
                     <li>
                         <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
                         <div class="holder">
-                            <h4><a href="#">Problem with printer</a></h4>
+                            <h6><a href="#">Problem with printer</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
                         <div class="holder">
-                            <h4><a href="#">Re: Help connecting to the network server</a></h4>
+                            <h6><a href="#">Re: Help connecting to the network server</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
                         <div class="holder">
-                            <h4><a href="#">How to design for mobile</a></h4>
+                            <h6><a href="#">How to design for mobile</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
                         <div class="holder">
-                            <h4><a href="#">Whiteboard in the classroom</a></h4>
+                            <h6><a href="#">Whiteboard in the classroom</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
                     <li>
                         <div><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
                         <div class="holder">
-                            <h4><a href="#">Thoughts on online communities</a></h4>
+                            <h6><a href="#">Thoughts on online communities</a></h6>
                             <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                         </div>
                     </li>
@@ -260,7 +260,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
                                 </div>
                                 <div class="use-it heading">
-                                    <h3>Microsoft Office</h3>
+                                    <h4>Microsoft Office</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
                                 </div>
                                 <div class="use-it heading">
-                                    <h3>Photoshop Elements</h3>
+                                    <h4>Photoshop Elements</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
                                 </div>
                                 <div class="about-it heading">
-                                    <h3>Minecraft</h3>
+                                    <h4>Minecraft</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -289,7 +289,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
                                 </div>
                                 <div class="share-it heading">
-                                    <h3>Microsoft Office</h3>
+                                    <h4>Microsoft Office</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
                                 </div>
                                 <div class="use-it heading">
-                                    <h3>Photoshop Elements</h3>
+                                    <h4>Photoshop Elements</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
                                 </div>
                                 <div class="explore-it heading">
-                                    <h3>Minecraft</h3>
+                                    <h4>Minecraft</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
                                 </div>
                                 <div class="fix-it heading">
-                                    <h3>Microsoft Office</h3>
+                                    <h4>Microsoft Office</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -327,7 +327,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
                                 </div>
                                 <div class="share-it heading">
-                                    <h3>Photoshop Elements</h3>
+                                    <h4>Photoshop Elements</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -336,7 +336,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
                                 </div>
                                 <div class="use-it heading">
-                                    <h3>Minecraft</h3>
+                                    <h4>Minecraft</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -347,7 +347,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
                                 </div>
                                 <div class="fix-it heading">
-                                    <h3>Microsoft Office</h3>
+                                    <h4>Microsoft Office</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -356,7 +356,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
                                 </div>
                                 <div class="share-it heading">
-                                    <h3>Photoshop Elements</h3>
+                                    <h4>Photoshop Elements</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
@@ -365,7 +365,7 @@ $pageType = 'home';
                                     <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
                                 </div>
                                 <div class="use-it heading">
-                                    <h3>Minecraft</h3>
+                                    <h4>Minecraft</h4>
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>

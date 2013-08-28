@@ -14,7 +14,7 @@ $pageType = 'use-it';
         <div class="row">
             <div class="large-12 columns">
                 <div class="subheader"><h3>How to Guides</h3></div>
-                <h2>Use.It</h2>
+                <h1>Use.It</h1>
             </div>
         </div>
     </section>
@@ -49,7 +49,9 @@ $pageType = 'use-it';
                 <h2>Popular</h2>
             </div>
             <div class="large-4 columns margin-top-20">
-                <h6 class="light-grey-bottom-border"><a href="use-it-training-guides.php">Training Guides</a></h6>
+                <h5><a href="use-it-training-guides.php">Training Guides</a></h5>
+
+                <hr />
 
                 <div class="tile white">
                     <div class="img-holder">
@@ -106,7 +108,9 @@ $pageType = 'use-it';
 
             </div>
             <div class="large-4 columns margin-top-20">
-                <h6 class="light-grey-bottom-border"><a href="use-it-product-guides.php">Product Guides</a></h6>
+                <h5><a href="use-it-product-guides.php">Product Guides</a></h5>
+
+                <hr />
 
                 <div class="tile white">
                     <div class="img-holder">
@@ -151,7 +155,7 @@ $pageType = 'use-it';
                         <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Whiteboards</a></h3>
+                        <h3><a href="use-it-whiteboards.php">Whiteboards</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -162,7 +166,9 @@ $pageType = 'use-it';
                 </div>
             </div>
             <div class="large-4 columns margin-top-20">
-                <h6 class="light-grey-bottom-border"><a href="use-it-guides.php">Use.It Guides</h6>
+                <h5><a href="use-it-guides.php">Use.It Guides</h5>
+
+                <hr />
 
                 <div class="tile white">
                     <div class="img-holder">

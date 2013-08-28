@@ -101,7 +101,7 @@ p a {
   p a:hover {
     color: #3aa385; }
 
-.caption {
+caption, .caption {
   color: #8a9096;
   font-size: 0.875em;
   font-style: italic; }
@@ -133,6 +133,9 @@ img.left {
 
 img.large {
   margin: 0 0 40px 0; }
+
+img.med {
+  margin: 0 0 20px 0; }
 
 .content-offset img.right {
   margin: 0 -80px 20px 36px; }
@@ -1265,13 +1268,16 @@ hr {
       z-index: 500;
       background-size: 30px 30px !important; }
     .global-header .rightside .f-dropdown {
-      text-align: left; }
+      text-align: left;
+      margin: 0;
+      padding: 0; }
       .global-header .rightside .f-dropdown li {
         position: relative;
         display: inline-block;
         width: 100%;
         height: auto;
         padding: 10px 10px 10px 30px;
+        margin: 0;
         border-bottom: 1px solid #e0e0e0;
         font-size: 0.9em;
         color: #424b54;
@@ -1665,8 +1671,13 @@ li.unread {
   box-shadow: 0px 5px 5px rgba(140, 140, 140, 0.35); }
 
 /*START: Headings classes */
+.subheader {
+  clear: both; }
+  .subheader h3 {
+    margin-bottom: 0 !important; }
+
 .breadcrumbs a, .subheader h3 {
-  padding: 0 0 10px 0;
+  padding: 0;
   margin: 0;
   background: none;
   border: none !important;
@@ -1721,8 +1732,6 @@ li.unread {
       border-bottom: 3px rgba(255, 255, 255, 0.8) solid; }
       .headings h1 a:hover, .headings h2 a:hover {
         color: rgba(255, 255, 255, 0.8); }
-  .headings h3 {
-    margin-bottom: 10px !important; }
   .headings .button.small {
     margin-top: 3px; }
 
@@ -1913,11 +1922,54 @@ li.unread {
   position: relative;
   background: white url(img/icon-your-community.png) no-repeat center 36px; }
 
+.alert p {
+  position: relative;
+  color: white;
+  padding: 0;
+  font-size: 0.95em;
+  margin: 0 0 15px 0;
+  font-weight: bold; }
+  .alert p:last-child {
+    margin-bottom: 0; }
+  .alert p a {
+    color: #cacdd1; }
+.alert .heading {
+  color: #e14d5b;
+  padding: 0 0 0 20px;
+  margin-bottom: 0 !important; }
+  .alert .heading:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 0px;
+    background-image: url(img/icon-sprite.png);
+    background-position: -77px -204px; }
+.alert .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  text-indent: -10000px; }
+  .alert .close:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background-image: url(img/icon-sprite.png);
+    background-position: -77px -17px; }
+
 .list-holder h2 {
   padding: 0;
   margin: 0 0 32px 0 !important; }
 .list-holder h5, .list-holder h6 {
-  margin-bottom: 0 !important; }
+  margin: 5px 0 !important; }
+  .list-holder h5 a:hover, .list-holder h6 a:hover {
+    color: inherit; }
 .list-holder h5 {
   width: 100%;
   padding: 20px 0;
@@ -1970,9 +2022,9 @@ li.unread {
     .list-holder ul li .about-it {
       background-color: #60cdae; }
     .list-holder ul li .holder {
+      float: left;
       clear: none;
-      margin: 0;
-      width: 91%; }
+      margin: 0; }
       .list-holder ul li .holder h4 {
         width: 100%;
         position: relative;
@@ -2005,6 +2057,7 @@ li.unread {
           font-family: inherit;
           font-size: inherit; }
       .list-holder ul li .holder p.cite {
+        padding-bottom: 5px;
         position: relative;
         float: left;
         clear: right;
@@ -2319,43 +2372,45 @@ li.unread {
 .filter-area, .tag-area {
   margin-top: 20px; }
   .filter-area .filter-box, .filter-area .tag-box, .tag-area .filter-box, .tag-area .tag-box {
-    position: relative;
-    display: block;
-    clear: both;
-    width: 100%;
-    height: auto;
-    max-height: 90px;
-    padding: 6px 0 6px 0;
-    margin: 0 0 20px 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch; }
-    .filter-area .filter-box a, .filter-area .tag-box a, .tag-area .filter-box a, .tag-area .tag-box a {
-      padding: 5px 6px;
-      float: left;
-      margin: 10px 10px 0 0;
-      border-width: 1px;
-      border-style: solid;
-      border-color: #8a9096;
-      border-radius: 3px;
-      font-size: 1em;
-      font-color: #454d54;
-      transition-property: background-color, color;
-      transition-duration: 0.25s;
-      transition-timing-function: ease-out;
-      -moz-transition-property: background-color, color;
-      -moz-transition-duration: 0.25s;
-      -moz-transition-timing-function: ease-out;
-      -webkit-transition-property: background-color, color;
-      -webkit-transition-duration: 0.25s;
-      -webkit-transition-timing-function: ease-out; }
-      .filter-area .filter-box a:hover, .filter-area .tag-box a:hover, .tag-area .filter-box a:hover, .tag-area .tag-box a:hover {
-        color: #454d54; }
-    .filter-area .filter-box .selected, .filter-area .tag-box .selected, .tag-area .filter-box .selected, .tag-area .tag-box .selected {
+    max-height: 90px; }
+
+.filter-box, .tag-box {
+  position: relative;
+  display: block;
+  clear: both;
+  width: 100%;
+  height: auto;
+  padding: 4px 0 4px 0;
+  margin: 0 0 20px 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+  .filter-box a, .tag-box a {
+    padding: 5px 6px;
+    float: left;
+    margin: 10px 10px 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8a9096;
+    border-radius: 3px;
+    font-size: 1em;
+    color: #454d54;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    -moz-transition-property: background-color, color;
+    -moz-transition-duration: 0.25s;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-out; }
+    .filter-box a:hover, .tag-box a:hover {
+      color: #454d54; }
+  .filter-box .selected, .tag-box .selected {
+    background-color: #8a9096;
+    color: white; }
+    .filter-box .selected:hover, .tag-box .selected:hover {
       background-color: #8a9096;
       color: white; }
-      .filter-area .filter-box .selected:hover, .filter-area .tag-box .selected:hover, .tag-area .filter-box .selected:hover, .tag-area .tag-box .selected:hover {
-        background-color: #8a9096;
-        color: white; }
 
 .tag-area {
   margin-top: 0px !important; }
@@ -3034,7 +3089,7 @@ footer {
   .content-offset img.left {
     margin: 0 36px 20px 0px; }
 
-  .heading {
+  .headings {
     background-image: none; } }
 /*Sidebar nav classes */
 body.off-canvas {

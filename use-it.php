@@ -13,7 +13,7 @@ $pageType = 'use-it';
     <section class="headings">
         <div class="row">
             <div class="large-12 columns">
-                <div class="subheader"><h3>How to Guides</h3></div>
+                <div class="subheader"><h3>Training Resources &amp; How to Guides</h3></div>
                 <h1>Use.It</h1>
             </div>
         </div>

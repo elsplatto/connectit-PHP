@@ -1,5 +1,6 @@
 <?php
 $pageType = 'home';
+$alert = $_Get['alert'];
 ?>
 
 
@@ -8,7 +9,20 @@ $pageType = 'home';
 <?php include 'includes/global-header.php'; ?>
 <?php include 'includes/banner.php'; ?>
 <?php include 'includes/nav.php'; ?>
-
+<?php if ($alert = true) { ?>
+    <section class="alert dark-grey-dark sml">
+        <div class="row">
+            <div class="large-12 columns">
+                <a href="#" class="close">Close</a>
+                <p class="heading">ATTENTION: Outlook Express unavailable for some users</p>
+                <p>
+                If you are unable to access your email through Outlook Express please <a href="#">read this article</a> on how to access your email through webmail. Please be aware that a current issue
+                means Outlook Express is currently unavailable for some users.
+                </p>
+            </div>
+        </div>
+    </section>
+<?php } ?>
     <section class="feature-holder">
         <div class="orbit-container">
             <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500; navigation_arrows: false; slide_number: false;" class="orbit-slides-container">
@@ -377,7 +391,16 @@ $pageType = 'home';
     </section>
 
 <?php include 'includes/global-js.php'; ?>
+<script>
+$(function() {
+    $('.alert .close').click(function(e) {
+        e.preventDefault();
+        var target = $(e.target).closest('.alert');
+        target.hide()
 
+    });
+});
+</script>
 
 
 <?php include 'includes/footer.php'; ?>

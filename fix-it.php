@@ -100,7 +100,7 @@ $pageType = 'fix-it';
                                 <a href="#">Email<span></span></a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
-                                        <a href="#">Outlook Express</a>
+                                        <a href="fix-it-outlook-express.php">Outlook Express</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#">Outlook.com</a>

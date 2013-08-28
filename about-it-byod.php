@@ -130,7 +130,7 @@ $pageType = 'about-it';
         <div class="large-12 columns text-center">
             <h2 class="margin-bottom-40">Inspiration</h2>
             <div class="flex-video">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI?rel=0&controls=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI" frameborder="0" allowfullscreen></iframe>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
         </div>
@@ -147,24 +147,24 @@ $pageType = 'about-it';
                         <div class="fix-it">
                             <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Fix.IT / Video</h4>
-                                <h3><a href="#">Bring in your own device scheme</a></h3>
+                                <h5>Fix.IT / Video</h5>
+                                <h4><a href="#">Bring in your own device scheme</a></h4>
                             </div>
                         </div>
 
                         <div class="use-it">
                             <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Use.IT / Article</h4>
-                                <h3><a href="#">How to design and build a website</a></h3>
+                                <h5>Use.IT / Article</h5>
+                                <h4><a href="#">How to design and build a website</a></h4>
                             </div>
                         </div>
 
                         <div class="share-it">
                             <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Share.IT / Article</h4>
-                                <h3><a href="#">Connecting with your peer community</a></h3>
+                                <h5>Share.IT / Article</h5>
+                                <h4><a href="#">Connecting with your peer community</a></h4>
                             </div>
                         </div>
                     </li>
@@ -172,24 +172,24 @@ $pageType = 'about-it';
                         <div class="fix-it">
                             <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Fix.IT / Video</h4>
-                                <h3><a href="#">Bring in your own device scheme</a></h3>
+                                <h5>Fix.IT / Video</h5>
+                                <h4><a href="#">Bring in your own device scheme</a></h4>
                             </div>
                         </div>
 
                         <div class="use-it">
                             <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Use.IT / Article</h4>
-                                <h3><a href="#">How to design and build a website</a></h3>
+                                <h5>Use.IT / Article</h5>
+                                <h4><a href="#">How to design and build a website</a></h4>
                             </div>
                         </div>
 
                         <div class="share-it">
                             <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Share.IT / Article</h4>
-                                <h3><a href="#">Connecting with your peer community</a></h3>
+                                <h5>Share.IT / Article</h5>
+                                <h4><a href="#">Connecting with your peer community</a></h4>
                             </div>
                         </div>
                     </li>
@@ -197,24 +197,24 @@ $pageType = 'about-it';
                         <div class="fix-it">
                             <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Fix.IT / Video</h4>
-                                <h3><a href="#">Bring in your own device scheme</a></h3>
+                                <h5>Fix.IT / Video</h5>
+                                <h4><a href="#">Bring in your own device scheme</a></h4>
                             </div>
                         </div>
 
                         <div class="use-it">
                             <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
                             <div class="heading">
-                                <h4>Use.IT / Article</h4>
-                                <h3>How to design and build a website</h3>
+                                <h5>Use.IT / Article</h5>
+                                <h4>How to design and build a website</h4>
                             </div>
                         </div>
 
                         <div class="share-it">
                             <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
                             <div class="heading">
-                                <h4>Share.IT / Article</h4>
-                                <h3><a href="#">Connecting with your peer community</a></h3>
+                                <h5>Share.IT / Article</h5>
+                                <h4><a href="#">Connecting with your peer community</a></h4>
                             </div>
                         </div>
                     </li>
@@ -227,53 +227,7 @@ $pageType = 'about-it';
 
 <?php include 'includes/global-js.php'; ?>
 
-<script src="js/foundation/foundation.orbit.js"></script>
-<script>
 
-    $(document).foundation('orbit');
-
-    $(function() {
-        var offset = 18 //half the width of the gutters
-        var sliderNextArrow = $('.orbit-container .orbit-next');
-        var sliderPrevArrow = $('.orbit-container .orbit-prev');
-        var orbitContainer = $('.slider-holder .orbit-container');
-        var sliderMarginWidth = 0;
-        var arrowPosition = 0;
-        var i = 0;
-
-        for (i = 0;i < sliderNextArrow.length; i++)
-        {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
-            arrowPosition = sliderMarginWidth + offset;
-            $(sliderNextArrow[i]).addClass('desktop');
-            $(sliderPrevArrow[i]).addClass('desktop');
-            $(sliderNextArrow[i]).css({
-                'width': sliderMarginWidth + 'px',
-                'right': '-' +  arrowPosition + 'px'
-            });
-            $(sliderPrevArrow[i]).css({
-                'width': sliderMarginWidth + 'px',
-                'left': '-' +  arrowPosition + 'px'
-            });
-        }
-
-        $(window).resize(function() {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
-            arrowPosition = sliderMarginWidth + offset;
-            for (i = 0;i < sliderNextArrow.length; i++)
-            {
-                $(sliderNextArrow[i]).css({
-                    'width': sliderMarginWidth + 'px',
-                    'right': '-' +  arrowPosition + 'px'
-                });
-                $(sliderPrevArrow[i]).css({
-                    'width': sliderMarginWidth + 'px',
-                    'left': '-' +  arrowPosition + 'px'
-                });
-            }
-        });
-    });
-</script>
 
 <?php include 'includes/footer.php'; ?>
 

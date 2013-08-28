@@ -23,7 +23,7 @@ $pageType = 'explore-it';
         <div class="row">
             <div class="large-12 columns text-center">
                 <div class="flex-video">
-                    <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI?rel=0&controls=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <h2 class="margin-top-40">Teaching - we're about outcomes, not incomes</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>

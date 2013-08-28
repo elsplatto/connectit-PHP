@@ -30,6 +30,7 @@ $pageType = 'use-it';
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
             </p>
+
             <img src="media/img/projector.jpg" alt="Example image" class="right wrap" />
 
             <h4>1. Turning it on</h4>
@@ -37,8 +38,17 @@ $pageType = 'use-it';
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
             </p>
 
+
+            <h4>2. Turning it off</h4>
+
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+            </p>
+
+
             <img src="media/img/markers.jpg" alt="Example image" class="left" />
-            <h4>2. Turning it on</h4>
+            <h4>3. Using the markers</h4>
 
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
@@ -49,9 +59,10 @@ $pageType = 'use-it';
                 <p>
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                 </p>
+                <p class="caption">Jane Doe, Technical Coordinator</p>
             </blockquote>
 
-            <h4>3. Turning it on</h4>
+            <h4>4. Using the whiteboard</h4>
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
@@ -61,15 +72,14 @@ $pageType = 'use-it';
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
             </p>
 
-            <h4>4. Turning it on</h4>
-            <img src="media/img/exampleImage.png" alt="Example image" class="right" />
+            <img src="media/img/videoHolder.jpg" class="large" alt="Example image" />
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
             </p>
 
-            <h4>5. Turning it on</h4>
-            <img src="media/img/exampleImage.png" alt="Example image" class="left" />
+
+            <h4>5. Further learning</h4>
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
@@ -77,18 +87,150 @@ $pageType = 'use-it';
 
             <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
             </p>
-
-            <img src="media/img/exampleImageLge.png" alt="Example image" />
 
         </div>
     </div>
 </section>
 
 
+<section class="light-grey-light sml light-grey-bottom-border">
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="large-block-grid-5 share-suite">
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="comment"></div>
+                        <h6>3 Comments</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="add-comment"></div>
+                        <h6>Add Comment</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="like"></div>
+                        <h6>Like it <span>(33 likes)</span></h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="subscribe"></div>
+                        <h6>Subscribe</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-center">
+                        <div class="share"></div>
+                        <h6>Share</h6>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
+<section class="light-grey-light std">
+    <div class="row">
+        <div class="large-12 columns text-center">
+            <h2 class="text-center">Inspiration</h2>
+            <div class="flex-video">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/5QqG3uLgpzA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+        </div>
+    </div>
+</section>
 
+<section class="slider-holder dark-grey">
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>Related Content</h2>
+            <div class="orbit-container dark-grey margin">
+                <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container dark-grey">
+                    <li>
+                        <div class="fix-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Fix.IT / Video</h5>
+                                <h4><a href="#">Bring in your own device scheme</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="use-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Use.IT / Article</h5>
+                                <h4><a href="#">How to design and build a website</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="share-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Share.IT / Article</h5>
+                                <h4><a href="#">Connecting with your peer community</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fix-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Fix.IT / Video</h5>
+                                <h4><a href="#">Bring in your own device scheme</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="use-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Use.IT / Article</h5>
+                                <h4><a href="#">How to design and build a website</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="share-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Share.IT / Article</h5>
+                                <h4><a href="#">Connecting with your peer community</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fix-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Fix.IT / Video</h5>
+                                <h4><a href="#">Bring in your own device scheme</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="use-it">
+                            <img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
+                            <div class="heading">
+                                <h5>Use.IT / Article</h5>
+                                <h4>How to design and build a website</h4>
+                            </div>
+                        </div>
+
+                        <div class="share-it">
+                            <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                            <div class="heading">
+                                <h5>Share.IT / Article</h5>
+                                <h4><a href="#">Connecting with your peer community</a></h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php include 'includes/global-js.php'; ?>

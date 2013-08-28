@@ -24,7 +24,7 @@ body {
 
 /*START: Header classes */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1em !important; }
+  line-height: 1.5em !important; }
 
 h1 {
   font-size: 2.75em;
@@ -40,7 +40,7 @@ h1, h3, h5, h6 {
 h2 {
   font-size: 1.875em !important;
   font-weight: 400;
-  margin-bottom: 20px !important; }
+  margin-bottom: 10px !important; }
   h2 a {
     color: inherit; }
     h2 a:hover {
@@ -49,7 +49,7 @@ h2 {
 h3 {
   font-size: 1.5em !important;
   font-weight: 400;
-  margin-bottom: 18px !important; }
+  margin-bottom: 10px !important; }
   h3 a {
     color: inherit; }
     h3 a:hover {
@@ -58,7 +58,7 @@ h3 {
 h4 {
   font-size: 1.313em !important;
   font-weight: 300 !important;
-  margin-bottom: 16px !important; }
+  margin-bottom: 10px !important; }
   h4 a {
     color: inherit; }
     h4 a:hover {
@@ -67,7 +67,7 @@ h4 {
 h5 {
   font-size: 0.813em !important;
   text-transform: uppercase !important;
-  margin-bottom: 14px !important;
+  margin-bottom: 10px !important;
   color: #8a9096 !important; }
   h5 a {
     color: inherit; }
@@ -76,11 +76,18 @@ h5 {
 
 h6 {
   font-size: 1em !important;
-  margin-bottom: 14px !important; }
+  margin-bottom: 10px !important;
+  font-weight: 400 !important; }
   h6 a {
     color: inherit; }
     h6 a:hover {
       color: inherit; }
+
+.use-it.heading h1, .use-it.heading h2, .use-it.heading h3, .use-it.heading h4, .use-it.heading h5, .use-it.heading h6, .fix-it.heading h1, .fix-it.heading h2, .fix-it.heading h3, .fix-it.heading h4, .fix-it.heading h5, .fix-it.heading h6, .explore-it.heading h1, .explore-it.heading h2, .explore-it.heading h3, .explore-it.heading h4, .explore-it.heading h5, .explore-it.heading h6, .share-it.heading h1, .share-it.heading h2, .share-it.heading h3, .share-it.heading h4, .share-it.heading h5, .share-it.heading h6, .about-it.heading h1, .about-it.heading h2, .about-it.heading h3, .about-it.heading h4, .about-it.heading h5, .about-it.heading h6, .other.heading h1, .other.heading h2, .other.heading h3, .other.heading h4, .other.heading h5, .other.heading h6 {
+  color: white !important; }
+
+.list-holder h5, .list-holder h6 {
+  margin-bottom: 0 !important; }
 
 /*END: Header classes */
 /*START: Standard Typography */
@@ -123,6 +130,9 @@ img.right {
 
 img.left {
   margin: 0 36px 20px 0; }
+
+img.large {
+  margin: 0 0 40px 0; }
 
 .content-offset img.right {
   margin: 0 -80px 20px 36px; }
@@ -412,6 +422,9 @@ input[type='search'] {
   left: 188px;
   z-index: 198; }
 
+.flex-video {
+  margin-top: 2em; }
+
 /*START: Orbit Classes */
 .orbit-container {
   overflow: hidden; }
@@ -445,7 +458,7 @@ input[type='search'] {
   display: block;
   float: left;
   list-style: none;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 10px !important;
   padding: 0;
   position: relative;
   right: 50%; }
@@ -1707,7 +1720,7 @@ li.unread {
       text-decoration: none;
       border-bottom: 3px rgba(255, 255, 255, 0.8) solid; }
       .headings h1 a:hover, .headings h2 a:hover {
-        color: rgba(255, 255, 255, 0.5); }
+        color: rgba(255, 255, 255, 0.8); }
   .headings h3 {
     margin-bottom: 10px !important; }
   .headings .button.small {
@@ -1869,12 +1882,10 @@ li.unread {
         left: 9px;
         width: 24px;
         height: 24px; }
-      .support-suite li a h5, .share-suite li a h5 {
-        font-size: 1em; }
-        .support-suite li a h5 span, .share-suite li a h5 span {
-          font-size: 0.75em;
-          font-weight: 300;
-          color: #8a9096; }
+      .support-suite li a h6 span, .share-suite li a h6 span {
+        font-size: 0.75em;
+        font-weight: 300;
+        color: #8a9096; }
       .support-suite li a p, .share-suite li a p {
         font-size: 0.75em;
         color: #8a9096; }
@@ -1904,12 +1915,13 @@ li.unread {
 
 .list-holder h2 {
   padding: 0;
-  margin: 0 0 32px 0; }
+  margin: 0 0 32px 0 !important; }
+.list-holder h5, .list-holder h6 {
+  margin-bottom: 0 !important; }
 .list-holder h5 {
   width: 100%;
   padding: 20px 0;
   margin: 0;
-  text-transform: uppercase;
   color: #424a53;
   text-align: left;
   float: left;
@@ -1964,8 +1976,8 @@ li.unread {
       .list-holder ul li .holder h4 {
         width: 100%;
         position: relative;
-        padding: 5px 0 8px 0;
-        margin: 0;
+        padding: 5px 0 0 0;
+        margin: 0 !important;
         display: block;
         float: left;
         clear: right;
@@ -2014,59 +2026,61 @@ li.unread {
   padding: 50px 0 60px; }
   .slider-holder .column, .slider-holder .columns {
     padding: 0; }
-  .slider-holder ul {
-    width: 100%;
-    margin: 0; }
-    .slider-holder ul li {
-      margin: 0;
-      padding: 0;
-      width: 100%; }
-      .slider-holder ul li div {
-        float: left;
-        margin: 0 1.125em;
-        height: 20.25em;
-        width: 17.75em;
-        background-color: white;
-        overflow: hidden; }
-        .slider-holder ul li div img {
-          border-width: 0 0 3px 0;
-          border-style: solid; }
-        .slider-holder ul li div .heading {
-          margin: 0;
-          clear: both;
-          height: 8.813em;
-          padding: 1.25em; }
-          .slider-holder ul li div .heading h4 {
-            font-size: 1.313em;
-            font-weight: 400;
-            color: #222529; }
-          .slider-holder ul li div .heading h5 {
-            font-size: 0.75em;
-            text-transform: uppercase; }
-      .slider-holder ul li .use-it img {
-        border-color: #994275; }
-      .slider-holder ul li .use-it .heading h5 {
-        color: #994275; }
-      .slider-holder ul li .fix-it img {
-        border-color: #f19d19; }
-      .slider-holder ul li .fix-it .heading h5 {
-        color: #f19d19; }
-      .slider-holder ul li .explore-it img {
-        border-color: #e14d5b; }
-      .slider-holder ul li .explore-it .heading h5 {
-        color: #e14d5b; }
-      .slider-holder ul li .share-it img {
-        border-color: #1a7bc0; }
-      .slider-holder ul li .share-it .heading h5 {
-        color: #1a7bc0; }
-      .slider-holder ul li .about-it img {
-        border-color: #60cdae; }
-      .slider-holder ul li .about-it .heading h5 {
-        color: #60cdae; }
-      .slider-holder ul li .other img {
-        border-color: #60cdae; }
-      .slider-holder ul li .other .heading h5 {
-        color: #60cdae; }
+    .slider-holder .column h2, .slider-holder .columns h2 {
+      margin: 0 0 32px 0 !important; }
+    .slider-holder .column ul, .slider-holder .columns ul {
+      width: 100%;
+      margin: 0; }
+      .slider-holder .column ul li, .slider-holder .columns ul li {
+        margin: 0;
+        padding: 0;
+        width: 100%; }
+        .slider-holder .column ul li div, .slider-holder .columns ul li div {
+          float: left;
+          margin: 0 1.125em;
+          height: 20.25em;
+          width: 17.75em;
+          background-color: white;
+          overflow: hidden; }
+          .slider-holder .column ul li div img, .slider-holder .columns ul li div img {
+            border-width: 0 0 3px 0;
+            border-style: solid; }
+          .slider-holder .column ul li div .heading, .slider-holder .columns ul li div .heading {
+            margin: 0;
+            clear: both;
+            height: 8.813em;
+            padding: 1.25em; }
+            .slider-holder .column ul li div .heading h4, .slider-holder .columns ul li div .heading h4 {
+              font-size: 1.313em;
+              font-weight: 400;
+              color: #222529; }
+            .slider-holder .column ul li div .heading h5, .slider-holder .columns ul li div .heading h5 {
+              font-size: 0.75em;
+              text-transform: uppercase; }
+        .slider-holder .column ul li .use-it img, .slider-holder .columns ul li .use-it img {
+          border-color: #994275; }
+        .slider-holder .column ul li .use-it .heading h5, .slider-holder .columns ul li .use-it .heading h5 {
+          color: #994275 !important; }
+        .slider-holder .column ul li .fix-it img, .slider-holder .columns ul li .fix-it img {
+          border-color: #f19d19; }
+        .slider-holder .column ul li .fix-it .heading h5, .slider-holder .columns ul li .fix-it .heading h5 {
+          color: #f19d19 !important; }
+        .slider-holder .column ul li .explore-it img, .slider-holder .columns ul li .explore-it img {
+          border-color: #e14d5b; }
+        .slider-holder .column ul li .explore-it .heading h5, .slider-holder .columns ul li .explore-it .heading h5 {
+          color: #e14d5b !important; }
+        .slider-holder .column ul li .share-it img, .slider-holder .columns ul li .share-it img {
+          border-color: #1a7bc0; }
+        .slider-holder .column ul li .share-it .heading h5, .slider-holder .columns ul li .share-it .heading h5 {
+          color: #1a7bc0 !important; }
+        .slider-holder .column ul li .about-it img, .slider-holder .columns ul li .about-it img {
+          border-color: #60cdae; }
+        .slider-holder .column ul li .about-it .heading h5, .slider-holder .columns ul li .about-it .heading h5 {
+          color: #60cdae !important; }
+        .slider-holder .column ul li .other img, .slider-holder .columns ul li .other img {
+          border-color: #60cdae; }
+        .slider-holder .column ul li .other .heading h5, .slider-holder .columns ul li .other .heading h5 {
+          color: #60cdae !important; }
   .slider-holder .orbit-container {
     background: inherit;
     padding: 0 0 30px 0;
@@ -2164,10 +2178,10 @@ li.unread {
     #featured-software-slider div .heading h3 {
       color: white; }
     #featured-software-slider div .heading .button, #featured-software-slider div .heading button {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.8);
       background-color: transparent;
       box-shadow: none;
-      border: 2px solid rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.8);
       border-radius: 3px;
       font-size: 0.813em;
       font-weight: 400; }

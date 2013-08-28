@@ -129,7 +129,7 @@ body
 /*START: Header classes*/
 
 h1, h2, h3, h4, h5, h6
-  line-height: 1em !important
+  line-height: 1.5em !important
 
 h1
   font-size: 2.75em
@@ -145,7 +145,7 @@ h1, h3, h5, h6
 h2
   font-size: 1.875em !important
   font-weight: 400
-  margin-bottom: 20px !important
+  margin-bottom: 10px !important
   a
     color: inherit
     &:hover
@@ -154,7 +154,7 @@ h2
 h3
   font-size: 1.5em!important
   font-weight: 400
-  margin-bottom: 18px !important
+  margin-bottom: 10px !important
   a
     color: inherit
     &:hover
@@ -162,7 +162,7 @@ h3
 h4
   font-size: 1.313em!important
   font-weight: 300!important
-  margin-bottom: 16px !important
+  margin-bottom: 10px !important
   a
     color: inherit
     &:hover
@@ -170,7 +170,7 @@ h4
 h5
   font-size: 0.813em !important
   text-transform: uppercase !important
-  margin-bottom: 14px !important
+  margin-bottom: 10px !important
   color: $dark-grey-light-bg !important
   a
     color: inherit
@@ -178,11 +178,20 @@ h5
       color: inherit
 h6
   font-size: 1em!important
-  margin-bottom: 14px !important
+  margin-bottom: 10px !important
+  font-weight: 400 !important
   a
     color: inherit
     &:hover
       color: inherit
+
+.use-it.heading, .fix-it.heading, .explore-it.heading, .share-it.heading, .about-it.heading, .other.heading
+  h1, h2, h3, h4, h5, h6
+    color: #fff !important
+
+.list-holder
+  h5, h6
+    margin-bottom: 0 !important
 
 /*END: Header classes*/
 
@@ -229,6 +238,9 @@ img.right
 
 img.left
   margin: 0 36px 20px 0
+
+img.large
+  margin: 0 0 40px 0
 
 .content-offset
   img.right
@@ -536,6 +548,9 @@ input[type='search']
   z-index: 198
 
 
+.flex-video
+  margin-top: 2em
+
 /*START: Orbit Classes*/
 
 .orbit-container
@@ -571,7 +586,7 @@ input[type='search']
   display: block
   float: left
   list-style: none
-  margin: 0 0 0 10px
+  margin: 0 0 0 10px !important
   padding: 0
   position: relative
   right: 50%
@@ -1986,8 +2001,7 @@ li.unread
           left: 9px
           width: 24px
           height: 24px
-      h5
-        font-size: 1em
+      h6
         span
           font:
             size: 0.75em
@@ -2030,12 +2044,13 @@ li.unread
 .list-holder
   h2
     padding: 0
-    margin: 0 0 32px 0
+    margin: 0 0 32px 0 !important
+  h5, h6
+    margin-bottom: 0 !important
   h5
     width: 100%
     padding: 20px 0
     margin: 0
-    text-transform: uppercase
     color: $h-tag-small-color
     text-align: left
     float: left
@@ -2093,8 +2108,8 @@ li.unread
         h4
           width: 100%
           position: relative
-          padding: 5px 0 8px 0
-          margin: 0
+          padding: 5px 0 0 0
+          margin: 0 !important
           display: block
           float: left
           clear: right
@@ -2148,74 +2163,76 @@ li.unread
   padding: 50px 0 60px
   .column, .columns
     padding: 0
-  ul
-    width: 100%
-    margin: 0
-    li
-      margin: 0
-      padding: 0
+    h2
+      margin: 0 0 32px 0 !important
+    ul
       width: 100%
-      div
-        float: left
-        margin: 0 1.125em
-        height: 20.25em
-        width: 17.75em
-        background-color: #fff
-        overflow: hidden
-        img
-          border:
-            width: 0 0 3px 0
-            style: solid
+      margin: 0
+      li
+        margin: 0
+        padding: 0
+        width: 100%
+        div
+          float: left
+          margin: 0 1.125em
+          height: 20.25em
+          width: 17.75em
+          background-color: #fff
+          overflow: hidden
+          img
+            border:
+              width: 0 0 3px 0
+              style: solid
 
-        .heading
-          margin: 0
-          clear: both
-          height: 8.813em
-          padding: 1.25em
-          h4
-            font:
-              size: 1.313em
-              weight: 400
-            color: $h-tag-std-color
-          h5
-            font-size: 0.75em
-            text-transform: uppercase
-      .use-it
-        img
-          border-color: $use-it-bg
-        .heading
-          h5
-            color: $use-it-bg
-      .fix-it
-        img
-          border-color: $fix-it-bg
-        .heading
-          h5
-            color: $fix-it-bg
-      .explore-it
-        img
-          border-color: $explore-it-bg
-        .heading
-          h5
-            color: $explore-it-bg
-      .share-it
-        img
-          border-color: $share-it-bg
-        .heading
-          h5
-            color: $share-it-bg
-      .about-it
-        img
-          border-color: $about-it-bg
-        .heading
-          h5
-            color: $about-it-bg
-      .other
-        img
-          border-color: $about-it-bg
-        .heading
-          h5
-            color: $about-it-bg
+          .heading
+            margin: 0
+            clear: both
+            height: 8.813em
+            padding: 1.25em
+            h4
+              font:
+                size: 1.313em
+                weight: 400
+              color: $h-tag-std-color
+            h5
+              font-size: 0.75em
+              text-transform: uppercase
+        .use-it
+          img
+            border-color: $use-it-bg
+          .heading
+            h5
+              color: $use-it-bg !important
+        .fix-it
+          img
+            border-color: $fix-it-bg
+          .heading
+            h5
+              color: $fix-it-bg !important
+        .explore-it
+          img
+            border-color: $explore-it-bg
+          .heading
+            h5
+              color: $explore-it-bg !important
+        .share-it
+          img
+            border-color: $share-it-bg
+          .heading
+            h5
+              color: $share-it-bg !important
+        .about-it
+          img
+            border-color: $about-it-bg
+          .heading
+            h5
+              color: $about-it-bg !important
+        .other
+          img
+            border-color: $about-it-bg
+          .heading
+            h5
+              color: $about-it-bg !important
   .orbit-container
     background: inherit
     padding: 0 0 30px 0
@@ -2323,10 +2340,10 @@ li.unread
       h3
         color: #fff
       .button, button
-        color: rgba(255,255,255,0.5)
+        color: rgba(255,255,255,0.8)
         background-color: transparent
         box-shadow: none
-        border: 2px solid rgba(255,255,255,0.5)
+        border: 2px solid rgba(255,255,255,0.8)
         border-radius: 3px
         font:
           size: 0.813em

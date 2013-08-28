@@ -378,58 +378,7 @@ $pageType = 'home';
 
 <?php include 'includes/global-js.php'; ?>
 
-<script src="js/foundation/foundation.orbit.js"></script>
-<script>
 
-    $(document).foundation('orbit');
-
-    $(function() {
-        var offset = 18 //half the width of the gutters
-        var sliderNextArrow = $('.orbit-container .orbit-next');
-        var sliderPrevArrow = $('.orbit-container .orbit-prev');
-        var orbitContainer = $('.slider-holder .orbit-container');
-        var sliderMarginWidth = 0;
-        var arrowPosition = 0;
-        var i = 0;
-
-        if ($('html').hasClass('lt-ie9'))
-        {
-            offset = 14;
-        }
-
-        for (i = 0;i < sliderNextArrow.length; i++)
-        {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
-            arrowPosition = sliderMarginWidth + offset;
-            $(sliderNextArrow[i]).addClass('desktop');
-            $(sliderPrevArrow[i]).addClass('desktop');
-            $(sliderNextArrow[i]).css({
-                'width': sliderMarginWidth + 'px',
-                'right': '-' +  arrowPosition + 'px'
-            });
-            $(sliderPrevArrow[i]).css({
-                'width': sliderMarginWidth + 'px',
-                'left': '-' +  arrowPosition + 'px'
-            });
-        }
-
-        $(window).resize(function() {
-            sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
-            arrowPosition = sliderMarginWidth + offset;
-            for (i = 0;i < sliderNextArrow.length; i++)
-            {
-                $(sliderNextArrow[i]).css({
-                    'width': sliderMarginWidth + 'px',
-                    'right': '-' +  arrowPosition + 'px'
-                });
-                $(sliderPrevArrow[i]).css({
-                    'width': sliderMarginWidth + 'px',
-                    'left': '-' +  arrowPosition + 'px'
-                });
-            }
-        });
-    });
-</script>
 
 <?php include 'includes/footer.php'; ?>
 <?php include 'includes/sidebar.php'; ?>

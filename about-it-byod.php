@@ -41,38 +41,7 @@ $pageType = 'about-it';
 <section class="light-grey-light sml">
     <div class="row">
         <div class="large-12 columns">
-            <ul class="large-block-grid-5 share-suite">
-                <li>
-                    <a href="#" class="text-center">
-                        <div class="comment"></div>
-                        <h6>3 Comments</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-center">
-                        <div class="add-comment"></div>
-                        <h6>Add Comment</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-center">
-                        <div class="like"></div>
-                        <h6>Like it <span>(33 likes)</span></h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-center">
-                        <div class="subscribe"></div>
-                        <h6>Subscribe</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-center">
-                        <div class="share"></div>
-                        <h6>Share</h6>
-                    </a>
-                </li>
-            </ul>
+            <?php include 'includes/share-suite.php'; ?>
         </div>
     </div>
 </section>

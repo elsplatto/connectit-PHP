@@ -80,7 +80,7 @@ $pageType = 'use-it';
                         <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Audio</h3>
+                        <h3><a href="#">Audio</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>

@@ -1,11 +1,8 @@
 <?php
-$pageType = 'fix-it';
+$pageType = 'explore-it';
 ?>
 
-
 <?php include 'includes/header.php'; ?>
-
-
 
 <?php include 'includes/global-header.php'; ?>
 <?php include 'includes/banner.php'; ?>
@@ -15,8 +12,8 @@ $pageType = 'fix-it';
 <section class="headings">
     <div class="row">
         <div class="large-12 columns">
-            <div class="breadcrumbs"><a href="fix-it.php">Fix.It</a><a href="fix-it-outlook-express.php">Outlook Express</a></div>
-            <h1>Connecting toOutlook Express</h1>
+            <div class="breadcrumbs"><a href="explore-it.php">Explore.It</a></div>
+            <h1>Connecting Countries</h1>
         </div>
     </div>
 </section>
@@ -55,7 +52,7 @@ $pageType = 'fix-it';
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             </p>
 
-            <img src="media/img/outlook.com.gif" class="med" alt="Example image" />
+            <img src="media/img/test-image-2.jpg" class="med" alt="Example image" />
             <p class="caption">Caption sed ut perspiciatis unde omnis iste natus error sit</p>
 
             <p>
@@ -73,37 +70,8 @@ $pageType = 'fix-it';
                 <a href="#" class="selected">Audio</a>
             </div>
 
-            <h5>Related Form Posts</h5>
-            <div class="block-list-holder">
-                <ul>
-                    <li>
-                        <div class="holder">
-                            <h6><a href="#">Problem with printer</a></h6>
-                            <p class="cite">2 replies</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="holder">
-                            <h6><a href="#">Whiteboards in the classroom</a></h6>
-                            <p class="cite">13 replies</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="holder">
-                            <h6><a href="#">How to use Outlook Express on classroom iMac</a></h6>
-                            <p class="cite">7 replies</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="holder">
-                            <h6><a href="#">Multiple account setup</a></h6>
-                            <p class="cite">7 replies</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <h6>Got something to share?</h6>
+            <a href="overlay-submit-content.php" class="button blue reveal-init">Submit an Article</a>
         </div>
     </div>
 </section>
@@ -115,6 +83,64 @@ $pageType = 'fix-it';
     <div class="row">
         <div class="large-12 columns">
             <?php include 'includes/share-suite.php'; ?>
+        </div>
+    </div>
+</section>
+
+<section class="light-grey-light std light-grey-top-border list-holder">
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="large-6 columns">
+                <h2>View Comments</h2>
+            </div>
+
+            <div class="large-6 columns text-right">
+                <a href="#" class="button dark-grey flat">Top</a>
+                <a href="#" class="button grey flat">Date Added</a>
+            </div>
+
+            <div class="large-12 columns margin-bottom-18">
+                <div class="large-12 wide-tile white sml">
+                    <div class="large-1 avatar-holder">
+                        <a href="#"><img src="media/img/avatars/example-2.jpg" alt="Example Avatar" class="avatar" /></a>
+                    </div>
+                    <div class="large-10 columns content">
+                        <p class="header"><span class="handle"><strong>John Smith</strong></span> <a href="#">@johnboy</a> <span class="timestamp">2 hours ago</span></p>
+                        <p>As a condition, hyperspace translates objects as a phased tachyon wave, which once collapsed restores the objects to their meson composition instantaneously. As a condition, hyperspace translates objects as a phased tachyon wave, which once collapsed restores the objects to their meson composition instantaneously.</p>
+                        <p class="functions"><span>Did you find this comment useful?</span><a href="#" class="like">Yes</a> <span>(10)</span><a href="#" class="unlike">No</a> <span>(1)</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="large-12 columns margin-bottom-18">
+                <div class="wide-tile white sml">
+                    <div class="large-1 avatar-holder">
+                        <a href="#"><img src="media/img/avatars/profileLge.jpg" class="avatar" alt="Example Avatar" /></a>
+                    </div>
+                    <div class="large-10 columns content">
+                        <div class="edit-delete-holder">
+                            120 seconds left to <a href="#">edit</a> or <a href="#">delete</a>
+                        </div>
+                        <p class="header"><span class="handle"><strong>Jason Taikato</strong></span> <a href="#">@elsplatto</a> <span class="timestamp">just now</span></p>
+                        <p>This is supposed to happen with a minimum of energy expenditure. While it is necessary for a ship to have nuclear engine to pro- duce the hyperspace drive field to hurl a vessel through hyperspace, nearly all of the energy expended is recovered as the hyper field collapses. Also, there is no Cherenkov radiation flash associated with re-entry from hyperspace.</p>
+                        <p class="functions"><span>Did you find this comment useful?</span><a href="#" class="like">Yes</a> <span>(10)</span><a href="#" class="unlike">No</a> <span>(1)</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="light-grey-light std light-grey-top-border">
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>Add Comment</h2>
+            <form id="frmAddComment" name="frmAddComment">
+                <label for="comment" class="hidden-field"></label>
+                <textarea id="comment"></textarea>
+                <input type="submit" value="Add Comment" class="button green right" />
+            </form>
         </div>
     </div>
 </section>
@@ -207,7 +233,9 @@ $pageType = 'fix-it';
 </section>
 
 
+
 <?php include 'includes/global-js.php'; ?>
+
 
 <?php include 'includes/footer.php'; ?>
 

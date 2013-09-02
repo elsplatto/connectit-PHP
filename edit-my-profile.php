@@ -12,6 +12,7 @@ $pageType = 'other';
 <?php include 'includes/nav.php'; ?>
 
 
+
 <section class="headings">
     <div class="row">
         <div class="large-12 columns">
@@ -26,7 +27,7 @@ $pageType = 'other';
     <div class="row">
         <div class="large-2 columns">
             <div class="avatar-overlay-holder">
-                <a href="#" id="changePhoto" data-reveal-id="fileModal" class="avatar-overlay green" title="Click here to change your avatar"></a>
+                <a href="overlay-file-upload.php" id="changePhoto" class="avatar-overlay green reveal-init" title="Click here to change your avatar">Change Photo</a>
                 <img src="media/img/avatars/profileLge.jpg" class="avatar" />
             </div>
         </div>
@@ -45,84 +46,36 @@ $pageType = 'other';
                 <label for="bio">Bio</label>
                 <textarea id="bio" name="bio"></textarea>
 
-                <div class="note-holder">
+                <div class="note-holder large-9 columns">
                     <span class="mandatory">*</span><span class="note">These fields are mandatory</span>
                 </div>
 
-                <input type="submit" class="button green right" value="Save Changes" />
-                <a href="my-profile.php" class="button secondary right">Cancel</a>
+                <div class=" large-9 columns">
+                    <input type="submit" class="button green right" value="Save Changes" />
+                    <a href="my-profile.php" class="button secondary right">Cancel</a>
+                </div>
             </form>
         </div>
     </div>
 </section>
 
-
 <?php include 'includes/global-js.php'; ?>
 
 <script src="js/foundation/foundation.reveal.js"></script>
 <script src="js/foundation/foundation.alerts.js"></script>
-<script src="js/vendor/plugins/jquery/dropzone.js"></script>
 <script>
 $(function() {
-    $('#changePhoto').click(function(e)
-    {
-        e.preventDefault();
-        $('#fileModal').foundation('reveal', 'open', {
-            animation: 'fadeAndPop',
-            animationSpeed: 0,
-            closeOnBackgroundClick: true,
-            dismissModalClass: 'secondary',
-            bgClass: 'reveal-modal-bg',
-            open: function(){},
-            opened: function(){},
-            close: function(){},
-            closed: function(){},
-            bg : $('.reveal-modal-bg'),
-            css : {
-                open : {
-                    'opacity': 0,
-                    'visibility': 'visible',
-                    'display' : 'block'
-                },
-                close : {
-                    'opacity': 1,
-                    'visibility': 'hidden',
-                    'display': 'none'
-                }
-            }
-        });
-    });
-    $('.reveal-close').click(function(e) {
-        e.preventDefault();
-        $('#fileModal').foundation('reveal','close');
-    });
+
+
 });
-
-
-
 </script>
 
 <?php include 'includes/footer.php'; ?>
 
 <?php include 'includes/sidebar.php'; ?>
 
-<div id="fileModal" class="reveal-modal small white">
-    <h3>Change profile picture</h3>
-    <form id="frmUpload" class="dropzone" action="upload.php" method="POST" enctype="multipart/form-data">
 
-            <!--label for="fileselect">Files to upload:</label-->
-        <div class="fallback">
-            <input type="file" id="file" name="file" />
-            <div class="note-holder">
-                <span class="note">JPG, GIF or PNG. Max size of 700K</span>
-            </div>
-            <input type="submit" class="button green right" value="Upload Now" />
-            <a href="#" class="button secondary reveal-close right">Cancel</a>
-        </div>
-    </form>
-    <a class="close-reveal-modal reveal-close">x</a>
-</div>
-<div class="reveal-modal-bg" style="display: none"></div>
+
 
 </body>
 </html>

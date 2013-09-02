@@ -1,6 +1,6 @@
 <?php
 $pageType = 'home';
-$alert = $_Get['alert'];
+$alert = $_REQUEST['alert'];
 ?>
 
 
@@ -9,7 +9,7 @@ $alert = $_Get['alert'];
 <?php include 'includes/global-header.php'; ?>
 <?php include 'includes/banner.php'; ?>
 <?php include 'includes/nav.php'; ?>
-<?php if ($alert = true) { ?>
+<?php if ($alert > 0) { ?>
     <section class="alert dark-grey-dark sml">
         <div class="row">
             <div class="large-12 columns">
@@ -42,43 +42,7 @@ $alert = $_Get['alert'];
     <section class="light-grey-light sml">
         <div class="row">
             <div class="large-12 columns">
-                <ul class="large-block-grid-5 support-suite">
-                    <li>
-                        <a href="#" class="text-center">
-                            <div class="virtual-agent"></div>
-                            <h6>Virtual Agent</h6>
-                            <p>Get answers by talking to our virtual agent</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-center">
-                            <div class="lodge-ticket"></div>
-                            <h6>Lodge a Ticket</h6>
-                            <p>Got a problem? Lodge a support ticket</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-center">
-                            <div class="call-centre"></div>
-                            <h6>Call Centre</h6>
-                            <p>Call us on 8888 8888 or request a call back</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-center">
-                            <div class="knowledge-base"></div>
-                            <h6>Knowledge Base</h6>
-                            <p>Call us on 8888 8888 or request a call back</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-center">
-                            <div class="communities"></div>
-                            <h6>Communities</h6>
-                            <p>Find and share solutions with other users</p>
-                        </a>
-                    </li>
-                </ul>
+                <?php include 'includes/support-suite.php'; ?>
             </div>
         </div>
     </section>
@@ -166,10 +130,10 @@ $alert = $_Get['alert'];
                             </div>
 
                             <div class="use-it">
-                                <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" />
+                                <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
                                 <div class="heading white">
                                     <h5>Use.IT / Article</h5>
-                                    <h4><a href="#">How to design and build a website</h4>
+                                    <h4><a href="#">How to design and build a website</a></h4>
                                 </div>
                             </div>
 

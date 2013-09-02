@@ -83,7 +83,7 @@ $pageType = 'explore-it';
                     <div>
                         <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                         <div class="heading">
-                            <h3><a href="#">Bring in your own device scheme</a></h3>
+                            <h3><a href="explore-it-connecting-countries.php">Connecting Countries</a></h3>
                             <div class="tags"><p><strong>Tags:</strong> collaborating in the cloud, printers, whiteboards, scanners</p> </div>
                         </div>
                     </div>

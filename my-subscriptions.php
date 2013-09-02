@@ -29,7 +29,7 @@ $pageType = 'other';
 
             <ul class="action-list subscriptions">
                 <li class="unread">
-                    <div class="header"><a href="#">3 new comments</a> on <a href="#">New learning techniques and practices</a></div><a href="#" class="button flat light-grey-dark right">Unsubscribe</a><a href="#" class="button flat green mark-as-read right">Mark as read</a>
+                    <div class="header"><a href="#">2 new comments</a> on <a href="#">New learning techniques and practices</a></div><a href="#" class="button flat light-grey-dark right">Unsubscribe</a><a href="#" class="button flat green mark-as-read right">Mark as read</a>
                     <div class="preview large-12 columns margin-top-20">
                         <div class="content">
                             <p class="header"><span class="handle"><strong>John Smith</strong> <span class="timestamp">2 hours ago</span></p>

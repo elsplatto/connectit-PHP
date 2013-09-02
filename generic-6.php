@@ -1,5 +1,5 @@
 <?php
-$pageType = 'fix-it';
+$pageType = 'other';
 ?>
 
 
@@ -15,8 +15,8 @@ $pageType = 'fix-it';
 <section class="headings">
     <div class="row">
         <div class="large-12 columns">
-            <div class="breadcrumbs"><a href="fix-it.php">Fix.It</a><a href="fix-it-outlook-express.php">Outlook Express</a></div>
-            <h1>Connecting toOutlook Express</h1>
+            <div class="breadcrumbs"><a href="fix-it.php">Fix.It</a><a href="fix-it-outlook-express.php">Fix.It</a></div>
+            <h1>Outlook Express</h1>
         </div>
     </div>
 </section>

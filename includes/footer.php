@@ -27,3 +27,6 @@
     </div>
 
 </section>
+
+<a href="feedback.php" class="feedback-tab reveal-init">Feedback</a>
+<div class="reveal-modal-bg" style="display: none"></div>

@@ -1,8 +1,5 @@
-<script>
-    document.write('<script src=' +
-        ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-        '.js><\/script>')
-</script>
+
+
 
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/plugins/jquery/scroll-start-stop.js"></script>
@@ -10,6 +7,30 @@
 
 <script id="scriptAnchor">
 $(function() {
+    $('.reveal-init').click(function(e)
+    {
+        e.preventDefault();
+        $('.reveal-modal-bg').show();
+        var modal = $('<div>').addClass('reveal-modal small').prependTo('body');
+        $.get($(this).attr('href'), function(data) {
+            modal.empty().html(data).foundation('reveal', 'open');
+        });
+        $('.reveal-modal').show();
+    });
+
+    $('.reveal-close, .reveal-modal-bg').on('click',function(e) {
+        e.preventDefault();
+        $('#fileModal').foundation('reveal','close');
+        $('.reveal-modal-bg').hide();
+    });
+
+    $(document).keyup(function(e) {
+
+        if (e.keyCode == 27) {
+            $('#fileModal').foundation('reveal','close');
+            $('.reveal-modal-bg').hide();
+        }   // esc
+    });
     if ($('.slider-holder').length > 0 || $('.feature-holder').length > 0)
     {
         var scriptHTML = '<script src="js\/foundation\/foundation.orbit.js"><\/script>';
@@ -69,6 +90,38 @@ $(function() {
 
 <script>
 $(function() {
+
+    $('.action-list .header, .action-list .header a').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var targetEl;
+        if ($(e.target).hasClass('header'))
+        {
+            targetEl = $(e.target).siblings('.preview');
+        }
+        else
+        {
+            targetEl = $(e.target).closest('.header').siblings('.preview');
+        }
+
+        if (targetEl.is(':hidden'))
+        {
+            targetEl.show();
+        }
+        else
+        {
+            targetEl.hide();
+        }
+    });
+
+    $('.action-list .mark-as-read').click(function(e) {
+        e.preventDefault();
+        var targetEl = $(e.target).closest('li');
+        targetEl.removeClass('unread');
+        targetEl.addClass('read');
+        $(e.target).hide('fast');
+    });
+
     $('img.wrap').slickWrap();
     $('#btnSideNav').click( function(e) {
         e.preventDefault();
@@ -135,47 +188,19 @@ $(function() {
 });
 </script>
 
+<!--[if lt IE 9]>
+<script src="js/foundation/lt-ie9/foundation.min.js"></script>
+<script src="js/foundation/lt-ie9/jquery.foundation.topbar.js"></script>
+<![endif]-->
+<!--[if gt IE 8]><!-->
 <script src="js/foundation.min.js"></script>
 <script src="js/foundation/foundation.topbar.js"></script>
 <script src="js/foundation/foundation.dropdown.js"></script>
 
-<!--
 
-<script src="js/foundation/foundation.js"></script>
-
-<script src="js/foundation/foundation.alerts.js"></script>
-
-<script src="js/foundation/foundation.clearing.js"></script>
-
-<script src="js/foundation/foundation.cookie.js"></script>
-
-<script src="js/foundation/foundation.dropdown.js"></script>
-
-<script src="js/foundation/foundation.forms.js"></script>
-
-<script src="js/foundation/foundation.joyride.js"></script>
-
-<script src="js/foundation/foundation.magellan.js"></script>
-
-<script src="js/foundation/foundation.joyride.js"></script>
-
-<script src="js/foundation/foundation.orbit.js"></script>
-
-<script src="js/foundation/foundation.reveal.js"></script>
-
-<script src="js/foundation/foundation.section.js"></script>
-
-<script src="js/foundation/foundation.tooltips.js"></script>
-
-<script src="js/foundation/foundation.topbar.js"></script>
-
-<script src="js/foundation/foundation.interchange.js"></script>
-
-<script src="js/foundation/foundation.placeholder.js"></script>
-
--->
 
 <script>
+
     $(document).foundation('topbar');
     $(document).foundation('dropdown',{
         offsetTop: 25,
@@ -183,3 +208,4 @@ $(function() {
     });
 
 </script>
+<!--<![endif]-->

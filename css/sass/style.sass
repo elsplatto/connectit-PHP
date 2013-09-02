@@ -3187,6 +3187,9 @@ footer
       div.header
         width: 40%!important
 
+  .feedback-tab
+    display: none
+
 
 /*Sidebar nav classes*/
 
@@ -3227,45 +3230,56 @@ a.sidebar-button
     font-weight: bold !important
 
 #sidebar
-  position: absolute
-  background: $dark-grey-bg
+  position: fixed
+  background: $dark-grey-dark-bg
   height: 100%
-  padding: 0px
+  padding: 0
   -webkit-box-shadow: inset -2px 0px 8px -1px #111111
   box-shadow: inset -2px 0px 8px -1px #111111
   padding-top: 10px
-  h5 a
-    font-size: 20px !important
-  hr
-    margin: 8px 0 20px 0
-    border-color: #444444 !important
-  h6, h5
-    color: #fff
-    text-transform: uppercase
-    margin-bottom: 0px
-    font-family: $serif-font-family
-  h6
-    font-size: 14px
-    font-weight: bold
+  z-index: 2
   .nav-bar
     background: none
     margin-bottom: 0px
     li
       width: 100%
       box-shadow: none !important
+      border-bottom: 1px solid $dark-grey-bg
+      background-color: transparent !important
       a
-        font-size: 20px !important
+        font-size: 1em !important
         font-weight: 500
-        color: #ccc !important
-        font-family: $serif-font-family
-        font-weight: 600
-        padding: 10px !important
+        color: #fff !important
+        font-family: $gothic-font-family
+        padding: 12px 16px !important
+
+#sidebar
+  #frmSideSearch
+    position: relative
+    input[type="search"]
+      margin: 0
+      background-color: $dark-grey-bg !important
+      border: none
+      color: #fff !important
+  li.active
+    background-color: $dark-grey-bg !important
+  .use-it.active
+    border-bottom: 3px solid $use-it-bg
+  .fix-it.active
+    border-bottom: 3px solid $fix-it-bg
+  .explore-it.active
+    border-bottom: 3px solid $explore-it-bg
+  .share-it.active
+    border-bottom: 3px solid $share-it-bg
+  .about-it.active
+    border-bottom: 3px solid $about-it-bg
 
 .nav-bar
   height: 110px
   background: #4d4d4d
   margin-left: 0
-  margin-top: 8px !important
+  margin-top: 0 !important
+  padding-left: 0 !important
   &.goodness
     height: 120px
     background: #4d4d4d
@@ -3291,9 +3305,10 @@ a.sidebar-button
       display: none
 
 #sidebar
+  padding: 0
   .main-menu
     overflow-x: hidden
-    padding: 0px 15px
+    padding: 0
   .more-goodness, .zurb-links
     padding: 0px 15px
   #passport

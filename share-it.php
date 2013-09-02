@@ -223,3 +223,5 @@ $pageType = 'share-it';
     </script>
 
 <?php include 'includes/footer.php'; ?>
+
+<?php include 'includes/sidebar.php'; ?>

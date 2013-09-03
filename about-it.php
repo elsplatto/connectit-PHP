@@ -79,17 +79,17 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="about-it-software-catalogue.php"><img src="media/img/holder.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
-                    <h3><a href="#">Student Portal</a></h3>
+                    <h3><a href="about-it-software-catalogue.php">Software Catalogue</a></h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
+                        Search, Select and Request Software direct to your computer August 2013
                     </p>
                 </div>
             </div>
             <div class="tile-bottom">
-                <a href="#">Read Article</a>
+                <a href="about-it-software-catalogue.php">Read Article</a>
             </div>
         </div>
 

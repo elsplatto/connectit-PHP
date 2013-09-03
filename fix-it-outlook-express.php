@@ -74,35 +74,35 @@ $pageType = 'fix-it';
             <h2>In the Forums</h2>
             <ul>
                 <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
+                    <div class="avatar-holder"><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
                     <div class="holder">
                         <h6><a href="#">Problem with printer</a></h6>
                         <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                     </div>
                 </li>
                 <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
+                    <div class="avatar-holder"><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
                     <div class="holder">
                         <h6><a href="#">Re: Help connecting to the network server</a></h6>
                         <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                     </div>
                 </li>
                 <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
+                    <div class="avatar-holder"><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
                     <div class="holder">
                         <h6><a href="#">How to design for mobile</a></h6>
                         <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                     </div>
                 </li>
                 <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
+                    <div class="avatar-holder"><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
                     <div class="holder">
                         <h6><a href="#">Whiteboard in the classroom</a></h6>
                         <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
                     </div>
                 </li>
                 <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
+                    <div class="avatar-holder"><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
                     <div class="holder">
                         <h6><a href="#">Thoughts on online communities</a></h6>
                         <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>

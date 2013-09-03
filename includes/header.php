@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/custom.modernizr.js"></script>
+    <?php
+    if (($_SERVER['SERVER_NAME'] == 'tobiasandtobias.com.au') || ($_SERVER['SERVER_NAME'] == 'www.tobiasandtobias.com.au')){
+    ?>
     <script type='text/javascript'>
         (function (d, t) {
             var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -22,6 +25,9 @@
             s.parentNode.insertBefore(bh, s);
         })(document, 'script');
     </script>
+    <?php
+    }
+    ?>
 </head>
 <body class="body-<?php echo $pageType; ?> off-canvas hide-extras">
     <section role="main">

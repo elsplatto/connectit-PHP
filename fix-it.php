@@ -50,17 +50,6 @@ $pageType = 'fix-it';
                     <section class="top-bar-section">
                         <ul>
                             <li class="has-dropdown">
-                                <a href="#">ITD Services<span></span></a>
-                                <ul class="dropdown">
-                                    <li class="nav-item">
-                                        <a href="#">Identity Management</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#">Schools Library Service</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="has-dropdown">
                                 <a href="#">Email<span></span></a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
@@ -71,6 +60,17 @@ $pageType = 'fix-it';
                                     </li>
                                     <li class="nav-item">
                                         <a href="#">Gmail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">ITD Services<span></span></a>
+                                <ul class="dropdown">
+                                    <li class="nav-item">
+                                        <a href="#">Identity Management</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">Schools Library Service</a>
                                     </li>
                                 </ul>
                             </li>
@@ -88,6 +88,38 @@ $pageType = 'fix-it';
                                     </li>
                                     <li class="nav-item">
                                         <a href="#">List item 4</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">List item 5<span></span></a>
+                                        <ul class="dropdown">
+                                            <li class="nav-item">
+                                                <a href="#">List item 1</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">List item 2</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">List item 3</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">List item 4</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">List item 5</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">List item 6</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">List item 7</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">List item 6</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">List item 7</a>
                                     </li>
                                 </ul>
                             </li>

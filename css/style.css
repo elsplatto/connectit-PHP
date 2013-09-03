@@ -68,7 +68,7 @@ h5 {
   font-size: 0.813em !important;
   text-transform: uppercase !important;
   margin-bottom: 10px !important;
-  color: #8a9096 !important; }
+  color: #424a53 !important; }
   h5 a {
     color: inherit !important; }
     h5 a:hover {
@@ -350,7 +350,7 @@ button.dark-red, .button.dark-red {
   box-shadow: none; }
 
 button.small, .button.small {
-  font-weight: 500; }
+  font-weight: 600; }
 
 .button:hover {
   color: white !important; }
@@ -439,7 +439,7 @@ input[type='url'] {
   font-size: 1em; }
 
 input[type='search'] {
-  -webkit-appearance: textfield; }
+  -webkit-appearance: none; }
 
 /*END: Input Fields */
 @media only screen and (min-width: 58.75em) {
@@ -590,7 +590,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   /*transition: box-shadow 0.45s, border-color 0.45s ease-in-out */ }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
   background-color: white !important;
   height: 53px !important;
   font-size: 1.2em !important; }
@@ -1409,7 +1409,7 @@ hr {
         text-decoration: underline; }
       .global-header .rightside .f-dropdown span.time {
         float: left;
-        color: #9c9fa4;
+        color: #424a53;
         padding: 0;
         margin: 0;
         font-style: italic;
@@ -1419,9 +1419,10 @@ hr {
       .global-header .rightside .f-dropdown li.see-all {
         border-bottom: none;
         text-align: center;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 1em; }
         .global-header .rightside .f-dropdown li.see-all a {
-          color: #60cdb0; }
+          color: #3aa385; }
       .global-header .rightside .f-dropdown li.my-profile:before {
         content: "";
         position: absolute;
@@ -1436,7 +1437,8 @@ hr {
         top: 8px;
         left: 220px;
         height: 20px;
-        padding: 2px 4px; }
+        padding: 2px 4px;
+        font-weight: bold; }
       .global-header .rightside .f-dropdown li.drop-logout {
         display: none;
         font-style: normal;
@@ -1502,7 +1504,7 @@ hr {
       border-radius: 16px;
       margin: 10px 0 0 10px; }
     .global-header .rightside .badge {
-      background-color: #e04e5b;
+      background-color: #d4091b;
       padding: 1px;
       border: 1px solid transparent;
       border-radius: 2px;
@@ -1515,7 +1517,8 @@ hr {
       width: auto;
       min-width: 15px;
       display: block;
-      z-index: 100; }
+      z-index: 100;
+      font-weight: bold; }
 
 .banner-holder {
   position: relative;
@@ -1756,7 +1759,7 @@ li.unread {
                 .nav-holder .row nav.top-bar section ul.top-level li ul .search-holder form label {
                   display: none; }
                 .nav-holder .row nav.top-bar section ul.top-level li ul .search-holder form input[type="search"] {
-                  -webkit-appearance: textfield;
+                  -webkit-appearance: none;
                   font-size: 30px;
                   margin: 0;
                   height: 72px; }
@@ -1837,6 +1840,7 @@ li.unread {
     margin: 0 20px 0 0 !important;
     line-height: 1em !important;
     color: white;
+    font-weight: 500 !important;
     font-family: "Gotham";
     font-size: 2.75em !important; }
     .headings h1 a, .headings h2 a {
@@ -2015,7 +2019,7 @@ li.unread {
         color: #8a9096; }
       .support-suite li a p, .share-suite li a p {
         font-size: 0.75em;
-        color: #8a9096; }
+        color: #eeeff1; }
 
 .light-grey-light .support-suite li:hover, .light-grey-light .share-suite li:hover {
   background-color: white !important; }
@@ -2024,9 +2028,11 @@ li.unread {
   border-color: #dfe0e3;
   border-style: solid;
   border-radius: 1.375em;
-  background-color: #dfe0e3; }
+  background-color: #cacdd1; }
 .light-grey-light .support-suite a:hover div, .light-grey-light .share-suite a:hover div {
   background-color: #8a9096; }
+.light-grey-light .support-suite a p, .light-grey-light .share-suite a p {
+  color: #555e68; }
 
 .share-suite li {
   height: 110px !important; }
@@ -2195,14 +2201,14 @@ li.unread {
         position: relative;
         float: left;
         clear: right;
-        color: #8a9096;
+        color: #424a53;
         font-size: 0.875em;
         font-family: "Whitney HTF", "Helvetica Neue"; }
         .list-holder ul li .holder p.cite a, .block-list-holder ul li .holder p.cite a {
           position: relative;
           text-decoration: underline;
           display: inline;
-          color: #8a9096; }
+          color: #424a53; }
 
 .slider-holder {
   width: 100%;
@@ -2428,8 +2434,6 @@ li.unread {
             border: solid 7px;
             border-color: transparent transparent transparent #454d54;
             margin-top: -8px; }
-      .trouble-shoot .top-bar .top-bar-section ul li:first-child a {
-        border: none; }
       .trouble-shoot .top-bar .top-bar-section ul li li a {
         transition: padding-left 0.5s ease;
         padding: 0.3em 1em 0.3em !important; }
@@ -2442,11 +2446,41 @@ li.unread {
       .trouble-shoot .top-bar .top-bar-section ul .has-dropdown ul {
         display: none;
         list-style: none; }
+        .trouble-shoot .top-bar .top-bar-section ul .has-dropdown ul .has-dropdown ul {
+          display: none;
+          list-style: none;
+          left: 0%; }
+        .trouble-shoot .top-bar .top-bar-section ul .has-dropdown ul .hover ul {
+          display: list-item !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          list-style: none !important; }
+    .trouble-shoot .top-bar .top-bar-section ul .moved {
+      display: inline-block;
+      list-style: none;
+      padding-left: 0; }
+      .trouble-shoot .top-bar .top-bar-section ul .moved a {
+        padding-left: 0 !important; }
+      .trouble-shoot .top-bar .top-bar-section ul .moved ul {
+        display: list-item;
+        list-style: none; }
+        .trouble-shoot .top-bar .top-bar-section ul .moved ul .moved {
+          display: inline-block;
+          list-style: none;
+          padding-left: 0; }
+          .trouble-shoot .top-bar .top-bar-section ul .moved ul .moved a {
+            padding-left: 0 !important; }
+          .trouble-shoot .top-bar .top-bar-section ul .moved ul .moved ul {
+            display: list-item;
+            list-style: none;
+            left: 100%; }
     .trouble-shoot .top-bar .top-bar-section ul .hover {
       background-color: white !important; }
       .trouble-shoot .top-bar .top-bar-section ul .hover a {
-        font-weight: bold;
+        font-weight: bold !important;
         padding-left: 20px !important; }
+        .trouble-shoot .top-bar .top-bar-section ul .hover a:after {
+          content: "" !important; }
         .trouble-shoot .top-bar .top-bar-section ul .hover a span:after {
           border-color: #454d54 transparent transparent transparent; }
       .trouble-shoot .top-bar .top-bar-section ul .hover ul {
@@ -2456,12 +2490,21 @@ li.unread {
         list-style: none !important; }
         .trouble-shoot .top-bar .top-bar-section ul .hover ul li a {
           padding: 0.3em 1em 0.3em !important;
-          font-weight: 400;
+          font-weight: 400 !important;
           border-width: 1px 0 0 0;
           border-color: #dfe0e3;
           border-style: solid; }
+          .trouble-shoot .top-bar .top-bar-section ul .hover ul li a span:after {
+            border-color: transparent transparent transparent #454d54; }
         .trouble-shoot .top-bar .top-bar-section ul .hover ul li:first-child a {
           border: none; }
+        .trouble-shoot .top-bar .top-bar-section ul .hover ul .hover a {
+          font-weight: bold !important;
+          padding-left: 30px !important; }
+          .trouble-shoot .top-bar .top-bar-section ul .hover ul .hover a span:after {
+            border-color: #454d54 transparent transparent transparent; }
+        .trouble-shoot .top-bar .top-bar-section ul .hover ul .hover ul li a {
+          font-weight: 400 !important; }
 
 .toggle-view.large {
   width: 36px;
@@ -2881,6 +2924,10 @@ footer {
             border-width: 0 0 1px 0; }
             body .nav-holder .row .large-12 nav.top-bar section ul.top-level li:first-child {
               border-width: 1px 0; }
+    body .trouble-shoot .top-bar .top-bar-section ul {
+      position: relative; }
+      body .trouble-shoot .top-bar .top-bar-section ul li ul {
+        position: absolute; }
     body #nav-pad {
       height: 50px; }
     body .orbit-bullets li {
@@ -2977,7 +3024,9 @@ a.sidebar-button {
     margin: 0;
     background-color: #555e68 !important;
     border: none;
-    color: white !important; }
+    border-radius: 0px;
+    color: white !important;
+    -webkit-appearance: none; }
 #sidebar li.active {
   background-color: #555e68 !important; }
 #sidebar .use-it.active {

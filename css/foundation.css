@@ -2622,9 +2622,6 @@ form.custom {
   z-index: 99; }
 
 .top-bar {
-  overflow: hidden;
-  height: 45px;
-  line-height: 45px;
   position: relative;
   background: #111111;
   margin-bottom: 1.875em; }
@@ -2715,7 +2712,6 @@ form.custom {
     width: 100%;
     height: auto;
     display: block;
-    background: #222222;
     font-size: 16px;
     margin: 0; }
   .top-bar-section .divider,

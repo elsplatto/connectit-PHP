@@ -84,7 +84,7 @@ $alert = $_REQUEST['alert'];
                         </div>
                     </li>
                 </ul>
-                <a href="news.php" class="small button green">See all news</a>
+                <a href="news.php" class="small button blue">See all news</a>
             </div>
         </div>
     </section>
@@ -228,7 +228,7 @@ $alert = $_REQUEST['alert'];
     <section id="featured-software-slider" class="slider-holder light-grey-light std">
         <div class="row">
             <div class="large-12 columns">
-                <h2>Featured Software</h2>
+                <h2>Services &amp; Partners</h2>
 
                 <div class="orbit-container">
                     <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container">

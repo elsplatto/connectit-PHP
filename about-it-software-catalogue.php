@@ -16,22 +16,50 @@ $pageType = 'about-it';
     <div class="row">
         <div class="large-12 columns">
             <div class="breadcrumbs"><a href="about-it.php">About.It</a></div>
-            <h1>BYOD</h1>
+            <h1>Software Catalogue</h1>
         </div>
     </div>
 </section>
 
-<section class="white std">
+<section class="white std content-offset">
     <div class="row">
-        <div class="large-12 columns">
-            <img src="media/img/holderLge.png" alt="Example Image" class="right"  />
+        <div class="large-offset-1 large-10 columns">
             <p class="intro">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo consequat.
+                Search, Select and Request Software direct to your computer August 2013.
             </p>
 
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <a href="#">fugiat nulla</a> pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-            </p>
+            <h4>What is the Software Catalogue?</h4>
+            <p>The eT4L Software Catalogue is a new web-service where you can browse, discover and request software for installation on computers in your classroom, computer lab or staffroom, actually anywhere across the school. The catalogue will be available only for schools who are running an eT4L server.</p>
+
+            <h4>What type of Software will be in the catalogue?</h4>
+            <p>The software in the catalogue reflects the software titles that are currently in DEC schools across NSW.</p>
+
+
+            <img src="media/img/holderLge.png" alt="Example Image" class="right"  />
+
+            <h4>Has the Software been expertly reviewed?</h4>
+            <p>All software in the catalogue has been classified by teachers and there are ratings and reviews by people who have used these tools in practice to assist you in selecting the best resources for deployment in your setting.</p>
+
+            <h4>Are user ratings part of the catalogue?</h4>
+            <p>In the second phase of the project users will be able to rate and review software to assist other users within the DEC.</p>
+
+
+
+
+            <h4>What are the benefits of the eT4L Software Catalogue?</h4>
+            <p>The benefits of the eT4L Software Catalogue for schools and teachers will be: - Minimising software costs for schools and sites</p>
+            <ul>
+                <li>Providing support for schools in managing software and licensing</li>
+                <li>Supporting schools in reducing replication of licenses</li>
+                <li>Assisting teachers to discover software to enhance their teaching practice.</li>
+            </ul>
+
+            <h4>When will the eT4L Software Catalogue be re-leased for Schools?</h4>
+            <p>The project is currently in pilot phase with full rollout to all eT4L schools during 2014. The full release of the eT4L Software Catalogue is scheduled to begin in 2014.</p>
+            <img src="media/img/holderLge.png" alt="Example Image" class="left"  />
+            <h4>Further Information</h4>
+            <p>For more information on the eT4L Software Catalogue please ensure you check out the latest edition of technology news for schools. Or contact us on the details below:</p>
+            <p><a href="mailto:et4lsoftwarecatalogue@det.nsw.edu.au">et4lsoftwarecatalogue@det.nsw.edu.au</a></p>
         </div>
     </div>
 </section>

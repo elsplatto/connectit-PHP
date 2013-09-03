@@ -1,7 +1,7 @@
 $header-bg: #222529
 $footer-bg: #222529
 $circle-bg: #8a9096
-$badge-color: #e04e5b
+$badge-color: #d4091b
 $support-area-bg: #eeeff1
 
 $banner-height: 144px
@@ -171,7 +171,7 @@ h5
   font-size: 0.813em !important
   text-transform: uppercase !important
   margin-bottom: 10px !important
-  color: $dark-grey-light-bg !important
+  color: $dark-grey-dark-bg !important
   a
     color: inherit !important
     &:hover
@@ -485,7 +485,7 @@ button.dark-red, .button.dark-red
   box-shadow: none
 
 button.small, .button.small
-  font-weight: 500
+  font-weight: 600
 
 .button
   &:hover
@@ -573,7 +573,7 @@ input[type='url']
     size: 1em
 
 input[type='search']
-  -webkit-appearance: textfield
+  -webkit-appearance: none
 
 /*END: Input Fields*/
 
@@ -734,7 +734,7 @@ input
     /*transition: box-shadow 0.45s, border-color 0.45s ease-in-out */
 
 input[type="search"]
-  -webkit-appearance: textfield
+  -webkit-appearance: none
   background-color: #fff!important
   height: 53px!important
   font-size: 1.2em!important
@@ -1500,7 +1500,7 @@ hr
         text-decoration: underline
       span.time
         float: left
-        color: #9c9fa4
+        color: $dark-grey-dark-bg
         padding: 0
         margin: 0
         font-style: italic
@@ -1512,8 +1512,9 @@ hr
         border-bottom: none
         text-align: center
         padding: 10px
+        font-size: 1em
         a
-          color: #60cdb0
+          color: $about-it-dark-bg
       li.my-profile
         &:before
           content: ''
@@ -1530,6 +1531,7 @@ hr
           left: 220px
           height: 20px
           padding: 2px 4px
+          font-weight: bold
       li.drop-logout
         display: none
         font-style: normal
@@ -1612,6 +1614,7 @@ hr
       min-width: 15px
       display: block
       z-index: 100
+      font-weight: bold
 
 .banner-holder
   position: relative
@@ -1862,7 +1865,7 @@ li.unread
                   label
                     display: none
                   input[type="search"]
-                    -webkit-appearance: textfield
+                    -webkit-appearance: none
                     font-size: 30px
                     margin: 0
                     height: 72px
@@ -1947,6 +1950,7 @@ li.unread
     margin: 0 20px 0 0 !important
     line-height: 1em !important
     color: rgba(255,255,255,1)
+    font-weight: 500 !important
     font:
       family: $gothic-font-family
       size: 2.75em !important
@@ -2154,7 +2158,7 @@ li.unread
           color: $dark-grey-light-bg
       p
         font-size: 0.75em
-        color: $dark-grey-light-bg
+        color: $light-grey-light-bg
 
 .light-grey-light
   .support-suite, .share-suite
@@ -2168,10 +2172,12 @@ li.unread
           color: $light-grey-bg
           style: solid
           radius: 1.375em
-        background-color: $light-grey-bg
+        background-color: $light-grey-dark-bg
       &:hover
         div
           background-color: $dark-grey-light-bg
+      p
+        color: $dark-grey-bg
 
 .share-suite
   li
@@ -2353,7 +2359,7 @@ li.unread
           position: relative
           float: left
           clear: right
-          color: $dark-grey-light-bg
+          color: $dark-grey-dark-bg
           font:
             size: 0.875em
             family: $body-font-family
@@ -2361,7 +2367,7 @@ li.unread
             position: relative
             text-decoration: underline
             display: inline
-            color: $dark-grey-light-bg
+            color: $dark-grey-dark-bg
 
 .slider-holder
   width: 100%
@@ -2623,28 +2629,58 @@ li.unread
                 border: solid 7px
                 border-color: transparent transparent transparent $std-font-color
                 margin-top: -8px
-          &:first-child
-            a
-              border: none
           li
             a
               transition: padding-left 0.5s ease
               padding: $topbar-link-padding
-
         .has-dropdown
           display: inline-block
           list-style: none
           padding-left: 0
           a
             padding-left: 0!important
+
           ul
             display: none
             list-style: none
-        .hover
-          background-color: #fff!important
+            .has-dropdown
+              ul
+                display: none
+                list-style: none
+                left: 0%
+            .hover
+              ul
+                display: list-item !important
+                padding: 0 !important
+                margin: 0 !important
+                list-style: none !important
+        .moved
+          display: inline-block
+          list-style: none
+          padding-left: 0
           a
-            font-weight: bold
-            padding-left: 20px!important
+            padding-left: 0 !important
+          ul
+            display: list-item
+            list-style: none
+
+            .moved
+              display: inline-block
+              list-style: none
+              padding-left: 0
+              a
+                padding-left: 0 !important
+              ul
+                display: list-item
+                list-style: none
+                left: 100%
+        .hover
+          background-color: #fff !important
+          a
+            font-weight: bold !important
+            padding-left: 20px !important
+            &:after
+              content: '' !important
             span
               &:after
                 border-color: $std-font-color transparent transparent transparent
@@ -2656,14 +2692,28 @@ li.unread
             li
               a
                 padding: $topbar-link-padding
-                font-weight: 400
+                font-weight: 400 !important
                 border:
                   width: 1px 0 0 0
                   color: $light-grey-bg
                   style: solid
+                span
+                  &:after
+                    border-color: transparent transparent transparent $std-font-color
               &:first-child
                 a
                   border: none
+            .hover
+              a
+                font-weight: bold !important
+                padding-left: 30px !important
+                span
+                  &:after
+                    border-color: $std-font-color transparent transparent transparent
+              ul
+                li
+                  a
+                    font-weight: 400 !important
 
 .toggle-view.large
   width: 36px
@@ -3150,6 +3200,18 @@ footer
                     width: 0 0 1px 0
                   &:first-child
                     border-width: 1px 0
+
+
+    .trouble-shoot
+      .top-bar
+        .top-bar-section
+          ul
+            position: relative
+            li
+              ul
+                position: absolute
+
+
     #nav-pad
       height: 50px
 
@@ -3260,7 +3322,9 @@ a.sidebar-button
       margin: 0
       background-color: $dark-grey-bg !important
       border: none
+      border-radius: 0px
       color: #fff !important
+      -webkit-appearance: none
   li.active
     background-color: $dark-grey-bg !important
   .use-it.active

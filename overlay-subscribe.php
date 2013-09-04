@@ -7,8 +7,10 @@
     <div class="note-holder">
         <span class="note">You can edit your subscriptions at any time in your profile.</span>
     </div>
-    <a href="#" class="button green reveal-close right">Confirm Subscription</a>
-    <a href="#" class="button secondary reveal-close right">Cancel</a>
+    <div class="button-holder">
+        <a href="#" class="button green reveal-close right">Confirm Subscription</a>
+        <a href="#" class="button secondary reveal-close right">Cancel</a>
+    </div>
 
     <a class="close-reveal-modal reveal-close"></a>
 </div>

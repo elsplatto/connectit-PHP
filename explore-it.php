@@ -13,7 +13,7 @@ $pageType = 'explore-it';
         <div class="row">
             <div class="large-12 columns">
                 <div class="subheader"><h3>Be Inspired</h3></div>
-                <h1>Explore.It</h1> <a href="#" class="button dark-red small">Subscribe</a>
+                <h1>Explore.It</h1> <a href="overlay-subscribe.php" class="button dark-red small reveal-init">Subscribe</a>
             </div>
         </div>
     </section>

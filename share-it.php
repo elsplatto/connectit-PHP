@@ -159,10 +159,6 @@ $pageType = 'share-it';
 
     <script>
         $(function() {
-
-
-
-
             $('.toggle-view').click(function(e){
                 e.preventDefault();
                 var targetEl = $('#'+$(this).attr('data-target'));

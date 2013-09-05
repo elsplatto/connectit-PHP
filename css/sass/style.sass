@@ -1543,11 +1543,13 @@ li.unread
             border-color: $topbar-nav-border-color
             border-width: 0 1px 0 0
             text-align: center
+            float: left
             a
               font-size: 1em
               font-weight: bold
               height: $topbar-height
               color: $topbar-link-color
+              line-height: 45px
               text-align: center
               transition:
                 property: border-bottom-color
@@ -2791,15 +2793,11 @@ li.unread
     height: 24px
     background-position: -29px -215px
 
-
-
-
 .body-explore-it
   .tile-holder
     div
       img
         border-color: $explore-it-bg
-
 
 .new-discussion, .my-profile, .edit-my-profile
   h3
@@ -2874,6 +2872,14 @@ li.unread
   position: absolute
   background-color: rgba(95,205,174,0.9)
 
+.guide
+  position: relative
+  min-height: 200px
+  .button
+    position: absolute
+    bottom: 0
+    width: 80%
+
 footer
   border-bottom: 1px solid $dark-grey-dark-bg
   padding: 30px 0 10px
@@ -2920,9 +2926,6 @@ footer
       height: 50px
 
 
-
-
-
 /*START: Dropzone */
 
 .dropzone
@@ -2952,18 +2955,27 @@ footer
             li
               height: $topbar-height-mob
 
+  .guide
+    position: relative
+    min-height: 250px
+    .button
+      position: absolute
+      bottom: 0
+      width: 80%
+
+@media only screen and (max-width: 1024px)
+  .feedback-tab
+    display: none
 
 
 //phone
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px)
 
   h1, h2, h3, h4, h5, h6
     line-height: 1.5em !important
 
   h1
-    font-size: 2.75em
-    font-weight: 400 !important
-    color: #fff !important
+    font-size: 1.313em
 
   h2, h4
     font-family: $serif-font-family
@@ -2972,61 +2984,42 @@ footer
 
 
   h2
-    font-size: 1.875em !important
-    font-weight: 400
-    margin-bottom: 10px !important
-    a
-      color: inherit !important
-      &:hover
-        color: inherit !important
+    font-size: 1.125em !important
 
   h3
-    font-size: 1.5em !important
-    font-weight: 400
-    margin-bottom: 10px !important
-    a
-      color: inherit !important
-      &:hover
-        color: inherit !important
+    font-size: 1.125em !important
+
   h4
-    font-size: 1.313em !important
-    font-weight: 300 !important
-    margin-bottom: 10px !important
-    a
-      color: inherit !important
-      &:hover
-        color: inherit !important
-  h5
     font-size: 0.813em !important
-    text-transform: uppercase !important
-    margin-bottom: 10px !important
-    color: $dark-grey-dark-bg !important
-    a
-      color: inherit !important
-      &:hover
-        color: inherit !important
+
+  h5
+    font-size: 0.688em !important
+
   h6
-    font-size: 1em !important
-    margin-bottom: 10px !important
-    font-weight: 400 !important
-    a
-      color: inherit !important
-      &:hover
-        color: inherit !important
+    font-size: 0.875em !important
 
   .headings
-    background-image: none
-    padding: 20px 0
+    padding: 20px 0 !important
     h1, h2
-      float: left
-      padding: 0
-      margin: 0 20px 0 0 !important
-      line-height: 1em !important
-      color: rgba(255,255,255,1)
-      font-weight: 500 !important
-      font:
-        family: $gothic-font-family
-        size: 1.688em !important
+      font-size: 1.313em !important
+
+  .breadcrumbs a, .subheader h3
+    font-size: 0.813em !important
+    color: rgba(255,255,255,1) !important
+
+  p.intro
+    font-size: 1em
+  p, button, .button, .filter-box a, .tag-box a
+    font-size: 0.875em
+  button, .button
+    padding: 0.75em 0.9em
+
+  .filter-area .filter-box, .filter-area .tag-box, .tag-area .filter-box, .tag-area .tag-box
+    max-height: 80px
+
+  .std
+    padding: 25px 0
+
 
   body
     overflow-x: hidden
@@ -3110,8 +3103,6 @@ footer
                   &:first-child
                     border-width: 1px 0
 
-
-
     .trouble-shoot
       .top-bar
         .top-bar-section
@@ -3120,7 +3111,6 @@ footer
             li
               ul
                 position: absolute
-
 
     #nav-pad
       height: 50px
@@ -3134,7 +3124,6 @@ footer
     margin: 0 auto 10px auto !important
     li
       width: 100%
-
 
   blockquote
     margin: 20px 0 20px 0
@@ -3161,7 +3150,6 @@ footer
 
   .feedback-tab
     display: none
-
 
 /*Sidebar nav classes*/
 

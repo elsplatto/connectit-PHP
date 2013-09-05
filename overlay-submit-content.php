@@ -5,7 +5,7 @@
     </p>
     <p>
         <strong>Get started! Submit content to:</strong><br />
-        <a href="mailto:submitcontent@connectit.nsw.edu.au>submitcontent@connectit.nsw.edu.au/a>
+        <a href="mailtto:submitcontent@connectit.nsw.edu.au">submitcontent@connectit.nsw.edu.au</a>
     </p>
     <hr class="margin-bottom-20" />
 

@@ -28,5 +28,5 @@
 
 </section>
 
-<a href="feedback.php" class="feedback-tab reveal-init">Feedback</a>
+<a href="overlay-feedback.php" data-size="medium" class="feedback-tab reveal-init">Feedback</a>
 <div class="reveal-modal-bg" style="display: none"></div>

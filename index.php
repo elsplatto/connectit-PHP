@@ -182,6 +182,7 @@ $alert = $_REQUEST['alert'];
                 <h2>Your Community</h2>
 
                 <h5>Last Discussions</h5>
+
                 <ul>
                     <li>
                         <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>

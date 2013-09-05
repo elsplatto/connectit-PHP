@@ -1444,12 +1444,14 @@ li.unread {
             border-style: solid;
             border-color: #e0e0e2;
             border-width: 0 1px 0 0;
-            text-align: center; }
+            text-align: center;
+            float: left; }
             .nav-holder .row nav.top-bar section ul.top-level li a {
               font-size: 1em;
               font-weight: bold;
               height: 54px;
               color: #434a52;
+              line-height: 45px;
               text-align: center;
               transition-property: border-bottom-color;
               transition-duration: 0.5s;
@@ -2623,6 +2625,14 @@ li.unread {
   position: absolute;
   background-color: rgba(95, 205, 174, 0.9); }
 
+.guide {
+  position: relative;
+  min-height: 200px; }
+  .guide .button {
+    position: absolute;
+    bottom: 0;
+    width: 80%; }
+
 footer {
   border-bottom: 1px solid #424a53;
   padding: 30px 0 10px;
@@ -2686,15 +2696,24 @@ footer {
       .nav-holder .row .columns .title-area .name {
         padding-left: 0.95em; }
       .nav-holder .row .columns section ul.top-level li {
-        height: 50px; } }
-@media only screen and (max-width: 768px) {
+        height: 50px; }
+
+  .guide {
+    position: relative;
+    min-height: 250px; }
+    .guide .button {
+      position: absolute;
+      bottom: 0;
+      width: 80%; } }
+@media only screen and (max-width: 1024px) {
+  .feedback-tab {
+    display: none; } }
+@media only screen and (max-width: 767px) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.5em !important; }
 
   h1 {
-    font-size: 2.75em;
-    font-weight: 400 !important;
-    color: white !important; }
+    font-size: 1.313em; }
 
   h2, h4 {
     font-family: "PMN Caecilia", serif; }
@@ -2703,63 +2722,43 @@ footer {
     font-family: "Gotham"; }
 
   h2 {
-    font-size: 1.875em !important;
-    font-weight: 400;
-    margin-bottom: 10px !important; }
-    h2 a {
-      color: inherit !important; }
-      h2 a:hover {
-        color: inherit !important; }
+    font-size: 1.125em !important; }
 
   h3 {
-    font-size: 1.5em !important;
-    font-weight: 400;
-    margin-bottom: 10px !important; }
-    h3 a {
-      color: inherit !important; }
-      h3 a:hover {
-        color: inherit !important; }
+    font-size: 1.125em !important; }
 
   h4 {
-    font-size: 1.313em !important;
-    font-weight: 300 !important;
-    margin-bottom: 10px !important; }
-    h4 a {
-      color: inherit !important; }
-      h4 a:hover {
-        color: inherit !important; }
+    font-size: 0.813em !important; }
 
   h5 {
-    font-size: 0.813em !important;
-    text-transform: uppercase !important;
-    margin-bottom: 10px !important;
-    color: #424a53 !important; }
-    h5 a {
-      color: inherit !important; }
-      h5 a:hover {
-        color: inherit !important; }
+    font-size: 0.688em !important; }
 
   h6 {
-    font-size: 1em !important;
-    margin-bottom: 10px !important;
-    font-weight: 400 !important; }
-    h6 a {
-      color: inherit !important; }
-      h6 a:hover {
-        color: inherit !important; }
+    font-size: 0.875em !important; }
 
   .headings {
-    background-image: none;
-    padding: 20px 0; }
+    padding: 20px 0 !important; }
     .headings h1, .headings h2 {
-      float: left;
-      padding: 0;
-      margin: 0 20px 0 0 !important;
-      line-height: 1em !important;
-      color: white;
-      font-weight: 500 !important;
-      font-family: "Gotham";
-      font-size: 1.688em !important; }
+      font-size: 1.313em !important; }
+
+  .breadcrumbs a, .subheader h3 {
+    font-size: 0.813em !important;
+    color: white !important; }
+
+  p.intro {
+    font-size: 1em; }
+
+  p, button, .button, .filter-box a, .tag-box a {
+    font-size: 0.875em; }
+
+  button, .button {
+    padding: 0.75em 0.9em; }
+
+  .filter-area .filter-box, .filter-area .tag-box, .tag-area .filter-box, .tag-area .tag-box {
+    max-height: 80px; }
+
+  .std {
+    padding: 25px 0; }
 
   body {
     overflow-x: hidden; }

@@ -22,19 +22,19 @@ $pageType = 'use-it';
 
     <section class="white std">
         <div class="row">
-            <div class="large-4 columns">
+            <div class="large-4 columns guide">
                 <h2>Training Guides</h2>
                 <p>Training in the Products and Services available through the DEC.</p>
                 <a href="use-it-training-guides.php" class="button small green full-width">View all Training Guides</a>
             </div>
 
-            <div class="large-4 columns">
+            <div class="large-4 columns guide">
                 <h2>Product Guides</h2>
                 <p>Get support and information on the products you used anyway.</p>
                 <a href="use-it-product-guides.php" class="button small green full-width">View all Product Guides</a>
             </div>
 
-            <div class="large-4 columns">
+            <div class="large-4 columns guide">
                 <h2>Use.It Guides</h2>
                 <p>Discover how to use technology to get the most from you professional practice.</p>
                 <a href="use-it-guides.php" class="button small green full-width">View all Use.It Guides</a>

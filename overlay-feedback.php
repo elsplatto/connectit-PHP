@@ -13,7 +13,7 @@
 
 
 
-            <input type="submit" class="button green right" value="Upload Now" />
+            <input type="submit" class="button green right" value="Submit" />
             <a href="#" class="button secondary reveal-close right">Cancel</a>
     </form>
     <a class="close-reveal-modal reveal-close"></a>

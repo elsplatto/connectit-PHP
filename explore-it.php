@@ -81,9 +81,9 @@ $pageType = 'explore-it';
             <div class="large-4 columns">
                 <div class="tile-holder">
                     <div>
-                        <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                        <a href="explore-it-connecting-countries.php"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
                         <div class="heading">
-                            <h3><a href="explore-it-connecting-countries.php">Connecting Countries</a></h3>
+                            <h3><a href="explore-it-connecting-countries.php">Connecting Countries - Video</a></h3>
                             <div class="tags"><p><strong>Tags:</strong> collaborating in the cloud, printers, whiteboards, scanners</p> </div>
                         </div>
                     </div>
@@ -93,9 +93,9 @@ $pageType = 'explore-it';
             <div class="large-4 columns">
                 <div class="tile-holder">
                     <div>
-                        <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
+                        <a href="explore-it-article.php"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
                         <div class="heading">
-                            <h3><a href="#">Bring in your own device scheme</a></h3>
+                            <h3><a href="explore-it-article.php">Connecting Countries - Article</a></h3>
                             <div class="tags"><p><strong>Tags:</strong> collaborating in the cloud, printers, whiteboards, scanners</p> </div>
                         </div>
                     </div>

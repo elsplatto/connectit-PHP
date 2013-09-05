@@ -10,8 +10,10 @@ $(function() {
     $('.reveal-init').click(function(e)
     {
         e.preventDefault();
+        var size = 'small';
+        size = $(this).attr('data-size');
         $('.reveal-modal-bg').show();
-        var modal = $('<div>').addClass('reveal-modal small').prependTo('body');
+        var modal = $('<div>').addClass('reveal-modal '+size).prependTo('body');
         $.get($(this).attr('href'), function(data) {
             modal.empty().html(data).foundation('reveal', 'open');
         });
@@ -188,11 +190,7 @@ $(function() {
 });
 </script>
 
-<!--[if lt IE 9]>
-<script src="js/foundation/lt-ie9/foundation.min.js"></script>
-<script src="js/foundation/lt-ie9/jquery.foundation.topbar.js"></script>
-<![endif]-->
-<!--[if gt IE 8]><!-->
+
 <script src="js/foundation.min.js"></script>
 <script src="js/foundation/foundation.topbar.js"></script>
 <script src="js/foundation/foundation.dropdown.js"></script>
@@ -208,4 +206,3 @@ $(function() {
     });
 
 </script>
-<!--<![endif]-->

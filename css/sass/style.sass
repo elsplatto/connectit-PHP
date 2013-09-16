@@ -10,29 +10,41 @@ $banner-height: 144px
 
 $connect-it-black: #222529
 
-$use-it-dark-bg: #7d2d5c
+$use-it-dark-bg: #692e51
 $use-it-bg: #994275
-$use-it-light-bg: #e8a4cb
+$use-it-light-bg: #c67da7
+$use-it-super-light-bg: #e8a4cb
+$use-it-ultra-light-bg: #ffcdea
 
-$fix-it-dark-bg: #e28a00
-$fix-it-bg: #f19d19
-$fix-it-light-bg: #fad153
+$fix-it-dark-bg: #cc5d26
+$fix-it-bg: #e4772e
+$fix-it-light-bg: #ffa145
+$fix-it-super-light-bg: #ffc77f
+$fix-it-ultra-light-bg: #ffe8b8
 
-$explore-it-dark-bg: #c43442
-$explore-it-bg: #e14d5b
-$explore-it-light-bg: #f9a8b1
+$explore-it-dark-bg: #9c3640
+$explore-it-bg: #c4414e
+$explore-it-light-bg: #eb6874
+$explore-it-super-light-bg: #f08791
+$explore-it-ultra-light-bg: #ffc0c7
 
-$share-it-dark-bg: #0e5992
-$share-it-bg: #1a7bc0
-$share-it-light-bg: #80c2f2
+$share-it-dark-bg: #084878
+$share-it-bg: #1366a3
+$share-it-light-bg: #318bcb
+$share-it-super-light-bg: #5aa6dd
+$share-it-ultra-light-bg: #80c2f2
 
-$about-it-dark-bg: #3aa385
-$about-it-bg: #60cdae
-$about-it-light-bg: #aef9e4
+$about-it-dark-bg: #2e7a64
+$about-it-bg: #3aa385
+$about-it-light-bg: #61cdae
+$about-it-super-light-bg: #99e6cf
+$about-it-ultra-light-bg: #ccffef
 
-$other-dark-bg: #3aa385
-$other-bg: #60cdae
-$other-light-bg: #aef9e4
+$other-dark-bg: #2e7a64
+$other-bg: #3aa385
+$other-light-bg: #61cdae
+$other-super-light-bg: #99e6cf
+$other-ultra-light-bg: #ccffef
 
 $dark-grey-dark-bg: #424a53
 $dark-grey-bg: #555e68
@@ -44,20 +56,20 @@ $light-grey-light-bg: #eeeff1
 
 $grey-bg: #3f4851
 
-$button-blue: #1a7bc0
-$button-blue-drop-shadow: #0e5992
+$button-blue: #1366a3
+$button-blue-drop-shadow: #084878
 
-$button-green: #60cdae
-$button-green-drop-shadow: #3aa385
+$button-green: #2e7a64
+$button-green-drop-shadow: #2e7a64
 
-$button-orange: #f19d19
-$button-orange-drop-shadow: #e28a00
+$button-orange: #e4772e
+$button-orange-drop-shadow: #cc5d26
 
-$button-red: #e14d5b
-$button-red-drop-shadow: #c43442
+$button-red: #c4414e
+$button-red-drop-shadow: #9c3640
 
 $button-maroon: #994275
-$button-maroon-drop-shadow: #7d2d5c
+$button-maroon-drop-shadow: #692e51
 
 /*END: colors*/
 
@@ -261,6 +273,7 @@ img.large
 
 img.med
   margin: 0 0 20px 0
+
 
 .content-offset
   img.right
@@ -1389,7 +1402,7 @@ hr
         background-image: url(img/icon-sprite.png)
         background-position: -32px -17px
     .notification.alert
-      border: 2px solid #e14d5b
+      border: 2px solid $explore-it-bg
       background-color: $connect-it-black
       &:before
         background-position: -32px 0px
@@ -1811,6 +1824,20 @@ li.unread
   text-align: center
   overflow: hidden
   .orbit-container
+    h2
+      color: #fff
+      font-size: 2.75em !important
+      font-weight: 400 !important
+      color: #fff !important
+      font-family: $gothic-font-family !important
+    h4
+      color: #ffffff
+    li.container
+      padding: 50px 0 0 0
+      height: 385px
+      background-image: url(img/feature-bg.png)
+      background-position: top center
+      background-repeat: no-repeat
     .use-it
       background-color: $use-it-bg
     .fix-it
@@ -2204,7 +2231,7 @@ li.unread
       a
         color: $std-link-color
 
-.slider-holder
+.slider-holder, .slider-holder-sml
   width: 100%
   position: relative
   height: auto
@@ -2347,7 +2374,8 @@ li.unread
   .heading
     margin: 0 !important
 
-.slider-holder.light-grey-light
+.slider-holder.light-grey-light,
+.slider-holder-sml.light-grey-light
   .orbit-bullets
     li
       background-color: $dark-grey-dark-bg
@@ -2365,22 +2393,24 @@ li.unread
     .desktop
       background: rgba(238,239,241,0.92)
 
+#single-feature-slider, .slider-holder-sml
+  display: none
 
-
-#featured-software-slider
+.feature-slider
   div
     height: auto
     .img-holder
       position: relative
-      width: 17.75em
-      height: 11.25em
+      width: 17.75em !important
+      height: 11.25em !important
       line-height: 11.25em
       display: table
       text-align: center
       padding: 0
       margin: 0
       img
-        border: none
+        border: none !important
+        border-width: 0px
         display: inline-block
         vertical-align: middle
     .heading
@@ -2971,6 +3001,12 @@ footer
 //phone
 @media only screen and (max-width: 767px)
 
+
+  #single-feature-slider, .slider-holder-sml
+    display: block
+  #feature-slider, .slider-holder, .feature-holder
+    display: none
+
   h1, h2, h3, h4, h5, h6
     line-height: 1.5em !important
 
@@ -3020,6 +3056,10 @@ footer
   .std
     padding: 25px 0
 
+  .support-suite
+    li
+      border: 1px solid $light-grey-dark-bg
+      margin-bottom: 10px
 
   body
     overflow-x: hidden

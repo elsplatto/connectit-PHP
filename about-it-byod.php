@@ -24,7 +24,7 @@ $pageType = 'about-it';
 <section class="white std">
     <div class="row">
         <div class="large-12 columns">
-            <img src="media/img/holderLge.png" alt="Example Image" class="right"  />
+            <img src="media/img/byod-2-med.png" alt="Example Image" class="right"  />
             <p class="intro">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo consequat.
             </p>

@@ -26,14 +26,19 @@ $alert = $_REQUEST['alert'];
     <section class="feature-holder">
         <div class="orbit-container">
             <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500; navigation_arrows: false; slide_number: false;" class="orbit-slides-container">
-                <li class="about-it">
-                    <img src="media/img/slideshow/sample-1.png" alt="Example Image" />
+                <li class="about-it container">
+                    <h2>Getting Started</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
+                    <a href="#" class="button flat green">Watch Video</a>
                 </li>
-                <li class="grey">
-                    <img src="media/img/slideshow/sample-2.png" alt="Example Image" />
+                <li class="grey container">
+                    <h2>Getting Started</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
+                    <a href="#" class="button flat red">Watch Video</a>
                 </li>
-                <li class="use-it">
-                    <img src="media/img/slideshow/sample-3.png" alt="Example Image" />
+                <li class="use-it container">
+                    <h2>Getting Started</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt. Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt. Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
                 </li>
             </ul>
         </div>
@@ -89,7 +94,7 @@ $alert = $_REQUEST['alert'];
         </div>
     </section>
 
-    <section id="inspired-slider" class="slider-holder dark-grey">
+    <section class="slider-holder dark-grey">
         <div class="row">
             <div class="large-12 columns">
                 <h2>Learn &amp; Get Inspired</h2>
@@ -176,6 +181,45 @@ $alert = $_REQUEST['alert'];
         </div>
     </section>
 
+    <section class="slider-holder-sml dark-grey">
+        <div class="row">
+            <div class="large-12 columns">
+                <h2>Learn &amp; Get Inspired</h2>
+                <div class="orbit-container dark-grey margin">
+                    <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container dark-grey">
+                        <li>
+                            <div class="share-it">
+                                <a href="#"><img src="media/img/slideshow/inspire-3.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Share.IT / Article</h5>
+                                    <h4><a href="#">Connecting with your peer community</a></h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fix-it">
+                                <a href="#"><img src="media/img/slideshow/inspire-1.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Fix.IT / Video</h5>
+                                    <h4><a href="#">Bring in your own device scheme</a></h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="use-it">
+                                <a href="#"><img src="media/img/slideshow/inspire-2.jpg" alt="Example Image" /></a>
+                                <div class="heading white">
+                                    <h5>Use.IT / Article</h5>
+                                    <h4><a href="#">How to design and build a website</a></h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="icon-community white std">
         <div class="row">
             <div class="large-12 columns text-center list-holder">
@@ -226,7 +270,7 @@ $alert = $_REQUEST['alert'];
         </div>
     </section>
 
-    <section id="featured-software-slider" class="slider-holder light-grey-light std">
+    <section class="slider-holder light-grey-light feature-slider std">
         <div class="row">
             <div class="large-12 columns">
                 <h2>Services &amp; Partners</h2>
@@ -339,6 +383,53 @@ $alert = $_REQUEST['alert'];
                                     <a href="#" class="button">Get License</a>
                                 </div>
                             </div>
+                            <div>
+                                <div class="img-holder">
+                                    <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />
+                                </div>
+                                <div class="use-it heading">
+                                    <h4>Minecraft</h4>
+                                    <a href="#" class="button">Get License</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="slider-holder-sml light-grey-light feature-slider std">
+        <div class="row">
+            <div class="large-12 columns">
+                <h2>Services &amp; Partners</h2>
+
+                <div class="orbit-container">
+                    <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500;navigation_arrows: true;slide_number: false;" class="orbit-slides-container">
+                        <li>
+                            <div>
+                                <div class="img-holder">
+                                    <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
+                                </div>
+                                <div class="use-it heading">
+                                    <h4>Microsoft Office</h4>
+                                    <a href="#" class="button">Get License</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="img-holder">
+                                    <img src="media/img/logos/adobe-pse.png" alt="Adobe Photoshop Elements Logo" />
+                                </div>
+                                <div class="share-it heading">
+                                    <h4>Photoshop Elements</h4>
+                                    <a href="#" class="button">Get License</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
                             <div>
                                 <div class="img-holder">
                                     <img src="media/img/logos/minecraft.png" alt="Minecraft Logo" />

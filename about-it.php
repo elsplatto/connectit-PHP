@@ -45,7 +45,7 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="about-it-byod.php"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="about-it-byod.php"><img src="media/img/byod-1-sml.png" alt="Bring Your Own Device Illustration" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="about-it-byod.php">BYOD</a></h3>
@@ -62,10 +62,10 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/cloud.png" alt="In the Cloud Illustration" /></a>
                 </div>
                 <div class="content">
-                    <h3><a href="#">Edu blog</a></h3>
+                    <h3><a href="#">In the Cloud</a></h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                     </p>

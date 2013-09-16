@@ -71,7 +71,7 @@ $(function() {
             }
 
             $(window).resize(function() {
-                sliderMarginWidth = $(orbitContainer[i]).offset().left - offset;
+                sliderMarginWidth = $(orbitContainer[0]).offset().left - offset;
                 arrowPosition = sliderMarginWidth + offset;
                 for (i = 0;i < sliderNextArrow.length; i++)
                 {

@@ -55,7 +55,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/byod-1-sml.png" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">ITD Products</a></h3>

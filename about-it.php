@@ -45,7 +45,7 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="about-it-byod.php"><img src="media/img/byod-1-sml.png" alt="Bring Your Own Device Illustration" /></a>
+                    <a href="about-it-byod.php"><img src="media/img/products/byod-2.gif" alt="Bring Your Own Device Illustration" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="about-it-byod.php">BYOD</a></h3>
@@ -62,7 +62,7 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/cloud.png" alt="In the Cloud Illustration" /></a>
+                    <a href="#"><img src="media/img/products/cloud-1.gif" alt="In the Cloud Illustration" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">In the Cloud</a></h3>
@@ -79,7 +79,7 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="about-it-software-catalogue.php"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="about-it-software-catalogue.php"><img src="media/img/products/software-1.jpg" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="about-it-software-catalogue.php">Software Catalogue</a></h3>
@@ -96,7 +96,7 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/products/google-drive-icon.png" alt="Google drive" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Google Drive</a></h3>
@@ -113,7 +113,7 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/products/adobe.png" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Adobe Connect</a></h3>
@@ -147,10 +147,10 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
-                    <h3><a href="#">Example 1</a></h3>
+                    <h3><a href="#">Connected Classrooms</a></h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                     </p>
@@ -164,10 +164,10 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/products/network-1.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
-                    <h3><a href="#">Example 2</a></h3>
+                    <h3><a href="#">Hosting</a></h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                     </p>
@@ -181,10 +181,10 @@ $pageType = 'about-it';
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/products/chat-1.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
-                    <h3><a href="#">Example 3</a></h3>
+                    <h3><a href="#">Social</a></h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                     </p>

@@ -26,7 +26,7 @@ $pageType = 'other';
         <div class="large-12 columns">
             <h2>Filter</h2>
             <!--Note: data-target attribute in anchor element should be the ID of the element you want to hide/show-->
-            <a href="#" class="toggle-view toggle-icon large" data-target="tag-filters" data-state="open">Toggle Filter View</a>
+            <a href="#" class="toggle-view toggle-icon large" data-target="tag-filters" data-state="closed">Toggle Filter View</a>
         </div>
         <div id="tag-filters" class="large-12 columns filter-area">
             <h5>By Outcome</h5>

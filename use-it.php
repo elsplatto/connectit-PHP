@@ -55,7 +55,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/byod-1-sml.png" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/connect-2.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">ITD Products</a></h3>
@@ -71,29 +71,29 @@ $pageType = 'use-it';
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Training Guide</a>
                 </div>
 
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/chat-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Audio</a></h3>
+                        <h3><a href="#">Social</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Training Guide</a>
                 </div>
 
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/byod-2.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Tablet</a></h3>
@@ -103,7 +103,7 @@ $pageType = 'use-it';
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Training Guide</a>
                 </div>
 
             </div>
@@ -114,7 +114,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/website-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Email</a></h3>
@@ -130,32 +130,32 @@ $pageType = 'use-it';
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Product Guide</a>
                 </div>
 
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/cloud-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Phones</a></h3>
+                        <h3><a href="#">Cloud</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Product Guide</a>
                 </div>
 
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="use-it-whiteboards.php">Whiteboards</a></h3>
+                        <h3><a href="use-it-whiteboards.php">Connected Classrooms</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -172,7 +172,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/software-1.jpg" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Software</a></h3>
@@ -188,29 +188,29 @@ $pageType = 'use-it';
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Use.It Guide</a>
                 </div>
 
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/design-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Printers</a></h3>
+                        <h3><a href="#">Design</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Use.It Guide</a>
                 </div>
 
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/connect-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Projects</a></h3>
@@ -220,7 +220,7 @@ $pageType = 'use-it';
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Use.It Guide</a>
                 </div>
             </div>
         </div>

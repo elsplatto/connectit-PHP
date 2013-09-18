@@ -58,9 +58,12 @@ $grey-bg: #3f4851
 
 $button-blue: #1366a3
 $button-blue-drop-shadow: #084878
+$button-blue-hover: #318bcb
 
-$button-green: #2e7a64
+$button-green: #3aa385
+$button-dark-green: #2e7a64
 $button-green-drop-shadow: #2e7a64
+$button-green-hover: #61cdae
 
 $button-orange: #e4772e
 $button-orange-drop-shadow: #cc5d26
@@ -488,9 +491,18 @@ button, .button
   border-radius: 3px
   box-shadow: 0 3px 0 $button-blue-drop-shadow
 
+button:hover, button:focus, .button:hover, .button:focus
+  background-color: $button-blue-hover
+
 button.green, .button.green
   background-color: $button-green
   box-shadow: 0 3px 0 $button-green-drop-shadow
+
+button.green.flat, .button.green.flat
+  background-color: $button-dark-green
+
+button.green:hover, button.green:focus, .button.green:hover, .button.green:focus
+  background-color: $button-green-hover
 
 button.red, .button.red
   background-color: $button-red
@@ -1125,6 +1137,9 @@ fieldset
     img
       display: inline-block
       vertical-align: middle
+      width: 240px
+      height: auto
+      max-height: 152px
   .content
     width: 100%
     height: 155px
@@ -1581,6 +1596,8 @@ li.unread
             position: static
             /*width: 4.762%*/
             border-width: 0px
+            .dropdown
+              z-index: 300 !important
             a
               position: relative
               /*text-indent: -10000px*/
@@ -1672,12 +1689,16 @@ li.unread
                 background-color: $dark-grey-bg !important
                 li
                   background-color: $dark-grey-bg !important
+
+
           .search-it.hover
             background-color: $dark-grey-bg !important
             .dropdown
               background-color: $dark-grey-bg !important
               li
                 background-color: $dark-grey-bg !important
+
+
           a
             background-color: transparent
             font-size: $topbar-link-font-size
@@ -1713,23 +1734,55 @@ li.unread
                     margin: 0
                     height: 72px
 
-.search-results-overlay
-  background-color: rgb(255,255,255)
-  z-index: 200
-  width: 100%
-  height: 100%
-  position: fixed
-  top: 0px
-  left: 0px
-  display: none
-  .row
-    overflow-y: auto
-    height: 65%
-    padding: 30px 0
+.nav-holder
+  .top-level
+    .search-it
+      .search-results-overlay
+        background-color: rgb(255,255,255)
+        z-index: 200
+        width: 100%
+        height: 100%
+        position: fixed
+        top: 0px
+        left: 0px
+        display: none
+        .row
+          overflow-y: auto
+          height: 65%
+          padding: 30px 0
+          max-width: 60em !important
+          margin: 0 auto
+          h5
+            color: $other-bg !important
+          h6
+            font-weight: 500 !important
+            a
+              text-decoration: none !important
+              padding: 0 !important
+              border: none !important
+              &:before
+                background-image: none !important
+          .use-it
+            h5
+              color: $use-it-bg !important
+          .fix-it
+            h5
+              color: $fix-it-bg !important
+          .explore-it
+            h5
+              color: $explore-it-bg !important
+          .share-it
+            h5
+              color: $share-it-bg !important
+          .about-it
+            h5
+              color: $about-it-bg !important
 
-.hover
-  .search-results-overlay
-    display: block
+.nav-holder
+  .top-level
+    .search-it.hover
+      .search-results-overlay
+        display: block
 
 #nav-holder.respond
   position: fixed
@@ -1831,7 +1884,7 @@ li.unread
       color: #fff !important
       font-family: $gothic-font-family !important
     h4
-      color: #ffffff
+      color: #fff
     li.container
       padding: 50px 0 0 0
       height: 385px
@@ -2265,7 +2318,7 @@ li.unread
           .heading
             margin: 0
             clear: both
-            height: 8.813em
+            height: 9em
             padding: 1.25em
             h4
               font:
@@ -2401,7 +2454,7 @@ li.unread
     height: auto
     .img-holder
       position: relative
-      width: 17.75em !important
+      width: 15.5em !important
       height: 11.25em !important
       line-height: 11.25em
       display: table
@@ -2632,6 +2685,7 @@ li.unread
 
 .filter-area, .tag-area
   margin-top: 20px
+  display: none
   .filter-box, .tag-box
     max-height: 90px
 
@@ -2954,6 +3008,39 @@ footer
       display: block
       width: 124px
       height: 50px
+
+
+/*START: Autocomplete*/
+#autocomplete-holder
+  display: none
+  position: absolute
+  left: 0px
+  top: 60px
+  width: 100%
+  height: auto
+  border: 1px solid #000
+  z-index: 300
+  list-style: none !important
+  background-color: #fff !important
+  li
+    width: 100%
+    clear: both
+    display: list-item
+    a
+      background-image: none
+      color: #000
+      background-color: #fff !important
+      text-align: left !important
+      padding: 5px
+      height: auto
+      font-weight: normal
+      &:before
+        background-image: none !important
+      &:hover
+        background-color: $fix-it-ultra-light-bg !important
+    .focus
+      background-color: $fix-it-ultra-light-bg !important
+/*START: Autocomplete*/
 
 
 /*START: Dropzone */

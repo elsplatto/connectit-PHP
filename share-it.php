@@ -25,7 +25,7 @@ $pageType = 'share-it';
         <div class="row">
             <div class="large-12 columns">
                 <h2>Filter</h2>
-                <a href="#" class="toggle-view toggle-icon large" data-target="share-it-filters" data-state="open">Toggle Filter View</a>
+                <a href="#" class="toggle-view toggle-icon large" data-target="share-it-filters" data-state="closed">Toggle Filter View</a>
             </div>
             <div id="share-it-filters" class="large-12 columns filter-area">
                 <h5>Show activity for:</h5>

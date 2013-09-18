@@ -9,7 +9,7 @@
             <div class="note-holder">
                 <span class="note">JPG, GIF or PNG. Max size of 700K</span>
             </div>
-                <input type="submit" class="button green right" value="Send Feedback" />
+                <input type="submit" class="button green right" value="Upload" />
                 <a href="#" class="button secondary reveal-close right">Cancel</a>
         </div>
     </form>

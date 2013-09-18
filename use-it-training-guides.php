@@ -35,109 +35,88 @@ $pageType = 'use-it'
 
     <section class="light-grey-light std">
         <div class="row">
-            <div class="large-12 columns text-center">
-                <h2>Popular</h2>
-            </div>
-
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="about-it-byod.php"><img src="media/img/products/byod-2.gif" alt="Bring Your Own Device Illustration" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">ITD Products</a></h3>
+                        <h3><a href="about-it-byod.php">BYOD</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="about-it-byod.php">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/cloud-1.gif" alt="In the Cloud Illustration" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Audio</a></h3>
+                        <h3><a href="#">In the Cloud</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="about-it-software-catalogue.php"><img src="media/img/products/software-1.jpg" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Tablet</a></h3>
+                        <h3><a href="about-it-software-catalogue.php">Software Catalogue</a></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
+                            Search, Select and Request Software direct to your computer August 2013
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="about-it-software-catalogue.php">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/google-drive-icon.png" alt="Google drive" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">ITD Products</a></h3>
+                        <h3><a href="#">Google Drive</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/adobe.png" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Audio</a></h3>
+                        <h3><a href="#">Adobe Connect</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
-                </div>
-            </div>
-
-            <div class="large-4 columns">
-                <div class="tile white">
-                    <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Tablet</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-                <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
 
@@ -147,150 +126,65 @@ $pageType = 'use-it'
                         <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">ITD Products</a></h3>
+                        <h3><a href="#">SAM Initiative</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Audio</a></h3>
+                        <h3><a href="#">Connected Classrooms</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/network-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Tablet</a></h3>
+                        <h3><a href="#">Hosting</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/chat-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">ITD Products</a></h3>
+                        <h3><a href="#">Social</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
-                </div>
-            </div>
-
-            <div class="large-4 columns">
-                <div class="tile white">
-                    <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Audio</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-                <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
-                </div>
-            </div>
-
-            <div class="large-4 columns">
-                <div class="tile white">
-                    <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Tablet</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-                <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
-                </div>
-            </div>
-
-            <div class="large-4 columns">
-                <div class="tile white">
-                    <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">ITD Products</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-                <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
-                </div>
-            </div>
-
-            <div class="large-4 columns">
-                <div class="tile white">
-                    <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Audio</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-                <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
-                </div>
-            </div>
-
-            <div class="large-4 columns">
-                <div class="tile white">
-                    <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
-                    </div>
-                    <div class="content">
-                        <h3><a href="#">Tablet</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-                <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#">Read Training Guide</a>
                 </div>
             </div>
         </div>

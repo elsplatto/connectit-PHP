@@ -21,18 +21,6 @@ $pageType = 'fix-it';
         </div>
     </section>
 
-    <section class="white std">
-        <div class="row">
-            <div class="large-12 columns">
-                <form id="frmSearchProducts">
-                    <label for="search-products" class="hide">Search</label>
-                    <input autocomplete="off" autocorrect="off" autocapitalize="off" id="search-products" type="search" class="large no-margin" placeholder="Search the knowledge base 24/7" />
-                </form>
-            </div>
-        </div>
-    </section>
-
-
 
     <section class="dark-grey sml">
         <div class="row">

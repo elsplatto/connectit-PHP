@@ -38,10 +38,10 @@ $pageType = 'use-it'
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="about-it-byod.php"><img src="media/img/products/byod-2.gif" alt="Bring Your Own Device Illustration" /></a>
+                        <a href="#"><img src="media/img/products/productsicon.gif" alt="ITD Products Illustration" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="about-it-byod.php">BYOD</a></h3>
+                        <h3><a href="#">ITD Products</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -55,10 +55,10 @@ $pageType = 'use-it'
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/cloud-1.gif" alt="In the Cloud Illustration" /></a>
+                        <a href="#"><img src="media/img/products/website-1.gif" alt="Email Illustration" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">In the Cloud</a></h3>
+                        <h3><a href="#">Email</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -75,7 +75,7 @@ $pageType = 'use-it'
                         <a href="about-it-software-catalogue.php"><img src="media/img/products/software-1.jpg" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="about-it-software-catalogue.php">Software Catalogue</a></h3>
+                        <h3><a href="about-it-software-catalogue.php">Software</a></h3>
                         <p>
                             Search, Select and Request Software direct to your computer August 2013
                         </p>
@@ -89,10 +89,10 @@ $pageType = 'use-it'
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/google-drive-icon.png" alt="Google drive" /></a>
+                        <a href="#"><img src="media/img/products/connect-1.gif" alt="Illustration" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Google Drive</a></h3>
+                        <h3><a href="#">Audio</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -106,10 +106,10 @@ $pageType = 'use-it'
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/adobe.png" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/phone.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Adobe Connect</a></h3>
+                        <h3><a href="#">Phones</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -123,10 +123,10 @@ $pageType = 'use-it'
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/holder.gif" alt="Example image" /></a>
+                        <a href="use-it-printers.php"><img src="media/img/products/hp-printer.jpg" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">SAM Initiative</a></h3>
+                        <h3><a href="use-it-printers.php">Printers</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -140,10 +140,10 @@ $pageType = 'use-it'
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/byod-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Connected Classrooms</a></h3>
+                        <h3><a href="#">Tablets</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
@@ -160,24 +160,24 @@ $pageType = 'use-it'
                         <a href="#"><img src="media/img/products/network-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Hosting</a></h3>
+                        <h3><a href="use-it-whiteboards.php">Whiteboards</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#">Read Product Guide</a>
+                    <a href="use-it-whiteboards.php">Read Product Guide</a>
                 </div>
             </div>
 
             <div class="large-4 columns">
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/chat-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/products/connect-3.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
-                        <h3><a href="#">Social</a></h3>
+                        <h3><a href="#">Projects</a></h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt
                         </p>

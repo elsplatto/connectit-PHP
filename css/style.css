@@ -40,7 +40,7 @@ h1, h3, h5, h6 {
 h2 {
   font-size: 1.875em !important;
   font-weight: 400;
-  margin-bottom: 10px !important; }
+  margin: 10px 0; }
   h2 a {
     color: inherit !important; }
     h2 a:hover {
@@ -103,8 +103,16 @@ h6 {
     background-image: url(img/icon-sprite.png);
     background-position: -174px 0; }
 
+h5.guide-titles {
+  padding: 20px 0 0 0;
+  display: none; }
+
 /*END: Header classes */
 /*START: Standard Typography */
+p.blurb {
+  padding: 20px 0 0 0;
+  height: 70px !important; }
+
 p.intro {
   font-size: 1.313em;
   font-weight: 400; }
@@ -168,6 +176,8 @@ img.med {
 
 .body-explore-it a {
   color: #c4414e; }
+.body-explore-it .dark-grey-dark a {
+  color: white !important; }
 
 /*END: Standard Typography */
 /*START: Kick-down classes */
@@ -1120,6 +1130,12 @@ hr {
 
 .padding-bottom-20 {
   padding-bottom: 20px !important; }
+
+.padding-bottom-40 {
+  padding-bottom: 40px !important; }
+
+.padding-bottom-60 {
+  padding-bottom: 60px !important; }
 
 .no-margin {
   margin: 0 !important; }
@@ -2687,8 +2703,7 @@ li.unread {
   background-color: rgba(95, 205, 174, 0.9); }
 
 .guide {
-  position: relative;
-  min-height: 200px; }
+  position: relative; }
   .guide .button {
     position: absolute;
     bottom: 0;
@@ -2792,8 +2807,7 @@ footer {
         height: 50px; }
 
   .guide {
-    position: relative;
-    min-height: 250px; }
+    position: relative; }
     .guide .button {
       position: absolute;
       bottom: 0;
@@ -2843,6 +2857,19 @@ footer {
   .breadcrumbs a, .subheader h3 {
     font-size: 0.813em !important;
     color: white !important; }
+
+  #guideTitles {
+    display: none; }
+
+  .titleGraphics {
+    margin-top: 20px !important; }
+
+  h5.guide-titles {
+    padding: 20px 0 0 0;
+    display: block; }
+
+  p.blurb {
+    height: auto; }
 
   p.intro {
     font-size: 1em; }

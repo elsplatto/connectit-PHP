@@ -20,39 +20,29 @@ $pageType = 'use-it';
     </section>
 
 
-    <section class="white std">
+    <section id="guideTitles" class="white sml">
         <div class="row">
             <div class="large-4 columns guide">
-                <h2>Training Guides</h2>
-                <p>Training in the Products and Services available through the DEC.</p>
-                <a href="use-it-training-guides.php" class="button small green full-width">View all Training Guides</a>
+                <h2><a href="use-it-training-guides.php">Training Guides</a></h2>
             </div>
 
             <div class="large-4 columns guide">
-                <h2>Product Guides</h2>
-                <p>Get support and information on the products you used anyway.</p>
-                <a href="use-it-product-guides.php" class="button small green full-width">View all Product Guides</a>
+                <h2><a href="use-it-product-guides.php">Product Guides</a></h2>
             </div>
 
             <div class="large-4 columns guide">
-                <h2>Use.It Guides</h2>
-                <p>Discover how to use technology to get the most from you professional practice.</p>
-                <a href="use-it-guides.php" class="button small green full-width">View all Use.It Guides</a>
+                <h2><a href="use-it-guides.php">Use.It Guides</a></h2>
             </div>
         </div>
     </section>
 
 
-    <section class="light-grey-light std">
+    <section class="light-grey-light padding-bottom-60">
         <div class="row">
-            <div class="large-12 columns">
-                <h2>Popular</h2>
-            </div>
-            <div class="large-4 columns margin-top-20">
-                <h5><a href="use-it-training-guides.php">Training Guides</a></h5>
-
-                <hr />
-
+            <div class="large-4 columns">
+                <a href="use-it-training-guides.php" title="Link to Training Guides landing page"><img class="titleGraphics" src="media/img/services/trainingicon.gif" alt="Training Icon" /></a>
+                <h5 class="guide-titles">Training Guides</h5>
+                <p class="blurb">Training in the Products and Services available through the DEC.</p>
                 <div class="tile white">
                     <div class="img-holder">
                         <a href="#"><img src="media/img/products/connect-2.gif" alt="Example image" /></a>
@@ -109,11 +99,11 @@ $pageType = 'use-it';
             </div>
 
 
-            <div class="large-4 columns margin-top-20">
-                <h5><a href="use-it-product-guides.php">Product Guides</a></h5>
+            <div class="large-4 columns">
 
-                <hr />
-
+                <a href="use-it-product-guides.php" title="Link to Product Guides landing page"><img class="titleGraphics" src="media/img/services/productsicon.gif" alt="Products Icon" /></a>
+                <h5 class="guide-titles">Product Guides</h5>
+                <p class="blurb">Get support and information on the products you used anyway.</p>
                 <div class="tile white">
                     <div class="img-holder">
                         <a href="#"><img src="media/img/products/website-1.gif" alt="Example image" /></a>
@@ -169,10 +159,11 @@ $pageType = 'use-it';
             </div>
 
 
-            <div class="large-4 columns margin-top-20">
-                <h5><a href="use-it-guides.php">Use.It Guides</a></h5>
+            <div class="large-4 columns">
 
-                <hr />
+                <a href="use-it-guides.php" title="Link to Use.It guides landing page"><img class="titleGraphics" src="media/img/services/website-1.gif" alt="Use.It Icon" /></a>
+                <h5 class="guide-titles">Use.It Guides</h5>
+                <p class="blurb">Discover how to use technology to get the most from you professional practice.</p>
 
                 <div class="tile white">
                     <div class="img-holder">

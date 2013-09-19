@@ -163,7 +163,7 @@ h1, h3, h5, h6
 h2
   font-size: 1.875em !important
   font-weight: 400
-  margin-bottom: 10px !important
+  margin: 10px 0
   a
     color: inherit !important
     &:hover
@@ -225,9 +225,17 @@ h6
     background-image: url(img/icon-sprite.png)
     background-position: -174px 0
 
+h5.guide-titles
+  padding: 20px 0 0 0
+  display: none
+
 /*END: Header classes*/
 
 /*START: Standard Typography*/
+p.blurb
+  padding: 20px 0 0 0
+  height: 70px !important
+
 p.intro
   font:
     size: 1.313em
@@ -304,6 +312,9 @@ img.med
 .body-explore-it
   a
     color: $explore-it-bg
+  .dark-grey-dark
+    a
+      color: #fff !important
 
 /*END: Standard Typography*/
 
@@ -1140,6 +1151,7 @@ fieldset
       width: 240px
       height: auto
       max-height: 152px
+      overflow: hidden
   .content
     width: 100%
     height: 155px
@@ -1223,6 +1235,12 @@ hr
 
 .padding-bottom-20
   padding-bottom: 20px !important
+
+.padding-bottom-40
+  padding-bottom: 40px !important
+
+.padding-bottom-60
+  padding-bottom: 60px !important
 
 
 
@@ -2958,7 +2976,6 @@ li.unread
 
 .guide
   position: relative
-  min-height: 200px
   .button
     position: absolute
     bottom: 0
@@ -3074,7 +3091,6 @@ footer
 
   .guide
     position: relative
-    min-height: 250px
     .button
       position: absolute
       bottom: 0
@@ -3129,6 +3145,19 @@ footer
   .breadcrumbs a, .subheader h3
     font-size: 0.813em !important
     color: rgba(255,255,255,1) !important
+
+  #guideTitles
+    display: none
+
+  .titleGraphics
+    margin-top: 20px !important
+
+  h5.guide-titles
+    padding: 20px 0 0 0
+    display: block
+
+  p.blurb
+    height: auto
 
   p.intro
     font-size: 1em

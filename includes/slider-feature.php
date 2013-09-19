@@ -37,11 +37,11 @@
                     <li>
                         <div>
                             <div class="img-holder">
-                                <img src="media/img/logos/ms-office.png" alt="Microsoft Office Logo" />
+                                <img src="media/img/services/byod-2.gif" alt="Bring Your Own Device" />
                             </div>
-                            <div class="share-it heading">
-                                <h4>Microsoft Office</h4>
-                                <a href="#" class="button">Get License</a>
+                            <div class="about-it heading">
+                                <h4>BYOD</h4>
+                                <a href="about-it-byod.php" class="button">Learn More</a>
                             </div>
                         </div>
                         <div>

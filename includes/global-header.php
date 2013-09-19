@@ -2,7 +2,7 @@
     <div class="row">
         <div class="large-12 columns">
             <a href="#" id="btnSideNav" class="menu-icon"></a>
-            <div class="NSWlogo"><a href="#" title="Link to NSW Department of Education and Communities"></a></div>
+            <div class="NSWlogo"><a href="http://www.dec.nsw.gov.au/" target="_blank" title="Link to NSW Department of Education and Communities"></a></div>
             <div class="rightside">
                 <!--NB: Remove 'alert' class to show normal notification icon. Remove the 'badge' span too-->
                 <a href="#" class="notification circle alert" data-dropdown="notification"><span class="badge">99+</span></a>

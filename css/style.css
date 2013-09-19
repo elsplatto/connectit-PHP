@@ -2859,7 +2859,7 @@ footer {
   .std {
     padding: 25px 0; }
 
-  .support-suite li {
+  .support-suite li, .share-suite li {
     border: 1px solid #cacdd1;
     margin-bottom: 10px; }
 

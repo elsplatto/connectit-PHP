@@ -107,6 +107,8 @@ $pageType = 'use-it';
                 </div>
 
             </div>
+
+
             <div class="large-4 columns margin-top-20">
                 <h5><a href="use-it-product-guides.php">Product Guides</a></h5>
 
@@ -149,7 +151,6 @@ $pageType = 'use-it';
                     <a href="#" class="themed">Read Product Guide</a>
                 </div>
 
-
                 <div class="tile white">
                     <div class="img-holder">
                         <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
@@ -162,11 +163,14 @@ $pageType = 'use-it';
                     </div>
                 </div>
                 <div class="tile-bottom">
-                    <a href="#" class="themed">Read Article</a>
+                    <a href="#" class="themed">Read Product Guide</a>
                 </div>
+
             </div>
+
+
             <div class="large-4 columns margin-top-20">
-                <h5><a href="use-it-guides.php">Use.It Guides</h5>
+                <h5><a href="use-it-guides.php">Use.It Guides</a></h5>
 
                 <hr />
 
@@ -222,7 +226,12 @@ $pageType = 'use-it';
                 <div class="tile-bottom">
                     <a href="#" class="themed">Read Use.It Guide</a>
                 </div>
+
             </div>
+
+
+
+
         </div>
     </section>
 

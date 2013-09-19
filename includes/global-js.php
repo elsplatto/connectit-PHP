@@ -167,9 +167,10 @@ $(function() {
         obj.each(function(i) {
             if($(this).hasClass('focus'))
             {
-                if (i-1 === -1)
+                if (i === 0)
                 {
                     $(this).removeClass('focus');
+                    focusSet = false;
                     return false;
                 }
                 else
@@ -186,8 +187,8 @@ $(function() {
             }
         });
         if (!focusSet) {
-            $('#autocomplete-holder li:eq('+objLength-1+') a').addClass('focus');
-            $('#search').val($('#autocomplete-holder li:eq('+objLength-1+') a').text());
+            $('#autocomplete-holder li:eq('+parseInt(objLength-1)+') a').addClass('focus');
+            $('#search').val($('#autocomplete-holder li:eq('+parseInt(objLength-1)+') a').text());
         }
     }
 

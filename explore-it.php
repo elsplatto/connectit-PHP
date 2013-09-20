@@ -26,7 +26,7 @@ $pageType = 'explore-it';
                 <!--div class="flex-video">
                     <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI" frameborder="0" allowfullscreen></iframe>
                 </div-->
-                <h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching - we're about outcomes, not incomes</a></h2>
+                <h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching Maths With Robots</a></h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip... <a href="explore-it-teaching-maths-with-robots.php">Read more</a></p>
             </div>
@@ -73,7 +73,7 @@ $pageType = 'explore-it';
     </section>
 
     <section class="light-grey-light std">
-        <div class="row">
+        <div class="row dynamic-load-target">
             <div class="large-12 columns margin-bottom-18">
                 <h2>Showing inspiration for</h2>
                 <h5>collaborating in the cloud, printers, whiteboards, scanners</h5>
@@ -189,9 +189,11 @@ $pageType = 'explore-it';
                 </div>
             </div>
 
-            <div class="large-12 columns text-center">
-                <a href="#" class="button red">Load More</a>
+            <div id="load-btn-holder" class="load-btn-loader large-12 columns text-center">
+                <a href="#" class="button red load-btn">Load More</a>
             </div>
+
+            <div id="canvas-loader" class="canvas-loader-holder"></div>
 
         </div>
     </section>
@@ -201,65 +203,59 @@ $pageType = 'explore-it';
 
 <script>
 $(function() {
-    $('.toggle-view').click(function(e){
+    var callFired = false;
+    var pageCounter = 2;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $(document).height() - $(window).height() - 100 && !callFired) {
+            retrieveTiles();
+        }
+    });
+
+    $('.load-btn').click(function(e) {
         e.preventDefault();
-        var targetEl = $('#'+$(this).attr('data-target'));
-        var targetState = $(this).attr('data-state').toLowerCase();
-        if (targetState === 'open')
-        {
-            targetEl.hide();
-            $(this).attr('data-state','closed');
-        }
-        else
-        {
-            targetEl.show();
-            $(this).attr('data-state','open');
-        }
+        retrieveTiles();
     });
 
-    $('.filter-box a, .tag-box a').click(function(e) {
-        e.preventDefault();
-        if($(this).hasClass('selected'))
-        {
-            $(this).removeClass('selected');
-        }
-        else
-        {
-            $(this).addClass('selected')
-        }
-    });
-
-    $('.clear-all').each(function( index ) {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-            var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
-            var targetEls =  targetHolder.children('a');
-            var i;
-            for (i = 0;i < targetEls.length; i++)
-            {
-                $(targetEls[i]).removeClass('selected');
-
-            }
-        });
-    });
-
-    $('.select-all').each(function( index ) {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-            var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
-            var targetEls =  targetHolder.children('a');
-            console.log('['+targetEls.length+']');
-            var i;
-            for (i = 0;i < targetEls.length; i++)
-            {
-                $(targetEls[i]).addClass('selected');
-
-            }
-        });
-    });
+    function retrieveTiles()
+    {
+        callFired = true;
+        $('#load-btn-holder').hide();
+        $('#canvas-loader').show();
+        //SetTimeout function can be removed -- is used for testing loading image - code inside function must remain as it renders the HTML and show/hides elements
+        setTimeout(function(){
+            $.get('assets/ajaxTiles/std-tile-holder.php?p='+pageCounter, function( data ) {
+                if (data.length > 0)
+                {
+                    $(data).insertAfter('.dynamic-load-target div.large-4:last');
+                    callFired = false;
+                    $('#load-btn-holder').show();
+                    $('#canvas-loader').hide();
+                    pageCounter++;
+                }
+                else
+                {
+                    $('#canvas-loader').hide();
+                    $('<p id="end-of-content" style="text-align: center;"><strong>End of content.</strong></p>').insertAfter('.dynamic-load-target div.large-4:last');
+                }
+            });
+        }, 1500);
+    }
 });
 </script>
 
+<script src="js/vendor/plugins/indie/heartcode-canvasloader-min-0.9.1.js"></script>
+
+<script type="text/javascript">
+    var cl = new CanvasLoader('canvas-loader');
+    cl.setColor('#c43442'); // default is '#000000'
+    cl.setShape('square'); // default is 'oval'
+    cl.setDiameter(42); // default is 40
+    cl.setDensity(90); // default is 40
+    cl.setRange(1); // default is 1.3
+    cl.setSpeed(3); // default is 2
+    cl.setFPS(24); // default is 24
+    cl.show(); // Hidden by default
+</script>
 
 <?php include 'includes/footer.php'; ?>
 

@@ -1133,7 +1133,7 @@ fieldset
   width: 100%
   padding: 22px
   height: 314px
-  margin: 36px 0 0 0
+  margin: 0
   overflow: hidden
   .img-holder
     position: relative
@@ -1168,6 +1168,7 @@ fieldset
   height: 45px
   padding: 15px 22px
   font-size: 0.9em
+  margin: 0 0 36px 0
   a
     color: $use-it-bg
     &:hover
@@ -2774,6 +2775,7 @@ li.unread
     background-color: #fff
     overflow: hidden
     img
+      display: block
       border:
         width: 0 0 3px 0
         style: solid
@@ -3075,6 +3077,10 @@ footer
 
 /*END: Dropzone */
 
+.canvas-loader-holder
+  text-align: center
+  display: none
+
 @media only screen and (min-width: 768px)
   .nav-holder
     .row
@@ -3314,7 +3320,7 @@ body.off-canvas
   margin: 0
 
 canvas
-  background: #fff
+  background: transparent
 
 #sidebar
   .container

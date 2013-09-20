@@ -48,7 +48,7 @@ $pageType = 'share-it';
     </section>
 
     <section class="light-grey-light std">
-        <div class="row">
+        <div class="row dynamic-load-target">
             <div class="large-12 columns margin-bottom-18">
                 <h2>Showing social media activity for</h2>
                 <h5>#nswprimaryteachers, #nswsecondaryteachers, #education, #water, and 3 more...</h5>
@@ -56,7 +56,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml twitter">
+                <div class="wide-tile white sml twitter">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -69,7 +69,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml twitter">
+                <div class="wide-tile white sml twitter">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -82,7 +82,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml yammer">
+                <div class="wide-tile white sml yammer">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -95,7 +95,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml twitter">
+                <div class="wide-tile white sml twitter">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -108,7 +108,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml yammer">
+                <div class="wide-tile white sml yammer">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -121,7 +121,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml twitter">
+                <div class="wide-tile white sml twitter">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -134,7 +134,7 @@ $pageType = 'share-it';
             </div>
 
             <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml yammer">
+                <div class="wide-tile white sml yammer">
                     <div class="large-1 avatar-holder">
                         <a href="#"><img src="media/img/avatars/connect-it.png" alt="Connect.It Avatar" /></a>
                     </div>
@@ -146,9 +146,11 @@ $pageType = 'share-it';
                 </div>
             </div>
 
-            <div class="large-12 columns text-center">
-                <a href="#" class="button blue">Load More</a>
+            <div id="load-btn-holder" class="load-btn-loader large-12 columns text-center">
+                <a href="#" class="button blue load-btn">Load More</a>
             </div>
+
+            <div id="canvas-loader" class="canvas-loader-holder"></div>
 
         </div>
     </section>
@@ -156,66 +158,60 @@ $pageType = 'share-it';
 
     <?php include 'includes/global-js.php'; ?>
 
-
     <script>
         $(function() {
-            $('.toggle-view').click(function(e){
+            var callFired = false;
+            var pageCounter = 2;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= $(document).height() - $(window).height() - 100 && !callFired) {
+                    retrieveTiles();
+                }
+            });
+
+            $('.load-btn').click(function(e) {
                 e.preventDefault();
-                var targetEl = $('#'+$(this).attr('data-target'));
-                var targetState = $(this).attr('data-state').toLowerCase();
-                if (targetState === 'open')
-                {
-                    targetEl.hide();
-                    $(this).attr('data-state','closed');
-                }
-                else
-                {
-                    targetEl.show();
-                    $(this).attr('data-state','open');
-                }
+                retrieveTiles();
             });
 
-            $('.filter-box a').click(function(e) {
-                e.preventDefault();
-                if($(this).hasClass('selected'))
-                {
-                    $(this).removeClass('selected');
-                }
-                else
-                {
-                    $(this).addClass('selected')
-                }
-            });
-
-            $('.clear-all').each(function( index ) {
-                $(this).on('click', function(e) {
-                    e.preventDefault();
-                    var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
-                    var targetEls =  targetHolder.children('a');
-                    var i;
-                    for (i = 0;i < targetEls.length; i++)
-                    {
-                        $(targetEls[i]).removeClass('selected');
-
-                    }
-                });
-            });
-
-            $('.select-all').each(function( index ) {
-                $(this).on('click', function(e) {
-                    e.preventDefault();
-                    var targetHolder = $(this).siblings('div.filter-box:eq('+index+')');
-                    var targetEls =  targetHolder.children('a');
-                    console.log('['+targetEls.length+']');
-                    var i;
-                    for (i = 0;i < targetEls.length; i++)
-                    {
-                        $(targetEls[i]).addClass('selected');
-
-                    }
-                });
-            });
+            function retrieveTiles()
+            {
+                callFired = true;
+                $('#load-btn-holder').hide();
+                $('#canvas-loader').show();
+                //SetTimeout function can be removed -- is used for testing loading image - code inside function must remain as it renders the HTML and show/hides elements.
+                setTimeout(function(){
+                    $.get('assets/ajaxTiles/social-tile-holder.php?p='+pageCounter, function( data ) {
+                        if (data.length > 0)
+                        {
+                            $(data).insertAfter('.dynamic-load-target div.large-12:not(.load-btn-loader):last');
+                            callFired = false;
+                            $('#load-btn-holder').show();
+                            $('#canvas-loader').hide();
+                            pageCounter++;
+                        }
+                        else
+                        {
+                            $('#canvas-loader').hide();
+                            $('<p id="end-of-content" style="text-align: center;"><strong>End of content.</strong></p>').insertAfter('.dynamic-load-target div.large-12:not(.load-btn-loader):last');
+                        }
+                    });
+                }, 1500);
+            }
         });
+    </script>
+
+    <script src="js/vendor/plugins/indie/heartcode-canvasloader-min-0.9.1.js"></script>
+
+    <script type="text/javascript">
+        var cl = new CanvasLoader('canvas-loader');
+        cl.setColor('#1366a3'); // default is '#000000'
+        cl.setShape('square'); // default is 'oval'
+        cl.setDiameter(42); // default is 40
+        cl.setDensity(90); // default is 40
+        cl.setRange(1); // default is 1.3
+        cl.setSpeed(3); // default is 2
+        cl.setFPS(24); // default is 24
+        cl.show(); // Hidden by default
     </script>
 
 <?php include 'includes/footer.php'; ?>

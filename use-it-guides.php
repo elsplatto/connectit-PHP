@@ -84,7 +84,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="about-it-byod.php"><img src="media/img/products/byod-2.gif" alt="Bring Your Own Device Illustration" /></a>
+                    <a href="about-it-byod.php"><img src="media/img/illustrations/byod-2.gif" alt="Bring Your Own Device Illustration" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="about-it-byod.php">BYOD</a></h3>
@@ -101,7 +101,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/products/cloud-1.gif" alt="In the Cloud Illustration" /></a>
+                    <a href="#"><img src="media/img/illustrations/cloud-1.gif" alt="In the Cloud Illustration" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">In the Cloud</a></h3>
@@ -118,7 +118,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="about-it-software-catalogue.php"><img src="media/img/products/software-1.jpg" alt="Example image" /></a>
+                    <a href="about-it-software-catalogue.php"><img src="media/img/illustrations/software-1.jpg" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="about-it-software-catalogue.php">Software Catalogue</a></h3>
@@ -135,7 +135,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/products/google-drive-icon.png" alt="Google drive" /></a>
+                    <a href="#"><img src="media/img/illustrations/google-drive-icon.png" alt="Google drive" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Google Drive</a></h3>
@@ -152,7 +152,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/products/adobe.png" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/illustrations/adobe.png" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Adobe Connect</a></h3>
@@ -186,7 +186,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/illustrations/cc-1.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Connected Classrooms</a></h3>
@@ -203,7 +203,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/products/network-1.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/illustrations/network-1.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Hosting</a></h3>
@@ -220,7 +220,7 @@ $pageType = 'use-it'
         <div class="large-4 columns">
             <div class="tile white">
                 <div class="img-holder">
-                    <a href="#"><img src="media/img/products/chat-1.gif" alt="Example image" /></a>
+                    <a href="#"><img src="media/img/illustrations/chat-1.gif" alt="Example image" /></a>
                 </div>
                 <div class="content">
                     <h3><a href="#">Social</a></h3>

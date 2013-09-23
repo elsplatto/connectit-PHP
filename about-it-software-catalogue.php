@@ -78,45 +78,10 @@ $pageType = 'about-it';
     <div class="row">
         <div class="large-12 columns text-center list-holder">
             <h2>Discussions about this service</h2>
-            <ul>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">BYOD - what you need to know</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Re: iPhones and school networks</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">How to design for mobile</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Whiteboard in the classroom</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h4><a href="#">Thoughts on online communities</a></h4>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-            </ul>
 
-            <a href="#" class="button small">See all discussions about this product</a>
+            <?php include 'includes/discussions-list.php' ?>
+
+            <a href="share-it-discussions.php" class="button small">See all discussions about this product</a>
         </div>
     </div>
 </section>

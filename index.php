@@ -44,7 +44,7 @@ $alert = $_REQUEST['alert'];
         </div>
     </section>
 
-    <section class="light-grey-light sml">
+    <section class="dark-grey sml">
         <div class="row">
             <div class="large-12 columns">
                 <?php include 'includes/support-suite.php'; ?>
@@ -107,45 +107,9 @@ include 'includes/slider.php';
 
                 <h5>Last Discussions</h5>
 
-                <ul>
-                    <li>
-                        <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
-                        <div class="holder">
-                            <h6><a href="#">Problem with printer</a></h6>
-                            <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
-                        <div class="holder">
-                            <h6><a href="#">Re: Help connecting to the network server</a></h6>
-                            <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
-                        <div class="holder">
-                            <h6><a href="#">How to design for mobile</a></h6>
-                            <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
-                        <div class="holder">
-                            <h6><a href="#">Whiteboard in the classroom</a></h6>
-                            <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
-                        <div class="holder">
-                            <h6><a href="#">Thoughts on online communities</a></h6>
-                            <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                        </div>
-                    </li>
-                </ul>
+                <?php include 'includes/discussions-list.php' ?>
 
-                <a href="#" class="button small">Go to the Community</a>
+                <a href="share-it-discussions.php" class="button small">Go to the Community</a>
             </div>
         </div>
     </section>
@@ -163,7 +127,6 @@ $(function() {
         e.preventDefault();
         var target = $(e.target).closest('.alert');
         target.hide()
-
     });
 });
 </script>

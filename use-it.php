@@ -40,12 +40,12 @@ $pageType = 'use-it';
     <section class="light-grey-light padding-bottom-60">
         <div class="row">
             <div class="large-4 columns">
-                <a href="use-it-training-guides.php" title="Link to Training Guides landing page"><img class="titleGraphics" src="media/img/services/trainingicon.gif" alt="Training Icon" /></a>
+                <a href="use-it-training-guides.php" title="Link to Training Guides landing page"><img class="titleGraphics" src="media/img/illustrations/trainingicon.gif" alt="Training Icon" /></a>
                 <h5 class="guide-titles">Training Guides</h5>
                 <p class="blurb">Training in the Products and Services available through the DEC.</p>
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/connect-2.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/connect-2.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">ITD Products</a></h3>
@@ -67,7 +67,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/chat-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/chat-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Social</a></h3>
@@ -83,7 +83,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/byod-2.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/byod-2.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Tablet</a></h3>
@@ -101,12 +101,12 @@ $pageType = 'use-it';
 
             <div class="large-4 columns">
 
-                <a href="use-it-product-guides.php" title="Link to Product Guides landing page"><img class="titleGraphics" src="media/img/services/productsicon.gif" alt="Products Icon" /></a>
+                <a href="use-it-product-guides.php" title="Link to Product Guides landing page"><img class="titleGraphics" src="media/img/illustrations/productsicon.gif" alt="Products Icon" /></a>
                 <h5 class="guide-titles">Product Guides</h5>
                 <p class="blurb">Get support and information on the products you used anyway.</p>
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/website-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/website-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Email</a></h3>
@@ -128,7 +128,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/cloud-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/cloud-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Cloud</a></h3>
@@ -143,7 +143,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/cc-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/cc-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="use-it-whiteboards.php">Connected Classrooms</a></h3>
@@ -161,13 +161,13 @@ $pageType = 'use-it';
 
             <div class="large-4 columns">
 
-                <a href="use-it-guides.php" title="Link to Use.It guides landing page"><img class="titleGraphics" src="media/img/services/website-1.gif" alt="Use.It Icon" /></a>
+                <a href="use-it-guides.php" title="Link to Use.It guides landing page"><img class="titleGraphics" src="media/img/illustrations/website-1.gif" alt="Use.It Icon" /></a>
                 <h5 class="guide-titles">Use.It Guides</h5>
                 <p class="blurb">Discover how to use technology to get the most from you professional practice.</p>
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/software-1.jpg" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/software-1.jpg" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Software</a></h3>
@@ -189,7 +189,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/design-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/design-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Design</a></h3>
@@ -205,7 +205,7 @@ $pageType = 'use-it';
 
                 <div class="tile white">
                     <div class="img-holder">
-                        <a href="#"><img src="media/img/products/connect-1.gif" alt="Example image" /></a>
+                        <a href="#"><img src="media/img/illustrations/connect-1.gif" alt="Example image" /></a>
                     </div>
                     <div class="content">
                         <h3><a href="#">Projects</a></h3>

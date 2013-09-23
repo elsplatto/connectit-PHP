@@ -420,6 +420,24 @@ img.med
 
 /*START: Buttons*/
 
+.video-link
+  position: relative
+  display: block
+  height: auto
+  &:before
+    content: ''
+    position: absolute
+    width: 60px
+    height: 60px
+    top: 50%
+    left: 50%
+    background-image: url(img/icon-sprite.png)
+    background-position: -176px -37px
+    margin: -30px 0 0 -30px
+  &:hover
+    &:before
+      background-position: -236px -37px
+
 .mark-as-read
   position: relative
   text-indent: -10000px
@@ -2178,7 +2196,7 @@ li.unread
     padding: 0
     margin: 0 0 32px 0 !important
   h5, h6
-    margin: 5px 0 !important
+    margin: 0 0 5px 0 !important
     a
       &:hover
         color: inherit !important
@@ -2221,7 +2239,7 @@ li.unread
         height: 3.75em
         border: 1px solid transparent
         border-radius: 2em
-      div
+      div.avatar-holder
         float: left
         clear: left
         margin: 0 20px 0 0
@@ -2230,6 +2248,7 @@ li.unread
         height: auto
       .holder
         width: auto
+        max-width: 840px
       .use-it
         background-color: $use-it-bg
       .fix-it
@@ -2827,62 +2846,66 @@ li.unread
     background-position: 0px -214px
   .avatar-holder
     height: 100%
-    width: auto
+    width: 100px
     float: left
     padding: 0 20px
     img
       width: 60px
       height: 60px
-  .functions
-    margin: 0
-    span
-      font-size: 0.875em
-      color: $dark-grey-light-bg
-    a
-      position: relative
-      padding: 0 0 0 18px
-      margin-left: 10px
-      text-decoration: none
-      &:first-child
-        margin-left: 0
-      &:before
-        content: ''
-        position: absolute
-        top: 2px
-        left: 0
-        width: 11px
-        height: 11px
-        background-image: url(img/icon-sprite.png)
-    .reply
-      &:before
-        background-position: -76px -126px
-    .retweet
-      &:before
-        width: 12px
-        background-position: -89px -126px
-    .favourite
-      &:before
-        width: 12px
-        background-position: -103px -126px
-    .subscribe
-      &:before
-        width: 11px
-        background-position: -117px -126px
-    .replies
-      &:before
-        width: 13px
-        background-position: -130px -126px
-    .share
-      &:before
-        width: 12px
-        background-position: -144px -126px
-    .like, .unlike
-      padding: 0 0 0 14px
-      &:before
-        background-position: -217px -126px
-    .unlike
-      &:before
-        background-position: -231px -126px
+  .content
+    display: inline-block
+    float: left
+    width: 80%
+    .functions
+      margin: 0
+      span
+        font-size: 0.875em
+        color: $dark-grey-light-bg
+      a
+        position: relative
+        padding: 0 0 0 18px
+        margin-left: 10px
+        text-decoration: none
+        &:first-child
+          margin-left: 0
+        &:before
+          content: ''
+          position: absolute
+          top: 2px
+          left: 0
+          width: 11px
+          height: 11px
+          background-image: url(img/icon-sprite.png)
+      .reply
+        &:before
+          background-position: -76px -126px
+      .retweet
+        &:before
+          width: 12px
+          background-position: -89px -126px
+      .favourite
+        &:before
+          width: 12px
+          background-position: -103px -126px
+      .subscribe
+        &:before
+          width: 11px
+          background-position: -117px -126px
+      .replies
+        &:before
+          width: 13px
+          background-position: -130px -126px
+      .share
+        &:before
+          width: 12px
+          background-position: -144px -126px
+      .like, .unlike
+        padding: 0 0 0 14px
+        &:before
+          background-position: -217px -126px
+      .unlike
+        &:before
+          background-position: -231px -126px
 
 
 .wide-tile.twitter
@@ -3008,6 +3031,7 @@ footer
       a
         font-size: 1em
   .utilities
+    clear: both
     li
       margin: 0 15px 20px 0
       a
@@ -3107,9 +3131,86 @@ footer
     display: none
 
 
+//tablet - ipad
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  body
+    overflow-x: hidden
+
+  .slider-holder
+    .column, .columns
+      ul
+        li
+          div
+            width: 28.333% !important
+            .img-holder
+              width: 100% !important
+              img
+            .heading
+              width: 100% !important
+              margin: 0
+              clear: both
+              height: 10.5em !important
+              padding: 1.25em
+              h4
+                font:
+                  size: 1.313em
+                  weight: 400
+                color: $h-tag-std-color
+              h5
+                font-size: 0.75em
+                text-transform: uppercase
+
+  .feature-slider
+    div
+      .img-holder
+        height: 153px !important
+        line-height: 153px !important
+        min-height: 153px !important
+
+
 //phone
 @media only screen and (max-width: 767px)
 
+  .wide-tile
+    .avatar-holder
+      height: 100%
+      width: 60px
+      float: left
+      padding: 0 10px
+      img
+        width: 40px
+        height: 40px
+    .content
+      display: inline-block
+      float: left
+      width: 75%
+      .functions
+        margin: 0
+        span
+          font-size: 0.875em
+          color: $dark-grey-light-bg
+        a
+          margin: 8px 0 !important
+          clear: both
+          display: block
+          &:before
+            top: 7px
+
+  .list-holder, .block-list-holder
+    ul
+      li
+        div.avatar-holder
+          height: 100%
+          width: 60px
+          float: left
+          padding: 0 10px
+          img
+            width: 40px
+            height: 40px
+        div.avatar-holder + .holder
+          width: 70%
+        .holder
+          width: 100%
 
   #single-feature-slider, .slider-holder-sml
     display: block
@@ -3182,6 +3283,10 @@ footer
     li
       border: 1px solid $light-grey-dark-bg
       margin-bottom: 10px
+
+  .icon-community
+    background-size: 30px 30px
+    background-position: center 50px
 
   body
     overflow-x: hidden

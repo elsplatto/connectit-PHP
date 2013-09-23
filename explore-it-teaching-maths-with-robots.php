@@ -18,6 +18,19 @@ $pageType = 'explore-it';
     </div>
 </section>
 
+<section class="dark-grey-dark std">
+    <div class="row">
+        <div class="large-12 columns text-center">
+            <a href="overlay-beebots.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/3tbeetbots.jpg" alt="Beebots pic" /></a>
+            <!--div class="flex-video">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI" frameborder="0" allowfullscreen></iframe>
+            </div-->
+            <h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching Maths With Robots</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip... <a href="explore-it-teaching-maths-with-robots.php">Read more</a></p>
+        </div>
+    </div>
+</section>
 
 <section class="white std">
     <div class="row">

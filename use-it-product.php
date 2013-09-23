@@ -22,7 +22,7 @@ $pageType = 'use-it'
 <section class="white std">
     <div class="row">
         <div class="large-12 columns">
-            <img src="media/img/products/hp-printer.jpg" width="350" height="245" alt="HP Apeos IV3375 Printer" class="right" />
+            <img src="media/img/illustrations/hp-printer.jpg" width="350" height="245" alt="HP Apeos IV3375 Printer" class="right" />
             <p class="intro">
             The HP Apeos IVC3375 Printer is used for admin, publishing, reports, art, craft, and design.
             </p>
@@ -67,45 +67,9 @@ $pageType = 'use-it'
     <div class="row">
         <div class="large-12 columns text-center list-holder">
             <h2>Discussions About This Printer</h2>
-            <ul>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-1.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h6><a href="#">Problem with printer</a></h6>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-2.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h6><a href="#">Re: Help connecting to the network server</a></h6>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-3.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h6><a href="#">How to design for mobile</a></h6>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-4.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h6><a href="#">Whiteboard in the classroom</a></h6>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div><a href="#"><img class="circle" src="media/img/avatars/example-5.jpg" alt="Example Image" /></a></div>
-                    <div class="holder">
-                        <h6><a href="#">Thoughts on online communities</a></h6>
-                        <p class="cite">about 14 hours ago by <a href="#">Connect.It</a></p>
-                    </div>
-                </li>
-            </ul>
+            <?php include 'includes/discussions-list.php' ?>
 
-            <a href="#" class="button small">See all discussions about this printer</a>
+            <a href="share-it-discussions.php" class="button small">See all discussions about this printer</a>
         </div>
     </div>
 </section>

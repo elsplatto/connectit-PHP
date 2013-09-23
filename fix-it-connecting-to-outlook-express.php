@@ -73,7 +73,7 @@ $pageType = 'fix-it';
                 <a href="#" class="selected">Audio</a>
             </div>
 
-            <h5>Related Form Posts</h5>
+            <h5>Related Forum Posts</h5>
             <div class="block-list-holder">
                 <ul>
                     <li>

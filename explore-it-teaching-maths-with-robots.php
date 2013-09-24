@@ -21,13 +21,8 @@ $pageType = 'explore-it';
 <section class="dark-grey-dark std">
     <div class="row">
         <div class="large-12 columns text-center">
-            <a href="overlay-beebots.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/3tbeetbots.jpg" alt="Beebots pic" /></a>
-            <!--div class="flex-video">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI" frameborder="0" allowfullscreen></iframe>
-            </div-->
-            <h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching Maths With Robots</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip... <a href="explore-it-teaching-maths-with-robots.php">Read more</a></p>
+            <a href="overlay-beebots.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/3tbeebots-nicole.jpg" alt="Beebots pic" /></a>
+
         </div>
     </div>
 </section>
@@ -112,32 +107,30 @@ $pageType = 'explore-it';
                 <a href="#" class="button grey flat">Date Added</a>
             </div>
 
-            <div class="large-12 columns margin-bottom-18">
-                <div class="large-12 wide-tile white sml">
-                    <div class="large-1 avatar-holder">
-                        <a href="#"><img src="media/img/avatars/example-2.jpg" alt="Example Avatar" class="avatar" /></a>
-                    </div>
-                    <div class="large-10 columns content">
-                        <p class="header"><span class="handle"><strong>John Smith</strong></span> <a href="#">@johnboy</a> <span class="timestamp">2 hours ago</span></p>
-                        <p>As a condition, hyperspace translates objects as a phased tachyon wave, which once collapsed restores the objects to their meson composition instantaneously. As a condition, hyperspace translates objects as a phased tachyon wave, which once collapsed restores the objects to their meson composition instantaneously.</p>
-                        <p class="functions"><span>Did you find this comment useful?</span><a href="#" class="like">Yes</a> <span>(10)</span><a href="#" class="unlike">No</a> <span>(1)</span></p>
-                    </div>
+            <div class="large-12 wide-tile white sml margin-bottom-18">
+                <div class="avatar-holder">
+                    <a href="#"><img src="media/img/avatars/example-2.jpg" alt="Example Avatar" class="avatar" /></a>
+                </div>
+                <div class="content">
+                    <p class="header"><span class="handle"><strong>John Smith</strong></span> <a href="#">@johnboy</a> <span class="timestamp">2 hours ago</span></p>
+                    <p class="comment">As a condition, hyperspace translates objects as a phased tachyon wave, which once collapsed restores the objects to their meson composition instantaneously. As a condition, hyperspace translates objects as a phased tachyon wave, which once collapsed restores the objects to their meson composition instantaneously.</p>
+                    <p class="functions"><span>Did you find this comment useful?</span><a href="#" class="like">Yes</a> <span>(10)</span><a href="#" class="unlike">No</a> <span>(1)</span></p>
                 </div>
             </div>
 
-            <div class="large-12 columns margin-bottom-18">
-                <div class="wide-tile white sml">
-                    <div class="large-1 avatar-holder">
-                        <a href="#"><img src="media/img/avatars/profileLge.jpg" class="avatar" alt="Example Avatar" /></a>
+            <div class="large-12 wide-tile white sml margin-bottom-18">
+                <div class="avatar-holder">
+                    <a href="#"><img src="media/img/avatars/profileLge.jpg" class="avatar" alt="Example Avatar" /></a>
+                </div>
+                <div class="content">
+                    <!--if user has just posted comment then include this next div. It's a panic button to allow them to delete or edit their comment. -->
+                    <div class="edit-delete-holder">
+                        <span class="panic-timer">120</span> seconds left to <a href="#" class="edit">edit</a> or <a href="#" class="delete">delete</a>
                     </div>
-                    <div class="large-10 columns content">
-                        <div class="edit-delete-holder">
-                            120 seconds left to <a href="#">edit</a> or <a href="#">delete</a>
-                        </div>
-                        <p class="header"><span class="handle"><strong>Jason Taikato</strong></span> <a href="#">@elsplatto</a> <span class="timestamp">just now</span></p>
-                        <p>This is supposed to happen with a minimum of energy expenditure. While it is necessary for a ship to have nuclear engine to pro- duce the hyperspace drive field to hurl a vessel through hyperspace, nearly all of the energy expended is recovered as the hyper field collapses. Also, there is no Cherenkov radiation flash associated with re-entry from hyperspace.</p>
-                        <p class="functions"><span>Did you find this comment useful?</span><a href="#" class="like">Yes</a> <span>(10)</span><a href="#" class="unlike">No</a> <span>(1)</span></p>
-                    </div>
+                    <p class="header"><span class="handle"><strong>Jason Taikato</strong></span> <a href="#">@elsplatto</a> <span class="timestamp">just now</span></p>
+                    <p class="comment">This is supposed to happen with a minimum of energy expenditure. While it is necessary for a ship to have nuclear engine to produce the hyperspace drive field to hurl a vessel through hyperspace, nearly all of the energy expended is recovered as the hyper field collapses. Also, there is no Cherenkov radiation flash associated with re-entry from hyperspace.</p>
+                    <p class="comment">This is supposed to happen with a minimum of energy expenditure. While it is necessary for a ship to have nuclear engine to produce the hyperspace drive field to hurl a vessel through hyperspace, nearly all of the energy expended is recovered as the hyper field collapses. Also, there is no Cherenkov radiation flash associated with re-entry from hyperspace.</p>
+                    <p class="functions"><span>Did you find this comment useful?</span><a href="#" class="like">Yes</a> <span>(10)</span><a href="#" class="unlike">No</a> <span>(1)</span></p>
                 </div>
             </div>
 
@@ -152,7 +145,7 @@ $pageType = 'explore-it';
             <form id="frmAddComment" name="frmAddComment">
                 <label for="comment" class="hidden-field"></label>
                 <textarea id="comment"></textarea>
-                <input type="submit" value="Add Comment" class="button green right" />
+                <input type="submit" value="Add Comment" disabled="disabled" class="button green right" />
             </form>
         </div>
     </div>
@@ -172,6 +165,73 @@ include 'includes/slider.php';
 <?php include 'includes/footer.php'; ?>
 
 <?php include 'includes/sidebar.php'; ?>
+
+<script>
+    $(function() {
+        var count=120;
+        var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+        function timer()
+        {
+            count=count-1;
+            if (count < 0)
+            {
+                clearInterval(counter);
+                $('.edit-delete-holder').remove();
+                //counter ended, do something here
+                return;
+            }
+            //Do code for showing the number of seconds here
+            $('span.panic-timer').text(count);
+        }
+
+        $('.edit-delete-holder .edit').on('click', function(e) {
+            e.preventDefault();
+            var commentHolder = $(this).closest('.wide-tile');
+            var comment = $(this).parent('div').siblings('p.comment');
+            var text= '';
+            for (var i = 0; i < comment.length; i++)
+            {
+                text = text + $(comment[i]).text() + '\r\r';
+            }
+            $('#comment').focus();
+            $('#comment').val(text);
+            $('#frmAddComment input[type="submit"]').removeAttr('disabled');
+            $(commentHolder).remove();
+        });
+
+        $('.edit-delete-holder .delete').on('click', function(e) {
+            e.preventDefault();
+            var commentHolder = $(this).closest('.wide-tile');
+            $(commentHolder).remove();
+        });
+
+        $('#comment').keyup(function(){
+            var btn = $('#frmAddComment input[type="submit"]')
+            if ($(this).val().length > 0)
+            {
+                btn.removeAttr('disabled');
+            }
+            else if (($(this).val().length === 0) && btn.not(':disabled'))
+            {
+               btn.attr('disabled','disabled');
+            }
+        });
+
+        $('#comment').focus(function(){
+            if ($('html').hasClass('touch') && $('#global-header').not(':hidden'))
+            {
+                $('#global-header').hide();
+            }
+        });
+
+        $('#comment').blur(function(){
+            if ($('html').hasClass('touch') && $('#global-header').not(':visible'))
+            {
+                $('#global-header').show();
+            }
+        });
+    });
+</script>
 
 </body>
 </html>

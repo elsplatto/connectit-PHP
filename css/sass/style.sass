@@ -403,6 +403,11 @@ img.med
   padding-left: 1.125em
   padding-right: 1.125em
 
+.top-bar-section
+  .has-dropdown.hover > .dropdown
+    visibility: visible
+
+
 .top-bar-section .has-dropdown > a:after
   border: none
 
@@ -520,6 +525,12 @@ button, .button
   border-radius: 3px
   box-shadow: 0 3px 0 $button-blue-drop-shadow
 
+button[disabled="disabled"], .button[disabled="disabled"]
+  background-color: $light-grey-dark-bg !important
+  border-color: $light-grey-dark-bg !important
+  box-shadow: 0 3px 0 $dark-grey-dark-bg !important
+
+
 button:hover, button:focus, .button:hover, .button:focus
   background-color: $button-blue-hover
 
@@ -609,6 +620,7 @@ textarea
   border: 1px solid $light-grey-bg
   border-radius: 3px
   background-color: #fff !important
+  font-size: 1em !important
 
 input[type='text'],
 input[type='password'],
@@ -1007,7 +1019,7 @@ fieldset
     height: 15px
     width: auto
     position: absolute
-    right: 0
+    right: 20px
     z-index: 3
     color: $dark-grey-light-bg
     font-size: 0.875em
@@ -1043,7 +1055,6 @@ fieldset
     font-size: 1.2em
   p
     clear: both
-    font-size: 1em
     margin-bottom: 10px
     .read-more
       color: $about-it-dark-bg

@@ -74,14 +74,14 @@ $pageType = 'use-it'
     </div>
 </section>
 
+
 <section class="light-grey-light std">
     <div class="row">
         <div class="large-12 columns text-center">
-            <h2 class="margin-bottom-40">Inspiration</h2>
-            <div class="flex-video">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/88KmvrGQrcI" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+            <a href="explore-it-teaching-maths-with-robots.php"><img src="media/img/articles/3tbeetbots.jpg" /></a>
+            <h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching Maths With Robots</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip... <a href="explore-it-teaching-maths-with-robots.php">Read more</a></p>
         </div>
     </div>
 </section>

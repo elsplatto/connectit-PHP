@@ -256,6 +256,9 @@ img.med {
   padding-left: 1.125em;
   padding-right: 1.125em; }
 
+.top-bar-section .has-dropdown.hover > .dropdown {
+  visibility: visible; }
+
 .top-bar-section .has-dropdown > a:after {
   border: none; }
 
@@ -364,6 +367,11 @@ button, .button {
   border-radius: 3px;
   box-shadow: 0 3px 0 #084878; }
 
+button[disabled="disabled"], .button[disabled="disabled"] {
+  background-color: #cacdd1 !important;
+  border-color: #cacdd1 !important;
+  box-shadow: 0 3px 0 #424a53 !important; }
+
 button:hover, button:focus, .button:hover, .button:focus {
   background-color: #318bcb; }
 
@@ -455,7 +463,8 @@ input[type='time'],
 input[type='url'] {
   border: 1px solid #dfe0e3;
   border-radius: 3px;
-  background-color: white !important; }
+  background-color: white !important;
+  font-size: 1em !important; }
 
 input[type='text'],
 input[type='password'],
@@ -911,7 +920,7 @@ input.error[type='url']:focus {
     height: 15px;
     width: auto;
     position: absolute;
-    right: 0;
+    right: 20px;
     z-index: 3;
     color: #8a9096;
     font-size: 0.875em; }
@@ -947,7 +956,6 @@ input.error[type='url']:focus {
     font-size: 1.2em; }
   .content p {
     clear: both;
-    font-size: 1em;
     margin-bottom: 10px; }
     .content p .read-more {
       color: #2e7a64;

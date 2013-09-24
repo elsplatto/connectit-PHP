@@ -33,7 +33,7 @@ $pageType = 'other';
         </div>
         <div class="large-10 columns">
             <h3>Jason Taikato</h3>
-            <form id="frmEditProfile">
+            <form id="frmEditProfile" data-abide>
                 <label for="twitterId">Twitter ID</label>
                 <input type="text" id="twitterId" name="twitterId" />
 
@@ -60,14 +60,7 @@ $pageType = 'other';
 </section>
 
 <?php include 'includes/global-js.php'; ?>
-
-<script src="js/foundation/foundation.reveal.js"></script>
-<script src="js/foundation/foundation.alerts.js"></script>
 <script>
-$(function() {
-
-
-});
 </script>
 
 <?php include 'includes/footer.php'; ?>

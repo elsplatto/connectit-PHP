@@ -44,7 +44,7 @@ $alert = $_REQUEST['alert'];
         </div>
     </section>
 
-    <section class="dark-grey sml">
+    <section class="light-grey-light sml">
         <div class="row">
             <div class="large-12 columns">
                 <?php include 'includes/support-suite.php'; ?>

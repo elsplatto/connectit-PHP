@@ -964,6 +964,9 @@ input.error[type='url']:focus {
 .right-col .tag-box {
   margin-bottom: 30px; }
 
+.white .action-list li {
+  background-color: #eeeff1 !important; }
+
 .action-list {
   list-style: none;
   display: block;
@@ -1777,6 +1780,7 @@ li.unread {
   text-align: center;
   overflow: hidden; }
   .feature-holder .orbit-container h2 {
+    padding-top: 50px !important;
     color: white;
     font-size: 2.75em !important;
     font-weight: 400 !important;
@@ -1785,11 +1789,8 @@ li.unread {
   .feature-holder .orbit-container h4 {
     color: white; }
   .feature-holder .orbit-container li.container {
-    padding: 50px 0 0 0;
-    height: 385px;
-    background-image: url(img/feature-bg.png);
-    background-position: top center;
-    background-repeat: no-repeat; }
+    padding: 0;
+    height: 385px; }
   .feature-holder .orbit-container .use-it {
     background-color: #994275; }
   .feature-holder .orbit-container .fix-it {
@@ -1802,6 +1803,14 @@ li.unread {
     background-color: #3aa385; }
   .feature-holder .orbit-container .grey {
     background-color: #3f4851; }
+  .feature-holder .orbit-container .light-grey {
+    background-color: #dfe0e3; }
+  .feature-holder .orbit-container .red-blue {
+    background-image: url(img/red-blue-bg.png) !important;
+    background-repeat: repeat-x !important; }
+  .feature-holder .orbit-container .blue-grad {
+    background-image: url(img/blue-bg.png) !important;
+    background-repeat: repeat-x !important; }
   .feature-holder .orbit-container li {
     margin: 0;
     padding: 0; }

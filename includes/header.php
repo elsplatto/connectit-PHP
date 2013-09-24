@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Connect.IT</title>
 
+    <link rel="apple-touch-icon" href="apple-icons/connect-it-icon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icons/connect-it-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icons/connect-it-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icons/connect-it-icon-152x152.png" />
+
 
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />

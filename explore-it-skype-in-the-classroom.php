@@ -13,7 +13,7 @@ $pageType = 'explore-it';
     <div class="row">
         <div class="large-12 columns">
             <div class="breadcrumbs"><a href="explore-it.php">Explore.It</a></div>
-            <h1>Teaching Maths With Robots</h1>
+            <h1>Skype In The Classroom</h1>
         </div>
     </div>
 </section>
@@ -21,7 +21,7 @@ $pageType = 'explore-it';
 <section class="dark-grey-dark std">
     <div class="row">
         <div class="large-12 columns text-center">
-            <a href="overlay-beebots.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/3tbeebots-nicole.jpg" alt="Beebots pic" /></a>
+            <a href="overlay-skype.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/Skypeclassroom.jpg" alt="Skype Illustration" /></a>
 
         </div>
     </div>
@@ -31,34 +31,19 @@ $pageType = 'explore-it';
     <div class="row">
         <div class="large-8 columns">
             <p class="intro">
-                Bee bots in the classroom! Miss Troy, Manly Village Primary, explains how she uses Bee bots in the classroom to engage year three students in Mathematics and the Creative Arts.
+                Skype in the classroom is an amazing resource which connects Australian classrooms to thousands of teachers and classrooms from around the world. The service provides access  to global experts, the ability to share ideas and to create amazing learning experiences with teachers from around the world.
             </p>
 
             <blockquote>
                 <p>
-                    Kids are more engaged when they're using technology. I use a range of resources with my class to inspire and encourage exploration.
+                    Skype creates the kind of environment that children will experience in the future. It lets them see there is learning happening beyond the four walls of our classroom. They learn there is an extended world beyond them, places they've never seen before - the potential is great
                 </p>
-                <p class="caption">Nicole Troy - Manly Village Primary School Year 3 Teacher</p>
+                <p class="caption">Jo-Ann Fox, 4th grade teacher, Escondido, California</p>
             </blockquote>
 
-            <p>
-                The kids were encouraged to create Bee bot dances based on their favourite Youtube tracks. The process of choreographing and documenting the dances inspired the exploration of movement, time and step, as well as the key mathematics concept of position.
-            </p>
+            <h5>Skype lessons for every subject.</h5>
 
-            <img src="media/img/articles/beebotsGirls.jpg" class="med" alt="Three students with their robots" />
-            <p class="caption">The girls enjoyed working as a team.</p>
-
-            <blockquote>
-                <p>
-                They've really been on task, focused and learning how to work as teams
-                </p>
-                <p class="caption">Nicole Troy - Manly Village Primary School Year 3 Teacher</p>
-            </blockquote>
-
-            <h5> Resources </h5>
-            <ul>
-                <li>Stimulus / Ignition materials - Bee Bot Tango - <a href="http://www.youtube.com/watch?v=WmlokmEtpMg‎" target="_blank">http://www.youtube.com/watch?v=WmlokmEtpMg‎</a></li>
-            </ul>
+            <p>Ever wanted to introduce your class to a physicist? An explorer? How about an author? Explore a world of Skype lessons from experts and our partners to find a fantastic speaker for your class.Lessons are created by teachers, guest speakers. <a href="https://education.skype.com/collections" target="_blank">Find out more</a></p>
 
 
 
@@ -66,34 +51,17 @@ $pageType = 'explore-it';
         <div class="large-4 columns right-col">
             <h5>Tags</h5>
             <div class="tag-box light-grey-top-border">
-                <a href="#" class="selected">Bee bots</a>
-                <a href="#" class="selected">Robotics</a>
-                <a href="#" class="selected">Mathematics</a>
-                <a href="#" class="selected">Position</a>
-                <a href="#" class="selected">Creative Arts</a>
-                <a href="#" class="selected">YouTube</a>
-                <a href="#" class="selected">Moviemaker</a>
-                <a href="#" class="selected">iPad</a>
-                <a href="#" class="selected">Whiteboard</a>
-                <a href="#" class="selected">Programming</a>
+                <a href="#" class="selected">Skype</a>
+                <a href="#" class="selected">Connected classrooms</a>
+                <a href="#" class="selected">People and culture</a>
+                <a href="#" class="selected">Science</a>
+                <a href="#" class="selected">Video camera</a>
+                <a href="#" class="selected">Whiteboards</a>
+
             </div>
 
             <h6>Got something to share?</h6>
             <a href="overlay-submit-content.php" class="button blue reveal-init">Submit an Article</a>
-        </div>
-    </div>
-</section>
-
-<section class="white std light-grey-top-border">
-    <div class="row">
-
-        <div class="large-12 columns text-center">
-            <h2>Lesson Plan</h2>
-
-            <ul class="action-list text-left margin-top-40">
-                <li><div class="header"><span>Lesson plan: Teaching maths and creative arts with Bee bots</span> <span class="weight">(.PDF 800kB)</span></div><a href="#" class="button flat green download right">Download</a></li>
-            </ul>
-
         </div>
     </div>
 </section>
@@ -225,7 +193,7 @@ include 'includes/slider.php';
             }
             else if (($(this).val().length === 0) && btn.not(':disabled'))
             {
-               btn.attr('disabled','disabled');
+                btn.attr('disabled','disabled');
             }
         });
 

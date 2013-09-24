@@ -26,6 +26,9 @@ $alert = $_REQUEST['alert'];
     <section class="feature-holder">
         <div class="orbit-container">
             <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500; navigation_arrows: false; slide_number: false;" class="orbit-slides-container">
+                <li class="red-blue container">
+                    <a href="overlay-maang.php" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/slideshow/t4l-1.png" alt="T4L Illustration" /></a>
+                </li>
                 <li class="about-it container">
                     <h2>Getting Started</h2>
                     <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
@@ -35,10 +38,6 @@ $alert = $_REQUEST['alert'];
                     <h2>Getting Started</h2>
                     <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
                     <a href="#" class="button flat red">Watch Video</a>
-                </li>
-                <li class="use-it container">
-                    <h2>Getting Started</h2>
-                    <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt. Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt. Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
                 </li>
             </ul>
         </div>

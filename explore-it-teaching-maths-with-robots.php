@@ -18,10 +18,10 @@ $pageType = 'explore-it';
     </div>
 </section>
 
-<section class="dark-grey-dark std">
+<section class="light-grey-light std">
     <div class="row">
         <div class="large-12 columns text-center">
-            <a href="overlay-beebots.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/3tbeebots-nicole.jpg" alt="Beebots pic" /></a>
+            <a href="overlay-beebots.php" data-size="large" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/articles/exploreITTroy.jpg" alt="Beebots pic" /></a>
 
         </div>
     </div>

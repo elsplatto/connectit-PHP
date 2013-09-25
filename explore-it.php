@@ -22,11 +22,11 @@ $pageType = 'explore-it';
     <section class="dark-grey-dark std">
         <div class="row">
             <div class="large-12 columns text-center">
-                <a href="explore-it-teaching-maths-with-robots.php"><img src="media/img/articles/3tbeebots-nicole.jpg" /></a>
+                <a href="explore-it-teaching-maths-with-robots.php"><img src="media/img/articles/misstroy924.jpg" /></a>
 
-                <!--h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching Maths With Robots</a></h2>
+                <h2 class="margin-top-40"><a href="explore-it-teaching-maths-with-robots.php">Teaching Maths With Robots</a></h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                   quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip... <a href="explore-it-teaching-maths-with-robots.php">Read more</a></p-->
+                   quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip... <a href="explore-it-teaching-maths-with-robots.php">Read more</a></p>
             </div>
         </div>
     </section>

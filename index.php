@@ -26,18 +26,16 @@ $alert = $_REQUEST['alert'];
     <section class="feature-holder">
         <div class="orbit-container">
             <ul data-orbit data-options="pause_on_hover:false; timer_speed:0; animation_speed: 500; navigation_arrows: false; slide_number: false;" class="orbit-slides-container">
-                <li class="red-blue container">
-                    <a href="overlay-maang.php" class="reveal-init video-link" title="Link opens video in overlay"><img src="media/img/slideshow/t4l-1.png" alt="T4L Illustration" /></a>
+                <li class="grey container">
+                    <a href="explore-it-teaching-maths-with-robots.php"><img src="media/img/slideshow/t4l-6.jpg" alt="Feature image" data-interchange="[media/img/slideshow/t4l-6.jpg], [media/img/slideshow/t4l-6-1024x385.jpg, (tablet)]" /></a>
+                </li>
+                <li class="light-blue container">
+                    <a href="explore-it-skype-in-the-classroom.php"><img src="media/img/slideshow/homeSkype.jpg" alt="T4L Illustration" /></a>
                 </li>
                 <li class="about-it container">
                     <h2>Getting Started</h2>
                     <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
                     <a href="#" class="button flat green">Watch Video</a>
-                </li>
-                <li class="grey container">
-                    <h2>Getting Started</h2>
-                    <h4>Lorem ipsum dolor sit amet, consectectur adispicing elit, sed do euismod tempor incididunt.</h4>
-                    <a href="#" class="button flat red">Watch Video</a>
                 </li>
             </ul>
         </div>
@@ -120,12 +118,19 @@ include 'includes/slider-feature.php';
 ?>
 
 <?php include 'includes/global-js.php'; ?>
+<script src="js/foundation/foundation.interchange.js"></script>
 <script>
 $(function() {
     $('.alert .close').click(function(e) {
         e.preventDefault();
         var target = $(e.target).closest('.alert');
         target.hide()
+    });
+
+    $(document).foundation('interchange', {
+        named_queries : {
+            tablet : 'only screen and (min-width: 768px) and (max-width: 1024px)'
+        }
     });
 });
 </script>

@@ -1081,7 +1081,7 @@ fieldset
     display: list-item
     height: auto
     margin: 0
-    padding: 10px 8px 10px 20px
+    padding: 15px 8px 10px 20px
     background-color: #fff
     line-height: 2.3em
     overflow: hidden
@@ -1362,12 +1362,13 @@ hr
     float: left
     width: 124px
     height: 50px
-    text-align: right
     background: url(img/dec-logo.png) no-repeat center left
     a
+      position: relative
       display: block
       width: 124px
       height: 50px
+      text-indent: -10000px
   .rightside
     position: relative
     float: right
@@ -1583,7 +1584,7 @@ li.unread
   height: 71px
   position: relative
   display: none
-  background-color: #f00
+  //background-color: #f00
   .respond
     display: block
 
@@ -1652,6 +1653,7 @@ li.unread
             border-width: 0px
             .dropdown
               z-index: 300 !important
+              width: 100%
             a
               position: relative
               /*text-indent: -10000px*/
@@ -1774,11 +1776,12 @@ li.unread
                 clear: both
                 border: none
                 form
-                  width: 100%
+                  width: 90%
+                  text-align: center
                   height: auto
                   display: block
                   padding: 0
-                  margin: 0
+                  margin: 0 auto
                   position: relative
                   label
                     display: none
@@ -1960,9 +1963,8 @@ li.unread
     .red-blue
       background-image: url(img/red-blue-bg.png) !important
       background-repeat: repeat-x !important
-    .blue-grad
-      background-image: url(img/blue-bg.png) !important
-      background-repeat: repeat-x !important
+    .light-blue
+      background-color: #4db6f7 !important
     li
       margin: 0
       padding: 0
@@ -3156,40 +3158,33 @@ footer
 
 //tablet - ipad
 @media only screen and (min-width: 768px) and (max-width: 1024px)
-  body
-    overflow-x: hidden
 
-  .slider-holder
+  html.search-showing
+    body
+      overflow: hidden
+
+  html
+    width: 100% !important
+    min-width: 1024px
+
+
+
+
+
+//phone - landscape
+@media only screen and (max-width: 767px) and (orientation: landscape)
+  .slider-holder-sml
     .column, .columns
       ul
         li
+          margin: 0 auto
+          text-align: center
           div
-            width: 28.333% !important
-            .img-holder
-              width: 100% !important
-              img
+            float: none
+            margin: 0 auto
+            text-align: center
             .heading
-              width: 100% !important
-              margin: 0
-              clear: both
-              height: 10.5em !important
-              padding: 1.25em
-              h4
-                font:
-                  size: 1.313em
-                  weight: 400
-                color: $h-tag-std-color
-              h5
-                font-size: 0.75em
-                text-transform: uppercase
-
-  .feature-slider
-    div
-      .img-holder
-        height: 153px !important
-        line-height: 153px !important
-        min-height: 153px !important
-
+              width: 100%
 
 //phone
 @media only screen and (max-width: 767px)
@@ -3234,6 +3229,7 @@ footer
           width: 70%
         .holder
           width: 100%
+
 
   #single-feature-slider, .slider-holder-sml
     display: block
@@ -3367,7 +3363,7 @@ footer
     .banner-holder
       height: 124px
       padding-top: 30px
-      row
+      .row
         large-12
           h1
             margin: 25px 0
@@ -3407,8 +3403,8 @@ footer
 
     .orbit-bullets
       li
-        width: 0.5em
-        height: 0.5em
+        width: 1.3em
+        height: 1.3em
 
   .support-suite, .share-suite
     margin: 0 auto 10px auto !important

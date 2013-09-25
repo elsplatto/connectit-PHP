@@ -1,4 +1,4 @@
-
+<!--Desktop and Tablet Version-->
 <section class="slider-holder <?php echo $sliderStyle ?>">
     <div class="row">
         <div class="large-12 columns">
@@ -89,6 +89,7 @@
     </div>
 </section>
 
+<!--Mobile Version-->
 <section class="slider-holder-sml <?php echo $sliderStyle ?>">
     <div class="row">
         <div class="large-12 columns">

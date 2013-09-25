@@ -977,7 +977,7 @@ input.error[type='url']:focus {
     display: list-item;
     height: auto;
     margin: 0;
-    padding: 10px 8px 10px 20px;
+    padding: 15px 8px 10px 20px;
     background-color: white;
     line-height: 2.3em;
     overflow: hidden;
@@ -1247,12 +1247,13 @@ hr {
     float: left;
     width: 124px;
     height: 50px;
-    text-align: right;
     background: url(img/dec-logo.png) no-repeat center left; }
     .global-header .NSWlogo a {
+      position: relative;
       display: block;
       width: 124px;
-      height: 50px; }
+      height: 50px;
+      text-indent: -10000px; }
   .global-header .rightside {
     position: relative;
     float: right;
@@ -1462,8 +1463,7 @@ li.unread {
 #nav-pad {
   height: 71px;
   position: relative;
-  display: none;
-  background-color: red; }
+  display: none; }
   #nav-pad .respond {
     display: block; }
 
@@ -1525,7 +1525,8 @@ li.unread {
             /*width: 4.762% */
             border-width: 0px; }
             .nav-holder .row nav.top-bar section ul.top-level li.search-it .dropdown {
-              z-index: 300 !important; }
+              z-index: 300 !important;
+              width: 100%; }
             .nav-holder .row nav.top-bar section ul.top-level li.search-it a {
               position: relative;
               /*text-indent: -10000px */ }
@@ -1640,11 +1641,12 @@ li.unread {
               clear: both;
               border: none; }
               .nav-holder .row nav.top-bar section ul.top-level li ul .search-holder form {
-                width: 100%;
+                width: 90%;
+                text-align: center;
                 height: auto;
                 display: block;
                 padding: 0;
-                margin: 0;
+                margin: 0 auto;
                 position: relative; }
                 .nav-holder .row nav.top-bar section ul.top-level li ul .search-holder form label {
                   display: none; }
@@ -1808,9 +1810,8 @@ li.unread {
   .feature-holder .orbit-container .red-blue {
     background-image: url(img/red-blue-bg.png) !important;
     background-repeat: repeat-x !important; }
-  .feature-holder .orbit-container .blue-grad {
-    background-image: url(img/blue-bg.png) !important;
-    background-repeat: repeat-x !important; }
+  .feature-holder .orbit-container .light-blue {
+    background-color: #4db6f7 !important; }
   .feature-holder .orbit-container li {
     margin: 0;
     padding: 0; }
@@ -2864,31 +2865,22 @@ footer {
   .feedback-tab {
     display: none; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    overflow-x: hidden; }
+  html.search-showing body {
+    overflow: hidden; }
 
-  .slider-holder .column ul li div, .slider-holder .columns ul li div {
-    width: 28.333% !important; }
-    .slider-holder .column ul li div .img-holder, .slider-holder .columns ul li div .img-holder {
-      width: 100% !important; }
-    .slider-holder .column ul li div .heading, .slider-holder .columns ul li div .heading {
-      width: 100% !important;
-      margin: 0;
-      clear: both;
-      height: 10.5em !important;
-      padding: 1.25em; }
-      .slider-holder .column ul li div .heading h4, .slider-holder .columns ul li div .heading h4 {
-        font-size: 1.313em;
-        font-weight: 400;
-        color: #222529; }
-      .slider-holder .column ul li div .heading h5, .slider-holder .columns ul li div .heading h5 {
-        font-size: 0.75em;
-        text-transform: uppercase; }
-
-  .feature-slider div .img-holder {
-    height: 153px !important;
-    line-height: 153px !important;
-    min-height: 153px !important; } }
+  html {
+    width: 100% !important;
+    min-width: 1024px; } }
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .slider-holder-sml .column ul li, .slider-holder-sml .columns ul li {
+    margin: 0 auto;
+    text-align: center; }
+    .slider-holder-sml .column ul li div, .slider-holder-sml .columns ul li div {
+      float: none;
+      margin: 0 auto;
+      text-align: center; }
+      .slider-holder-sml .column ul li div .heading, .slider-holder-sml .columns ul li div .heading {
+        width: 100%; } }
 @media only screen and (max-width: 767px) {
   .wide-tile .avatar-holder {
     height: 100%;
@@ -3057,7 +3049,7 @@ footer {
     body .banner-holder {
       height: 124px;
       padding-top: 30px; }
-      body .banner-holder row large-12 h1 {
+      body .banner-holder .row large-12 h1 {
         margin: 25px 0; }
     body #nav-pad {
       display: none; }
@@ -3082,8 +3074,8 @@ footer {
     body #nav-pad {
       height: 50px; }
     body .orbit-bullets li {
-      width: 0.5em;
-      height: 0.5em; }
+      width: 1.3em;
+      height: 1.3em; }
 
   .support-suite, .share-suite {
     margin: 0 auto 10px auto !important; }

@@ -42,7 +42,7 @@ $pageType = 'other';
     </div>
 </section>
 
-<section class="light-grey-light std">
+<section class="light-grey-light std"><a name="notifications"></a>
     <div class="row">
         <div class="large-12 columns">
             <h2 class="margin-bottom-40">Notifications</h2>

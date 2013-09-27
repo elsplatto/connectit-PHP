@@ -136,9 +136,10 @@ $pageType = 'explore-it';
     <div class="row">
         <div class="large-12 columns">
             <h2>Add Comment</h2>
-            <form id="frmAddComment" name="frmAddComment">
+            <form id="frmAddComment" name="frmAddComment" data-abide>
                 <label for="comment" class="hidden-field"></label>
-                <textarea id="comment"></textarea>
+                <textarea id="comment" required></textarea>
+                <small class="error">Please enter your comment.</small>
                 <input type="submit" value="Add Comment" class="button green right" />
             </form>
         </div>

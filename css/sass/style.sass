@@ -76,9 +76,9 @@ $button-maroon-drop-shadow: #692e51
 
 /*END: colors*/
 
-$serif-font-family: 'PMN Caecilia', serif
-$gothic-font-family: 'Gotham'
-$body-font-family: 'Whitney HTF', 'Helvetica Neue'
+$serif-font-family: 'PMNCaeciliaW01-55Roman', 'PMN Caecilia'
+$gothic-font-family: 'Gotham SSm A', 'Gotham SSm B', 'Gotham'
+$body-font-family: 'Whitney SSm A', 'Whitney SSm B', 'Whitney', 'Helvetica Neue'
 $std-font-color: #454d54
 $std-link-color: #454d54
 $h-tag-std-color: #222529
@@ -621,6 +621,7 @@ textarea
   border-radius: 3px
   background-color: #fff !important
   font-size: 1em !important
+  margin-bottom: 0
 
 input[type='text'],
 input[type='password'],
@@ -643,6 +644,7 @@ input[type='url']
   font:
     family: $gothic-font-family
     size: 1em
+  margin-bottom: 0
 
 input[type='search']
   -webkit-appearance: none
@@ -820,7 +822,7 @@ textarea
   color: rgba(0, 0, 0, 0.75)
   display: block
   font-size: 0.875em
-  margin: 0 0 2em 0
+  //margin: 0 0 2em 0
   padding: 0.5em
   height: 12.5em
   width: 100%
@@ -891,18 +893,18 @@ fieldset
 
 /* Error Handling
 
-.error input, input.error, .error textarea, textarea.error
+/*.error input, input.error, .error textarea, textarea.error
   border-color: #c60f13
   background-color: rgba(198, 15, 19, 0.1)
 
-.error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus
+/*.error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus
   background: #fafafa
   border-color: #999999
 
-.error label, label.error
+/*.error label, label.error
   color: #c60f13
 
-.error small, small.error
+/*.error small, small.error
   display: block
   padding: 0.375em 0.25em
   margin-top: -1.3125em
@@ -911,6 +913,38 @@ fieldset
   font-weight: bold
   background: #c60f13
   color: white
+
+/*START: Validation*/
+
+small
+  font-size: 1em !important
+  color: #fff
+
+
+input[data-invalid],
+textarea[data-invalid]
+  border-color: $explore-it-bg !important
+  border-width: 2px !important
+  background-color: rgba(198, 15, 19, 0.1) !important
+
+
+input[data-invalid] + small,
+textarea[data-invalid] + small
+  visibility: visible !important
+
+input + small,
+textarea + small
+  min-height: 2em !important
+  display: block !important
+  //margin-bottom: 1em !important
+  visibility: hidden
+  background-color: $explore-it-bg !important
+  padding: 0.5em !important
+  font-weight: 500 !important
+
+label.error
+  color: $explore-it-bg !important
+/*END: Validation*/
 
 
 
@@ -2752,8 +2786,8 @@ li.unread
   .filter-box, .tag-box
     max-height: 90px
 
-
-
+.filter-area.show, .tag-area.show
+  display: block !important
 
 .filter-box, .tag-box
   position: relative

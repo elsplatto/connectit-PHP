@@ -7,9 +7,11 @@
     <p>
         Please send us your feedback:
     </p>
-    <form id="frmFeedback" action="#" method="POST">
-            <textarea></textarea>
+    <form id="frmFeedback" action="#" method="POST" data-abide>
 
+        <label for="fldFeedback">Feedback:</label>
+        <textarea id="fldFeedback" required></textarea>
+        <small class="error">Please enter your feedback before submitting.</small>
 
 
 
@@ -19,12 +21,13 @@
     <a class="close-reveal-modal reveal-close"></a>
 </div>
 <script>
+    $(document).foundation('abide','events');
     $(function() {
         $('.reveal-modal-bg, .reveal-close').click(function(e){
             e.preventDefault();
             $('.reveal-modal').foundation('reveal','close');
             $('.reveal-modal-bg').hide();
             $('.reveal-modal').remove();
-        })
-    })
+        });
+    });
 </script>

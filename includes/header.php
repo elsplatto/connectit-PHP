@@ -13,10 +13,14 @@
     <link rel="apple-touch-icon" sizes="120x120" href="apple-icons/connect-it-icon-120x120.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="apple-icons/connect-it-icon-152x152.png" />
 
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/cdbf6725-aac1-49eb-be1c-2eb45556c06d.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6681852/778262/css/fonts.css" />
+
 
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/custom.modernizr.js"></script>
+    <!--LEAVE BELOW <SCRIPT> BLOCK OUT OF PRODUCTION CODE - IT IS FOR TOBIAS AND TOBIAS ISSUE TRACKING ONLY-->
     <?php
     if (($_SERVER['SERVER_NAME'] == 'tobiasandtobias.com.au') || ($_SERVER['SERVER_NAME'] == 'www.tobiasandtobias.com.au')){
     ?>

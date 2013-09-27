@@ -122,9 +122,10 @@ $pageType = 'explore-it';
     <div class="row">
         <div class="large-12 columns">
             <h2>Add Comment</h2>
-            <form id="frmAddComment" name="frmAddComment">
+            <form id="frmAddComment" name="frmAddComment" data-abide>
                 <label for="comment" class="hidden-field"></label>
-                <textarea id="comment"></textarea>
+                <textarea id="comment" required></textarea>
+                <small class="error">Please enter your comment.</small>
                 <input type="submit" value="Add Comment" disabled="disabled" class="button green right" />
             </form>
         </div>
@@ -197,19 +198,7 @@ include 'includes/slider.php';
             }
         });
 
-        $('#comment').focus(function(){
-            if ($('html').hasClass('touch') && $('#global-header').not(':hidden'))
-            {
-                $('#global-header').hide();
-            }
-        });
 
-        $('#comment').blur(function(){
-            if ($('html').hasClass('touch') && $('#global-header').not(':visible'))
-            {
-                $('#global-header').show();
-            }
-        });
     });
 </script>
 

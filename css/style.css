@@ -19,7 +19,7 @@ a {
   color: #454d54; }
 
 body {
-  font-family: "Whitney HTF", "Helvetica Neue";
+  font-family: "Whitney SSm A", "Whitney SSm B", "Whitney", "Helvetica Neue";
   background-color: #222529 !important; }
 
 /*START: Header classes */
@@ -32,10 +32,10 @@ h1 {
   color: white !important; }
 
 h2, h4 {
-  font-family: "PMN Caecilia", serif; }
+  font-family: "PMNCaeciliaW01-55Roman", "PMN Caecilia"; }
 
 h1, h3, h5, h6 {
-  font-family: "Gotham"; }
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham"; }
 
 h2 {
   font-size: 1.875em !important;
@@ -360,7 +360,7 @@ button.dark-grey, .button.dark-grey {
   color: white; }
 
 button, .button {
-  font-family: "Gotham";
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
   color: white !important;
   background-color: #1366a3;
   border: 3px solid transparent;
@@ -464,7 +464,8 @@ input[type='url'] {
   border: 1px solid #dfe0e3;
   border-radius: 3px;
   background-color: white !important;
-  font-size: 1em !important; }
+  font-size: 1em !important;
+  margin-bottom: 0; }
 
 input[type='text'],
 input[type='password'],
@@ -483,8 +484,9 @@ input[type='url'] {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  font-family: "Gotham";
-  font-size: 1em; }
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
+  font-size: 1em;
+  margin-bottom: 0; }
 
 input[type='search'] {
   -webkit-appearance: none; }
@@ -501,7 +503,7 @@ input[type='search'] {
   padding: 8px 15px 2px;
   margin-bottom: 0;
   color: white;
-  font-family: "PMN Caecilia", serif;
+  font-family: "PMNCaeciliaW01-55Roman", "PMN Caecilia";
   text-transform: none;
   font-weight: normal;
   font-size: 1.625em;
@@ -664,7 +666,6 @@ input[type='url'] {
   color: rgba(0, 0, 0, 0.75);
   display: block;
   font-size: 0.875em;
-  margin: 0 0 2em 0;
   padding: 0.5em;
   height: 12.5em;
   width: 100%;
@@ -763,75 +764,90 @@ fieldset {
     margin-left: -0.1875em; }
 
 /* Error Handling */
-.error input, input.error, .error textarea, .error input[type='text'],
-.error input[type='password'],
-.error input[type='date'],
-.error input[type='datetime'],
-.error input[type='datetime-local'],
-.error input[type='month'],
-.error input[type='week'],
-.error input[type='email'],
-.error input[type='number'],
-.error input[type='search'],
-.error input[type='tel'],
-.error input[type='time'],
-.error input[type='url'], textarea.error, input.error[type='text'],
-input.error[type='password'],
-input.error[type='date'],
-input.error[type='datetime'],
-input.error[type='datetime-local'],
-input.error[type='month'],
-input.error[type='week'],
-input.error[type='email'],
-input.error[type='number'],
-input.error[type='search'],
-input.error[type='tel'],
-input.error[type='time'],
-input.error[type='url'] {
-  border-color: #c60f13;
-  background-color: rgba(198, 15, 19, 0.1); }
-
-.error input:focus, input.error:focus, .error textarea:focus, .error input[type='text']:focus,
-.error input[type='password']:focus,
-.error input[type='date']:focus,
-.error input[type='datetime']:focus,
-.error input[type='datetime-local']:focus,
-.error input[type='month']:focus,
-.error input[type='week']:focus,
-.error input[type='email']:focus,
-.error input[type='number']:focus,
-.error input[type='search']:focus,
-.error input[type='tel']:focus,
-.error input[type='time']:focus,
-.error input[type='url']:focus, textarea.error:focus, input.error[type='text']:focus,
-input.error[type='password']:focus,
-input.error[type='date']:focus,
-input.error[type='datetime']:focus,
-input.error[type='datetime-local']:focus,
-input.error[type='month']:focus,
-input.error[type='week']:focus,
-input.error[type='email']:focus,
-input.error[type='number']:focus,
-input.error[type='search']:focus,
-input.error[type='tel']:focus,
-input.error[type='time']:focus,
-input.error[type='url']:focus {
-  background: #fafafa;
-  border-color: #999999; }
-
-.error label, label.error {
-  color: #c60f13; }
-
-.error small, small.error {
-  display: block;
-  padding: 0.375em 0.25em;
-  margin-top: -1.3125em;
-  margin-bottom: 1em;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: #c60f13;
+/*.error input, input.error, .error textarea, textarea.error
+ * border-color: #c60f13
+ * background-color: rgba(198, 15, 19, 0.1) */
+/*.error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus
+ * background: #fafafa
+ * border-color: #999999 */
+/*.error label, label.error
+ * color: #c60f13 */
+/*.error small, small.error
+ * display: block
+ * padding: 0.375em 0.25em
+ * margin-top: -1.3125em
+ * margin-bottom: 1em
+ * font-size: 0.75em
+ * font-weight: bold
+ * background: #c60f13
+ * color: white */
+/*START: Validation */
+small {
+  font-size: 1em !important;
   color: white; }
 
+input[data-invalid],
+textarea[data-invalid],
+input[data-invalid][type='text'],
+input[data-invalid][type='password'],
+input[data-invalid][type='date'],
+input[data-invalid][type='datetime'],
+input[data-invalid][type='datetime-local'],
+input[data-invalid][type='month'],
+input[data-invalid][type='week'],
+input[data-invalid][type='email'],
+input[data-invalid][type='number'],
+input[data-invalid][type='search'],
+input[data-invalid][type='tel'],
+input[data-invalid][type='time'],
+input[data-invalid][type='url'] {
+  border-color: #c4414e !important;
+  border-width: 2px !important;
+  background-color: rgba(198, 15, 19, 0.1) !important; }
+
+input[data-invalid] + small,
+textarea[data-invalid] + small,
+input[data-invalid][type='text'] + small,
+input[data-invalid][type='password'] + small,
+input[data-invalid][type='date'] + small,
+input[data-invalid][type='datetime'] + small,
+input[data-invalid][type='datetime-local'] + small,
+input[data-invalid][type='month'] + small,
+input[data-invalid][type='week'] + small,
+input[data-invalid][type='email'] + small,
+input[data-invalid][type='number'] + small,
+input[data-invalid][type='search'] + small,
+input[data-invalid][type='tel'] + small,
+input[data-invalid][type='time'] + small,
+input[data-invalid][type='url'] + small {
+  visibility: visible !important; }
+
+input + small,
+textarea + small,
+input[type='text'] + small,
+input[type='password'] + small,
+input[type='date'] + small,
+input[type='datetime'] + small,
+input[type='datetime-local'] + small,
+input[type='month'] + small,
+input[type='week'] + small,
+input[type='email'] + small,
+input[type='number'] + small,
+input[type='search'] + small,
+input[type='tel'] + small,
+input[type='time'] + small,
+input[type='url'] + small {
+  min-height: 2em !important;
+  display: block !important;
+  visibility: hidden;
+  background-color: #c4414e !important;
+  padding: 0.5em !important;
+  font-weight: 500 !important; }
+
+label.error {
+  color: #c4414e !important; }
+
+/*END: Validation */
 /* Custom Select Options and Dropdowns */
 /*END: Form Classes */
 /*START: Sidenav Classes */
@@ -904,7 +920,7 @@ input.error[type='url']:focus {
 .news-list .list .date {
   color: #8a9096; }
 .news-list .list h2 {
-  font-family: "Gotham";
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
   margin: 0.3em 0 0.5em 0; }
   .news-list .list h2 a {
     color: inherit; }
@@ -1208,7 +1224,7 @@ hr {
   border-color: rgba(85, 104, 94, 0.85);
   border-radius: 3px !important; }
   .reveal-modal h3 {
-    font-family: "Gotham";
+    font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
     font-weight: 300; }
   .reveal-modal .button-holder {
     clear: both; }
@@ -1474,7 +1490,7 @@ li.unread {
   width: 15.9%; }
 
 .nav-holder {
-  font-family: "Gotham";
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
   position: relative;
   z-index: 100;
   width: 100%;
@@ -1713,7 +1729,7 @@ li.unread {
   background: none;
   border: none !important;
   color: rgba(255, 255, 255, 0.55) !important;
-  font-family: "PMN Caecilia", serif;
+  font-family: "PMNCaeciliaW01-55Roman", "PMN Caecilia";
   font-size: 24px;
   font-weight: 300; }
   .breadcrumbs a:before, .subheader h3:before {
@@ -1755,7 +1771,7 @@ li.unread {
     line-height: 1em !important;
     color: white;
     font-weight: 500 !important;
-    font-family: "Gotham";
+    font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
     font-size: 2.75em !important; }
     .headings h1 a, .headings h2 a {
       display: inline-block;
@@ -1787,7 +1803,7 @@ li.unread {
     font-size: 2.75em !important;
     font-weight: 400 !important;
     color: white !important;
-    font-family: "Gotham" !important; }
+    font-family: "Gotham SSm A", "Gotham SSm B", "Gotham" !important; }
   .feature-holder .orbit-container h4 {
     color: white; }
   .feature-holder .orbit-container li.container {
@@ -2108,7 +2124,7 @@ li.unread {
         float: left;
         clear: right;
         color: #424a53;
-        font-family: "Gotham";
+        font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
         font-weight: 500;
         font-size: 1em; }
         .list-holder ul li .holder h4 a, .block-list-holder ul li .holder h4 a {
@@ -2124,7 +2140,7 @@ li.unread {
         float: left;
         clear: right;
         color: #454d54;
-        font-family: "Gotham";
+        font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
         font-size: 1em; }
         .list-holder ul li .holder p a, .block-list-holder ul li .holder p a {
           color: inherit;
@@ -2137,7 +2153,7 @@ li.unread {
         clear: right;
         color: #424a53;
         font-size: 0.875em;
-        font-family: "Whitney HTF", "Helvetica Neue"; }
+        font-family: "Whitney SSm A", "Whitney SSm B", "Whitney", "Helvetica Neue"; }
         .list-holder ul li .holder p.cite a, .block-list-holder ul li .holder p.cite a {
           position: relative;
           text-decoration: underline;
@@ -2507,6 +2523,9 @@ li.unread {
   .filter-area .filter-box, .filter-area .tag-box, .tag-area .filter-box, .tag-area .tag-box {
     max-height: 90px; }
 
+.filter-area.show, .tag-area.show {
+  display: block !important; }
+
 .filter-box, .tag-box {
   position: relative;
   display: block;
@@ -2682,7 +2701,7 @@ li.unread {
   border-color: #c4414e; }
 
 .new-discussion h3, .my-profile h3, .edit-my-profile h3 {
-  font-family: "Gotham";
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
   font-weight: 300 !important; }
 
 .new-discussion h3, .edit-my-profile h3 {
@@ -2758,7 +2777,7 @@ footer {
   margin: 0;
   text-align: center;
   background-color: #222529;
-  font-family: "Gotham"; }
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham"; }
   footer a {
     color: #8a9096 !important; }
     footer a:hover {
@@ -2932,10 +2951,10 @@ footer {
     font-size: 1.313em; }
 
   h2, h4 {
-    font-family: "PMN Caecilia", serif; }
+    font-family: "PMNCaeciliaW01-55Roman", "PMN Caecilia"; }
 
   h1, h3, h5, h6 {
-    font-family: "Gotham"; }
+    font-family: "Gotham SSm A", "Gotham SSm B", "Gotham"; }
 
   h2 {
     font-size: 1.125em !important; }
@@ -3158,7 +3177,7 @@ a.sidebar-button {
         font-size: 1em !important;
         font-weight: 500;
         color: white !important;
-        font-family: "Gotham";
+        font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
         padding: 12px 16px !important; }
 
 #sidebar #frmSideSearch {

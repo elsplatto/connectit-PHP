@@ -96,10 +96,12 @@
         if (!validations[i] && /submit/.test(e.type)) {
           if (this.settings.focus_on_invalid) els[i].focus();
           form.trigger('invalid');
-          $(els[i]).closest('form').attr('data-invalid', '');
+          //$(els[i]).closest('form').attr('data-invalid', '').find('input[type="sbumit"]').attr('disabled','disabled');
           return false;
         }
       }
+
+
 
       if (/submit/.test(e.type)) {
         form.trigger('valid');
@@ -159,9 +161,15 @@
           if (el_patterns[i][1].test(value) && valid_length ||
             !required && el.value.length < 1) {
             $(el).removeAttr('data-invalid').parent().removeClass('error');
+            $('label[for="'+$(el).attr('id')+'"]').removeClass('error');
+            //$(el).closest('form').find('input[type="submit"]').removeAttr('disabled');
+            //console.log('remove')
             validations.push(true);
           } else {
             $(el).attr('data-invalid', '').parent().addClass('error');
+            $('label[for="'+$(el).attr('id')+'"]').addClass('error');
+            //$(el).parent().find('input[type="submit"]').attr('disabled','disabled');
+            //console.log('add')
             validations.push(false);
           }
         }
@@ -183,8 +191,12 @@
       for (var i=0; i < count; i++) {
         if (valid) {
           $(group[i]).removeAttr('data-invalid').parent().removeClass('error');
+          $('label[for="'+$(group[i]).attr('id')+'"]').removeClass('error');
+          $(group[i]).parent().find('input[type="submit"]').removeAttr('disabled');
         } else {
           $(group[i]).attr('data-invalid', '').parent().addClass('error');
+          $('label[for="'+$(group[i]).attr('id')+'"]').addClass('error');
+          $(group[i]).parent().find('input[type="submit"]').attr('disabled','disabled');
         }
       }
 

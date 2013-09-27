@@ -3,7 +3,7 @@
 
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/plugins/jquery/scroll-start-stop.js"></script>
-<script src="js/vendor/plugins/jquery/jq-slickWrap.js"></script>
+
 
 <script id="scriptAnchor">
 $(function() {
@@ -394,7 +394,7 @@ $(function() {
         $(e.target).hide('fast');
     });
 
-    $('img.wrap').slickWrap();
+
     $('#btnSideNav').click( function(e) {
         e.preventDefault();
         if ($('body').hasClass('active'))
@@ -457,6 +457,22 @@ $(function() {
 
     }
 
+    $('textarea, input[type="text"], input[type="email"], input[type="search"], input[type="url"]').focus(function(){
+        if ($('html').hasClass('touch') && $('#global-header').not(':hidden'))
+        {
+            $('#global-header').hide();
+        }
+    });
+
+    $('textarea, input[type="text"], input[type="email"], input[type="search"], input[type="url"]').blur(function(){
+        if ($('html').hasClass('touch') && $('#global-header').not(':visible'))
+        {
+            $('#global-header').show();
+        }
+    });
+
+
+
 });
 </script>
 
@@ -464,6 +480,8 @@ $(function() {
 <script src="js/foundation.min.js"></script>
 <script src="js/foundation/foundation.topbar.js"></script>
 <script src="js/foundation/foundation.dropdown.js"></script>
+
+<script src="js/foundation/foundation.abide.js"></script>
 
 
 
@@ -474,5 +492,6 @@ $(function() {
         offsetTop: 25,
         offsetLeft: 184
     });
+    $(document).foundation('abide','events');
 
 </script>

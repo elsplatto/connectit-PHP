@@ -34,23 +34,25 @@ $pageType = 'other';
         <div class="large-10 columns">
             <h3>Jason Taikato</h3>
             <form id="frmEditProfile" data-abide>
-                <label for="twitterId">Twitter ID</label>
-                <input type="text" id="twitterId" name="twitterId" />
+                <label for="twitterId">Twitter Username</label>
+                <input type="text" id="twitterId" name="twitterId" pattern="alpha_numeric" />
+                <small class="error">Please enter a valid Twitter Username</small>
 
-                <label for="yammerId">Yammer ID</label>
-                <input type="text" id="yammerId" name="yammerId" />
+                <label for="yammerId">Yammer Username</label>
+                <input type="text" id="yammerId" name="yammerId" pattern="alpha_numeric" />
+                <small class="error">Please enter a valid Yammer Username</small>
 
                 <label for="schools">Schools</label>
-                <input type="text" id="schools" name="schools" />
+                <input type="text" id="schools" name="schools" class="margin-bottom-40" />
 
                 <label for="bio">Bio</label>
-                <textarea id="bio" name="bio"></textarea>
+                <textarea id="bio" name="bio" class="margin-bottom-40"></textarea>
 
-                <div class="note-holder large-9 columns">
-                    <span class="mandatory">*</span><span class="note">These fields are mandatory</span>
-                </div>
+                <!--div class="note-holder large-12">
+                    <span class="mandatory">*</span> <span class="note">These fields are mandatory</span>
+                </div-->
 
-                <div class=" large-9 columns">
+                <div class="large-12">
                     <input type="submit" class="button green right" value="Save Changes" />
                     <a href="my-profile.php" class="button secondary right">Cancel</a>
                 </div>
@@ -60,8 +62,6 @@ $pageType = 'other';
 </section>
 
 <?php include 'includes/global-js.php'; ?>
-<script>
-</script>
 
 <?php include 'includes/footer.php'; ?>
 

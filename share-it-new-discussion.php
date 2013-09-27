@@ -28,15 +28,17 @@ $pageType = 'share-it';
                 <h3>Jason Taikato</h3>
                 <form id="frmNewDiscussion" data-abide>
                     <label for="fldSubject">Subject</label>
-                    <input type="text" id="fldSubject" name="fldSubject" />
+                    <input type="text" id="fldSubject" name="fldSubject" required />
+                    <small class="error">Subject is a required field</small>
 
                     <label for="fldDiscussion">Discussion</label>
-                    <textarea id="fldDiscussion" name="fldDiscussion"></textarea>
+                    <textarea id="fldDiscussion" name="fldDiscussion" required></textarea>
+                    <small class="error">Discussion is a required field</small>
 
                     <h5>Select Tags</h5>
 
 
-                    <div class="tag-area">
+                    <div class="tag-area show">
                         <h5>Product Groups</h5>
 
                         <div class="tag-box light-grey-top-border">
@@ -92,21 +94,6 @@ $pageType = 'share-it';
 
 
 <?php include 'includes/global-js.php'; ?>
-<script>
-$(function() {
-    $('.filter-box a, .tag-box a').click(function(e) {
-        e.preventDefault();
-        if($(this).hasClass('selected'))
-        {
-            $(this).removeClass('selected');
-        }
-        else
-        {
-            $(this).addClass('selected')
-        }
-    });
-})
 
-</script>
 <?php include 'includes/footer.php'; ?>
 <?php include 'includes/sidebar.php'; ?>

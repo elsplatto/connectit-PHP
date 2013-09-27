@@ -22,7 +22,7 @@ $pageType = 'other';
 </section>
 
 
-<section class="my-subscriptions light-grey-light std">
+<section class="my-subscriptions light-grey-light std"><a name="subscriptions"></a>
     <div class="row">
         <div class="large-12 columns">
             <h2 class="margin-bottom-40">Your Subscriptions</h2>

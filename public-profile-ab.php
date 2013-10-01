@@ -15,17 +15,17 @@ $pageType = 'other';
 <section class="headings public-profile">
     <div class="row">
         <div class="large-12 columns">
-            <h1>Jason Taikato</h1>
+            <h1>Antonio Banderas</h1>
             <div class="avatar-holder">
                 <?php
-                if (file_exists("media/img/avatars/jason.jpg"))
+                if (file_exists("media/img/avatars/antonio.jpg"))
                 {?>
-                    <img src="media/img/avatars/jason.jpg" class="avatar" alt="Jason Taikato" />
+                    <img id="oldImg" src="media/img/avatars/antonio.jpg" class="avatar" alt="Antonio Banderas" />
                 <?php
                 }
                 else
                 {?>
-                    <div id="initialsHolder" class="avatar red">JT</div>
+                    <div id="initialsHolder" class="avatar blue">AB</div>
                 <?php
                 }
                 ?>
@@ -39,8 +39,8 @@ $pageType = 'other';
     <div class="row">
         <div class="large-12 columns margin-top-40 text-center">
             <div class="profile-bar">
-                <a href="#" class="twitter">@jasontaikato</a>
-                <a href="#" class="yammer">jason.taikato</a>
+                <a href="#" class="twitter">@antonio.banderas</a>
+                <a href="#" class="yammer">antonio.banderas</a>
                 <a href="#" class="location">Australian Technology Park</a>
             </div>
         </div>

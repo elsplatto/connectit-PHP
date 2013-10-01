@@ -25,7 +25,22 @@ $pageType = 'other';
 <section class="my-profile white std">
     <div class="row">
         <div class="large-2 columns">
-            <img src="media/img/avatars/profileLge.jpg" class="avatar" />
+            <!--If image exists then use it, otherwise use green dot with users initials in it-->
+            <?php
+            if (file_exists("media/img/avatars/jason.jpg"))
+            {
+            ?>
+                <a href="public-profile.php"><img src="media/img/avatars/jason.jpg" class="avatar" alt="Jason Taikato" /></a>
+            <?php
+            }
+            else
+            {
+            ?>
+                <a href="public-profile.php" class="avatar green">JT</a>
+            <?php
+            }
+            ?>
+
         </div>
         <div class="large-10 columns">
             <h3>Jason Taikato</h3>

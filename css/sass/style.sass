@@ -1361,22 +1361,6 @@ hr
   .button-holder
     clear: both
 
-#filedrag
-  display: none
-  font-weight: bold
-  text-align: center
-  padding: 1em 0
-  margin: 1em 0
-  color: #555
-  border: 2px dashed #555
-  border-radius: 7px
-  cursor: default
-
-#filedrag.hover
-  color: #f00
-  border-color: #f00
-  border-style: solid
-  box-shadow: inset 0 3px 4px #888
 
 #messages
   clear: both
@@ -1923,6 +1907,9 @@ li.unread
     margin-bottom: 15px
   .avatar-holder
     clear: both
+  #initialsHolder,
+  img.avatar
+    margin: 0 auto
 
 .headings
   background-image: url(img/heading-bg-1.png), url(img/heading-bg-2.png), url(img/heading-bg-3.png), url(img/heading-bg-4.png), url(img/heading-bg-5.png)
@@ -3032,7 +3019,38 @@ li.unread
     width: 1px
     style: solid
     color: transparent
-  border-radius: 62px
+  border-radius: 3.875em
+
+.avatar
+  color: #fff
+  font-family: $gothic-font-family
+  font-size: 3.8em
+  line-height: 2.1em
+  vertical-align: middle
+  text-align: center
+  display: block
+  &:hover
+    color: #fff !important
+
+.avatar.green
+  background-color: $other-bg
+
+.avatar.blue
+  background-color: $share-it-bg
+
+.avatar.red
+  background-color: $explore-it-bg
+
+.avatar.orange
+  background-color: $fix-it-bg
+
+.avatar.small
+  width: 60px !important
+  height: 60px !important
+  border-radius: 29px
+  border: 1px solid transparent
+  font-size: 2em
+  line-height: 1.9em
 
 .avatar-overlay
   text-indent: -10000px
@@ -3048,15 +3066,15 @@ li.unread
 
 .avatar-overlay.green
   z-index: 2
-  width: 123px
-  height: 123px
+  width: 124px
+  height: 124px
   border:
     width: 1px
     style: solid
     color: transparent
   border-radius: 62px
   position: absolute
-  background-color: rgba(95,205,174,0.9)
+  background-color: rgba(95,205,174,0.75)
 
 .guide
   position: relative
@@ -3142,23 +3160,60 @@ footer
         background-color: $fix-it-ultra-light-bg !important
     .focus
       background-color: $fix-it-ultra-light-bg !important
-/*START: Autocomplete*/
+/*END: Autocomplete*/
+
+#filedrag
+  display: none
+  font-weight: bold
+  text-align: center
+  padding: 1em 0
+  margin: 1em 0
+  color: #555
+  border: 2px dashed #555
+  border-radius: 7px
+  cursor: default
+
+#filedrag.hover
+  color: #f00
+  border-color: #f00
+  border-style: solid
+  box-shadow: inset 0 3px 4px #888
 
 
-/*START: Dropzone */
+#fileModal
+  #file
+    padding: 1em
+    margin: 1em 0
+    color: $std-font-color
+    border: 2px dashed $dark-grey-light-bg
+    border-radius: 5px
+    background-color: $light-grey-bg
+  #successHolder,
+  #errorHolder
+    display: none
 
-.dropzone
-  input[type="file"]
-    border: 2px dashed #dfe0e3
-    min-height: 60px
-    -webkit-border-radius: 3px
-    border-radius: 3px
-    background: $light-grey-light-bg
-    padding: 20px
-    clear: both
-    margin: 0 0 30px 0
+  #successHolder
+    width: 100%
+    height: auto
+    text-align: center
+  #errorHolder
+    width: 100%
+    min-height: 20px
+    position: relative
+    padding: 5px 5px 5px 30px
+    color: $explore-it-bg
+    font-size: 0.9em
+    line-height: 1.4em
+    &:before
+      content: ''
+      position: absolute
+      top: 6px
+      left: 0px
+      width: 16px
+      height: 16px
+      background-image: url(img/icon-sprite.png)
+      background-position: -32px 0px
 
-/*END: Dropzone */
 
 .canvas-loader-holder
   text-align: center

@@ -26,9 +26,21 @@ $pageType = 'other';
 <section class="edit-my-profile white std">
     <div class="row">
         <div class="large-2 columns">
-            <div class="avatar-overlay-holder">
-                <a href="overlay-file-upload.php" id="changePhoto" class="avatar-overlay green reveal-init" title="Click here to change your avatar">Change Photo</a>
-                <img src="media/img/avatars/profileLge.jpg" class="avatar" />
+            <div id="avatarOverlayHolder" class="avatar-overlay-holder">
+                <a href="overlay-file-upload.php" data-size="small" id="changePhoto" class="avatar-overlay green reveal-init" title="Click here to change your avatar">Change Photo</a>
+                <!--If image exists then use it, otherwise use green dot with users initials in it-->
+                <?php
+                if (file_exists("media/img/avatars/jason.jpg"))
+                {?>
+                    <img id="oldImg" src="media/img/avatars/jason.jpg" class="avatar" alt="Jason Taikato" />
+                <?php
+                }
+                else
+                {?>
+                    <div id="initialsHolder" class="avatar green">JT</div>
+                <?php
+                }
+                ?>
             </div>
         </div>
         <div class="large-10 columns">

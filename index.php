@@ -53,7 +53,7 @@ $alert = $_REQUEST['alert'];
     <section class="whats-new white std">
         <div class="row">
             <div class="large-12 columns text-center list-holder">
-                <h2><a href="news.php">What's New</a></h2>
+                <h2><a href="news.php">What&rsquo;s New</a></h2>
                 <ul>
                     <li>
                         <div class="holder">
@@ -92,7 +92,7 @@ $alert = $_REQUEST['alert'];
     </section>
 
 <?php
-$sliderTitle = "Learn &amp; get Inspired";
+$sliderTitle = "Learn &amp; Get Inspired";
 $sliderStyle = "dark-grey";
 include 'includes/slider.php';
 ?>

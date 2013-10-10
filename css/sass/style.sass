@@ -622,6 +622,7 @@ textarea
   background-color: #fff !important
   font-size: 1em !important
   margin-bottom: 0
+  background-color: $light-grey-light-bg !important
 
 input[type='text'],
 input[type='password'],
@@ -835,26 +836,26 @@ textarea
 
 input
   &[type="text"]:focus, &[type="password"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="month"]:focus, &[type="week"]:focus, &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="time"]:focus, &[type="url"]:focus
-    -webkit-box-shadow: 0 0 0.313em #999999
-    -moz-box-shadow: 0 0 0.313em #999999
-    box-shadow: 0 0 0.313em #999999
-    border-color: #999999
+    -webkit-box-shadow: 0 0 0.313em $other-bg
+    -moz-box-shadow: 0 0 0.313em $other-bg
+    box-shadow: 0 0 0.313em $other-bg
+    border-color: $other-bg
 
 textarea:focus
-  -webkit-box-shadow: 0 0 0.313em #999999
-  -moz-box-shadow: 0 0 0.313em #999999
-  box-shadow: 0 0 0.313em #999999
-  border-color: #999999
+  -webkit-box-shadow: 0 0 0.313em $other-bg
+  -moz-box-shadow: 0 0 0.313em $other-bg
+  box-shadow: 0 0 0.313em $other-bg
+  border-color: $other-bg
 
 input
   &[type="text"]:focus, &[type="password"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="month"]:focus, &[type="week"]:focus, &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="time"]:focus, &[type="url"]:focus
     background: #fafafa
-    border-color: #999999
+    border-color: $other-bg
     outline: none
 
 textarea:focus
   background: #fafafa
-  border-color: #999999
+  border-color: $other-bg
   outline: none
 
 input
@@ -2514,7 +2515,7 @@ li.unread
       &:before
         content: ''
         position: absolute
-        top: 11.25em
+        top: 8.25em
         left: 2.5em
         width: 1.938em
         height: 3.313em
@@ -2529,7 +2530,7 @@ li.unread
       &:before
         content: ''
         position: absolute
-        top: 11.25em
+        top: 8.25em
         right: 2.5em
         width: 1.938em
         height: 3.313em
@@ -3071,7 +3072,7 @@ li.unread
   border-radius: 3.875em
 
 .avatar
-  color: #fff
+  color: #fff !important
   font-family: $gothic-font-family
   font-size: 3.8em
   line-height: 2.1em
@@ -3248,14 +3249,17 @@ footer
     border: 0.125em dashed $dark-grey-light-bg
     border-radius: 0.313em
     background-color: $light-grey-bg
-  #successHolder,
-  #errorHolder
+  #successHolder, #confirmButtonHolder, #errorHolder
     display: none
 
+  #confirmButtonHolder
+    padding-top: 1.5em
   #successHolder
     width: 100%
     height: auto
     text-align: center
+    img.avatar
+      margin: 0 auto
   #errorHolder
     width: 100%
     min-height: 1.25em

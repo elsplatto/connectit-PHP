@@ -465,7 +465,8 @@ input[type='url'] {
   border-radius: 0.188em;
   background-color: white !important;
   font-size: 1em !important;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background-color: #eeeff1 !important; }
 
 input[type='text'],
 input[type='password'],
@@ -677,10 +678,10 @@ input[type='url'] {
   transition: box-shadow 0.45s, border-color 0.45s ease-in-out; }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus {
-  -webkit-box-shadow: 0 0 0.313em #999999;
-  -moz-box-shadow: 0 0 0.313em #999999;
-  box-shadow: 0 0 0.313em #999999;
-  border-color: #999999; }
+  -webkit-box-shadow: 0 0 0.313em #3aa385;
+  -moz-box-shadow: 0 0 0.313em #3aa385;
+  box-shadow: 0 0 0.313em #3aa385;
+  border-color: #3aa385; }
 
 textarea:focus, input[type='text']:focus,
 input[type='password']:focus,
@@ -695,14 +696,14 @@ input[type='search']:focus,
 input[type='tel']:focus,
 input[type='time']:focus,
 input[type='url']:focus {
-  -webkit-box-shadow: 0 0 0.313em #999999;
-  -moz-box-shadow: 0 0 0.313em #999999;
-  box-shadow: 0 0 0.313em #999999;
-  border-color: #999999; }
+  -webkit-box-shadow: 0 0 0.313em #3aa385;
+  -moz-box-shadow: 0 0 0.313em #3aa385;
+  box-shadow: 0 0 0.313em #3aa385;
+  border-color: #3aa385; }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus {
   background: #fafafa;
-  border-color: #999999;
+  border-color: #3aa385;
   outline: none; }
 
 textarea:focus, input[type='text']:focus,
@@ -719,7 +720,7 @@ input[type='tel']:focus,
 input[type='time']:focus,
 input[type='url']:focus {
   background: #fafafa;
-  border-color: #999999;
+  border-color: #3aa385;
   outline: none; }
 
 input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="datetime-local"][disabled], input[type="month"][disabled], input[type="week"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled] {
@@ -2276,7 +2277,7 @@ li.unread {
       .slider-holder .orbit-container .orbit-next:before, .slider-holder-sml .orbit-container .orbit-next:before {
         content: "";
         position: absolute;
-        top: 11.25em;
+        top: 8.25em;
         left: 2.5em;
         width: 1.938em;
         height: 3.313em;
@@ -2291,7 +2292,7 @@ li.unread {
       .slider-holder .orbit-container .orbit-prev:before, .slider-holder-sml .orbit-container .orbit-prev:before {
         content: "";
         position: absolute;
-        top: 11.25em;
+        top: 8.25em;
         right: 2.5em;
         width: 1.938em;
         height: 3.313em;
@@ -2773,7 +2774,7 @@ li.unread {
   border-radius: 3.875em; }
 
 .avatar {
-  color: white;
+  color: white !important;
   font-family: "Gotham SSm A", "Gotham SSm B", "Gotham";
   font-size: 3.8em;
   line-height: 2.1em;
@@ -2940,13 +2941,16 @@ footer {
   border: 0.125em dashed #8a9096;
   border-radius: 0.313em;
   background-color: #dfe0e3; }
-#fileModal #successHolder,
-#fileModal #errorHolder {
+#fileModal #successHolder, #fileModal #confirmButtonHolder, #fileModal #errorHolder {
   display: none; }
+#fileModal #confirmButtonHolder {
+  padding-top: 1.5em; }
 #fileModal #successHolder {
   width: 100%;
   height: auto;
   text-align: center; }
+  #fileModal #successHolder img.avatar {
+    margin: 0 auto; }
 #fileModal #errorHolder {
   width: 100%;
   min-height: 1.25em;

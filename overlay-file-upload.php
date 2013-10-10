@@ -22,6 +22,11 @@
 
     <div id="successHolder" class="success-holder"></div>
 
+    <div id="confirmButtonHolder" class="button-holder">
+        <a href="#" class="button green reveal-close right">Use</a>
+        <a href="#" class="button secondary upload-again right">Change</a>
+    </div>
+
     <a class="close-reveal-modal reveal-close"></a>
 </div>
 
@@ -54,6 +59,15 @@ $(function() {
         {
 
         }
+    });
+
+    $('.upload-again').click(function(e){
+        e.preventDefault();
+        $('#successHolder').hide();
+        $('#confirmButtonHolder').hide();
+        $('#newImg').remove();
+        $('#frmUpload').show();
+        $('#file').val('');
     });
 
     $('#frmUpload').submit(function(e){
@@ -107,18 +121,19 @@ $(function() {
 
     function completeHandler(data) {
         var obj = JSON.parse(data);
-        var html, imgHTML;
+        var avatarHTML1, avatarHTML2;
         if (obj.hasOwnProperty('Filename') && obj.Filename.length > 0)
         {
-            html = '<img src="media/img/avatars/'+obj.Filename+'" class="avatar" alt="Avatar Image" />';
-            imgHTML = '<img id="newImg" src="media/img/avatars/'+obj.Filename+'" class="avatar" alt="Avatar Image" />';
+            avatarHTML1 = '<img src="media/img/avatars/'+obj.Filename+'" class="avatar" alt="Avatar Image" />';
+            avatarHTML2 = '<img id="newImg" src="media/img/avatars/'+obj.Filename+'" class="avatar" alt="Avatar Image" />';
             $('#canvas-loader').hide();
-            $('#successHolder').html(html).show();
-            $('#avatarOverlayHolder').append(imgHTML);
+            $('#successHolder').html(avatarHTML1).show();
+            $('#confirmButtonHolder').show();
+            $('#avatarOverlayHolder').append(avatarHTML2);
         }
         else if (obj.hasOwnProperty('ErrorMsg') && obj.ErrorMsg.length > 0)
         {
-            html = obj.ErrorMsg;
+            avatarHTML1 = obj.ErrorMsg;
             $('#canvas-loader').hide();
             $('#frmUpload').show();
             $('#errorHolder').html(html).show();

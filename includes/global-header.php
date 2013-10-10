@@ -16,7 +16,21 @@
                     <li class="see-all"><a href="my-profile.php#notifications">See all</a></li>
                 </ul>
                 <!--NB: Remove the 'badge' span if no alerts for this user-->
-                <a href="#" class="profile circle" style="background: url(media/img/profile-1.jpg) no-repeat center center;" data-dropdown="profile-drop"><span class="badge">5</span></a>
+                <a href="#" class="profile circle" data-dropdown="profile-drop">
+                    <?php
+                    if (file_exists("media/img/avatars/jason.jpg"))
+                    {?>
+                    <img src="media/img/avatars/jason.jpg" class="avatar-small" />
+                    <?php
+                    }
+                    else{
+                    ?>
+                    <div class="avatar-small green">JT</div>
+                    <?php
+                    }
+                    ?>
+                    <span class="badge">5</span>
+                </a>
                 <ul id="profile-drop" class="f-dropdown" data-dropdown-content>
 
                     <li class="drop-logout"><a href="#">Logout</a></li>

@@ -4,7 +4,7 @@ $circle-bg: #8a9096
 $badge-color: #d4091b
 $support-area-bg: #eeeff1
 
-$banner-height: 144px
+$banner-height: 9em
 
 /*START: colors*/
 
@@ -91,10 +91,10 @@ $footer-link-color: #8a9096
 $topbar-bg: #fff
 
 /* Height and margin */
-$topbar-height: 54px
-$topbar-list-item-height: 54px
+$topbar-height: 3.375em
+$topbar-list-item-height: 3.375em
 
-$topbar-height-mob: 50px
+$topbar-height-mob: 3.125em
 
 /* Control Input height for top bar */
 $topbar-input-height: 2.45em
@@ -130,7 +130,7 @@ $drop-down-border-color: #e0e0e0
 
 html > *
   -webkit-font-smoothing: antialiased !important
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
+  text-shadow: 0.063em 0.063em 0.063em rgba(0,0,0,0.004)
 
 html.search-showing
   body
@@ -163,7 +163,7 @@ h1, h3, h5, h6
 h2
   font-size: 1.875em !important
   font-weight: 400
-  margin: 10px 0
+  margin: 0.625em 0
   a
     color: inherit !important
     &:hover
@@ -172,7 +172,7 @@ h2
 h3
   font-size: 1.5em !important
   font-weight: 400
-  margin-bottom: 10px !important
+  margin-bottom: 0.625em !important
   a
     color: inherit !important
     &:hover
@@ -180,7 +180,7 @@ h3
 h4
   font-size: 1.313em !important
   font-weight: 300 !important
-  margin-bottom: 10px !important
+  margin-bottom: 0.625em !important
   a
     color: inherit !important
     &:hover
@@ -188,7 +188,7 @@ h4
 h5
   font-size: 0.813em !important
   text-transform: uppercase !important
-  margin-bottom: 10px !important
+  margin-bottom: 0.625em !important
   color: $dark-grey-dark-bg !important
   a
     color: inherit !important
@@ -196,7 +196,7 @@ h5
       color: inherit !important
 h6
   font-size: 1em !important
-  margin-bottom: 10px !important
+  margin-bottom: 0.625em !important
   font-weight: 400 !important
   a
     color: inherit !important
@@ -212,29 +212,29 @@ h6
     margin-bottom: 0 !important
 
 .close-reveal-modal
-  width: 36px
-  height: 36px
+  width: 2.25em
+  height: 2.25em
   &:before
     position: absolute
     z-index: 10
     content: ''
-    width: 36px
-    height: 36px
+    width: 2.25em
+    height: 2.25em
     top: 0
     left: 0
     background-image: url(img/icon-sprite.png)
     background-position: -174px 0
 
 h5.guide-titles
-  padding: 20px 0 0 0
+  padding: 1.25em 0 0 0
   display: none
 
 /*END: Header classes*/
 
 /*START: Standard Typography*/
 p.blurb
-  padding: 20px 0 0 0
-  height: 70px !important
+  padding: 1.25em 0 0 0
+  height: 4.375em !important
 
 p.intro
   font:
@@ -255,17 +255,17 @@ caption, .caption
 
 ol, ul
   list-style-position: outside
-  padding-left: 10px
+  padding-left: 0.625em
   li
-    margin: 0 20px 0 40px
-    padding: 0 0 20px 20px
+    margin: 0 1.25em 0 2.5em
+    padding: 0 0 1.25em 1.25em
 
 blockquote
-  margin: 20px 0 20px -40px
-  border-left: 3px solid $explore-it-bg
-  padding: 0 0 0 40px
+  margin: 1.25em 0 1.25em -2.5em
+  border-left: 0.188em solid $explore-it-bg
+  padding: 0 0 0 2.5em
   p
-    padding: 0 0 20px 0
+    padding: 0 0 1.25em 0
     margin: 0
     color: $explore-it-bg
     font:
@@ -274,25 +274,25 @@ blockquote
       padding: 0
 
 img.right
-  margin: 0 0 20px 36px
+  margin: 0 0 1.25em 2.25em
 
 img.left
-  margin: 0 36px 20px 0
+  margin: 0 2.25em 1.25em 0
 
 img.large
-  margin: 0 0 40px 0
+  margin: 0 0 2.5em 0
 
 img.med
-  margin: 0 0 20px 0
+  margin: 0 0 1.25em 0
 
 
 .content-offset
   img.right
-    margin: 0 -80px 20px 36px
+    margin: 0 -5em 1.25em 2.25em
 
 .content-offset
   img.left
-    margin: 0 36px 20px -80px
+    margin: 0 2.25em 1.25em -5em
 
 
 //links
@@ -432,30 +432,30 @@ img.med
   &:before
     content: ''
     position: absolute
-    width: 60px
-    height: 60px
+    width: 3.75em
+    height: 3.75em
     top: 50%
     left: 50%
     background-image: url(img/icon-sprite.png)
     background-position: -176px -37px
-    margin: -30px 0 0 -30px
+    margin: -1.875em 0 0 -1.875em
   &:hover
     &:before
-      background-position: -236px -37px
+      background-position: -22.25em -37px
 
 .mark-as-read
   position: relative
   text-indent: -10000px
-  width: 36px
-  height: 36px
+  width: 2.25em
+  height: 2.25em
   padding: 0px
   &:before
     content: ''
     position: absolute
-    width: 18px
-    height: 18px
-    top: 5px
-    left: 7px
+    width: 1.125em
+    height: 1.125em
+    top: 0.313em
+    left: 0.438em
     background-image: url(img/icon-sprite.png)
     background-position: -217px -161px
 
@@ -493,10 +493,10 @@ h1 + .button
   &:before
     content: ''
     position: absolute
-    width: 13px
-    height: 12px
-    top: 8px
-    left: 8px
+    width: 0.813em
+    height: 0.75em
+    top: 0.5em
+    left: 0.5em
     background-image: url(img/icon-sprite.png)
     background-position: -76px -142px
 
@@ -505,7 +505,7 @@ h1 + .button
 
 button.grey, .button.grey, button.secondary, .button.secondary
   background-color: $light-grey-dark-bg
-  box-shadow: 0 3px 0 $dark-grey-light-bg
+  box-shadow: 0 0.188em 0 $dark-grey-light-bg
   color: #fff
 
 button.light-grey, .button.light-grey, button.grey.inactive, .button.grey.inactive
@@ -514,21 +514,21 @@ button.light-grey, .button.light-grey, button.grey.inactive, .button.grey.inacti
 
 button.dark-grey, .button.dark-grey
   background-color: $dark-grey-light-bg
-  box-shadow: 0 3px 0 $dark-grey-dark-bg
+  box-shadow: 0 0.188em 0 $dark-grey-dark-bg
   color: #fff
 
 button, .button
   font-family: $gothic-font-family
   color: #fff !important
   background-color: $button-blue
-  border: 3px solid transparent
-  border-radius: 3px
-  box-shadow: 0 3px 0 $button-blue-drop-shadow
+  border: 0.188em solid transparent
+  border-radius: 0.188em
+  box-shadow: 0 0.188em 0 $button-blue-drop-shadow
 
 button[disabled="disabled"], .button[disabled="disabled"]
   background-color: $light-grey-dark-bg !important
   border-color: $light-grey-dark-bg !important
-  box-shadow: 0 3px 0 $dark-grey-dark-bg !important
+  box-shadow: 0 0.188em 0 $dark-grey-dark-bg !important
 
 
 button:hover, button:focus, .button:hover, .button:focus
@@ -536,7 +536,7 @@ button:hover, button:focus, .button:hover, .button:focus
 
 button.green, .button.green
   background-color: $button-green
-  box-shadow: 0 3px 0 $button-green-drop-shadow
+  box-shadow: 0 0.188em 0 $button-green-drop-shadow
 
 button.green.flat, .button.green.flat
   background-color: $button-dark-green
@@ -546,7 +546,7 @@ button.green:hover, button.green:focus, .button.green:hover, .button.green:focus
 
 button.red, .button.red
   background-color: $button-red
-  box-shadow: 0 3px 0 $button-red-drop-shadow
+  box-shadow: 0 0.188em 0 $button-red-drop-shadow
 
 button.dark-red, .button.dark-red
   background-color: $button-red-drop-shadow
@@ -565,14 +565,14 @@ button.small, .button.small
 .action-list
   li
     .button + .button
-      margin-right: 10px !important
+      margin-right: 0.625em !important
 
 .button + .button
-  margin-right: 20px !important
+  margin-right: 1.25em !important
 
 .text-right
   .button + .button
-    margin-left: 10px !important
+    margin-left: 0.625em !important
     margin-right: 0 !important
 
 /*END: Buttons*/
@@ -584,19 +584,19 @@ button.small, .button.small
 
 .feedback-tab
   width: 108px
-  height: 30px
+  height: 1.875em
   position: fixed
   z-index: 200
   top: 45%
   left: -39px
   background-color: $connect-it-black
   color: $light-grey-light-bg !important
-  padding: 7px 0
+  padding: 0.438em 0
   text-align: center
   font-size: 1em
   font-weight: 500
   border: 1px solid transparent
-  border-radius: 3px 3px 0 0
+  border-radius: 0.188em 0.188em 0 0
   transform: rotate(90deg)
   -ms-transform: rotate(90deg) /* IE 9 */
   -webkit-transform: rotate(90deg) /* Safari and Chrome */
@@ -618,7 +618,7 @@ button.small, .button.small
 
 textarea
   border: 1px solid $light-grey-bg
-  border-radius: 3px
+  border-radius: 0.188em
   background-color: #fff !important
   font-size: 1em !important
   margin-bottom: 0
@@ -661,7 +661,7 @@ input[type='search']
 
 
 .top-bar-section .dropdown li h2
-  padding: 8px 15px 2px
+  padding: 0.5em 0.938em 0.125em
   margin-bottom: 0
   color: #fff
   font-family: $serif-font-family
@@ -671,8 +671,8 @@ input[type='search']
   background-color: transparent
 
 .top-bar .toggle-topbar.menu-icon a span
-  -webkit-box-shadow: 0 10px 0 1px $topbar-link-color, 0 16px 0 1px $topbar-link-color, 0 22px 0 1px $topbar-link-color
-  box-shadow: 0 10px 0 1px $topbar-link-color, 0 16px 0 1px $topbar-link-color, 0 22px 0 1px $topbar-link-color
+  -webkit-box-shadow: 0 0.625em 0 0.063em $topbar-link-color, 0 1em 0 0.063em $topbar-link-color, 0 1.375em 0 0.063em $topbar-link-color
+  box-shadow: 0 0.625em 0 0.063em $topbar-link-color, 0 1em 0 0.063em $topbar-link-color, 0 1.375em 0 0.063em $topbar-link-color
   color: $topbar-link-color
 
 .top-bar.expanded .title-area
@@ -680,8 +680,8 @@ input[type='search']
 
 .f-dropdown
   min-width: 250px
-  border: 3px solid #e0e0e0
-  border-radius: 5px
+  border: 0.188em solid #e0e0e0
+  border-radius: 0.313em
   z-index: 200
   height: auto !important
 
@@ -690,7 +690,7 @@ input[type='search']
   display: block
   width: 0
   height: 0
-  border: inset 15px
+  border: inset 0.938em
   border-color: transparent transparent white transparent
   border-bottom-style: solid
   position: absolute
@@ -735,7 +735,7 @@ input[type='search']
   text-align: center
   top: 90%
   width: auto
-  height: 20px
+  height: 1.25em
   overflow: visible
 
 .touch
@@ -745,12 +745,12 @@ input[type='search']
 .orbit-bullets li
   cursor: pointer
   background: #fff
-  border: 2px solid #fff
+  border: 0.125em solid #fff
   opacity: 0.2
   display: block
   float: left
   list-style: none
-  margin: 0 0 0 10px !important
+  margin: 0 0 0 0.625em !important
   padding: 0
   position: relative
   right: 50%
@@ -769,19 +769,19 @@ label, form h5
   font:
     size: 1em
     weight: bold
-  padding-bottom: 10px
+  padding-bottom: 0.625em
   color: $std-font-color
 
 input[type="checkbox"] + label
-  margin-left: 10px
+  margin-left: 0.625em
   font-size: 1em
   color: $dark-grey-light-bg
   font-style: italic
   font-weight: 400
 
 input[type="checkbox"]
-  width: 20px
-  height: 20px
+  width: 1.25em
+  height: 1.25em
   margin: 17px 0 0 0 !important
   padding: 0 !important
   background-color: $light-grey-light-bg
@@ -790,9 +790,9 @@ input
   &[type="text"], &[type="password"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="month"], &[type="week"], &[type="email"], &[type="number"], &[type="search"], &[type="tel"], &[type="time"], &[type="url"]
     background-color: $light-grey-light-bg
     /* font-family: inherit
-    /*border: 1px solid #cccccc
-    /*-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
-    /*box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+    /*border: 0.063em solid #cccccc
+    /*-webkit-box-shadow: inset 0 0.063em 0.125em rgba(0, 0, 0, 0.1)
+    /*box-shadow: inset 0 0.063em 0.125em rgba(0, 0, 0, 0.1)
     /*color: rgba(0, 0, 0, 0.75)
     /*display: block
     /*font-size: 0.875em
@@ -810,15 +810,15 @@ input
 input[type="search"]
   -webkit-appearance: none
   background-color: #fff !important
-  height: 53px !important
+  height: 3.313em !important
   font-size: 1.2em !important
 
 textarea
   background-color: $light-grey-light-bg
   font-family: inherit
   border: 1px solid #cccccc
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+  -webkit-box-shadow: inset 0 1px 0.125em rgba(0, 0, 0, 0.1)
+  box-shadow: inset 0 1px 0.125em rgba(0, 0, 0, 0.1)
   color: rgba(0, 0, 0, 0.75)
   display: block
   font-size: 0.875em
@@ -835,15 +835,15 @@ textarea
 
 input
   &[type="text"]:focus, &[type="password"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="month"]:focus, &[type="week"]:focus, &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="time"]:focus, &[type="url"]:focus
-    -webkit-box-shadow: 0 0 5px #999999
-    -moz-box-shadow: 0 0 5px #999999
-    box-shadow: 0 0 5px #999999
+    -webkit-box-shadow: 0 0 0.313em #999999
+    -moz-box-shadow: 0 0 0.313em #999999
+    box-shadow: 0 0 0.313em #999999
     border-color: #999999
 
 textarea:focus
-  -webkit-box-shadow: 0 0 5px #999999
-  -moz-box-shadow: 0 0 5px #999999
-  box-shadow: 0 0 5px #999999
+  -webkit-box-shadow: 0 0 0.313em #999999
+  -moz-box-shadow: 0 0 0.313em #999999
+  box-shadow: 0 0 0.313em #999999
   border-color: #999999
 
 input
@@ -924,7 +924,7 @@ small
 input[data-invalid],
 textarea[data-invalid]
   border-color: $explore-it-bg !important
-  border-width: 2px !important
+  border-width: 0.125em !important
   background-color: rgba(198, 15, 19, 0.1) !important
 
 
@@ -956,11 +956,11 @@ label.error
   position: fixed
   font-size: 1em
   margin: 0
-  padding: 20px 0
+  padding: 1.25em 0
   border-top: 1px solid $light-grey-dark-bg
   li
     font-size: 1em !important
-    padding: 0 0 10px 0 !important
+    padding: 0 0 0.625em 0 !important
     a
       color: $dark-grey-light-bg
       font-size: 1em
@@ -1010,6 +1010,19 @@ label.error
 .light-grey-dark
   background-color: $light-grey-dark-bg !important
 
+.light-grey
+  background-color: $light-grey-bg !important
+
+.light-grey-light
+  background-color: $light-grey-light-bg !important
+
+.dark-grey-dark
+  background-color: $dark-grey-dark-bg
+  h1, h2, h3, h4, h5, h6
+    color: #fff
+  p
+    color: $light-grey-dark-bg
+
 .dark-grey
   background-color: $dark-grey-bg
   h1, h2, h3, h4, h5, h6
@@ -1017,8 +1030,15 @@ label.error
   p
     color: $light-grey-dark-bg
 
-.dark-grey-dark
-  background-color: $dark-grey-dark-bg
+.dark-grey-light
+  background-color: $dark-grey-light-bg
+  h1, h2, h3, h4, h5, h6
+    color: #fff
+  p
+    color: $light-grey-dark-bg
+
+.black
+  background-color: $connect-it-black
   h1, h2, h3, h4, h5, h6
     color: #fff
   p
@@ -1049,11 +1069,11 @@ label.error
   float: left
   .edit-delete-holder
     display: inline-block
-    padding: 0 0 0 18px
-    height: 15px
+    padding: 0 0 0 1.125em
+    height: 0.938em
     width: auto
     position: absolute
-    right: 20px
+    right: 1.25em
     z-index: 3
     color: $dark-grey-light-bg
     font-size: 0.875em
@@ -1061,10 +1081,10 @@ label.error
       content: ''
       position: absolute
       z-index: 0
-      width: 11px
-      height: 11px
+      width: 0.688em
+      height: 0.688em
       left: 0
-      top: 1px
+      top: 0.063em
       background-image: url(img/icon-sprite.png)
       background-position: -245px -127px
     a
@@ -1072,7 +1092,7 @@ label.error
       color: $dark-grey-light-bg
   .header
     font-size: 1em
-    margin-bottom: 40px
+    margin-bottom: 2.5em
     span, a, strong
       float: left
     .timestamp
@@ -1081,15 +1101,15 @@ label.error
       font-style: italic
       display: list-item
       float: left
-      margin-left: 25px
+      margin-left: 1.563em
       position: relative
-      top: 1px
+      top: 0.063em
       list-style-type: disc
   h5
     font-size: 1.2em
   p
     clear: both
-    margin-bottom: 10px
+    margin-bottom: 0.625em
     .read-more
       color: $about-it-dark-bg
       text-decoration: none
@@ -1097,7 +1117,7 @@ label.error
 
 .right-col
   .tag-box
-    margin-bottom: 30px
+    margin-bottom: 1.875em
 
 
 .white
@@ -1109,17 +1129,17 @@ label.error
   list-style: none
   display: block
   position: relative
-  margin: 0 0 20px 0
+  margin: 0 0 1.25em 0
   li
     width: 100%
     display: list-item
     height: auto
     margin: 0
-    padding: 15px 8px 10px 20px
+    padding: 0.938em 0.5em 0.625em 1.25em
     background-color: #fff
     line-height: 2.3em
     overflow: hidden
-    border-top: 1px solid $light-grey-dark-bg
+    border-top: 0.063em solid $light-grey-dark-bg
     transition:
       property: background-color
       duration: 0.5s
@@ -1152,20 +1172,20 @@ label.error
     .preview
       display: none
       .content
-        margin-top: 20px
+        margin-top: 1.25em
 
 .urgent
   li
     position: relative
-    padding: 10px 8px 10px 45px
+    padding: 0.625em 0.5em 0.625em 2.813em
     background-color: $explore-it-dark-bg
     &:before
       content: ''
       position: absolute
-      width: 18px
-      height: 18px
-      top: 18px
-      left: 16px
+      width: 1.125em
+      height: 1.125em
+      top: 1.125em
+      left: 1em
       background-image: url(img/icon-sprite.png)
       background-position: -76px -181px
     div.header
@@ -1185,30 +1205,30 @@ label.error
 .notifications, .subscriptions
   li
     position: relative
-    padding: 10px 8px 10px 45px
+    padding: 0.625em 0.5em 0.625em 2.813em
   .unread
     background-color: #fff !important
     &:before
-      top: 22px
-      left: 20px
+      top: 1.375em
+      left: 1.25em
   .read
     background-color: transparent !important
     &:before
-      top: 22px
-      left: 20px
+      top: 1.375em
+      left: 1.25em
 
 
 .tile
   width: 100%
-  padding: 22px
-  height: 314px
+  padding: 1.375em
+  height: 19.625em
   margin: 0
   overflow: hidden
   .img-holder
     position: relative
     width: 100%
-    height: 140px
-    line-height: 140px
+    height: 9.5em
+    line-height: 9.5em
     display: table
     text-align: center
     padding: 0
@@ -1217,7 +1237,7 @@ label.error
     img
       display: inline-block
       vertical-align: middle
-      width: 240px
+      width: 22.5em
       height: auto
       max-height: 152px
       overflow: hidden
@@ -1234,10 +1254,10 @@ label.error
     width: 1px
     color: $light-grey-bg
   background-color: #fff
-  height: 45px
-  padding: 15px 22px
+  height: 2.813em
+  padding: 0.938em 1.375em
   font-size: 0.9em
-  margin: 0 0 36px 0
+  margin: 0 0 2.25em 0
   a
     color: $use-it-bg
     &:hover
@@ -1248,7 +1268,7 @@ label.error
   position: relative
   display: inline-block
   float: left
-  margin: 15px 0
+  margin: 0.938em 0
 
 .mandatory
   color: $explore-it-dark-bg
@@ -1262,16 +1282,16 @@ label.error
   overflow: hidden
 
 .sml
-  padding: 18px 0
+  padding: 1.125em 0
 
 .std
-  padding: 50px 0
+  padding: 3.125em 0
 
 .std-repeater
-  padding: 50px 0 0 0
+  padding: 3.125em 0 0 0
 
 .std-repeater-last
-  padding: 50px 0
+  padding: 3.125em 0
 
 .full-width
   width: 100%
@@ -1295,22 +1315,22 @@ hr
     color: $light-grey-bg
 
 .padding-top-18
-  padding-top: 18px !important
+  padding-top: 1.125em !important
 
 .padding-top-20
-  padding-top: 20px !important
+  padding-top: 1.25em !important
 
 .padding-bottom-18
-  padding-bottom: 18px !important
+  padding-bottom: 1.125em !important
 
 .padding-bottom-20
-  padding-bottom: 20px !important
+  padding-bottom: 1.25em !important
 
 .padding-bottom-40
-  padding-bottom: 40px !important
+  padding-bottom: 2.5em !important
 
 .padding-bottom-60
-  padding-bottom: 60px !important
+  padding-bottom: 3.75em !important
 
 
 
@@ -1321,40 +1341,40 @@ hr
   margin-bottom: 0 !important
 
 .margin-top-18
-  margin-top: 18px !important
+  margin-top: 1.125em !important
 
 .margin-bottom-18
-  margin-bottom: 18px !important
+  margin-bottom: 1.125em !important
 
 .margin-top-20
-  margin-top: 20px !important
+  margin-top: 1.25em !important
 
 .margin-bottom-20
-  margin-bottom: 20px !important
+  margin-bottom: 1.25em !important
 
 .margin-top-bottom-20
-  margin-top: 20px !important
-  margin-bottom: 20px !important
+  margin-top: 1.25em !important
+  margin-bottom: 1.25em !important
 
 .margin-left-20
-  margin-left: 20px !important
+  margin-left: 1.25em !important
 
 .margin-top-40
-  margin-top: 40px !important
+  margin-top: 2.5em !important
 
 .margin-bottom-40
-  margin-bottom: 40px !important
+  margin-bottom: 2.5em !important
 
 .margin-top-bottom-40
-  margin-top: 40px !important
-  margin-bottom: 40px !important
+  margin-top: 2.5em !important
+  margin-bottom: 2.5em !important
 
 .reveal-modal
   border:
-    width: 3px
+    width: 0.188em
     style: solid
     color: rgba(85,104,94, 0.85)
-  border-radius: 3px !important
+  border-radius: 0.188em !important
   h3
     font-family: $gothic-font-family
     font-weight: 300
@@ -1369,7 +1389,7 @@ hr
 
 .global-header
   background-color: $header-bg
-  height: 50px
+  height: 3.125em
   width: 100%
   position: fixed
   z-index: 200
@@ -1378,26 +1398,26 @@ hr
   .NSWlogo
     position: relative
     float: left
-    width: 124px
-    height: 50px
+    width: 7.75em
+    height: 3.125em
     background: url(img/dec-logo.png) no-repeat center left
     a
       position: relative
       display: block
-      width: 124px
-      height: 50px
+      width: 7.75em
+      height: 3.125em
       text-indent: -10000px
   .rightside
     position: relative
     float: right
-    height: 50px
+    height: 3.125em
     display: block
     text-align: right
     .profile
       position: relative
       width: auto
       z-index: 500
-      background-size: 30px 30px !important
+      background-size: 1.875em 1.875em !important
     .f-dropdown
       text-align: left
       margin: 0
@@ -1407,7 +1427,7 @@ hr
         display: inline-block
         width: 100%
         height: auto
-        padding: 10px 10px 10px 30px
+        padding: 0.625em 0.625em 0.625em 1.875em
         margin: 0
         border-bottom: 1px solid $drop-down-border-color
         font-size: 0.9em
@@ -1418,7 +1438,7 @@ hr
           background-color: inherit
       .title
         color: #212429
-        padding: 10px
+        padding: 0.625em
       a
         display: inline
         margin: 0
@@ -1440,7 +1460,7 @@ hr
       li.see-all
         border-bottom: none
         text-align: center
-        padding: 10px
+        padding: 0.625em
         font-size: 1em
         a
           color: $about-it-dark-bg
@@ -1448,19 +1468,20 @@ hr
         &:before
           content: ''
           position: absolute
-          top: 9px
-          left: 10px
-          width: 16px
-          height: 16px
+          top: 0.563em
+          left: 0.625em
+          width: 1em
+          height: 1em
           z-index: 0
           background-image: url(img/icon-sprite.png)
           background-position: -14px 0px
         .badge
-          top: 8px
-          left: 220px
-          height: 20px
-          padding: 2px 4px
+          top: 0.5em
+          left: 21.25em
+          height: 1.25em
+          padding: 0.125em 0.25em
           font-weight: bold
+          min-width: 0.938em
       li.drop-logout
         display: none
         font-style: normal
@@ -1468,13 +1489,13 @@ hr
         &:before
           content: ''
           position: absolute
-          top: 9px
-          left: 10px
-          width: 16px
-          height: 16px
+          top: 0.563em
+          left: 0.625em
+          width: 1em
+          height: 1em
           z-index: 0
           background-image: url(img/icon-sprite.png)
-          background-position: -14px -18px
+          background-position: -14px -1.125em
     .notification
       position: relative
       background-color: $circle-bg
@@ -1482,15 +1503,15 @@ hr
       &:before
         content: ''
         position: absolute
-        width: 16px
-        height: 16px
-        top: 4px
-        left: 4px
+        width: 1em
+        height: 1em
+        top: 0.23em
+        left: 0.27em
         z-index: 0
         background-image: url(img/icon-sprite.png)
         background-position: -32px -17px
     .notification.alert
-      border: 2px solid $explore-it-bg
+      border: 0.125em solid $explore-it-bg
       background-color: $connect-it-black
       &:before
         background-position: -32px 0px
@@ -1500,57 +1521,84 @@ hr
       color: #fff
       font-weight: 700
       vertical-align: middle
-      top: -10px
-      padding-left: 10px
+      top: -0.625em
+      padding-left: 0.625em
     a, span
       display: inline-block
       height: auto
       text-align: center
-      font-size: 0.8em
       position: relative
+    span
+      font-size: 0.8em
+    a
+      font-size: 1em !important
 
     span
       color: #fff
-      padding: 0 10px
+      padding: 0 0.625em
     .logout
-      font-size: 0.875em
+      font-size: 0.875em !important
       color: #929292
       text-decoration: underline
       padding-top: 0px
       padding-left: 0px
       font-style: italic
       vertical-align: middle
-      top: -10px
+      top: -0.625em
     .circle
-      width: 29px
-      height: 29px
-      border: 2px solid transparent
-      border-radius: 16px
-      margin: 10px 0 0 10px
+      position: relative
+      width: 1.875em
+      height: 1.875em
+      border: 0.125em solid transparent
+      border-radius: 1.25em
+      margin: 0.625em 0 0 0.625em
 
-    .badge
-      background-color: $badge-color
-      padding: 1px
-      border: 1px solid transparent
-      border-radius: 2px
-      position: absolute
-      top: -5px
-      left: 20px
-      display: block
-      color: #fff
-      height: 15px
-      width: auto
-      min-width: 15px
-      display: block
-      z-index: 100
-      font-weight: bold
+      .avatar-small
+        position: absolute
+        top: -2px
+        left: 0px
+        width: 1.75em
+        height: 1.75em
+        border:
+          width: 0.125em
+          style: solid
+          color: transparent
+        border-radius: 1em
+        color: #fff
+        line-height: 1.5em
+        vertical-align: middle
+        font-weight: 500
+
+      .avatar-small.green
+        background-color: $other-bg
+        border-color: $other-bg !important
+
+      .avatar-small + .badge
+        left: 2em
+      .badge
+        background-color: $badge-color
+        padding: 0
+        border: 2px solid $badge-color
+        border-radius: 2PX
+        position: absolute
+        top: -0.6em
+        left: 1.6em
+        display: block
+        color: #fff
+        height: auto
+        width: auto
+        min-width: 0.938em
+        display: block
+        z-index: 100
+        font-weight: bold
+        font-size: 0.7em !important
 
 .banner-holder
   position: relative
   width: 100%
   height: $banner-height
   background-color: #fff
-  padding-top: 50px
+  padding-top: 3.125em
   .row
     width: 100%
     .large-12
@@ -1567,7 +1615,7 @@ hr
         padding: 0
         background: url(img/logo.png) no-repeat
         a
-          height: 34px
+          height: 2.125em
           width: 277px
           text-indent: -10000px
           display: block
@@ -1579,9 +1627,9 @@ li.read
     content: ''
     position: absolute
     top: 14px
-    left: 7px
-    width: 12px
-    height: 12px
+    left: 0.438em
+    width: 0.75em
+    height: 0.75em
     z-index: 0
     background-image: url(img/icon-sprite.png)
     background-position: 0px -12px
@@ -1591,9 +1639,9 @@ li.unread
     content: ''
     position: absolute
     top: 14px
-    left: 7px
-    width: 12px
-    height: 12px
+    left: 0.438em
+    width: 0.75em
+    height: 0.75em
     z-index: 0
     background-image: url(img/icon-sprite.png)
     background-position: 0px 0px
@@ -1650,7 +1698,7 @@ li.unread
               font-weight: bold
               height: $topbar-height
               color: $topbar-link-color
-              line-height: 45px
+              line-height: 2.813em
               text-align: center
               transition:
                 property: border-bottom-color
@@ -1661,7 +1709,7 @@ li.unread
                 duration: 0.5s
                 timing-function: ease-out
               border-bottom:
-                width: 3px
+                width: 0.188em
                 color: transparent
                 style: solid
 
@@ -1679,8 +1727,8 @@ li.unread
                 content: ''
                 position: absolute
                 top: 19px
-                left: 12px
-                width: 15px
+                left: 0.75em
+                width: 0.938em
                 height: 14px
                 z-index: 0
                 background-image: url(img/icon-sprite.png)
@@ -1693,10 +1741,10 @@ li.unread
             a
               color: #fff
               &:before
-                top: 18px
+                top: 1.125em
                 left: 14px
-                width: 15px
-                height: 15px
+                width: 0.938em
+                height: 0.938em
                 background-position: -77px 0px
           .use-it
             background-color: #fff !important
@@ -1805,7 +1853,7 @@ li.unread
                     display: none
                   input[type="search"]
                     -webkit-appearance: none
-                    font-size: 30px
+                    font-size: 1.875em
                     margin: 0
                     height: 72px
 
@@ -1824,7 +1872,7 @@ li.unread
         .row
           overflow-y: auto
           height: 65%
-          padding: 30px 0
+          padding: 1.875em 0
           max-width: 60em !important
           margin: 0 auto
           h5
@@ -1861,9 +1909,9 @@ li.unread
 
 #nav-holder.respond
   position: fixed
-  top: 50px
+  top: 3.125em
   border-bottom: 1px solid $light-grey-bg
-  box-shadow: 0px 5px 5px rgba(140,140,140,0.35)
+  box-shadow: 0px 0.313em 0.313em rgba(140,140,140,0.35)
 
 /*START: Headings classes*/
 .subheader
@@ -1904,7 +1952,7 @@ li.unread
     clear: both
     width: 100%
     text-align: center
-    margin-bottom: 15px
+    margin-bottom: 0.938em
   .avatar-holder
     clear: both
   #initialsHolder,
@@ -1915,11 +1963,11 @@ li.unread
   background-image: url(img/heading-bg-1.png), url(img/heading-bg-2.png), url(img/heading-bg-3.png), url(img/heading-bg-4.png), url(img/heading-bg-5.png)
   background-repeat: no-repeat, repeat-y, repeat-y, repeat-y, repeat-y
   background-position: bottom right, 90% 99%, 85% 99%, 88% 99%, 99% 79%
-  padding: 50px 0
+  padding: 3.125em 0
   h1, h2
     float: left
     padding: 0
-    margin: 0 20px 0 0 !important
+    margin: 0 1.25em 0 0 !important
     line-height: 1em !important
     color: rgba(255,255,255,1)
     font-weight: 500 !important
@@ -1930,12 +1978,12 @@ li.unread
       display: inline-block
       color: rgba(255,255,255,0.7) !important
       text-decoration: none
-      border-bottom: 3px rgba(255,255,255,0.7) solid !important
+      border-bottom: 0.188em rgba(255,255,255,0.7) solid !important
       &:hover
         color:  rgba(255,255,255,0.7) !important
 
   .button.small
-    margin-top: 3px
+    margin-top: 0.188em
 
 .lt-ie9
   .headings
@@ -1956,7 +2004,7 @@ li.unread
   overflow: hidden
   .orbit-container
     h2
-      padding-top: 50px !important
+      padding-top: 1.125em !important
       color: #fff
       font-size: 2.75em !important
       font-weight: 400 !important
@@ -2000,7 +2048,7 @@ li.unread
     .paused
       > span
         border-color: transparent transparent transparent #fff
-        border-width: 0 0 0 8px
+        border-width: 0 0 0 0.5em
 
 .lt-ie9
   .support-suite, .share-suite
@@ -2014,12 +2062,12 @@ li.unread
   list-style: none
   width: 100%
   li
-    padding: 12px
+    padding: 0.75em
     height: 144px
     display: list-item
     margin: 0 0 0 0
     border: 1px solid transparent
-    border-radius: 3px
+    border-radius: 0.188em
     transition:
       property: background-color
       duration: 0.5s
@@ -2038,7 +2086,7 @@ li.unread
       width: 100%
       height: 100%
       div
-        margin: 0 auto 10px auto
+        margin: 0 auto 0.625em auto
         border:
           width: 1px
           color: $dark-grey-light-bg
@@ -2064,9 +2112,9 @@ li.unread
         &:before
           content: ''
           position: absolute
-          top: 10px
-          left: 9px
-          width: 25px
+          top: 0.625em
+          left: 0.563em
+          width: 1.563em
           height: 24px
           z-index: 0
           background-image: url(img/icon-sprite.png)
@@ -2074,71 +2122,71 @@ li.unread
       .virtual-agent
         &:before
           background-position: -103px 0
-          top: 10px
-          left: 9px
-          width: 25px
+          top: 0.625em
+          left: 0.563em
+          width: 1.563em
           height: 24px
       .lodge-ticket
         &:before
           background-position: -103px -25px
-          top: 9px
-          left: 9px
+          top: 0.563em
+          left: 0.563em
           width: 24px
           height: 24px
       .call-centre
         &:before
           background-position: -103px -49px
-          top: 9px
-          left: 9px
+          top: 0.563em
+          left: 0.563em
           width: 24px
           height: 24px
       .knowledge-base
         &:before
           background-position: -103px -73px
-          top: 9px
-          left: 8px
-          width: 25px
+          top: 0.563em
+          left: 0.5em
+          width: 1.563em
           height: 24px
       .communities
         &:before
           background-position: -103px -97px
-          top: 9px
-          left: 9px
+          top: 0.563em
+          left: 0.563em
           width: 24px
           height: 24px
       .comment
         &:before
           background-position: -76px -155px
-          top: 9px
-          left: 9px
+          top: 0.563em
+          left: 0.563em
           width: 24px
           height: 24px
       .add-comment
         &:before
           background-position: -101px -155px
-          top: 9px
-          left: 9px
+          top: 0.563em
+          left: 0.563em
           width: 24px
-          height: 23px
+          height: 1.438em
       .like
         &:before
           background-position: -127px -155px
-          top: 10px
-          left: 9px
+          top: 0.625em
+          left: 0.563em
           width: 24px
           height: 24px
       .subscribe
         &:before
           background-position: -157px -155px
-          top: 8px
-          left: 10px
+          top: 0.5em
+          left: 0.625em
           width: 24px
           height: 24px
       .share
         &:before
           background-position: -187px -155px
-          top: 10px
-          left: 9px
+          top: 0.625em
+          left: 0.563em
           width: 24px
           height: 24px
       h6
@@ -2172,16 +2220,17 @@ li.unread
 
 .share-suite
   li
-    height: 110px !important
+    height: 10.625em !important
 
 .whats-new
   background-color: #fff
-  padding: 45px 0
+  padding: 2.813em 0
 
 .icon-community
-  padding: 110px 0 34px 0
+  padding: 6.875em 0 2.125em 0
   position: relative
-  background: #fff url(img/icon-your-community.png) no-repeat center 36px
+  background: #fff url(img/icon-your-community.png) no-repeat center 2.25em
+
 
 .alert
   p
@@ -2189,7 +2238,7 @@ li.unread
     color: #fff
     padding: 0
     font-size: 0.95em
-    margin: 0 0 15px 0
+    margin: 0 0 0.938em 0
     font-weight: bold
     &:last-child
       margin-bottom: 0
@@ -2197,14 +2246,14 @@ li.unread
       color: $light-grey-dark-bg
   .heading
     color: $explore-it-bg
-    padding: 0 0 0 20px
+    padding: 0 0 0 1.25em
     margin-bottom: 0 !important
     &:before
       content: ''
       position: absolute
-      width: 16px
-      height: 16px
-      top: 3px
+      width: 1em
+      height: 1em
+      top: 0.188em
       left: 0px
       background-image: url(img/icon-sprite.png)
       background-position: -77px -204px
@@ -2212,14 +2261,14 @@ li.unread
     position: absolute
     top: 0
     right: 0
-    width: 15px
-    height: 15px
+    width: 0.938em
+    height: 0.938em
     text-indent: -10000px
     &:before
       content: ''
       position: absolute
-      width: 15px
-      height: 15px
+      width: 0.938em
+      height: 0.938em
       top: 0
       left: 0
       background-image: url(img/icon-sprite.png)
@@ -2229,26 +2278,26 @@ li.unread
   ul
     display: block
     width: 100%
-    padding: 10px 0 !important
+    padding: 0.625em 0 !important
     border-top: 1px solid $light-grey-light-bg
     li
-      margin-top: 10px !important
-      padding: 10px 15px !important
+      margin-top: 0.625em !important
+      padding: 0.625em 0.938em !important
       background-color: $light-grey-light-bg
       border: none !important
 
 .list-holder, .block-list-holder
   h2
     padding: 0
-    margin: 0 0 32px 0 !important
+    margin: 0 0 1em 0 !important
   h5, h6
-    margin: 0 0 5px 0 !important
+    margin: 0 0 0.313em 0 !important
     a
       &:hover
         color: inherit !important
   h5
     width: 100%
-    padding: 20px 0
+    padding: 1.25em 0
     margin: 0
     color: $h-tag-small-color
     text-align: left
@@ -2264,14 +2313,14 @@ li.unread
     list-style: none
     text-align: left
     padding: 0
-    margin: 0 0 35px 0
+    margin: 0 0 2.188em 0
     li
       position: relative
       display: block
       width: 100%
       height: auto
       margin: 0
-      padding: 15px 0
+      padding: 0.938em 0
       overflow: hidden
       border:
         color: $light-grey-bg
@@ -2288,13 +2337,13 @@ li.unread
       div.avatar-holder
         float: left
         clear: left
-        margin: 0 20px 0 0
+        margin: 0 1.25em 0 0
         display: inline-block
-        width: 60px
+        width: 3.75em
         height: auto
       .holder
         width: auto
-        max-width: 840px
+        max-width: 52.5em
       .use-it
         background-color: $use-it-bg
       .fix-it
@@ -2313,7 +2362,7 @@ li.unread
         h4
           width: 100%
           position: relative
-          padding: 5px 0 0 0
+          padding: 0.313em 0 0 0
           margin: 0 !important
           display: block
           float: left
@@ -2331,7 +2380,7 @@ li.unread
         p
           width: 100%
           position: relative
-          padding: 5px 0 0 0
+          padding: 0.313em 0 0 0
           margin: 0
           display: block
           float: left
@@ -2346,7 +2395,7 @@ li.unread
               family: inherit
               size: inherit
         p.cite
-          padding-bottom: 5px
+          padding-bottom: 0.313em
           position: relative
           float: left
           clear: right
@@ -2374,11 +2423,11 @@ li.unread
   height: auto
   text-align: center
   overflow: hidden
-  padding: 50px 0 60px
+  padding: 3.125em 0 3.75em
   .column, .columns
     padding: 0
     h2
-      margin: 0 0 32px 0 !important
+      margin: 0 0 2em 0 !important
     ul
       width: 100%
       margin: 0
@@ -2396,7 +2445,7 @@ li.unread
           overflow: hidden
           img
             border:
-              width: 0 0 3px 0
+              width: 0 0 0.188em 0
               style: solid
 
           .heading
@@ -2450,14 +2499,14 @@ li.unread
               color: $about-it-bg !important
   .orbit-container
     background: inherit
-    padding: 0 0 30px 0
+    padding: 0 0 1.875em 0
     overflow: visible
     .orbit-container
       padding: 0
       overflow: visible
     .orbit-bullets
       position: relative
-      top: 20px
+      top: 1.25em
 
     .orbit-next
       height: 20.25em
@@ -2465,25 +2514,25 @@ li.unread
       &:before
         content: ''
         position: absolute
-        top: 120px
-        left: 40px
-        width: 31px
-        height: 53px
+        top: 11.25em
+        left: 2.5em
+        width: 1.938em
+        height: 3.313em
         z-index: 0
         background-image: url(img/icon-sprite.png)
         background-position: -35px -48px
     .orbit-prev
       height: 20.25em
-      width: 330px
+      width: 31.875em
       margin: 0
-      left: -330px
+      left: -31.875em
       &:before
         content: ''
         position: absolute
-        top: 120px
-        right: 40px
-        width: 31px
-        height: 53px
+        top: 11.25em
+        right: 2.5em
+        width: 1.938em
+        height: 3.313em
         z-index: 0
         background-image: url(img/icon-sprite.png)
         background-position: 0px -48px
@@ -2561,8 +2610,8 @@ li.unread
         color: rgba(255,255,255,0.8)
         background-color: transparent
         box-shadow: none
-        border: 2px solid rgba(255,255,255,0.8)
-        border-radius: 3px
+        border: 0.125em solid rgba(255,255,255,0.8)
+        border-radius: 0.188em
         font:
           size: 0.813em
           weight: 400
@@ -2616,9 +2665,9 @@ li.unread
               style: solid
             span
               position: absolute
-              right: 18px
+              right: 1.125em
               top: 0
-              width: 11px
+              width: 0.688em
               height: 100%
               &:after
                 position: absolute
@@ -2628,7 +2677,7 @@ li.unread
                 display: block
                 width: 0
                 height: 0
-                border: solid 7px
+                border: solid 0.438em
                 border-color: transparent transparent transparent $std-font-color
                 margin-top: -8px
           li
@@ -2680,7 +2729,7 @@ li.unread
           background-color: #fff !important
           a
             font-weight: bold !important
-            padding-left: 20px !important
+            padding-left: 1.25em !important
             &:after
               content: '' !important
             span
@@ -2708,7 +2757,7 @@ li.unread
             .hover
               a
                 font-weight: bold !important
-                padding-left: 30px !important
+                padding-left: 1.875em !important
                 span
                   &:after
                     border-color: $std-font-color transparent transparent transparent
@@ -2718,8 +2767,8 @@ li.unread
                     font-weight: 400 !important
 
 .toggle-view.large
-  width: 36px
-  height: 36px
+  width: 2.25em
+  height: 2.25em
   display: block
 .toggle-icon
   text-indent: -10000px
@@ -2730,8 +2779,8 @@ li.unread
     position: absolute
     top: 0px
     left: 0px
-    width: 36px
-    height: 36px
+    width: 2.25em
+    height: 2.25em
     z-index: 0
     background-image: url(img/icon-sprite.png)
   &[data-state="open"]
@@ -2754,24 +2803,24 @@ li.unread
     float: left
   h5 ~ .clear-all, h5 ~ .clear-all + .select-all
     float: right
-    margin-top: 5px
-    margin-left: 10px
+    margin-top: 0.313em
+    margin-left: 0.625em
     font-size: 0.813em
     color: $dark-grey-light-bg
     text-decoration: underline
   h5 ~ .select-my-groups, h5 ~ .make-selected-my-groups
-    margin-top: 5px
+    margin-top: 0.313em
     float: left
-    margin-left: 10px
+    margin-left: 0.625em
     font-size: 0.813em
     color: $dark-grey-light-bg
     text-decoration: underline
 
 .filter-area, .tag-area
-  margin-top: 20px
+  margin-top: 1.25em
   display: none
   .filter-box, .tag-box
-    max-height: 90px
+    max-height: 5.625em
 
 .filter-area.show, .tag-area.show
   display: block !important
@@ -2782,19 +2831,19 @@ li.unread
   clear: both
   width: 100%
   height: auto
-  padding: 4px 0 4px 0
-  margin: 0 0 20px 0
+  padding: 0.25em 0 0.25em 0
+  margin: 0 0 1.25em 0
   overflow: auto
   -webkit-overflow-scrolling: touch
   a
-    padding: 5px 6px
+    padding: 0.313em 0.375em
     float: left
-    margin: 10px 10px 0 0
+    margin: 0.625em 0.625em 0 0
     border:
       width: 1px
       style: solid
       color: $dark-grey-light-bg !important
-    border-radius: 3px
+    border-radius: 0.188em
     font:
       size: 1em
     color: $std-font-color !important
@@ -2822,7 +2871,7 @@ li.unread
 .tag-area
   margin-top: 0px !important
   .tag-box
-    max-height: 45px
+    max-height: 2.813em
 /*END: Filter classes*/
 
 
@@ -2830,7 +2879,7 @@ li.unread
   display: block
   width: 100%
   height: auto
-  padding: 18px 0
+  padding: 1.125em 0
   position: relative
   overflow: hidden
   div
@@ -2842,7 +2891,7 @@ li.unread
     img
       display: block
       border:
-        width: 0 0 3px 0
+        width: 0 0 0.188em 0
         style: solid
     .heading
       position: relative
@@ -2862,8 +2911,8 @@ li.unread
         text-transform: uppercase
       .tags
         position: absolute
-        bottom: 18px
-        left: 18px
+        bottom: 1.125em
+        left: 1.125em
         width: 20em
         height: auto
         font-size: 0.75em
@@ -2886,18 +2935,18 @@ li.unread
   &:before
     content: ''
     position: absolute
-    top: 20px
-    right: 20px
+    top: 1.25em
+    right: 1.25em
     background-image: url(img/icon-sprite.png)
     background-position: 0px -214px
   .avatar-holder
     height: 100%
-    width: 100px
+    width: 6.25em
     float: left
-    padding: 0 20px
+    padding: 0 1.25em
     img
-      width: 60px
-      height: 60px
+      width: 3.75em
+      height: 3.75em
   .content
     display: inline-block
     float: left
@@ -2909,41 +2958,41 @@ li.unread
         color: $dark-grey-light-bg
       a
         position: relative
-        padding: 0 0 0 18px
-        margin-left: 10px
+        padding: 0 0 0 1.125em
+        margin-left: 0.625em
         text-decoration: none
         &:first-child
           margin-left: 0
         &:before
           content: ''
           position: absolute
-          top: 2px
+          top: 0.125em
           left: 0
-          width: 11px
-          height: 11px
+          width: 0.688em
+          height: 0.688em
           background-image: url(img/icon-sprite.png)
       .reply
         &:before
           background-position: -76px -126px
       .retweet
         &:before
-          width: 12px
+          width: 0.75em
           background-position: -89px -126px
       .favourite
         &:before
-          width: 12px
+          width: 0.75em
           background-position: -103px -126px
       .subscribe
         &:before
-          width: 11px
+          width: 0.688em
           background-position: -117px -126px
       .replies
         &:before
-          width: 13px
-          background-position: -130px -126px
+          width: 0.813em
+          background-position: -11.875em -126px
       .share
         &:before
-          width: 12px
+          width: 0.75em
           background-position: -144px -126px
       .like, .unlike
         padding: 0 0 0 14px
@@ -2956,13 +3005,13 @@ li.unread
 
 .wide-tile.twitter
   &:before
-    width: 25px
-    height: 21px
+    width: 1.563em
+    height: 1.313em
     background-position: 0px -214px
 
 .wide-tile.yammer
   &:before
-    width: 28px
+    width: 1.75em
     height: 24px
     background-position: -29px -215px
 
@@ -2979,24 +3028,24 @@ li.unread
 
 .new-discussion, .edit-my-profile
   h3
-    padding-bottom: 20px
+    padding-bottom: 1.25em
 
 .my-profile, .public-profile
   .profile-bar
     display: block
     width: 100%
     height: auto
-    margin: 0 0 20px 0
+    margin: 0 0 1.25em 0
     .twitter, .yammer, .location
       color: $other-dark-bg
       position: relative
       display: inline-block
-      padding: 0 22px
+      padding: 0 1.375em
       &:before
         content: ''
         position: absolute
-        height: 16px
-        width: 16px
+        height: 1em
+        width: 1em
         top: 0px
         left: 0px
         background-image: url(img/icon-sprite.png)
@@ -3034,45 +3083,56 @@ li.unread
 
 .avatar.green
   background-color: $other-bg
+  border:
+    color: $other-bg !important
 
 .avatar.blue
   background-color: $share-it-bg
+  border:
+    color: $share-it-bg !important
 
 .avatar.red
   background-color: $explore-it-bg
+  border:
+    color: $explore-it-bg !important
 
 .avatar.orange
   background-color: $fix-it-bg
+  border:
+    color: $fix-it-bg !important
 
 .avatar.small
-  width: 60px !important
-  height: 60px !important
-  border-radius: 29px
-  border: 1px solid transparent
-  font-size: 2em
-  line-height: 1.9em
+  width: 56px !important
+  height: 56px !important
+  border-radius: 28px
+  border:
+    width: 1px
+    style: solid
+    color: transparent
+  font-size: 1.8em
+  line-height: 55px
 
 .avatar-overlay
   text-indent: -10000px
   &:before
     content: ''
-    width: 36px
-    height: 36px
+    width: 2.25em
+    height: 2.25em
     position: absolute
-    top: 42px
-    left: 42px
+    top: 2.625em
+    left: 2.625em
     background-image: url(img/icon-sprite.png)
     background-position: -101px -181px
 
 .avatar-overlay.green
   z-index: 2
-  width: 124px
-  height: 124px
+  width: 7.75em
+  height: 7.75em
   border:
     width: 1px
     style: solid
     color: transparent
-  border-radius: 62px
+  border-radius: 3.875em
   position: absolute
   background-color: rgba(95,205,174,0.75)
 
@@ -3085,7 +3145,7 @@ li.unread
 
 footer
   border-bottom: 1px solid $dark-grey-dark-bg
-  padding: 30px 0 10px
+  padding: 1.875em 0 0.625em
   margin: 0
   text-align: center
   background-color: $footer-bg
@@ -3104,13 +3164,13 @@ footer
     height: auto
     li
       float: left
-      margin: 0 20px 10px 0
+      margin: 0 1.25em 0.625em 0
       a
         font-size: 1em
   .utilities
     clear: both
     li
-      margin: 0 15px 20px 0
+      margin: 0 0.938em 1.25em 0
       a
         font-size: 0.8em
 
@@ -3120,14 +3180,14 @@ footer
   .NSWlogo
     margin: 0 auto
     position: relative
-    width: 124px
-    height: 50px
+    width: 7.75em
+    height: 3.125em
     text-align: right
     background: url(img/dec-logo.png) no-repeat center left
     a
       display: block
-      width: 124px
-      height: 50px
+      width: 7.75em
+      height: 3.125em
 
 
 /*START: Autocomplete*/
@@ -3135,7 +3195,7 @@ footer
   display: none
   position: absolute
   left: 0px
-  top: 60px
+  top: 3.75em
   width: 100%
   height: auto
   border: 1px solid #000
@@ -3151,7 +3211,7 @@ footer
       color: #000
       background-color: #fff !important
       text-align: left !important
-      padding: 5px
+      padding: 0.313em
       height: auto
       font-weight: normal
       &:before
@@ -3169,15 +3229,15 @@ footer
   padding: 1em 0
   margin: 1em 0
   color: #555
-  border: 2px dashed #555
-  border-radius: 7px
+  border: 0.125em dashed #555
+  border-radius: 0.438em
   cursor: default
 
 #filedrag.hover
   color: #f00
   border-color: #f00
   border-style: solid
-  box-shadow: inset 0 3px 4px #888
+  box-shadow: inset 0 0.188em 0.25em #888
 
 
 #fileModal
@@ -3185,8 +3245,8 @@ footer
     padding: 1em
     margin: 1em 0
     color: $std-font-color
-    border: 2px dashed $dark-grey-light-bg
-    border-radius: 5px
+    border: 0.125em dashed $dark-grey-light-bg
+    border-radius: 0.313em
     background-color: $light-grey-bg
   #successHolder,
   #errorHolder
@@ -3198,19 +3258,19 @@ footer
     text-align: center
   #errorHolder
     width: 100%
-    min-height: 20px
+    min-height: 1.25em
     position: relative
-    padding: 5px 5px 5px 30px
+    padding: 0.313em 0.313em 0.313em 1.875em
     color: $explore-it-bg
     font-size: 0.9em
     line-height: 1.4em
     &:before
       content: ''
       position: absolute
-      top: 6px
+      top: 0.375em
       left: 0px
-      width: 16px
-      height: 16px
+      width: 1em
+      height: 1em
       background-image: url(img/icon-sprite.png)
       background-position: -32px 0px
 
@@ -3262,6 +3322,7 @@ footer
 
 //phone - landscape
 @media only screen and (max-width: 767px) and (orientation: landscape)
+
   .slider-holder-sml
     .column, .columns
       ul
@@ -3275,18 +3336,97 @@ footer
             .heading
               width: 100%
 
+
 //phone
 @media only screen and (max-width: 767px)
+
+  .large-2
+    position: relative
+    width: 16.6667%
+
+  .large-10
+    position: relative
+    width: 83.33333%
+
+  .columns
+    float: left
+
+
+  .avatar, .avatar-overlay-holder
+    width: 40px
+    height: 40px
+    border:
+      width: 1px
+      style: solid
+      color: transparent
+    border-radius: 19px
+
+  .avatar-overlay.green
+    z-index: 2
+    width: 40px
+    height: 40px
+    border:
+      width: 1px
+      style: solid
+    border-radius: 19px
+    &:before
+      content: ''
+      width: 0.938em
+      height: 0.938em
+      position: absolute
+      top: 0.75em
+      left: 0.75em
+      background-image: url(img/icon-sprite.png)
+      background-position: -137px -203px
+
+  .avatar-overlay.green
+    color: rgba(95,205,174,0.75)
+    background-color: rgba(95,205,174,0.75)
+
+  .avatar
+    font-size: 1.65em
+    line-height: 40px
+    vertical-align: middle
+    color: #fff
+
+  .my-profile, .public-profile
+    .profile-bar
+      display: block
+      width: 100%
+      height: auto
+      margin: 0 0 1.25em 0
+      .twitter, .yammer, .location
+        color: $other-dark-bg
+        position: relative
+        display: block
+        padding: 0.5em 1.375em
+        &:before
+          content: ''
+          position: absolute
+          height: 1em
+          width: 1em
+          top: 10px
+          left: 0px
+          background-image: url(img/icon-sprite.png)
+      .twitter
+        &:before
+          background-position: -159px -126px
+      .yammer
+        &:before
+          background-position: -197px -126px
+      .location
+        &:before
+          background-position: -178px -126px
 
   .wide-tile
     .avatar-holder
       height: 100%
-      width: 60px
+      width: 3.75em
       float: left
-      padding: 0 10px
+      padding: 0 0.625em
       img
-        width: 40px
-        height: 40px
+        width: 2.5em
+        height: 2.5em
     .content
       display: inline-block
       float: left
@@ -3297,23 +3437,36 @@ footer
           font-size: 0.875em
           color: $dark-grey-light-bg
         a
-          margin: 8px 0 !important
+          margin: 0.5em 0 !important
           clear: both
           display: block
           &:before
-            top: 7px
+            top: 0.438em
+
+  .avatar.small
+    width: 40px !important
+    height: 40px !important
+    border-radius: 19px
+    border:
+      width: 1px
+      style: solid
+      color: transparent
+    font-size: 1.2em
+    font-weight: 500
+    line-height: 39px
+    vertical-align: middle
 
   .list-holder, .block-list-holder
     ul
       li
         div.avatar-holder
           height: 100%
-          width: 60px
+          width: 3.75em
           float: left
-          padding: 0 10px
+          padding: 0 0.625em
           img
-            width: 40px
-            height: 40px
+            width: 2.5em
+            height: 2.5em
         div.avatar-holder + .holder
           width: 70%
         .holder
@@ -3353,7 +3506,7 @@ footer
     font-size: 0.875em !important
 
   .headings
-    padding: 20px 0 !important
+    padding: 1.25em 0 !important
     h1, h2
       font-size: 1.313em !important
 
@@ -3365,10 +3518,10 @@ footer
     display: none
 
   .titleGraphics
-    margin-top: 20px !important
+    margin-top: 1.25em !important
 
   h5.guide-titles
-    padding: 20px 0 0 0
+    padding: 1.25em 0 0 0
     display: block
 
   p.blurb
@@ -3382,67 +3535,69 @@ footer
     padding: 0.75em 0.9em
 
   .filter-area .filter-box, .filter-area .tag-box, .tag-area .filter-box, .tag-area .tag-box
-    max-height: 80px
+    max-height: 5em
 
   .std
-    padding: 25px 0
+    padding: 1.563em 0
 
   .support-suite, .share-suite
     li
       border: 1px solid $light-grey-dark-bg
-      margin-bottom: 10px
+      margin-bottom: 0.625em
 
   .icon-community
-    background-size: 30px 30px
-    background-position: center 50px
+    background-size: 1.875em 1.875em
+    background-position: center 3.125em
 
   body
     overflow-x: hidden
     .global-header
       position: fixed
-      height: 38px
+      height: 2.375em
       .menu-icon
         display: inline-block
         position: relative
-        width: 21px
-        height: 15px
-        margin: 10px 0 0 0
-        margin: 10px 0 0 0
+        width: 1.313em
+        height: 0.938em
+        margin: 0.625em 0 0 0
+        margin: 0.625em 0 0 0
         &:before
           content: ''
           position: absolute
           top: 0
           left: 0
-          width: 21px
-          height: 15px
+          width: 1.313em
+          height: 0.938em
           background-image: url(img/icon-sprite.png)
           background-position: -137px -73px
       .NSWlogo
-        width: 27px
+        width: 1.688em
         position: absolute
         top: 0px
         left: 50%
         margin-left: -15px
-        height: 33px
-        background-size: 90px 28px
+        height: 2.063em
+        background-size: 5.625em 1.75em
         a
-          width: 30px
+          width: 1.875em
 
       .rightside
-        height: 34px
+        height: 2.125em
         .circle
-          margin: 4px 0 0 10px
-          width: 25px
-          height: 25px
+          margin: 0.25em 0 0 0.625em
+          width: 1.75em
+          height: 1.75em
+          border-radius: 0.875em
+          top: 0.1em
           .badge
-            top: -3px
-            left: 15px
+            top: -0.6em
+            left: 1.5em
         .notification
           &:before
-            top: 2px
-            left: 3px
+            top: 0.23em
+            left: 0.25em
         .profile
-          background-size: 26px 26px !important
+          background-size: 1.625em 1.625em !important
         a.logout, .name
           display: none !important
       .f-dropdown
@@ -3450,12 +3605,12 @@ footer
           display: inline-block !important
 
     .banner-holder
-      height: 124px
-      padding-top: 30px
+      height: 7.75em
+      padding-top: 1.875em
       .row
         large-12
           h1
-            margin: 25px 0
+            margin: 1.563em 0
     #nav-pad
       display: none
 
@@ -3488,7 +3643,7 @@ footer
                 position: absolute
 
     #nav-pad
-      height: 50px
+      height: 3.125em
 
     .orbit-bullets
       li
@@ -3496,20 +3651,20 @@ footer
         height: 1.3em
 
   .support-suite, .share-suite
-    margin: 0 auto 10px auto !important
+    margin: 0 auto 0.625em auto !important
     li
       width: 100%
 
   blockquote
-    margin: 20px 0 20px 0
+    margin: 1.25em 0 1.25em 0
 
   .content-offset
     img.right
-      margin: 0 0px 20px 36px
+      margin: 0 0px 1.25em 2.25em
 
   .content-offset
     img.left
-      margin: 0 36px 20px 0px
+      margin: 0 2.25em 1.25em 0px
 
   .headings
     background-image: none
@@ -3550,16 +3705,16 @@ canvas
  *=================================
 
 a.sidebar-button
-  margin-top: 8px
-  margin-bottom: 6px
+  margin-top: 0.5em
+  margin-bottom: 0.375em
   display: inline-block
   img
     margin-top: -6px
-    width: 23px
+    width: 1.438em
   h4
-    font-size: 22px !important
+    font-size: 1.375em !important
     display: inline !important
-    margin-left: 10px
+    margin-left: 0.625em
     line-height: 1
     color: #fff
     font-weight: bold !important
@@ -3569,9 +3724,9 @@ a.sidebar-button
   background: $dark-grey-dark-bg
   height: 100%
   padding: 0
-  -webkit-box-shadow: inset -2px 0px 8px -1px #111111
-  box-shadow: inset -2px 0px 8px -1px #111111
-  padding-top: 10px
+  -webkit-box-shadow: inset -2px 0px 0.5em -1px #111111
+  box-shadow: inset -2px 0px 0.5em -1px #111111
+  padding-top: 0.625em
   z-index: 2
   .nav-bar
     background: none
@@ -3586,7 +3741,7 @@ a.sidebar-button
         font-weight: 500
         color: #fff !important
         font-family: $gothic-font-family
-        padding: 12px 16px !important
+        padding: 0.75em 1em !important
 
 #sidebar
   #frmSideSearch
@@ -3601,27 +3756,27 @@ a.sidebar-button
   li.active
     background-color: $dark-grey-bg !important
   .use-it.active
-    border-bottom: 3px solid $use-it-bg
+    border-bottom: 0.188em solid $use-it-bg
   .fix-it.active
-    border-bottom: 3px solid $fix-it-bg
+    border-bottom: 0.188em solid $fix-it-bg
   .explore-it.active
-    border-bottom: 3px solid $explore-it-bg
+    border-bottom: 0.188em solid $explore-it-bg
   .share-it.active
-    border-bottom: 3px solid $share-it-bg
+    border-bottom: 0.188em solid $share-it-bg
   .about-it.active
-    border-bottom: 3px solid $about-it-bg
+    border-bottom: 0.188em solid $about-it-bg
 
 .nav-bar
-  height: 110px
+  height: 10.625em
   background: #4d4d4d
   margin-left: 0
   margin-top: 0 !important
   padding-left: 0 !important
   &.goodness
-    height: 120px
+    height: 11.25em
     background: #4d4d4d
     margin-left: 0
-    margin-top: 20px
+    margin-top: 1.25em
     padding: 0
   > li
     float: left
@@ -3629,7 +3784,7 @@ a.sidebar-button
     position: relative
     padding: 0
     margin: 0
-    line-height: 38px
+    line-height: 2.375em
     a.current
       color: #ffffff !important
       font-weight: 700
@@ -3647,38 +3802,38 @@ a.sidebar-button
     overflow-x: hidden
     padding: 0
   .more-goodness, .zurb-links
-    padding: 0px 15px
+    padding: 0px 0.938em
   #passport
     display: inline-block
     width: 100%
     border-bottom: #444444 1px solid
-    margin-bottom: 10px
+    margin-bottom: 0.625em
     a
       &#user
         float: left
         display: inline-block
-        max-width: 260px
+        max-width: 16.25em
       &#ava
         float: right
         display: inline-block
-        max-width: 70px
+        max-width: 4.375em
     p
-      margin-bottom: 10px
+      margin-bottom: 0.625em
       color: #ccc
-      margin-left: 15px
+      margin-left: 0.938em
       display: inline-block
     h5
-      padding-left: 15px
-      margin-top: 15px
+      padding-left: 0.938em
+      margin-top: 0.938em
       display: inline-block
       color: #ffffff
       text-transform: none
     .avatar
-      height: 70px
+      height: 4.375em
       float: right
-      width: 70px
+      width: 4.375em
   .zurb-links
-    padding-bottom: 25px
+    padding-bottom: 1.563em
     margin-top: -5px
     ul
       &.top li
@@ -3689,16 +3844,16 @@ a.sidebar-button
         &.logo
           margin-left: 0px
           a
-            padding: 3px 8px 3px 0px
+            padding: 0.188em 0.5em 0.188em 0px
             font-size: 0.9em
           img
-            width: 60px
+            width: 3.75em
             margin-top: -4px
         a
           color: #727272
           text-transform: uppercase
-          font-size: 13px
-          padding: 5px
+          font-size: 0.813em
+          padding: 0.313em
           font-weight: 600
       &.pillars
         list-style: none
@@ -3706,17 +3861,17 @@ a.sidebar-button
       span
         &.title
           padding-bottom: 0px
-          padding-left: 40px
+          padding-left: 2.5em
           font-family: "ProximaNova" , "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif
           font-size: 1.3em
-          margin-bottom: 8px
+          margin-bottom: 0.5em
           color: #cccccc
         display: block
         color: #ccc
         font-size: 1.0em
-        line-height: 18px
-        margin-bottom: 18px
-        line-height: 20px
+        line-height: 1.125em
+        margin-bottom: 1.125em
+        line-height: 1.25em
         margin-bottom: 24px
         color: #727272
         padding-left: 0
@@ -3725,7 +3880,7 @@ a.sidebar-button
       background: url("../images/offcanvas/footer-icons.png") no-repeat 0 0
       display: block
       margin-bottom: 14px
-      padding-top: 6px
+      padding-top: 0.375em
       &.expo
         background-position: 0 -798px
       &.services
@@ -3769,7 +3924,7 @@ a.sidebar-button
 
 .page-panel
   width: 100%
-  padding: 0 15px
+  padding: 0 0.938em
   -webkit-transition: 0.05s margin linear-out
   -moz-transition: 0.05s margin linear-out
   -o-transition: 0.05s margin linear-out

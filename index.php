@@ -10,7 +10,7 @@ $alert = $_REQUEST['alert'];
 <?php include 'includes/banner.php'; ?>
 <?php include 'includes/nav.php'; ?>
 <?php if ($alert > 0) { ?>
-    <section class="alert dark-grey-dark sml">
+    <section class="alert black sml">
         <div class="row">
             <div class="large-12 columns">
                 <a href="#" class="close">Close</a>

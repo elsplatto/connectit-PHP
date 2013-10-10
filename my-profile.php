@@ -24,35 +24,37 @@ $pageType = 'other';
 
 <section class="my-profile white std">
     <div class="row">
-        <div class="large-2 columns">
-            <!--If image exists then use it, otherwise use green dot with users initials in it-->
-            <?php
-            if (file_exists("media/img/avatars/jason.jpg"))
-            {
-            ?>
-                <a href="public-profile.php"><img src="media/img/avatars/jason.jpg" class="avatar" alt="Jason Taikato" /></a>
-            <?php
-            }
-            else
-            {
-            ?>
-                <a href="public-profile.php" class="avatar green">JT</a>
-            <?php
-            }
-            ?>
+        <div class="large-12 columns">
+            <div class="large-2 columns">
+                <!--If image exists then use it, otherwise use green dot with users initials in it-->
+                <?php
+                if (file_exists("media/img/avatars/jason.jpg"))
+                {
+                ?>
+                    <a href="public-profile.php"><img src="media/img/avatars/jason.jpg" class="avatar" alt="Jason Taikato" /></a>
+                <?php
+                }
+                else
+                {
+                ?>
+                    <a href="public-profile.php" class="avatar green">JT</a>
+                <?php
+                }
+                ?>
 
-        </div>
-        <div class="large-10 columns">
-            <h3>Jason Taikato</h3>
-            <div class="profile-bar">
-                <a href="#" class="twitter">@jasontaikato</a>
-                <a href="#" class="yammer">jason.taikato</a>
-                <a href="#" class="location">Australian Technology Park</a>
             </div>
-            <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
-            </p>
-            <a href="edit-my-profile.php" class="button green no-margin">Edit Profile</a>
+            <div class="large-10 columns">
+                <h3>Jason Taikato</h3>
+                <div class="profile-bar">
+                    <a href="#" class="twitter">@jasontaikato</a>
+                    <a href="#" class="yammer">jason.taikato</a>
+                    <a href="#" class="location">Australian Technology Park</a>
+                </div>
+                <p>
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+                </p>
+                <a href="edit-my-profile.php" class="button green no-margin">Edit Profile</a>
+            </div>
         </div>
     </div>
 </section>

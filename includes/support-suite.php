@@ -10,7 +10,7 @@
         <a href="overlay-coming-soon.php" class="text-center reveal-init">
             <div class="lodge-ticket"></div>
             <h6>Lodge a Ticket</h6>
-            <p>Cot a problem? Lodge a support ticket</p>
+            <p>Got a problem? Lodge a support ticket</p>
         </a>
     </li>
     <li>

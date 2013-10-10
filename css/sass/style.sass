@@ -446,16 +446,16 @@ img.med
 .mark-as-read
   position: relative
   text-indent: -10000px
-  width: 2.25em
-  height: 2.25em
+  width: 2.65em
+  height: 2.65em
   padding: 0px
   &:before
     content: ''
     position: absolute
-    width: 1.125em
-    height: 1.125em
-    top: 0.313em
-    left: 0.438em
+    width: 1.38em
+    height: 1.5em
+    top: 0.39em
+    left: 0.5em
     background-image: url(img/icon-sprite.png)
     background-position: -217px -161px
 
@@ -493,8 +493,8 @@ h1 + .button
   &:before
     content: ''
     position: absolute
-    width: 0.813em
-    height: 0.75em
+    width: 1.1em
+    height: 1em
     top: 0.5em
     left: 0.5em
     background-image: url(img/icon-sprite.png)
@@ -1237,9 +1237,9 @@ label.error
     img
       display: inline-block
       vertical-align: middle
-      width: 22.5em
       height: auto
       max-height: 152px
+      max-width: 239px
       overflow: hidden
   .content
     width: 100%
@@ -1967,7 +1967,7 @@ li.unread
   h1, h2
     float: left
     padding: 0
-    margin: 0 1.25em 0 0 !important
+    margin: 0 0.75em 0 0 !important
     line-height: 1em !important
     color: rgba(255,255,255,1)
     font-weight: 500 !important
@@ -3352,6 +3352,42 @@ footer
     float: left
 
 
+  .action-list
+
+    .unsubscribe
+      display: none
+
+  .mark-as-read
+    position: relative
+    text-indent: -10000px
+    width: 2.65em
+    height: 2.65em
+    padding: 0px
+    &:before
+      content: ''
+      position: absolute
+      width: 1.38em
+      height: 1.5em
+      top: 0.39em
+      left: 0.5em
+      background-image: url(img/icon-sprite.png)
+      background-position: -217px -161px
+
+
+
+  .button.download
+    text-indent: -10000px
+    padding: 0.5em 1.4em !important
+    &:before
+      content: ''
+      position: absolute
+      width: 1.1em
+      height: 1em
+      top: 0.5em
+      left: 0.8em
+      background-image: url(img/icon-sprite.png)
+      background-position: -76px -142px
+
   .avatar, .avatar-overlay-holder
     width: 40px
     height: 40px
@@ -3676,7 +3712,7 @@ footer
   .subscriptions
     li
       div.header
-        width: 40% !important
+        width: 80% !important
 
   .feedback-tab
     display: none
